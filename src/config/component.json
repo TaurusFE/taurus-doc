@@ -1,0 +1,135 @@
+{
+  "components": [
+    {
+      "groupName": "form",
+      "list": [
+        {
+          "path": "/radio",
+          "title": "Radio"
+        },
+        {
+          "path": "/checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "path": "/button-filter",
+          "title": "ButtonFilter"
+        },
+        {
+          "path": "/autoComplete",
+          "title": "AutoComplete"
+        },
+        {
+          "path": "/switch",
+          "title": "Switch"
+        },
+        {
+          "path": "/range-slider",
+          "title": "RangeSlider"
+        },
+        {
+          "path": "/date-picker",
+          "title": "DatePicker"
+        },
+        {
+          "path": "/select",
+          "title": "Select"
+        },
+        {
+          "path": "/search-filter",
+          "title": "SearchFilter"
+        },
+        {
+          "path": "/number-stepper",
+          "title": "NumberStepper"
+        },
+        {
+          "path": "/form-validation",
+          "title": "FormValidation"
+        }
+      ]
+
+    },
+    {
+      "groupName":"data",
+      "list": [
+        {
+          "path": "/simple-table",
+          "title": "SimpleTable"
+        },
+        {
+          "path": "/table",
+          "title": "Table"
+        },
+        {
+          "path": "/amCharts",
+          "title": "AmCharts"
+        },
+        {
+          "path": "/pager",
+          "title": "Pager"
+        }
+      ]
+    },
+    {
+      "groupName":"Notice",
+      "list": [
+        {
+          "path": "/loading",
+          "title": "Loading"
+        },
+        {
+          "path": "/modal-box",
+          "title": "ModalBox"
+        },
+        {
+          "path": "/status-message",
+          "title": "StatusMessage"
+        },
+        {
+          "path": "/tooltip",
+          "title": "Tooltip"
+        },
+        {
+          "path": "/speech-bubble",
+          "title": "SpeechBubble"
+        }
+      ]
+    },
+    {
+      "groupName":"Navigation",
+      "list": [
+        {
+          "path": "/drop-down",
+          "title": "DropDown"
+        },
+        {
+          "path": "/tab",
+          "title": "Tab"
+        },
+        {
+          "path": "/breadcrumbs",
+          "title": "Breadcrumbs"
+        }
+      ]
+    },
+    {
+      "groupName":"Others",
+      "list": [
+        {
+          "path": "/video",
+          "title": "Video"
+        },
+        {
+          "path": "/cookie-helper",
+          "title": "CookieHelper"
+        },
+        {
+          "path": "/scroll-to",
+          "title": "ScrollTo"
+        }
+      ]
+    }
+
+  ]
+}
