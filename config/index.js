@@ -1,6 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-var saladConfig = require('./salad.config.json');
+
 module.exports = {
   build: {
     env: require('./prod.env'),
@@ -28,28 +28,5 @@ module.exports = {
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
     cssSourceMap: false
-  },
-  alias: {
-    'vue$': 'vue/dist/vue.common.js',
-    'src': path.resolve(__dirname, '../src'),
-    'assets': path.resolve(__dirname, '../src/assets'),
-    'components': path.resolve(__dirname, '../src/components'),
-    'github': path.resolve(__dirname, '../node_modules/highlight.js/styles/github.css'),
-    'markdown': path.resolve(__dirname, '../node_modules/github-markdown-css/github-markdown-css.css'),
-  },
-
-  vue: {
-    root: 'Vue',
-    commonjs: 'vue',
-    commonjs2: 'vue',
-    amd: 'vue'
-  },
-  postcss: function (webapck) {
-    saladConfig.features.partialImport = {
-      addDependencyTo: webapck
-    };
-    return [
-      require('postcss-salad')(saladConfig)
-    ];
   }
 }

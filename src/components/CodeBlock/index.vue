@@ -22,11 +22,7 @@
   </div>
 </template>
 
-<<<<<<< HEAD
 <style lang="scss">
-=======
-<style>
->>>>>>> origin/master
   .demo-block {
     border: solid 1px #eaeefb;
     border-radius: 4px;

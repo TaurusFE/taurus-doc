@@ -28,11 +28,7 @@ export default {
   }
 }
 </script>
-<<<<<<< HEAD
 <style lang="scss" >
-=======
-<style lang="scss" scoped >
->>>>>>> origin/master
   body {
     width: 100% !important;
     min-width: auto;

@@ -1,5 +1,5 @@
 <template>
-  <div class="fix-header" ref='header'>
+  <header class="fix-header" ref='header'>
     <div class="grid-row">
       <div class="col-md-3 col-sm-12 col-xs-12">
         <a href="#" class="header-logo">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 <script>
 export default {
@@ -31,7 +31,6 @@ export default {
     $(window).resize(() => {
       var dropDown = this.$refs.dropdown
       var header = this.$refs.header
-      debugger
       if (header.clientWidth > '1108') { // 当窗口大于1108px时隐藏dropdown
         $(dropDown).removeAttr('style')
       }

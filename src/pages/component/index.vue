@@ -1,24 +1,16 @@
 <template>
   <div class="component-container">
-    <div class="side-catalog">
+    <nav class="side-catalog">
       <nav-list :base='base' :list='list'></nav-list>
-    </div>
+    </nav>
     <div class="side-content">
       <div class="content-wrapper container">
-<<<<<<< HEAD
         <router-view class='content'></router-view>
-=======
-        <router-view></router-view>
->>>>>>> origin/master
       </div>
     </div>
   </div>
 </template>
-<<<<<<< HEAD
 <style lang='scss'>
-=======
-<style lang='scss' scoped>
->>>>>>> origin/master
   .component-container {
     display: -webkit-flex;
     display: flex;
@@ -33,7 +25,6 @@
         padding: 10px;
       }
     }
-<<<<<<< HEAD
     .side-content {
       -webkit-flex: 1;
       flex: 1;
@@ -123,12 +114,6 @@
 
   .content-wrapper .content>table td:first-child,.content-wrapper .content>table th:first-child {
     padding-left: 10px
-=======
-  .side-content {
-    -webkit-flex: 1;
-    flex: 1;
-  }
->>>>>>> origin/master
   }
 </style>
 <script>
@@ -145,8 +130,5 @@
       NavList
     }
   }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 </script>
