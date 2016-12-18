@@ -13,7 +13,7 @@
     </div>
     <div class="demo-block-control" @click="isExpanded = !isExpanded">
       <transition name="arrow-slide">
-        <i :class="[iconClass, { 'hovering': hovering }]" class="icon icon-arrow-up"></i>
+        <i :class="[iconClass, { 'hovering': hovering }]"></i>
       </transition>
       <transition name="text-slide">
         <span v-show="hovering">{{ controlText }}</span>
@@ -118,6 +118,7 @@
         font-size: 12px;
         line-height: 36px;
         transition: .3s;
+        display: inline-block;
         &.hovering {
           transform: translateX(-40px);
         }
@@ -156,7 +157,7 @@
     },
     computed: {
       iconClass () {
-        return this.isExpanded ? 'icon-arrow-up' : 'icon-arow-down'
+        return this.isExpanded ? 'icon-arrow-up' : 'icon-arrow-down'
       },
       controlText () {
         return this.isExpanded ? 'Hide' : 'Show'

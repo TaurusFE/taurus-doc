@@ -1,5 +1,5 @@
 <template>
-  <div class="padding-whole--small">
+  <div>
     <ul class="nav" v-for='group in list.components'>
       <li class="nav-item">
         <div class="nav-group__title">{{group.groupName}}</div>
@@ -9,9 +9,9 @@
           </li>
         </ul>
       </li>
-
     </ul>
   </div>
+
 </template>
 <style lang='scss' scoped>
   .nav {

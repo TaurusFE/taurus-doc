@@ -18,11 +18,12 @@
   .side-catalog {
     background: #fbfbfb;
     width: 190px;
+    padding-top: 30px;
+    padding-right: 30px;
     ul {
       display: block;
       li {
         text-align: left;
-        padding: 10px;
       }
     }
     .side-content {
@@ -31,8 +32,9 @@
     }
   }
   .content-wrapper {
-    padding-bottom: 95px;
+    padding: 30px 30px 95px 30px;
     box-sizing: border-box
+
   }
 
   .content-wrapper .content {
@@ -41,6 +43,9 @@
 
   .content-wrapper .content>h3 {
     margin: 45px 0 15px
+  }
+  .content-wrapper .content>p {
+    margin-top: 14px
   }
 
   .content-wrapper .content>table {
