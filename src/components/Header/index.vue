@@ -1,5 +1,6 @@
 <template>
-  <header class="fix-header" ref='header'>
+  <div class="fix-header">
+    <header class="header" ref='header'>
         <router-link to='/' class="header-logo">
           <img src="/static/img/taurus-logo.png">
         </router-link>
@@ -8,16 +9,16 @@
         <div class="menu-dropdown" ref='dropdown'>
           <ul class="home-nav">
             <!--<li class="home-nav-item__active"><a href="/patterns/index.html"><span>Home</span></a></li>-->
-            <li class="home-nav-item__active">
-              <router-link to='/'><span>Home</span></router-link>
+            <li>
+              <router-link active-class="active" to='/' exact><span>Home</span></router-link>
             </li>
             <li>
-              <router-link to='/design'><span>Design</span></router-link>
+              <router-link active-class="active" to='/design'><span>Design</span></router-link>
             </li>
             <li><a href="/document/guides/index.html"><span>Guide</span></a></li>
             <li><a href="/elements/index.html"><span>Elements</span></a></li>
             <li>
-              <router-link to='/component'><span>Component</span></router-link>
+              <router-link active-class="active" to='/component' ><span>Component</span></router-link>
             </li>
             <li><a href="/asset/index.html"><span>Assets</span></a></li>
             <li><a href="/case/index.html"><span>Telenor</span></a></li>
@@ -26,9 +27,15 @@
         </div>
       </div>
   </header>
+  </div>
 </template>
 <script>
   export default {
+    data () {
+      return {
+        active: ''
+      }
+    },
     mounted () {
       $(window).resize(() => {
         var dropDown = this.$refs.dropdown
@@ -62,7 +69,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   .fix-header {
-    display: flex;
     position: fixed;
     width: 100%;
     height: 70px;
@@ -70,8 +76,12 @@
     border-bottom: 1px solid #eee;
     background: #fff;
     transition: opacity 0.5s;
-    padding: 0 4%;
-    justify-content: space-between;
+    .header {
+      display: flex;
+      margin: 0 auto;
+      width: 1300px;
+      justify-content: space-between;
+    }
     .header-logo {
       line-height: 70px;
       height: 70px;
@@ -89,28 +99,36 @@
     .home-nav>li {
       display: inline-block;
       color: white;
+      position: relative;
       line-height: 70px;
-      padding-right: 40px;
+      padding-right: 20px;
+      padding-left: 20px;
       &:last-child {
         padding-right: 0px;
       }
     }
-    .home-nav>li.home-nav-item__active > a {
-      color: #108ee9;
-      font-weight: bold;
-      border-bottom: 3px solid #108ee9;
-    }
     .home-nav a {
       display: block;
       font-size: 16px;
+      color: #333;
       line-height: 70px;
-      color: #666;
       &:hover {
         text-decoration: none;
         color: #108eec;
-        border-bottom: 3px solid #108ee9;
+        font-weight: boldl
+      }
+      &.active::before {
+            content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #108ee9;
       }
     }
+
     @media (max-width: 1108px) {
       .collapse {
         position: absolute;
