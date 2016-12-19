@@ -1,14 +1,15 @@
-<style>
-  .demo-box.demo-switch {
-    .el-switch {
-      margin: 20px 20px 20px 0;
-    }
-  }
-</style>
-
 <script>
   import {TSwitcher} from 'aii-taurus'
   export default {
+    data () {
+      return {
+        small: {
+          'on': 'Yes',
+          'off': 'No',
+          value: false
+        }
+      }
+    },
     components: {
       TSwitcher
     }
@@ -23,18 +24,30 @@
 :::demo 绑定`v-model`到一个`Boolean`类型的变量。可以使用`on-text`属性与`off-text`属性来设置开关的文字描述，使用`on-color`属性与`off-color`属性来设置开关的背景色。
 
 ```html
-<t-switcher></t-switcher>
+<template>
+  <t-switcher :on-text='small.on' 
+              :on-off='small.off' 
+              v-model='small.value'>
+  </t-switcher>
+</template>
 <script>
   import {TSwitcher} from 'aii-taurus'
   export default {
     components: {
       TSwitcher
-    }
+    },
+    return {
+        small: {
+          'on': 'Yes',
+          'off': 'No'
+        }
+      }
   };
 </script>
 ```
-:::
 
+
+:::
 ### 禁用状态
 
 :::demo 设置`disabled`属性，接受一个`Boolean`，设置`true`即可禁用。

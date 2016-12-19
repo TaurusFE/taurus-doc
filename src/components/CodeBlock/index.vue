@@ -117,6 +117,7 @@
       i {
         font-size: 12px;
         line-height: 36px;
+        color: #787878;
         transition: .3s;
         display: inline-block;
         &.hovering {

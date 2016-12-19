@@ -19,18 +19,21 @@
     background: #fbfbfb;
     min-width: 190px;
     padding-top: 30px;
-    padding-right: 30px;
+    margin-right: 50px;
     ul {
       display: block;
       li {
         text-align: left;
       }
     }
-    .side-content {
-      -webkit-flex: 1;
+  
+  }
+   .side-content {
+      background: #FFFFFF;
+      border: 1px solid #E8E8E8;
+      border-radius: 2px;
       flex: 1;
     }
-  }
   .content-wrapper {
     padding: 30px 30px 95px 30px;
     box-sizing: border-box

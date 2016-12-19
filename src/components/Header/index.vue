@@ -1,8 +1,8 @@
 <template>
   <header class="fix-header" ref='header'>
-        <a href="#" class="header-logo">
+        <router-link to='/' class="header-logo">
           <img src="/static/img/taurus-logo.png">
-        </a>
+        </router-link>
       <a class='button button-default collapse' @click='toggle'><i class='icon icon-hamburger-menu'></i></a>
       <div class="">
         <div class="menu-dropdown" ref='dropdown'>
@@ -65,7 +65,7 @@
     display: flex;
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 70px;
     z-index: 1000;
     border-bottom: 1px solid #eee;
     background: #fff;
@@ -73,11 +73,11 @@
     padding: 0 4%;
     justify-content: space-between;
     .header-logo {
-      line-height: 80px;
-      height: 80px;
+      line-height: 70px;
+      height: 70px;
       display: block;
       img {
-        padding-top: 13.5px;
+        padding-top: 8.5px;
       }
     }
     .collapse {
@@ -89,8 +89,8 @@
     .home-nav>li {
       display: inline-block;
       color: white;
-      line-height: 80px;
-      padding-right: 20px;
+      line-height: 70px;
+      padding-right: 40px;
       &:last-child {
         padding-right: 0px;
       }
@@ -102,8 +102,8 @@
     }
     .home-nav a {
       display: block;
-      font-size: 1.188rem;
-      line-height: 80px;
+      font-size: 16px;
+      line-height: 70px;
       color: #666;
       &:hover {
         text-decoration: none;

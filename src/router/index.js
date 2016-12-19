@@ -37,7 +37,6 @@ var pageRouters = [
 
 ]
 function addChildren (navConfig, type) {
-  debugger
   let list = navConfig[type]
   let childConfList = []
   for (let i = 0, len = list.length; i < len; i++) {
@@ -62,7 +61,6 @@ function registerRoute (routers, type, navConfig) {
   }
   return routers
 }
-debugger
 let routes = registerRoute(pageRouters, 'component', navConfig)
 console.log(routes)
 export default new Router({

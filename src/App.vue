@@ -4,12 +4,9 @@
       <d-header></d-header>
     </template>
     <div  :class="{'main-wrapper': unhome}">
-      <div class="main-content">
         <transition name='fade' mode='out-in'>
           <router-view></router-view>
         </transition>
-      </div>
-
     </div>
   </div>
 </template>
@@ -37,6 +34,8 @@ export default {
     background: #fbfbfb;
     .main-wrapper {
       padding-top: 110px;
+      width: 1300px;
+      margin: 0 auto;
       .main-content {
         background: #fff;
         width: 92%;
