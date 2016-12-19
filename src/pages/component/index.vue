@@ -4,7 +4,7 @@
       <nav-list :base='base' :list='list'></nav-list>
     </nav>
     <div class="side-content">
-      <div class="content-wrapper container">
+      <div class="content-wrapper">
         <router-view class='content'></router-view>
       </div>
     </div>
@@ -17,7 +17,7 @@
   }
   .side-catalog {
     background: #fbfbfb;
-    width: 190px;
+    min-width: 190px;
     padding-top: 30px;
     padding-right: 30px;
     ul {
@@ -123,7 +123,7 @@
 </style>
 <script>
   import NavList from '../../components/navList/'
-  import list from '../../config/component.json'
+  import list from '../../config/router.json'
   export default {
     data () {
       return {

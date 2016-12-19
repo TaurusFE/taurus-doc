@@ -1,5 +1,5 @@
 {
-  "components": [
+  "component": [
     {
       "groupName": "form",
       "list": [
@@ -20,8 +20,8 @@
           "title": "AutoComplete"
         },
         {
-          "path": "/switch",
-          "title": "Switch"
+          "path": "/switcher",
+          "title": "Switcher"
         },
         {
           "path": "/range-slider",
