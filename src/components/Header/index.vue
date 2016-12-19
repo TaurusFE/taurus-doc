@@ -79,7 +79,7 @@
     .header {
       display: flex;
       margin: 0 auto;
-      width: 1300px;
+      max-width: 1300px;
       justify-content: space-between;
     }
     .header-logo {

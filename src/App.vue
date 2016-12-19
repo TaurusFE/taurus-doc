@@ -34,7 +34,7 @@ export default {
     background: #fbfbfb;
     .main-wrapper {
       padding-top: 110px;
-      width: 1300px;
+      max-width: 1300px;
       margin: 0 auto;
       .main-content {
         background: #fff;

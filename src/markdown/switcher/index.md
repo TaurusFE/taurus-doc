@@ -39,7 +39,7 @@
 ```html
 <template>
   <t-switcher :on-text='small.on' 
-              :on-off='small.off' 
+              :off-text='small.off' 
               v-model='small.value'>
   </t-switcher>
 </template>
