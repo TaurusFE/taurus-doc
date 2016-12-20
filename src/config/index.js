@@ -16,6 +16,7 @@ import scrollTo from '../markdown/scroll-to'
 import boxGroup from '../markdown/box-group'
 import autoComplete from '../markdown/autoComplete'
 import rangeSlider from '../markdown/range-slider'
+import loading from '../markdown/loading'
 import color from '../element/color'
 let taurus = {
   'component': {
@@ -26,6 +27,7 @@ let taurus = {
     'scroll-to': scrollTo,
     'box-group': boxGroup,
     autoComplete,
+    loading,
     'range-slider': rangeSlider,
     'am-charts-bars': amChartsBars,
     'am-charts-doughnut': amChartsDoughnut,
