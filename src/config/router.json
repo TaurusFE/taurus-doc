@@ -54,12 +54,24 @@
           "title": "Table"
         },
         {
-          "path": "/amCharts",
-          "title": "AmCharts"
-        },
-        {
           "path": "/pager",
           "title": "Pager"
+        },
+        {
+          "path": "/am-charts-bars",
+          "title": "AmCharts Bars"
+        },
+        {
+          "path": "/am-charts-doughnut",
+          "title": "AmCharts Doughnut"
+        },
+        {
+          "path": "/am-charts-gauge",
+          "title": "AmCharts Gauge"
+        },
+        {
+          "path": "/am-charts-line",
+          "title": "AmCharts Line"
         }
       ]
     },
