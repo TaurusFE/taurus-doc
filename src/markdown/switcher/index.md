@@ -1,5 +1,5 @@
 <script>
-  import {TSwitcher} from 'aii-taurus'
+  import {TSwitcher, TButton} from "aii-taurus"
   export default {
     data () {
       return {
@@ -24,7 +24,8 @@
       }
     },
     components: {
-      TSwitcher
+      TSwitcher,
+      TButton
     }
   };
 </script>
@@ -40,7 +41,7 @@
 <template>
   <t-switcher :on-text='small.on' 
               :off-text='small.off' 
-              v-model='small.value'>
+              v-model='small.value'>            
   </t-switcher>
 </template>
 <script>

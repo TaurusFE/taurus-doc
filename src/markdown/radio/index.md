@@ -1,8 +1,9 @@
 <script>
  import {TBoxGroup} from 'aii-taurus' 
+ const INFO_TITLE = 'BoxGroup事件信息：'
  export default {
    components: {
-     'ab': TBoxGroup
+     't-radio': TBoxGroup
    },
    methods: {
      warn$1: function (msg1, msg2) {
@@ -28,15 +29,20 @@
 
 ### 基本用法
 由于选项默认可见，不宜过多，若选项过多，建议使用 Select 选择器。
-:::demo xxxxx
+:::demo ge
 ```html
-<ab type="radiobox" 
-        labels="item1,item2,item3,item4" 
-        checked="false,true,false,false" 
+<template>
+  <t-radio type="radiobox" 
+        labels="item1,item2" 
+        checked="true, false" 
         mtop="true" size="small"
       @changed="changed"
       @checked="checked"
-      @unchecked="unchecked"></ab>
+      @unchecked="unchecked"
+      inline="true">
+</t-radio>
+
+</template>
 <script>
   import {TBoxGroup} from 'aii-taurus' 
  export default {
