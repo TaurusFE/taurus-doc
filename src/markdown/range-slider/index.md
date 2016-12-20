@@ -136,7 +136,7 @@ export default {
 ```html
 <template>
   <t-range-slider :range-options="singleSlideOptions"></t-range-slider>
-    <article style="margin-top: 20px">
+    <article style="margin-top: 20px;margin-bottom: 20px">
       <label>Range:</label>
       <span>{{singleSlideOptions.start}}-{{singleSlideOptions.end}}</span>
     </article>
