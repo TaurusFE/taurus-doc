@@ -33,6 +33,7 @@
       border: 1px solid #E8E8E8;
       border-radius: 2px;
       flex: 1;
+      max-width: 1060px;
     }
   .content-wrapper {
     padding: 30px 30px 95px 30px;

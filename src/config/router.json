@@ -4,16 +4,8 @@
       "groupName": "form",
       "list": [
         {
-          "path": "/radio",
-          "title": "Radio"
-        },
-        {
-          "path": "/checkbox",
-          "title": "Checkbox"
-        },
-        {
-          "path": "/button-filter",
-          "title": "ButtonFilter"
+          "path": "/box-group",
+          "title": "BoxGroup"
         },
         {
           "path": "/autoComplete",

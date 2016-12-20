@@ -7,6 +7,9 @@ import table from './table'
 import cookieHelper from './cookie-helper'
 import pager from './pager'
 import scrollTo from './scroll-to'
+import boxGroup from './box-group'
+import autoComplete from './autoComplete'
+import rangeSlider from './range-slider'
 let taurus = {
   switcher,
   radio,
@@ -14,6 +17,9 @@ let taurus = {
   'cookie-helper': cookieHelper,
   pager,
   'scroll-to': scrollTo
+  'box-group': boxGroup,
+  autoComplete,
+  'range-slider': rangeSlider
 }
 export {
   taurus
