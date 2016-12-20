@@ -126,11 +126,11 @@
   ],
   "element": [
     {
-      "groupName": "gloabal",
+      "groupName": "global",
       "list": [
         {
           "path": "/color",
-          "title": "color"
+          "title": "Color"
         },
         {
           "path": "/typography",

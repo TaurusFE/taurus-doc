@@ -1,7 +1,4 @@
 /**
- * Created by y1205 on 2016/12/20.
- */
-/**
  * Created by y1205 on 2016/12/15.
  */
 import switcher from '../markdown/switcher'
@@ -13,6 +10,7 @@ import boxGroup from '../markdown/box-group'
 import autoComplete from '../markdown/autoComplete'
 import rangeSlider from '../markdown/range-slider'
 import color from '../element/color'
+import typography from '../element/typography'
 let taurus = {
   'component': {
     switcher,
@@ -25,7 +23,8 @@ let taurus = {
     'range-slider': rangeSlider
   },
   'element': {
-    color
+    color,
+    typography
   }
 }
 export {
