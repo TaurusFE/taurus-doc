@@ -12,7 +12,6 @@
 </template>
 
 <script>
-// import markdown from './markdown/switcher/'
 import DHeader from './components/Header/'
 export default {
   computed: {
@@ -29,6 +28,7 @@ export default {
   body {
     width: 100% !important;
     min-width: auto;
+    background-color: #fbfbfb !important;
   }
   .page-wrapper {
     background: #fbfbfb;

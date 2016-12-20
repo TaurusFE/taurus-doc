@@ -26,7 +26,6 @@
         text-align: left;
       }
     }
-
   }
    .side-content {
       background: #FFFFFF;
@@ -40,11 +39,9 @@
     box-sizing: border-box
 
   }
-
   .content-wrapper .content {
     margin-left: -1px
   }
-
   .content-wrapper .content>h3 {
     margin: 45px 0 15px
   }

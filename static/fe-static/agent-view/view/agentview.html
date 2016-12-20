@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../../../assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/agentview.min.css" rel="stylesheet" type="text/css">
+    <script src="../../../../assets/js/jquery.js" type="text/javascript"></script>
+    <script></script>
+    <title>Agent View</title>
+</head>
+<body>
+    <div class="av-container">
+        <div class="av-header">
+            <div class="float--left">
+                <a href="#nogo" class="btn-menu">
+                    <span class="icon icon-close-menu"></span>
+                </a>
+                <div class="av-header--model av-header--caller icon icon-telephone">
+                    <div class="av-header--caller-name">
+                        <span class="text-size--13">Inbound call</span>
+                        <span class="text-size--16">Line S. Pedersen (60 50 22 11)</span>
+                    </div>
+                </div>
+                <div class="av-header--model">
+                    <span class="av-header--caller-time"> 06:42</span>
+                    <span class="icon icon-pause"></span>
+                </div>
+                <div class="av-header--model" >
+                    <span class="icon icon-keyboard-voice"></span>
+                    <span class="icon icon-forward"></span>
+                    <span class="icon icon-teleohone-hang-up"></span>
+                </div>
+                <div class="av-header--model">
+                    <span class="icon icon-account"></span>
+                </div>
+
+            </div>
+            <div class="float--right">
+                <div class="av-header--model border--without ">
+                    <div class="status-dot status-dot--green" aria-hidden="true"> <span class="icon icon-support color-white"></span></div>
+                </div>
+                <div class="av-header--model av-header--caller">
+                    <span class="icon icon-person"></span>
+                    <div class="av-header--caller-name av-header--caller-shop">
+                        <span class="text-size--16">Mona Schuster</span>
+                        <span class="text-size--13">Shop: Århus Fredriksgade</span>
+                        <div class="status-dot status-dot--small text--small status-dot--green" aria-hidden="true">Logged in</div>
+                    </div>
+                </div>
+                <div class="av-header--model text-size--13">
+                    <span class="icon icon-open-right-panel"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="av-sidebar">
+            <ul>
+                <li>
+                    <a href="#nogo" class="icon icon-home"></a>
+                </li>
+                <li>
+                    <a href="#nogo" class="icon icon-search"></a>
+                </li>
+                <li>
+                    <a href="#nogo" class="icon icon-knowledge_base"></a>
+                </li>
+                <li>
+                    <a href="#nogo" class="icon icon-mail"></a>
+                </li>
+                <li>
+                    <a href="#nogo" class="icon icon-14days"></a>
+                </li>
+                <li>
+                    <a href="#nogo" class="icon-stock_management"></a>
+                </li>
+            </ul>
+            <ul class="av-sidebar-bottom">
+                <li><a href="#" class="icon-telenor"></a></li>
+                <li><a href="#" class="icon-open_veris"></a></li>
+            </ul>
+        </div>
+        <div class="av-content">
+            <iframe src="../../p-eshop/view/shop/index.html" width="100%" height="100%" frameborder="0">
+
+            </iframe>
+        </div>
+    </div>
+</body>
+<script>
+    $('.btn-menu').click(function () {
+
+
+             //   var this = $('.av-sidebar');
+                if (!$('.av-sidebar').hasClass('is-hide')) {
+                    $('.av-sidebar').addClass('is-hide');
+                    $('.av-sidebar').siblings('.av-content').css('padding-left',"0");
+                    $(this).children().removeClass('icon-close-menu').addClass('icon-open-menu');
+
+                } else {
+                    $('.av-sidebar').removeClass('is-hide');
+                    $('.av-sidebar').siblings('.av-content').css('padding-left',"50px");
+                    $(this).children().removeClass('icon-open-menu').addClass('icon-close-menu');
+
+                }
+            }
+    );
+
+
+</script>
+</html>

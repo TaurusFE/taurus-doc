@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>customer-list</title>
+    <link href="../../../../assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/party.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!------------container----------------->
+<div class="container leader--large trailer--large">
+    <!------------ Individual Customer ------------->
+    <div>
+        <header class="padding-trailer--small">
+            <h1 class="text-size--36 text-light">
+                Individual Customer
+                <div class="pull-right leader--xsmall">
+                    <button class="button button--action button--small">Creat</button>
+                </div>
+            </h1>
+
+        </header>
+
+        <!-- add a new row -->
+        <div class="border gradient-line--with-border trailer">
+            <div class="padding-whole">
+                <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">Create New Customer</h3>
+                <form action="" class="grid-row">
+                    <div class="col-md-4 form-item--multi">
+                        <div class="form-item form-item--small form-item--required">
+                            <label for="">Name</label>
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Given Name"/></div>
+                            <!-- /component:input -->
+                        </div>
+                        <div class="form-item form-item--small form-item--required">
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Family Name"/></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small form-item--required">
+                            <label for="">Contact Media</label>
+                            <!-- component:select -->
+                            <div data-module="form.select" class="form-select form-select--small">
+                                <select id="select4">
+                                    <option value="opt1" selected="">Email</option>
+                                    <option value="opt2">Address</option>
+                                    <option value="opt3">Phone number</option>
+                                </select>
+                                <div class="form-select__field">Email</div>
+                            </div>
+                            <!-- /component:select -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small form-item--required">
+                            <label for="">Email</label>
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Please Enter"/></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                    <div class="text--right padding-leader col-md-12">
+                        <button class="button button--naked button--small toright--small">Cancel</button>
+                        <button class="button button--action button--small">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /add a new row -->
+        <div class="border gradient-line--with-border">
+            <!--table filter-->
+            <div class="border--bottom clear padding-whole box--greyed mobile-hidden">
+                <div class="pull-left">
+                    <!-- radiobutton -->
+                    <div class="radiobutton-row  radiobutton-row--small form-item--inline">
+                        <input type="radio" name="small-group-small" value="yes" id="small-group-small_0" checked="checked">
+                        <label class="text--small" for="small-group-small_0">
+                            Prospect
+                        </label>
+                        <input type="radio" name="small-group-small" value="no" id="small-group-small_1">
+                        <label class="text--small" for="small-group-small_1">
+                            Active
+                        </label>
+                        <input type="radio" name="small-group-small" value="no" id="small-group-small_2">
+                        <label class="text--small" for="small-group-small_2">
+                            Suspend
+                        </label>
+                        <input type="radio" name="small-group-small" value="no" id="small-group-small_3">
+                        <label class="text--small" for="small-group-small_3">
+                            Former
+                        </label>
+                    </div>
+                    <!-- radiobutton -->
+                    <!-- component:Select -->
+                    <div data-module="form.select" class="form-select form-select--small form-item--inline">
+                        <select id="select4">
+                            <option value="opt1" selected="">Customer Name</option>
+                            <option value="opt2">Customer ID</option>
+                            <option value="opt3">IMEI</option>
+                            <option value="opt4">CPR Number</option>
+                            <option value="opt5">Contact Number</option>
+                            <option value="opt6">Service Number</option>
+                            <option value="opt7">Customer Service ID</option>
+                        </select>
+                        <div class="form-select__field">Customer Name</div>
+                    </div>
+                    <!-- /component:Select -->
+                    <!-- component:search -->
+                    <div class="form-search is-empty form-item--small form-search--inline form-item--inline" data-module="form.search">
+                        <input id="search-small-inline" type="search" placeholder="Search">
+                        <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                    </div>
+                    <!-- /component:search -->
+                </div>
+                <div class="pull-right">
+                    <button class="button button--small button--default button--white">Reset</button>
+                </div>
+            </div>
+            <!--/table filter-->
+            <!---component: table-->
+            <table class="table table--adv">
+                <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Status</th>
+                    <th>Anonymous</th>
+                    <th>Date Created</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>21220311291801</td>
+                    <td>aaa</td>
+                    <td>Prospect</td>
+                    <td>No</td>
+                    <td>09,20,2016</td>
+                </tr>
+                <tr>
+                    <td>21220311291801</td>
+                    <td>aaa</td>
+                    <td>Prospect</td>
+                    <td>No</td>
+                    <td>09,20,2016</td>
+                </tr>
+                <tr>
+                    <td>21220311291801</td>
+                    <td>aaa</td>
+                    <td>Prospect</td>
+                    <td>No</td>
+                    <td>09,20,2016</td>
+                </tr>
+                <tr>
+                    <td>21220311291801</td>
+                    <td>aaa</td>
+                    <td>Prospect</td>
+                    <td>No</td>
+                    <td>09,20,2016</td>
+                </tr>
+                <tr>
+                    <td>21220311291801</td>
+                    <td>aaa</td>
+                    <td>Prospect</td>
+                    <td>No</td>
+                    <td>09,20,2016</td>
+                </tr>
+                </tbody>
+            </table>
+            <!---/component: table-->
+            <div class="padding-whole mobile-hidden">
+                <!--component:select menu-->
+                <div data-component="select" data-alias="lengthMenu"
+                     class="form-select form-select--length form-item--inline form-select--small">
+                    <select name="length">
+                        <option value="10" selected="selected">Vis 10</option>
+                        <option value="50">Vis 50</option>
+                        <option value="100">Vis 100</option>
+                        <option value="500">Vis 500</option>
+                    </select>
+
+                    <div class="form-select__field">Vis 10</div>
+                </div>
+                <!--/component:select menu-->
+                <!-- component: pager -->
+                <div class="pager pager--default pull-right" data-component="pager" data-alias="pagination">
+                    <a class="pager__button previous" data-selector="page-previous">previous</a>
+                        <span data-selector="pages">
+                            <a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+                            <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+                            <span class="pager__elipsis">…</span>
+                            <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+                        </span>
+                    <a class="pager__button next" data-selector="page-next">next</a>
+                </div>
+                <!-- /component: pager -->
+            </div>
+        </div>
+    </div>
+    <!---------- /Individual Customer --------------->
+</div>
+<!------------/container----------------->
+
+</body>
+</html>

@@ -12,7 +12,12 @@ import scrollTo from '../markdown/scroll-to'
 import boxGroup from '../markdown/box-group'
 import autoComplete from '../markdown/autoComplete'
 import rangeSlider from '../markdown/range-slider'
+// --------------------------------------------------
+
 import color from '../element/color'
+
+// -----------------------------------------------
+import eshop from '../pages/telenor/catalog/eshop.vue'
 let taurus = {
   'component': {
     switcher,
@@ -26,6 +31,9 @@ let taurus = {
   },
   'element': {
     color
+  },
+  'case': {
+    eshop
   }
 }
 export {
