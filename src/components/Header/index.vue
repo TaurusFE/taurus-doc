@@ -15,8 +15,8 @@
             <li>
               <router-link active-class="active" to='/design'><span>Design</span></router-link>
             </li>
-            <li><a href="/document/guides/index.html"><span>Guide</span></a></li>
-            <li><a href="/elements/index.html"><span>Elements</span></a></li>
+            <li><router-link active-class="active" to='/guide' ><span>Guide</span></router-link></li>
+            <li><router-link active-class="active" to='/element'><span>Element</span></router-link></li>
             <li>
               <router-link active-class="active" to='/component' ><span>Component</span></router-link>
             </li>

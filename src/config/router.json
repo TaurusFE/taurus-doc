@@ -123,5 +123,154 @@
       ]
     }
 
+  ],
+  "element": [
+    {
+      "groupName": "gloabal",
+      "list": [
+        {
+          "path": "/color",
+          "title": "color"
+        },
+        {
+          "path": "/typography",
+          "title": "Typography"
+        },
+        {
+          "path": "/typesetting",
+          "title": "Typesetting"
+        },
+        {
+          "path": "/layouts",
+          "title": "Layouts"
+        }
+      ]
+    },
+    {
+      "groupName": "atoms",
+      "list": [
+        {
+          "path": "/iconImages",
+          "title": "Icons & Images"
+        },
+        {
+          "path": "/lists",
+          "title": "List"
+        },
+        {
+          "path": "/input",
+          "title": "Input Element"
+        },
+        {
+          "path": "/controls",
+          "title": "Controls & Toggles"
+        },
+        {
+          "path": "/buttons",
+          "title": "Buttons"
+        },
+        {
+          "path": "/loading",
+          "title": "Loading"
+        }
+      ]
+    },
+    {
+      "groupName": "molecules",
+      "list": [
+        {
+          "path": "/typeHeadings",
+          "title": "Type & Headings"
+        },
+        {
+          "path": "/structure",
+          "title": "Structure"
+        },
+        {
+          "path": "/feedbackMessages",
+          "title": "Feedback & Messages"
+        },
+        {
+          "path": "/shop",
+          "title": "Shop"
+        },
+        {
+          "path": "/products",
+          "title": "Products"
+        },
+        {
+          "path": "/tables",
+          "title": "Tables"
+        },
+        {
+          "path": "/tabsWidgets",
+          "title": "Tabs & Widgets"
+        },
+        {
+          "path": "/modalBox",
+          "title": "ModalBox"
+        },
+        {
+          "path": "/upload",
+          "title": "Upload"
+        },
+        {
+          "path": "/step",
+          "title": "Step"
+        }
+      ]
+    },
+    {
+      "groupName": "organisms",
+      "list": [
+        {
+          "path": "/charts",
+          "title": "Charts"
+        },
+        {
+          "path": "/selfare",
+          "title": "SelfCare"
+        },
+        {
+          "path": "/globalModules",
+          "title": "Global Modules"
+        },
+        {
+          "path": "/menu",
+          "title": "Menu"
+        },
+        {
+          "path": "/dataTable",
+          "title": "DataTable"
+        },
+        {
+          "path": "/tables",
+          "title": "Tables"
+        },
+        {
+          "path": "/tabsWidgets",
+          "title": "Tabs & Widgets"
+        },
+        {
+          "path": "/modalBox",
+          "title": "ModalBox"
+        },
+        {
+          "path": "/upload",
+          "title": "Upload"
+        },
+        {
+          "path": "/step",
+          "title": "Step"
+        }
+      ]
+    },
+    {
+      "groupName": "pages",
+      "list": [{
+        "path": "formExamples",
+        "title": "Form Examples"
+      }]
+    }
   ]
 }

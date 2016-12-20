@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="nav" v-for='group in list.component'>
+    <ul class="nav" v-for='group in list'>
       <li class="nav-item">
         <div class="nav-group__title">{{group.groupName}}</div>
         <ul class="nav-menu-list">

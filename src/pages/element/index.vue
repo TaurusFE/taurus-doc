@@ -11,6 +11,7 @@
   </div>
 </template>
 <style lang='scss'>
+  @import "css/doc.css";
   .component-container {
     display: -webkit-flex;
     display: flex;
@@ -28,13 +29,13 @@
     }
 
   }
-   .side-content {
-      background: #FFFFFF;
-      border: 1px solid #E8E8E8;
-      border-radius: 2px;
-      flex: 1;
-      max-width: 1060px;
-    }
+  .side-content {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+    flex: 1;
+    max-width: 1060px;
+  }
   .content-wrapper {
     padding: 30px 30px 95px 30px;
     box-sizing: border-box
@@ -126,13 +127,13 @@
   }
 </style>
 <script>
-  import NavList from '../../components/navList/'
+  import NavList from '../../components/navList'
   import list from '../../config/router.json'
   export default {
     data () {
       return {
-        base: '/component',
-        list: list.component
+        base: '/element',
+        list: list.element
       }
     },
     components: {

@@ -6,11 +6,13 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-import Home from '../pages/home/'
-import Design from '../pages/design/'
-import Princ from '../pages/design/principle/'
-import Component from '../pages/component/'
-import { taurus } from '../markdown/'
+import Home from '../pages/home'
+import Design from '../pages/design'
+import Princ from '../pages/design/principle'
+import Component from '../pages/component'
+import Element from '../pages/element'
+import Guide from '../pages/guide'
+import { taurus } from '../config'
 import navConfig from '../config/router.json'
 var pageRouters = [
   { name: 'home', path: '/', component: Home },
@@ -33,6 +35,17 @@ var pageRouters = [
     path: '/component',
     component: Component,
     redirect: '/component/switcher'
+  },
+  {
+    name: 'element',
+    path: '/element',
+    component: Element,
+    redirect: '/element/color'
+  },
+  {
+    name: 'guide',
+    path: '/guide',
+    component: Guide
   }
 
 ]
@@ -46,7 +59,7 @@ function addChildren (navConfig, type) {
       let child = {
         path: childConf.path.replace('/', ''),
         name: childConf.path.replace('/', ''),
-        component: taurus[childConf.path.replace('/', '')]
+        component: taurus[type][childConf.path.replace('/', '')]
       }
       childConfList.push(child)
     }
@@ -61,10 +74,11 @@ function registerRoute (routers, type, navConfig) {
   }
   return routers
 }
-let routes = registerRoute(pageRouters, 'component', navConfig)
-console.log(routes)
+let routers = registerRoute(pageRouters, 'component', navConfig)
+console.log(navConfig.element)
+routers = registerRoute(routers, 'element', navConfig)
 export default new Router({
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
-  routes: routes
+  routes: routers
 })
