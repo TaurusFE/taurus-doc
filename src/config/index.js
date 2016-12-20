@@ -4,6 +4,10 @@
 /**
  * Created by y1205 on 2016/12/15.
  */
+import amChartsBars from '../markdown/am-charts-bars'
+import amChartsDoughnut from '../markdown/am-charts-doughnut'
+import amChartsGauge from '../markdown/am-charts-gauge'
+import amChartsLine from '../markdown/am-charts-line'
 import switcher from '../markdown/switcher'
 import table from '../markdown/table'
 import cookieHelper from '../markdown/cookie-helper'
@@ -22,7 +26,11 @@ let taurus = {
     'scroll-to': scrollTo,
     'box-group': boxGroup,
     autoComplete,
-    'range-slider': rangeSlider
+    'range-slider': rangeSlider,
+    'am-charts-bars': amChartsBars,
+    'am-charts-doughnut': amChartsDoughnut,
+    'am-charts-gauge': amChartsGauge,
+    'am-charts-line': amChartsLine
   },
   'element': {
     color
