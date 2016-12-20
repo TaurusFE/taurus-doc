@@ -25,7 +25,7 @@ cooking.set({
   publicPath: process.env.CI_ENV || '',
   devServer: {
     host:'localhost',
-    port: 8081,
+    port: 8080,
     log: false,
     publicPath: '/'
   },
