@@ -22,7 +22,7 @@
             </li>
             <li><a href="/asset/index.html"><span>Assets</span></a></li>
             <li><a href="/case/index.html"><span>Telenor</span></a></li>
-            <li><a href="/faqs/index.html"><span>FAQ</span></a></li>
+            <li><router-link active-class="active" to='/faq' ><span>FAQ</span></router-link></li>
           </ul>
         </div>
       </div>
