@@ -1,4 +1,4 @@
-<article class='markdown-body'>
+<article class='markdown-body trailer--large'>
 
 # Taurus业务开发快速上手指南
 

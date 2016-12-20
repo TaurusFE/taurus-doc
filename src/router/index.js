@@ -12,6 +12,7 @@ import Princ from '../pages/design/principle'
 import Component from '../pages/component'
 import Element from '../pages/element'
 import Guide from '../pages/guide'
+import Faq from '../pages/faq'
 import { taurus } from '../config'
 import navConfig from '../config/router.json'
 var pageRouters = [
@@ -46,6 +47,11 @@ var pageRouters = [
     name: 'guide',
     path: '/guide',
     component: Guide
+  },
+  {
+    name: 'faq',
+    path: '/faq',
+    component: Faq
   }
 
 ]
