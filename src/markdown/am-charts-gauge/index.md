@@ -43,7 +43,7 @@
 
 ### 基本用法
 
-:::demo 绑定`v-model`到一个`Boolean`类型的变量。可以使用`on-text`属性与`off-text`属性来设置开关的文字描述，使用`on-color`属性与`off-color`属性来设置开关的背景色。
+:::demo amcharts的gauge组件 绑定`v-model`到一个`Boolean`类型的变量。可以使用`on-text`属性与`off-text`属性来设置开关的文字描述，使用`on-color`属性与`off-color`属性来设置开关的背景色。
 
 ```html
 <t-gauge :data="multiValueData" :max-value="90" :step="10" :value="50" title="title for multiValue gauge"></t-gauge>

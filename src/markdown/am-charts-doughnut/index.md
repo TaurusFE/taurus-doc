@@ -32,7 +32,7 @@
 
 ### 基本用法
 
-:::demo
+:::demo  amcharts的doughnut组件
 
 ```html
 <template>

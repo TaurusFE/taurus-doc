@@ -149,7 +149,7 @@
 
 ### Select with grouping
 
-:::demo 需要用group功能要在每个value中再传入option数组
+:::demo 需要用group功能要在optgroup中的每个value中再传入option数组
 
 ```html
 <t-select :options="optgroup" style="width:150px;"></t-select>

@@ -37,7 +37,7 @@
 
 ### Search
 
-:::demo
+:::demo sf-search="normalSearch"来定义为普通搜索框，并且要用v-model绑定需要返回的值。
 
 ```html
   <t-search-filter v-model.trim="normalSearchResult" @sf-search="normalSearch"></t-search-filter>
@@ -70,7 +70,7 @@
 
 ## Search Small
 
-:::demo
+:::demo is-small="true" 来设置成small样式
 
 ```html
   <t-search-filter :is-small="true" v-model.trim="smallSearchResult" @sf-search="smallSearch"></t-search-filter>
@@ -136,13 +136,13 @@
 
 ## Search Small Inline
 
-:::demo
+:::demo is-inline="true"来显示搜索框搜索按钮
 
 ```html
 <t-search-filter :is-small="true" :is-inline="true" v-model.trim="smaillInlineSearchResult" @sf-search="smaillInlineSearch"></t-search-filter>
 <div class="form-row">
-      <div class="mt20">这是用来演示双向绑定的:<input v-model="smaillInlineSearchResult"></div>
-    </div>
+   <div class="mt20">这是用来演示双向绑定的:<input v-model="smaillInlineSearchResult"></div>
+</div>
 
 
 <script>
@@ -168,24 +168,24 @@
 ```
 :::
 
-### Props \(参数\)
+### Props (参数)
 
 | 名字 | 类型 | 是否必传 | 默认 | 描述 |
 | --- | --- | --- | --- | --- |
-| max | Number| No |  | 组件可达到的最大值 |
-| min | Number | No  | 0 | 组件对应的最小值，递减到最小值后停止减小|
-| step | Number | No  | 1 | 组件的增减步长，递增或递减以此作为步长|
-| defaultValue | Number | No | 0 | 组件的初始值，若默认值小于最小值，则将最小值设置为默认值；若默认值大于最大值，则将最大值设置为默认值 |
-| size | String | No |  | 可选择normal和small两种，不传入是默认为normal |
-| label | String | No |  | 组件的label,不传或传空时label不占位 |
-| modelValue | Number | No |  | 用来做双向绑定的入参传值 |
+| value | String | No | '' | 输入框内的文本 |
+| delay | Number | No | 300 | 默认延迟300毫秒执行搜索，可以传入其他值来控制延迟时间 |
+| isSmall | Boolean | No  | true | 组件尺寸大小，true为小尺寸，false为大尺寸 |
+| isInline | Boolean | No | true | 控制显示模式，当值为true时，搜索框的搜索按钮隐藏，当值为false时，搜索框搜索按钮显示 |
 
-### Methods \(方法\)
+### Events (事件)
 
 | 名字 | 参数 | 描述 |
 | --- | --- | --- |
-| setValue | \(value\) | 设置组件的值 |
-| getValue |  | 获取组件的值 |
-| disable |  | 禁用组件 |
-| enable |  | 启用组件 |
+| search | 无 | 输入文字搜索时触发回调 |
+
+### Methods (方法)
+
+| 名字 | 参数 | 描述 |
+| --- | ---| --- |
+| clear |无| 清除输入框文本 |
 

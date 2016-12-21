@@ -23,7 +23,7 @@ scroll-to插件，用于页面滚动
 
 ### 基本用法
 
-:::demo
+:::demo 调用$scollTo方法来滚动页面
 
 ```html
   <div class="form-row">

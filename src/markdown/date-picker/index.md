@@ -178,7 +178,7 @@
 
 ### size设置为large
 
-:::demo is-large="true"来设置更大的样式
+:::demo is-large="true"来设置large样式
 
 ```html
 <t-date-picker :is-large="true" date-format="yyyy.mm.dd"></t-date-picker>
