@@ -39,12 +39,14 @@ var pageRouters = [
   {
     name: 'guide',
     path: '/guide',
-    component: Guide
+    component: Guide,
+    redirect: '/guide/developGuide'
   },
   {
     name: 'faq',
     path: '/faq',
-    component: Faq
+    component: Faq,
+    redirect: '/faq/developFAQ'
   },
   {
     name: 'assets',
@@ -96,6 +98,8 @@ routers = registerRoute(routers, 'element', navConfig)
 routers = registerRoute(routers, 'case', navConfig)
 routers = registerRoute(routers, 'design', navConfig)
 routers = registerRoute(routers, 'assets', navConfig)
+debugger
+console.log(pageRouters)
 export default new Router({
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
