@@ -8,7 +8,6 @@ Vue.use(Router)
 
 import Home from '../pages/home'
 import Design from '../pages/design'
-import Princ from '../pages/design/principle'
 import Component from '../pages/component'
 import Element from '../pages/element'
 import Guide from '../pages/guide'
@@ -22,16 +21,8 @@ var pageRouters = [
   {
     name: 'design',
     path: '/design',
-    redirect: '/design/princ',
-    component: Design,
-    default: 'princ',
-    children: [
-      {
-        name: 'princ',
-        path: 'princ',
-        component: Princ
-      }
-    ]
+    redirect: '/design/principle',
+    component: Design
   },
   {
     name: 'component',
@@ -58,6 +49,7 @@ var pageRouters = [
   {
     name: 'assets',
     path: '/assets',
+    redirect: '/assets/download',
     component: Assets
   },
   {
@@ -100,9 +92,12 @@ function registerRoute (routers, type, navConfig) {
   return routers
 }
 let routers = registerRoute(pageRouters, 'component', navConfig)
-console.log(navConfig.element)
 routers = registerRoute(routers, 'element', navConfig)
 routers = registerRoute(routers, 'case', navConfig)
+routers = registerRoute(routers, 'design', navConfig)
+routers = registerRoute(routers, 'assets', navConfig)
+debugger
+console.log(pageRouters)
 export default new Router({
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),

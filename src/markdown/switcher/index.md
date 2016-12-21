@@ -36,12 +36,11 @@
 ### 基本用法
 
 :::demo 绑定`v-model`到一个`Boolean`类型的变量。可以使用`on-text`属性与`off-text`属性来设置开关的文字描述。
-
 ```html
 <template>
-  <t-switcher :on-text='small.on' 
-              :off-text='small.off' 
-              v-model='small.value'>            
+  <t-switcher :on-text='small.on'
+              :off-text='small.off'
+              v-model='small.value'>
   </t-switcher>
 </template>
 <script>
@@ -68,8 +67,8 @@
 
 ```html
 <template>
-  <t-switcher :on-text='two.on' 
-              :off-text='two.off' 
+  <t-switcher :on-text='two.on'
+              :off-text='two.off'
               :disabled='two.disabled'>
   </t-switcher>
 </template>
@@ -98,8 +97,8 @@
 
 ```html
   <template>
-    <t-switcher :on-text='three.on' 
-                :off-text='three.off' 
+    <t-switcher :on-text='three.on'
+                :off-text='three.off'
                 wide>
     </t-switcher>
   </template>
@@ -126,7 +125,7 @@
 :::demo 只需要在`on-text`和`off-text`属性中设置`<i></i>`就可以使开关状态显示为图标
 ```html
   <template>
-    <t-switcher :on-text='four.on' 
+    <t-switcher :on-text='four.on'
                 :off-text='four.off'>
     </t-switcher>
   </template>
@@ -163,7 +162,7 @@
 | on-change  | switcher状态发生变化时的回调函数    | 新状态的布尔值 |
 
 
-### Methods 
+### Methods
 | 方法名称      | 说明    | 方法参数      |
 |---------- |-------- |---------- |
 | toggle | 切换switcher的状态| — |

@@ -1,12 +1,8 @@
 <template>
-  <div class="component-container">
-    <nav class="side-catalog">
-      <nav-list :base='base' :list='list'></nav-list>
-    </nav>
-    <div class="side-content">
-      <div class="content-wrapper">
-        <router-view class='content'></router-view>
-      </div>
+  <div>
+    <nav-list :base='base' :list='list'></nav-list>
+    <div class="doc-content">
+      <router-view></router-view>
     </div>
   </div>
 </template>

@@ -40,6 +40,19 @@ import globalModules from '../element/organisms-global'
 import menu from '../element/organisms-menu'
 import dataTable from '../element/organisms-data-table'
 import formExamples from '../element/page-form'
+import principle from '../pages/design/principle.vue'
+import workflow from '../pages/design/workflow.vue'
+import sitemap from '../pages/telenor/content.vue'
+import download from '../pages/assets/download.vue'
+import js from '../pages/assets/js.md'
+import css from '../pages/assets/css.vue'
+
+import agentView from '../pages/telenor/catalog/av.vue'
+import cm from '../pages/telenor/catalog/cm.vue'
+import rm from '../pages/telenor/catalog/rm.vue'
+import eshop from '../pages/telenor/catalog/eshop.vue'
+let deliveryPage = sitemap
+let svnAddress = sitemap
 let taurus = {
   'component': {
     switcher,
@@ -59,6 +72,15 @@ let taurus = {
   'design': {
     principle,
     workflow
+  },
+  'case': {
+    sitemap,
+    deliveryPage,
+    svnAddress,
+    eshop,
+    agentView,
+    cm,
+    rm
   },
   'assets': {
     download,
@@ -95,6 +117,8 @@ let taurus = {
 
   }
 }
+debugger
+console.log(taurus)
 export {
   taurus
 }
