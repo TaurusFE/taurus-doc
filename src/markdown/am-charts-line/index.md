@@ -85,7 +85,7 @@
 
 ### 基本用法
 
-:::demo
+:::demo amcharts的line组件
 
 ```html
 <t-line :data-provider="lineDataProvider"

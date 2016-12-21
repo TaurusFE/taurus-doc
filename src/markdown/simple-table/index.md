@@ -135,7 +135,7 @@
 
 ### Default Table
 
-::: demo
+::: demo 需要传入data来设置表格数据，columns来设置表格的列
 
 ```html
   <t-simple-table
@@ -175,7 +175,7 @@ export default {
 
 ### Default Table Small
 
-::: demo
+::: demo size="small"设置成small样式
 
 ```html
   <t-simple-table
@@ -216,7 +216,7 @@ export default {
 
 ### Zebra Table
 
-::: demo
+::: demo zebra="true"来设置条纹间隔
 
 ```html
 <t-simple-table
@@ -256,7 +256,7 @@ export default {
 
 ### Line Table
 
-::: demo
+::: demo line="true"来设置每一行底部是否显示横线
 
 ```html
 <t-simple-table
@@ -297,7 +297,7 @@ export default {
 
 ### Settings Table
 
-::: demo
+::: demo type='settings'吧表格设置成可以自定义行
 
 ```html
 <t-simple-table
@@ -370,7 +370,7 @@ export default {
 
 ### Settings Table
 
-::: demo
+::: demo expandable="true"设置表格可以展开
 
 ```html
 <div class="form-row">

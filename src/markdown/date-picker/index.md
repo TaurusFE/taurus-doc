@@ -42,7 +42,7 @@
 
 ### 选择单个日期
 
-:::demo
+:::demo 要使用该组件需要传入一个date-format的时间格式用来定义获取返回时间的格式，并且要用v-model绑定需要返回的值。
 
 ```html
   <button class="button button--action" @click="setSingleDate">set single date (2015-06-16)</button>
@@ -77,7 +77,7 @@
 
 ### 选择日期范围
 
-:::demo
+:::demo range-select传入true即可选择时间范围
 
 ```html
 <button class="button button--action" @click="setDoubleDate">set double date (2016.07.16 - 2016.08.10)</button>
@@ -114,7 +114,7 @@
 
 ### 指定日期最大值，最小值
 
-:::demo
+:::demo 传入min-date或者max-date来限制时间选择 max-date必须要大于min-date
 
 ```html
 <t-date-picker  min-date="2016.07.11" max-date="2016.11.11" date-format="yyyy.mm.dd"></t-date-picker>
@@ -132,7 +132,7 @@
 
 ### 禁用
 
-:::demo
+:::demo disabled="true"用来禁用
 
 ```html
 <t-date-picker :disabled="true" ></t-date-picker>
@@ -150,7 +150,7 @@
 
 ### change事件
 
-:::demo
+:::demo v-on:date-change绑定change事件
 
 ```html
 <t-date-picker :date-val="dateVal" :range-select="true" date-format="yyyy.mm.dd" v-on:date-change="onChange"></t-date-picker>
@@ -178,7 +178,7 @@
 
 ### size设置为large
 
-:::demo
+:::demo is-large="true"来设置large样式
 
 ```html
 <t-date-picker :is-large="true" date-format="yyyy.mm.dd"></t-date-picker>
@@ -196,7 +196,7 @@
 
 ### 宽度根据内容做自适应
 
-:::demo
+:::demo inline="true"设置之后会根据内容去自适应
 
 ```html
 <t-date-picker :inline="true" date-format="yyyy.mm.dd"></t-date-picker>

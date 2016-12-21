@@ -206,7 +206,7 @@
 
 ### Data Table
 
-:::demo
+:::demo 需要传入table-data来设置表格数据，columns来设置表格的列
 
 ```html
     <div class="form-row">
@@ -340,7 +340,7 @@
 
 ### Scroll Table
 
-:::demo
+:::demo 当列数足够多时会出现滚动条
 
 ```html
     <t-data-table

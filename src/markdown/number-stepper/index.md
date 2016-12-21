@@ -46,7 +46,7 @@
 
 ### 基本用法
 
-:::demo
+:::demo 可以用v-model绑定需要返回的值
 
 ```html
   <div class="form-row">

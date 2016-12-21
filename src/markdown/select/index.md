@@ -71,7 +71,7 @@
 
 ### 基本用法
 
-:::demo
+:::demo 要使用该组件需要传入一个optionData数组，并且要用v-model绑定需要返回的值。
 
 ```html
     <li>Vaule: {{selectVal}}</li>
@@ -149,7 +149,7 @@
 
 ### Select with grouping
 
-:::demo
+:::demo 需要用group功能要在optgroup中的每个value中再传入option数组
 
 ```html
 <t-select :options="optgroup" style="width:150px;"></t-select>

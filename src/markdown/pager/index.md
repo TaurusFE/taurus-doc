@@ -48,7 +48,7 @@ pager组件，用于数据分页
 
 ### 基本用法
 
-:::demo
+:::demo  需要传入page-number来设置当前页数，page-size来设置每页显示条数，data-count来设置数据总数
 
 ```html
     <div class="form-row">

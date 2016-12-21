@@ -45,7 +45,7 @@
 
 ### 基本用法
 
-:::demo
+:::demo amcharts的bars组件
 
 ```html
 <t-bars
