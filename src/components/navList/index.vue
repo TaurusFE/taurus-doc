@@ -5,7 +5,12 @@
         <div class="nav-group__title">{{group.groupName}}</div>
         <ul class="nav-menu-list">
           <li v-for='item in group.list'>
-            <router-link :to='base + item.path'><span>{{item.title}}</span></router-link>
+            <template v-if='item.query' >
+              <router-link :to="{path: base + item.path, query:{url:item.query}}"><span>{{item.title}}</span></router-link>
+            </template>
+            <template v-else>
+              <router-link :to='base + item.path'><span>{{item.title}}</span></router-link>
+            </template>
           </li>
         </ul>
       </li>

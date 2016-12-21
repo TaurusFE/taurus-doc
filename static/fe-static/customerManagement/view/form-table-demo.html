@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>form and table</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<!-- 手机端菜单滑出时 增加 offcanvas--open -->
+<body class="offcanvas">
+    <!-- 手机端菜单滑出时 增加 is-disabled -->
+    <div class="section--oncanvas">
+        <!--nav-->
+        <nav class="menu-wrapper">
+            <!--desktop:menu-->
+            <div class="section mobile-hidden">
+                <div class="container section--menu">
+                    <ul class="menu--main">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Kundeservice</a></li>
+                        <li><a href="#">Mit Telenor</a></li>
+                        <li><a href="#">Find butik</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/desktop:menu-->
+            <!--subnav menu -->
+            <div id="menu--subnav-sticky-wrapper" class="mobile-hidden menu-subnav-sticky-wrapper">
+
+                <div class="section section--subnav mobile-hidden">
+                    <div class="container">
+                        <ul class="menu--subnav menu--flexnav flexnav--inited flexnav--active">
+                            <li>
+                                <a href="#nogo">Mobiler</a>
+                            </li>
+                            <li>
+                                <a href="#nogo" >Abonnementer</a>
+                            </li>
+                            <li>
+                                <a href="#nogo" >Tablets</a>
+                            </li>
+                            <li>
+                                <a href="#nogo" >Bredbånd</a>
+                            </li>
+                            <li>
+                                <a href="#nogo" >Tilbehør</a>
+                            </li>
+                            <li>
+                                <a href="#nogo" >Familierabat</a>
+                            </li>
+                            <li>
+                                <a href="#nogo" >Viaplay</a>
+                            </li>
+                            <li>
+                                <a href="#nogo" >Gør et kup!</a>
+                            </li>
+                            <li class="flexnav">
+                                <a class="flexnav__toggler">Mere</a>
+                                <ul class="flexnav__subnav">
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/subnav menu -->
+            <!--Mobile menu -->
+            <div class="nav-mobile desktop-hidden" role="navigation">
+                <div class="nav-mobile__container">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="icon--text">Menu</span>
+                                                <span class="icon icon-hamburger-menu nav-mobile__icon"
+                                                      aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Mobile menu -->
+        </nav>
+        <!--/nav-->
+        <!--tab-->
+        <div id="tab__nav" class="border--bottom box--white full-width" style="height: 52px;">
+            <div class="container">
+                <!-- tab component -->
+                <div class="tabpanel">
+                    <nav class="trailer">
+                        <ul class="tabpanel__list tabpanel__manage">
+                            <li class="tabpanel__tab is-active">
+                                <a href="#nogo" class="tabpanel__link icon icon-search">Om Samsung Galaxy S6Edge+</a>
+                                <a class="icon icon-remove tabpanel__closed"></a>
+                            </li>
+                            <li class="tabpanel__tab">
+                                <a href="#nogo" class="tabpanel__link">Tekniske specifikationer</a>
+                                <a class="icon icon-remove tabpanel__closed"></a>
+                            </li>
+                            <li class="tabpanel__tab">
+                                <a href="#nogo" class="tabpanel__link">Fortrydelse</a>
+                                <a class="icon icon-remove tabpanel__closed"></a>
+                            </li>
+                            <li class="tabpanel__tab flexnav">
+                                <a href="#nogo" class="tabpanel__link flexnav__toggler">More</a>
+                                <ul class="flexnav__subnav">
+                                    <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Om Samsung Galaxy S6Edge+</a>
+                                    </li>
+                                    <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Tekniske specifikationer</a>
+                                    </li>
+                                    <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Fortrydelse</a>
+                                    </li>
+                                    <li class="tabpanel__tab flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Levering123</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /tab component -->
+            </div>
+        </div>
+        <!--/tab-->
+        <div class="container leader--large trailer--large">
+            <!--title area-->
+            <header class="padding-trailer--small leader">
+                <span class="text-size--36 text-light">
+                    Entity Management Example
+                </span>
+                <div class="pull-right">
+                    <button class="button button--default button--small toright--small">Refresh</button>
+                    <button class="button button--action button--small">Create Entity</button>
+                </div>
+            </header>
+            <!--/title area-->
+            <!--form area-->
+            <div class="border gradient-line--with-border">
+                <div class="padding-whole">
+                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">This is a title for block</h3>
+                    <form action="" class="grid-row ">
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Effective Pericd</label>
+                                <div><input type="text" placeholder="Please Enter"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Input Label</label>
+                                <div><input type="text" placeholder="Please Enter"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text--right padding-leader">
+                            <button class="button button--naked button--small toright--small">Cancel</button>
+                            <button class="button button--action button--small">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--/form area-->
+            <!--table area-->
+            <div class="box--white-top-gradient border border--without-top">
+                <!-- table filter -->
+                <div class="border--bottom clear padding-whole box--greyed header-grey mobile-hidden">
+                    <div class="grid-row">
+                        <div class="col-md-3">
+                            <!-- component:search -->
+                            <div class="form-search is-empty form-item--small" data-module="form.search">
+                                <input id="search-small" type="search" placeholder="Search">
+                                <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                    <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                </button>
+                            </div>
+                            <!-- /component:search -->
+                        </div>
+                        <div class="col-md-3">
+                            <!-- component:search -->
+                            <div class="form-search is-empty form-item--small form-search--inline" data-module="form.search">
+                                <input id="search-small-inline" type="search" placeholder="Search">
+                                <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                            </div>
+                            <!-- /component:search -->
+                        </div>
+                        <div class="col-md-1 col-md-offset-5 text--right">
+                            <button class="button button--small button--default">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /table filter -->
+                <!-- table operation -->
+                <div class="text--right border--bottom leader padding-trailer--med toleft toright">
+                    <button class="button button--small button--default">Modity</button>
+                    <button class="button button--small button--default">Delete</button>
+                    <div class="drop download-drop dropdown inline-block" data-component="dropdown">
+                        <button class="button button--default button--small" role="button" data-toggle="dropdown">
+                                <span class="button__label icon--right icon-arrow-down">
+                                    <span class="button__text">
+                                        Export
+                                    </span>
+                                </span>
+                        </button>
+                        <div class="drop dropdown__content">
+                            <ul>
+                                <li><a class="icon-excel">Download as CSV</a></li>
+                                <li><a class="icon-excel">Download as XLSX</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /table operation -->
+                <!-- table component -->
+                <table class="table table--adv" role="grid">
+                    <thead>
+                    <tr role="row">
+                        <th class="form-checkbox invoices__table__column--checkbox all col--compact-5 form-checkbox--single sorting_disabled">
+                            <!--<input type="checkbox" id="select-all-rows" value="all" data-component="checkbox"-->
+                            <!--data-alias="selectAll">-->
+                            <!--<label for="select-all-rows"></label>-->
+                            <a class="form-checkbox--result" tabindex="1" href="#" role="link-hc" idx="4"
+                               data-state="some-selected"> <label> </label> </a>
+                        </th>
+                        <th class="invoices__table__column min-createdDate-a sorting_desc">Issued</th>
+                        <th class="invoices__table__column--description min-invoiceNumber-a sorting_asc">
+                            Description
+                        </th>
+                        <th class="invoices__table__column all sorting">Status</th>
+                        <th class="invoices__table__column min-dueDate-a sorting">Due date</th>
+                        <th class="invoices__table__column all sorting">Amount</th>
+                        <th class="invoices__table__column min-balanceAmount-a sorting">Balance</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr role="row" class="odd">
+                        <td class="form-checkbox invoices__table__column--checkbox col--compact-5  form-checkbox--single ">
+                            <input type="checkbox" id="check-02" name="invoices" value="6456456;343,43;Paid">
+                            <label for="check-02"></label>
+                        </td>
+                        <td class="min-createdDate-a sorting_1">2015.12.11</td>
+                        <td class="  min-invoiceNumber-a">
+                            <p>Credit note</p><span class="text-size--13"><a href="#">#6456456</a></span>
+                        </td>
+                        <td>Paid</td>
+                        <td class="  min-dueDate-a">2015.12.11</td>
+                        <td>547,81 kr.</td>
+                        <td class="  min-balanceAmount-a"><span class="">343,43 kr.</span></td>
+                    </tr>
+                    <tr role="row" class="even row-selected">
+                        <td class=" col--compact-5 form-checkbox form-checkbox--single invoices__table__column--checkbox">
+                            <input type="checkbox" checked="" id="check-03" name="invoices" value="6456456;343,43;Paid">
+                            <label for="check-03"></label>
+                        </td>
+                        <td class="min-createdDate-a sorting_1">row-selected</td>
+                        <td class="  min-invoiceNumber-a">
+                            <p>Credit note</p><span class="text-size--13"><a href="#">#6456456</a></span>
+                        </td>
+                        <td>Paid</td>
+                        <td class="  min-dueDate-a">2015.12.11</td>
+                        <td>547,81 kr.</td>
+                        <td class="  min-balanceAmount-a"><span class="">343,43 kr.</span></td>
+                    </tr>
+                    <tr role="row" class="odd row-selected row--error">
+                        <td class=" col--compact-5 form-checkbox form-checkbox--single invoices__table__column--checkbox">
+                            <input type="checkbox" id="check-04" checked="" name="invoices" value="6456456;343,43;Paid">
+                            <label for="check-04"></label>
+                        </td>
+                        <td class="min-createdDate-a sorting_1"><p>row-selected</p>
+
+                            <p>row--error</p></td>
+                        <td class="  min-invoiceNumber-a">
+                            <p>Credit note</p><span class="text-size--13"><a href="#">#6456456</a></span>
+                        </td>
+                        <td>Paid</td>
+                        <td class="  min-dueDate-a">2015.12.11</td>
+                        <td>547,81 kr.</td>
+                        <td class="  min-balanceAmount-a"><span class="">343,43 kr.</span></td>
+                    </tr>
+                    <tr role="row" class="even row-selected row--disable">
+                        <td class=" col--compact-5 form-checkbox form-checkbox--single invoices__table__column--checkbox">
+                            <input type="checkbox" id="check-05" name="invoices" value="6456456;343,43;Paid">
+                            <label for="check-05"></label>
+                        </td>
+                        <td class="min-createdDate-a sorting_1"><p>row-selected</p>
+
+                            <p>row--disable</p></td>
+                        <td class="  min-invoiceNumber-a">
+                            <p>Credit note</p><span class="text-size--13"><a href="#">#6456456</a></span>
+                        </td>
+                        <td>Paid</td>
+                        <td class="  min-dueDate-a">2015.12.11</td>
+                        <td>547,81 kr.</td>
+                        <td class="  min-balanceAmount-a"><span class="">343,43 kr.</span></td>
+                    </tr>
+                    <tr role="row" class="odd">
+                        <td class=" col--compact-5 form-checkbox form-checkbox--single invoices__table__column--checkbox">
+                            <input type="checkbox" id="check-06" name="invoices" value="6456456;343,43;Paid">
+                            <label for="check-06"></label>
+                        </td>
+                        <td class="min-createdDate-a sorting_1">2015.12.11</td>
+                        <td class="  min-invoiceNumber-a">
+                            <p>Credit note</p><span class="text-size--13"><a href="#">#6456456</a></span>
+                        </td>
+                        <td>Paid</td>
+                        <td class="  min-dueDate-a">2015.12.11</td>
+                        <td>547,81 kr.</td>
+                        <td class="  min-balanceAmount-a"><span class="">343,43 kr.</span></td>
+                    </tr>
+                    <tr role="row" class="even">
+                        <td class=" col--compact-5 form-checkbox form-checkbox--single invoices__table__column--checkbox">
+                            <input type="checkbox" id="check-6456457" name="invoices" value="6456456;343,43;Paid">
+                            <label for="check-6456457"></label>
+                        </td>
+                        <td class="min-createdDate-a sorting_1">2015.12.11</td>
+                        <td class="  min-invoiceNumber-a">
+                            <p>Credit note</p><span class="text-size--13"><a href="#">#6456456</a></span>
+                        </td>
+                        <td>Paid</td>
+                        <td class="  min-dueDate-a">2015.12.11</td>
+                        <td>547,81 kr.</td>
+                        <td class="  min-balanceAmount-a"><span class="">343,43 kr.</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- /table component -->
+                <div class="padding-whole select-items mobile-hidden">
+                    <!--select menu-->
+                    <div data-component="select" data-alias="lengthMenu"
+                         class="form-select form-select--length form-item--inline form-select--small">
+                        <select name="length">
+                            <option value="10" selected="selected">Vis 10</option>
+                            <option value="50">Vis 50</option>
+                            <option value="100">Vis 100</option>
+                            <option value="500">Vis 500</option>
+                        </select>
+
+                        <div class="form-select__field">Vis 10</div>
+                    </div>
+                    <!--/select menu-->
+                    <!-- default pager-->
+                    <div class="pager pager--default pull-right" data-component="pager" data-alias="pagination">
+                        <a class="pager__button previous" data-selector="page-previous">previous</a>
+                        <span data-selector="pages">
+                            <a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+                            <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+                            <span class="pager__elipsis">…</span>
+                            <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+                        </span>
+                        <a class="pager__button next" data-selector="page-next">next</a>
+                    </div>
+                    <!-- default pager-->
+                </div>
+            </div>
+            <!--table area-->
+
+        </div>
+    </div>
+    <!--moblie menu side-panel-->
+    <div class="side-panel desktop-hidden">
+        <!--nav-panel-->
+        <div class="nav-panel">
+            <ul class="nav-mobile__tabset">
+                <li class="tabpanel__tab is-active">
+                    <a href="javascript:;">Privat</a>
+                </li>
+                <li class="tabpanel__tab">
+                    <a href="javascript:;">Erhverv</a>
+                </li>
+                <li class="tabpanel__tab flexnav" role="presentation" style="display: none;">
+                    <a href="#" class="tabpanel__link flexnav__toggler" role="tab">Mere</a>
+                    <ul class="flexnav__subnav">
+                        <li class="tabpanel__tab flexnav--active-tab flexnav--invisible">
+                            <a href="#">Privat</a>
+                        </li>
+                        <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                            <a href="#">Erhverv</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-mobile__tab-holder tabpanel__panels">
+                <ul class="nav-mobile__accordion tabs__panel tabpanel__panel is-active">
+                    <li>
+                        <a href="#nogo">Shop1</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Shop1</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                </ul>
+                <ul class="nav-mobile__accordion tabs__panel tabpanel__panel js-hidden">
+                    <li>
+                        <a href="#nogo">Shop2</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Shop2</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/nav-panel-->
+    </div>
+    <!--moblie menu side-panel-->
+
+<script type="text/javascript" src="../../p-eshop/assets/js/jquery.js"></script>
+<script>
+    //导航条滚动效果
+    /*$(window).scroll(function () {
+        if ($(window).scrollTop() >= 102 && $("#menu--subnav-sticky-wrapper .section--subnav").length) {
+            $("#menu--subnav-sticky-wrapper").addClass('section--sticky');
+            $("#tab__nav").css({
+                "position":"fixed",
+                "top":"50px",
+                "z-index":"99"
+            });
+        } else {
+            $("#menu--subnav-sticky-wrapper").removeClass('section--sticky');
+            $("#tab__nav").css({
+                "position":"static",
+                "top":"auto"
+            });
+        }
+    });*/
+    //展开/关闭 收缩起来的二级菜单
+    $(".flexnav__toggler").click(function(){
+        $(this).parents(".flexnav").toggleClass("is-open");
+    })
+
+    //展开/关闭手机端菜单
+    $(".nav-mobile__container .icon-hamburger-menu").click(function(){
+        $(".offcanvas").toggleClass("offcanvas--open");
+        $(".section--oncanvas").toggleClass("is-disabled");
+
+    })
+    //展开/关闭手机端菜单二级菜单
+    $('.nav-mobile__tabset li').click(function(){
+        var $t = $(this).index();
+        if(!$(this).hasClass('.is-active')){
+            $(this).addClass('is-active').siblings().removeClass('is-active');
+            $('.nav-mobile__tab-holder > ul').eq($t).removeClass('js-hidden').addClass('is-active').siblings().addClass('js-hidden')
+        }
+    })
+    if(!$(".nav-mobile__accordion > li:has('span.icon-arrow-next')").length==0){
+        $('.nav-mobile__accordion > li span.icon-arrow-next').click(function(){
+            if(!$(this).hasClass('.is-expanded')){
+                $(this).parent().addClass('is-active').siblings().removeClass();
+                $(this).removeClass('collapsed').addClass('is-expanded');
+                $(this).parent().siblings().children('span.icon-arrow-next ').removeClass('is-expanded').addClass('collapsed');
+                $(this).next('.nav-mobile__accordion__drop').removeClass('js-hidden').addClass('is-open');
+                $(this).parent().siblings().children('.nav-mobile__accordion__drop').removeClass('is-open').addClass('js-hidden');
+            }else{
+                $(this).parent().removeClass('is-active');
+                $(this).removeClass('is-expanded').addClass('collapsed');
+                $(this).next('.nav-mobile__accordion__drop').removeClass('is-open').addClass('js-hidden');
+            }
+        })
+    }
+    //点击非手机端菜单区域隐藏手机端菜单
+    $(document).click(function(e){
+        var _conMobile = $('.nav-mobile__container,.side-panel');   // 设置目标区域
+        if(!_conMobile.is(e.target) && _conMobile.has(e.target).length === 0){
+            $(".offcanvas").removeClass("offcanvas--open");
+            $(".section--oncanvas").removeClass("is-disabled");
+        }
+    });
+
+</script>
+</body>
+</html>

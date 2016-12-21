@@ -264,5 +264,48 @@
         "title": "Form Examples"
       }]
     }
+  ],
+  "case": [
+    {
+      "groupName": "UE",
+      "list": [
+        {
+          "path": "/sitemap",
+          "title": "SiteMap",
+          "query": "http://10.19.18.95:48880/Wireframe/sitemap.html"
+        },
+        {
+          "path": "/deliveryPage",
+          "title": "Delivery Page",
+          "query": "http://10.19.18.95:48880//Wireframe/delivery_page.html"
+        },
+        {
+          "path": "/svnAddress",
+          "title": "SVN Address",
+          "query": "http://10.19.18.95:48880/Wireframe/svn_address.html"
+        }
+      ]
+    },
+    {
+      "groupName": "fe static",
+      "list": [
+        {
+          "path": "/eshop",
+          "title": "EShop"
+        },
+        {
+          "path": "/cm",
+          "title": "Custom Manage"
+        },
+        {
+          "path": "/agentView",
+          "title": "Agent View"
+        },
+        {
+          "path": "/rm",
+          "title": "Resource Manage"
+        }
+      ]
+    }
   ]
 }
