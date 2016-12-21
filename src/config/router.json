@@ -327,5 +327,36 @@
         }
       ]
     }
-  ]
+  ],
+  "assets": [{
+    "groupName": "download Assets",
+    "list": [{
+      "path": "/download",
+      "title": "DownLoad"
+    }
+    ]
+  }, {
+    "groupName": "code standard",
+    "list": [
+      {
+        "path": "/js",
+        "title": "JavaScript"
+      },
+      {
+        "path": "/css",
+        "title": "CSS"
+      }
+    ]
+  }],
+  "design": [{
+    "list": [{
+      "path": "/principle",
+      "title": "Principle"
+    },
+      {
+        "path": "/workflow",
+        "title": "Workflow"
+      }
+    ]
+  }]
 }

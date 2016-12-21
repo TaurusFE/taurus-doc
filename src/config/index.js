@@ -24,7 +24,14 @@ import eshop from '../pages/telenor/catalog/eshop.vue'
 import agentView from '../pages/telenor/catalog/av.vue'
 import cm from '../pages/telenor/catalog/cm.vue'
 import rm from '../pages/telenor/catalog/rm.vue'
+// ---------------------------------------------
+import principle from '../pages/design/principle.vue'
+import workflow from '../pages/design/workflow.vue'
 
+// ----------------------------------------------
+import download from '../pages/assets/download.vue'
+import js from '../pages/assets/js.md'
+import css from '../pages/assets/css.vue'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 
@@ -43,6 +50,15 @@ let taurus = {
     'am-charts-doughnut': amChartsDoughnut,
     'am-charts-gauge': amChartsGauge,
     'am-charts-line': amChartsLine
+  },
+  'design': {
+    principle,
+    workflow
+  },
+  'assets': {
+    download,
+    js,
+    css
   },
   'element': {
     color,
