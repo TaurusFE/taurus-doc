@@ -182,7 +182,7 @@
           "title": "Buttons"
         },
         {
-          "path": "/loading",
+          "path": "/atomsLoading",
           "title": "Loading"
         }
       ]
@@ -254,33 +254,13 @@
         {
           "path": "/dataTable",
           "title": "DataTable"
-        },
-        {
-          "path": "/tables",
-          "title": "Tables"
-        },
-        {
-          "path": "/tabsWidgets",
-          "title": "Tabs & Widgets"
-        },
-        {
-          "path": "/modalBox",
-          "title": "ModalBox"
-        },
-        {
-          "path": "/upload",
-          "title": "Upload"
-        },
-        {
-          "path": "/step",
-          "title": "Step"
         }
       ]
     },
     {
       "groupName": "pages",
       "list": [{
-        "path": "formExamples",
+        "path": "/formExamples",
         "title": "Form Examples"
       }]
     }
@@ -343,8 +323,8 @@
         "title": "JavaScript"
       },
       {
-        "path": "/css",
-        "title": "CSS"
+        "path": "",
+        "title": "Code Standard"
       }
     ]
   }],
