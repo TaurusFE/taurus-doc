@@ -1,6 +1,39 @@
 <script>
   import {TDataTable} from 'aii-taurus';
 
+  let dataTableTemplate = ' <div class="container data-table--without-pagination"> '+
+                          '       <div class="border--bottom clear padding-whole box--greyed header-grey"> '+
+                          '         <div class="grid-row"><h2 class="col-md-6 text-size--19 text-light">{{rowData.subTableTitle}}</h2> '+
+                          '           <div class="col-md-6 text--right"> '+
+                          '             <div class="mobile-trailer--small display--inline-block mobile-display--block"></div> '+
+                          '             <button class="button button--default button--small stretch-mobile toleft--small mobile-toleft--none" '+
+                          '                     type="button" @click="toggle(index)"><span class="button__text">Toggle all</span></button> '+
+                          '           </div> '+
+                          '         </div> '+
+                          '       </div> '+
+                          '       <div class="dataTables_wrapper no-footer"> '+
+                          '         <table  class="table table--without-hover" role="grid"> '+
+                          '           <thead> '+
+                          '           <tr role="row"> '+
+                          '             <th>Account</th> '+
+                          '             <th>EAN</th> '+
+                          '             <th>Acc.</th> '+
+                          '             <th>Payer</th> '+
+                          '             <th>Address</th> '+
+                          '           </tr> '+
+                          '           </thead> '+
+                          '           <tbody> '+
+                          '           <tr v-for="item in dataList"> '+
+                          '             <td>{{item.account}}</td> '+
+                          '             <td>{{item.ean}}</td> '+
+                          '             <td>{{item.acc}}</td> '+
+                          '             <td>{{item.payer}}</td> '+
+                          '             <td>{{item.address}}</td> '+
+                          '           </tr> '+
+                          '           </tbody> '+
+                          '         </table> '+
+                          '       </div> '+
+                          '     </div> ';
   export default {
     components: {
       TDataTable
@@ -57,7 +90,7 @@
     created: function () {
       var vm = this;
       Vue.component('my-box-partial', {
-        template: '#self-partial-template',
+        template: dataTableTemplate,
         props: ['rowData', 'index'],
         data: function () {
           return {
@@ -435,7 +468,7 @@
 
 ### Subscriptions Table
 
-:::demo
+:::demo 变量dataTableTemplate也可以用<template id="data-table-template">标签或者<script type="text/x-template" id="data-table-template">替代，入参传入'#data-table-template'即可。
 
 ```html
     <t-data-table
@@ -450,6 +483,40 @@
         </t-data-table>
 <script>
     import {TDataTable} from 'aii-taurus';
+
+  let dataTableTemplate = ' <div class="container data-table--without-pagination"> '+
+                          '       <div class="border--bottom clear padding-whole box--greyed header-grey"> '+
+                          '         <div class="grid-row"><h2 class="col-md-6 text-size--19 text-light">{{rowData.subTableTitle}}</h2> '+
+                          '           <div class="col-md-6 text--right"> '+
+                          '             <div class="mobile-trailer--small display--inline-block mobile-display--block"></div> '+
+                          '             <button class="button button--default button--small stretch-mobile toleft--small mobile-toleft--none" '+
+                          '                     type="button" @click="toggle(index)"><span class="button__text">Toggle all</span></button> '+
+                          '           </div> '+
+                          '         </div> '+
+                          '       </div> '+
+                          '       <div class="dataTables_wrapper no-footer"> '+
+                          '         <table  class="table table--without-hover" role="grid"> '+
+                          '           <thead> '+
+                          '           <tr role="row"> '+
+                          '             <th>Account</th> '+
+                          '             <th>EAN</th> '+
+                          '             <th>Acc.</th> '+
+                          '             <th>Payer</th> '+
+                          '             <th>Address</th> '+
+                          '           </tr> '+
+                          '           </thead> '+
+                          '           <tbody> '+
+                          '           <tr v-for="item in dataList"> '+
+                          '             <td>{{item.account}}</td> '+
+                          '             <td>{{item.ean}}</td> '+
+                          '             <td>{{item.acc}}</td> '+
+                          '             <td>{{item.payer}}</td> '+
+                          '             <td>{{item.address}}</td> '+
+                          '           </tr> '+
+                          '           </tbody> '+
+                          '         </table> '+
+                          '       </div> '+
+                          '     </div> ';
 
     export default {
         components: {
@@ -488,7 +555,7 @@
         created: function () {
           var vm = this;
           Vue.component('my-box-partial', {
-            template: '#self-partial-template',
+            template: dataTableTemplate,
             props: ['rowData', 'index'],
             data: function () {
               return {

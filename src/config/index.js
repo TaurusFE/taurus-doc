@@ -14,7 +14,6 @@ import boxGroup from '../markdown/box-group'
 import autoComplete from '../markdown/autoComplete'
 import rangeSlider from '../markdown/range-slider'
 import loading from '../markdown/loading'
-// --------------------------------------------------
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
