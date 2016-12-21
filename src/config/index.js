@@ -1,15 +1,13 @@
 /**
  * Created by y1205 on 2016/12/20.
  */
-/**
- * Created by y1205 on 2016/12/15.
- */
 import amChartsBars from '../markdown/am-charts-bars'
 import amChartsDoughnut from '../markdown/am-charts-doughnut'
 import amChartsGauge from '../markdown/am-charts-gauge'
 import amChartsLine from '../markdown/am-charts-line'
 import switcher from '../markdown/switcher'
 import table from '../markdown/table'
+import simpleTable from '../markdown/simple-table'
 import cookieHelper from '../markdown/cookie-helper'
 import pager from '../markdown/pager'
 import scrollTo from '../markdown/scroll-to'
@@ -25,6 +23,7 @@ let taurus = {
   'component': {
     switcher,
     table,
+    'simple-table': simpleTable,
     'cookie-helper': cookieHelper,
     pager,
     'scroll-to': scrollTo,
