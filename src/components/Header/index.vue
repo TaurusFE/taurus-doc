@@ -8,10 +8,6 @@
       <div class="">
         <div class="menu-dropdown" ref='dropdown'>
           <ul class="home-nav">
-            <!--<li class="home-nav-item__active"><a href="/patterns/index.html"><span>Home</span></a></li>-->
-            <li>
-              <router-link active-class="active" to='/' exact><span>Home</span></router-link>
-            </li>
             <li>
               <router-link active-class="active" to='/design'><span>Design</span></router-link>
             </li>
@@ -20,8 +16,8 @@
             <li>
               <router-link active-class="active" to='/component' ><span>Component</span></router-link>
             </li>
-            <li><a href="/asset/index.html"><span>Assets</span></a></li>
-            <li><a href="/case/index.html"><span>Telenor</span></a></li>
+            <li><router-link active-class="active" to='/assets'><span>Assets</span></router-link></li>
+            <li><router-link active-class="active" to='/case'><span>Telenor</span></router-link></li>
             <li><router-link active-class="active" to='/faq' ><span>FAQ</span></router-link></li>
           </ul>
         </div>

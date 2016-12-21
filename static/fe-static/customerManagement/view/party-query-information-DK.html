@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>party query infomation</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/party.css" rel="stylesheet" type="text/css">
+</head>
+<!-- 手机端菜单滑出时 增加 offcanvas--open -->
+<body class="offcanvas">
+    <!-- 手机端菜单滑出时 增加 is-disabled -->
+    <div class="section--oncanvas">
+        <!-------------nav------------------>
+        <nav class="menu-wrapper">
+            <!--desktop:menu-->
+            <div class="section mobile-hidden">
+                <div class="container section--menu">
+                    <ul class="menu--main">
+                        <li><a href="#">Individual Customer </a></li>
+                        <li><a href="#">Corporate Customer</a></li>
+                        <li><a href="#" class="current">Party</a></li>
+                        <li><a href="#">Batch Task</a></li>
+                        <li><a href="#">Log Query</a></li>
+                        <li><a href="#">Setting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/desktop:menu-->
+            <!--Mobile menu -->
+            <div class="nav-mobile desktop-hidden" role="navigation">
+                <div class="nav-mobile__container">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="icon--text">Menu</span>
+                                <span class="icon icon-hamburger-menu nav-mobile__icon" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Mobile menu -->
+        </nav>
+        <!------------/nav------------------>
+
+        <!-------------container------------------>
+        <div class="container leader--large trailer--large">
+            <header class="padding-trailer--small">
+                <h1 class="text-size--36 text-light">
+                    Party List
+                </h1>
+            </header>
+            <!--table area-->
+            <div class="border gradient-line--with-border">
+                <!-- table filter -->
+                <div class="border--bottom clear padding-whole box--greyed header-grey mobile-hidden">
+                    <!--quickly-search-->
+                    <div class="party-quickly-search">
+                        <div class="pull-left">
+                            <!-- component:select -->
+                            <div data-module="form.select" class="form-select form-select--small form-item--inline">
+                                <select id="select1">
+                                    <option value="opt1" selected="">CPR Number</option>
+                                    <option value="opt2">KOB Number</option>
+                                    <option value="opt3">Party ID</option>
+                                </select>
+                                <div class="form-select__field">CPR Number</div>
+                            </div>
+                            <!-- component:select -->
+                            <!-- component:Search inline -->
+                            <div class="form-search is-empty form-item--small form-search--inline form-item--inline" data-module="form.search">
+                                <input id="search-small-inline" type="search" placeholder="Search">
+                                <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                            </div>
+                            <!-- /component:Search inline -->
+                        </div>
+                        <a class="bullet-link text--small leader--small pull-right" href="#nogo" id="advanced-search-btn">Advanced Search</a>
+                    </div>
+                    <!--/quickly-search-->
+                    <!--advanced-search-->
+                    <div class="party-advanced-search" style="display: none">
+                        <a class="bullet-link text--small" href="#nogo" id="quickly-search-btn">Simple Search</a>
+                        <!-- component:tab -->
+                        <div class="tabpanel display--inline-block mobile-display--block">
+                            <ul class="tabgroup clear trailer tabgroup--small">
+                                <li class="tabgroup__tab is-active">
+                                    <a href="javascript:void(0);" class="tabgroup__link">Person Party</a>
+                                </li>
+                                <li class="tabgroup__tab">
+                                    <a href="javascript:void(0);" class="tabgroup__link">Organization Party</a>
+                                </li>
+                            </ul>
+                            <div class="tabpanel__content-wrapper">
+                                <section id="s_panel_one" class="tabpanel__panel is-active">
+                                    <!-- person -->
+                                    <div class="grid-row" id="person-search">
+                                        <div class="col-md-4 ">
+                                            <div class="form-item--multi">
+                                                <div class="form-item form-item--small form-item--required">
+                                                    <label for="">Name</label>
+                                                    <!-- component:input -->
+                                                    <div><input type="text" placeholder="Given Name"></div>
+                                                    <!-- /component:input -->
+                                                </div>
+                                                <div class="form-item form-item--small form-item--required">
+                                                    <!-- component:input -->
+                                                    <div><input type="text" placeholder="Family Name"></div>
+                                                    <!-- /component:input -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-item form-item--small">
+                                                <label>Address</label>
+                                                <!-- component:search -->
+                                                <div class="form-search is-empty form-item--small" data-module="form.search">
+                                                    <input id="search-small" type="search" placeholder="Search">
+                                                    <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                                    <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                                        <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                                    </button>
+                                                </div>
+                                                <!-- /component:search -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="text--right padding-leader">
+                                                <button class="button button--action button--small">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /person -->
+                                </section>
+                                <section id="s_panel_two" class="tabpanel__panel">
+                                    <!-- Organization -->
+                                    <div class="grid-row" id="organization-search">
+                                        <div class="col-md-4">
+                                            <div class="form-item form-item--small">
+                                                <label>Company Name</label>
+                                                <!-- component:input -->
+                                                <div><input type="text" placeholder="Please Enter"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-item form-item--small">
+                                                <label>CVR Number</label>
+                                                <!-- component:input -->
+                                                <div><input type="text" placeholder="Please Enter"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-item form-item--small">
+                                                <label>Address</label>
+                                                <!-- component:search -->
+                                                <div class="form-search is-empty form-item--small" data-module="form.search">
+                                                    <input id="search-small" type="search" placeholder="Search">
+                                                    <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                                    <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                                        <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                                    </button>
+                                                </div>
+                                                <!-- /component:search -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="text--right padding-leader">
+                                                <button class="button button--action button--small">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Organization -->
+                                </section>
+                            </div>
+                        </div>
+                        <!-- /component:tab -->
+                    </div>
+                    <!--/advanced-search-->
+                </div>
+                <!-- /table filter -->
+                <!-- component:table -->
+                <table class="table table--adv">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>CPR No.</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Effective Date</th>
+                        <th>Expiry Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="dataTables_empty" colspan="9">No data available</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- /component:table -->
+                <div class="padding-whole select-items mobile-hidden">
+                    <!--component:select menu-->
+                    <div data-component="select" data-alias="lengthMenu"
+                         class="form-select form-select--length form-item--inline form-select--small">
+                        <select name="length">
+                            <option value="10" selected="selected">10 Items</option>
+                            <option value="50">50 Items</option>
+                            <option value="100">100 Items</option>
+                            <option value="500">500 Items</option>
+                        </select>
+
+                        <div class="form-select__field">10 Items</div>
+                    </div>
+                    <!--/component:select menu-->
+                </div>
+            </div>
+            <!--table area-->
+        </div>
+        <!-------------/container------------------>
+    </div>
+
+    <!-------------moblie menu --------------->
+    <div class="side-panel desktop-hidden">
+        <!--nav-panel-->
+        <div class="nav-panel">
+            <ul class="nav-mobile__tabset">
+                <li class="tabpanel__tab is-active">
+                    <a href="javascript:;">Privat</a>
+                </li>
+            </ul>
+            <div class="nav-mobile__tab-holder tabpanel__panels">
+                <ul class="nav-mobile__accordion tabs__panel tabpanel__panel is-active">
+                    <li><a href="#">Individual Customer </a></li>
+                    <li><a href="#">Corporate Customer</a></li>
+                    <li><a href="#" class="current">Party</a></li>
+                    <li><a href="#">Batch Task</a></li>
+                    <li><a href="#">Log Query</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/nav-panel-->
+    </div>
+    <!-------------/moblie menu --------------->
+</body>
+<script type="text/javascript" src="../../p-eshop/assets/js/jquery.js"></script>
+<script>
+    //展开/关闭手机端菜单
+    $(".nav-mobile__container .icon-hamburger-menu").click(function(){
+        $(".offcanvas").toggleClass("offcanvas--open");
+        $(".section--oncanvas").toggleClass("is-disabled");
+
+    })
+    //点击非手机端菜单区域隐藏手机端菜单
+    $(document).click(function(e){
+        var _conMobile = $('.nav-mobile__container,.side-panel');   // 设置目标区域
+        if(!_conMobile.is(e.target) && _conMobile.has(e.target).length === 0){
+            $(".offcanvas").removeClass("offcanvas--open");
+            $(".section--oncanvas").removeClass("is-disabled");
+        }
+    });
+
+    //进入高级搜索
+    $("#advanced-search-btn").click(function () {
+        $(".party-advanced-search").css("display","block");
+        $(".party-quickly-search").css("display","none");
+    })
+    //进入快速搜索
+    $("#quickly-search-btn").click(function () {
+        $(".party-quickly-search").css("display","block");
+        $(".party-advanced-search").css("display","none");
+    })
+
+
+</script>
+</html>

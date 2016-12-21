@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>customer-view</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/party.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-------------customer-summary-------->
+    <div class="section--hero">
+        <div class="party-summary customer-summary">
+            <div class="container">
+                <a href="party-query-information-DK.html" class="text-size--13"><span class="icon-arrow-prev toright--xsmall"></span>Party Search</a>
+                <div class="padding-leader clear">
+                    <dl class="party-summary__info">
+                        <dt class="party-summary__avatar">
+                            <span class="icon-person"></span>
+                        </dt>
+                        <dd class="party-summary__detail">
+                            <div>
+                                <span class="text-size--30 text-light">Jack Chen</span>
+                                <span class="status-badge status-badge--accept">Active</span>
+                                <!-- other status -->
+                                <!--<span class="status-badge status-badge&#45;&#45;neutral">Former</span>
+                                <span class="status-badge status-badge&#45;&#45;prospective">Prospective</span>
+                                <span class="status-badge status-badge&#45;&#45;warning">Suspend</span>
+                                <span class="status-badge status-badge&#45;&#45;orange">Terminating</span>
+                                <span class="status-badge status-badge&#45;&#45;dark">Terminated</span>-->
+                                <!-- other status -->
+                            </div>
+                            <div class="party-summary__id">
+                                (110002029689)
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="pull-right padding-leader--med">
+                        <button class="button button--small button button--action">
+                            <span class="button__label icon--right icon-arrow-next"><span class="button__text">Party</span></span>
+                        </button>
+                        <button class="button button--small button--default button--white toright" id="terminate-btn">Terminate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------/customer-summary------->
+
+    <!------------cm-tab-nav----------------->
+    <div class="cm-tab-nav">
+        <div class="container">
+            <!-- component:tab -->
+            <div class="tabpanel">
+                <nav class="trailer">
+                    <ul class="tabpanel__list">
+                        <li class="tabpanel__tab is-active">
+                            <a href="#nogo" class="tabpanel__link">Customer View</a>
+                        </li>
+                        <li class="tabpanel__tab">
+                            <a href="" class="tabpanel__link">Account</a>
+                        </li>
+                        <li class="tabpanel__tab">
+                            <a href="" class="tabpanel__link">Contact Person</a>
+                        </li>
+                        <li class="tabpanel__tab">
+                            <a href="" class="tabpanel__link">Preference</a>
+                        </li>
+                        <li class="tabpanel__tab">
+                            <a href="" class="tabpanel__link">User Assignment</a>
+                        </li>
+                        <li class="tabpanel__tab">
+                            <a href="" class="tabpanel__link">Timeline</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /component:tab -->
+        </div>
+    </div>
+    <!-----------/cm-tab-nav----------------->
+
+    <!------------container----------------->
+    <div class="container leader--large trailer--large">
+        <!------------ Customer Information --------------------->
+        <div class="trailer--large ">
+            <header class="padding-trailer--small">
+                <h1 class="text-size--36 text-light">
+                    Customer Information
+                </h1>
+            </header>
+            <div class="border gradient-line--with-border">
+                <div class="padding-whole">
+                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom">
+                        <a href="/" class="icon icon-pencil pull-right color-gray text-size--11 leader--xsmall"></a>
+                        Customer Basic Information
+                    </h3>
+                    <div class="grid-row leader--small">
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Customer ID</dt>
+                            <dd>11238764532123</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>CPR Number</dt>
+                            <dd>1234****</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Segment</dt>
+                            <dd>Consumer</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>First Name</dt>
+                            <dd>Xiaoxiao</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Last Name</dt>
+                            <dd>Xiao</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Birth Date</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Payment Terms</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Reason</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Stop Payment Fee</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Customer Level</dt>
+                            <dd>Active</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Gender</dt>
+                            <dd>Male</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Customer Status</dt>
+                            <dd>Active</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Change Credit</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Credit Limit</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Credit Level</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Position</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Income</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Occupation</dt>
+                            <dd>IT</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>preferred Language</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Customer Language</dt>
+                            <dd>Danish</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Customer Password</dt>
+                            <dd>1234</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Employer</dt>
+                            <dd>Telenor</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Physiology Status</dt>
+                            <dd>Normal</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Old Customer ID</dt>
+                            <dd>00123123123</dd>
+                        </dl>
+                        <dl class="col-md-12 terms-list terms-list--small">
+                            <dt>Character Description</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-12 terms-list terms-list--small">
+                            <dt>Remark</dt>
+                            <dd>--</dd>
+                        </dl>
+                    </div>
+                    <form action="" class="grid-row js-hidden">
+                        <dl class="col-md-4 terms-list">
+                            <dt>Customer ID</dt>
+                            <dd>11238764532123</dd>
+                        </dl>
+                        <div class="col-md-4 ">
+                            <div class="form-item form-item--small">
+                                <label>CPR Number</label>
+                                <div><input type="text" value="1234****" disabled/></div>
+                            </div>
+                        </div>
+                        <dl class="col-md-4 terms-list">
+                            <dt>Segment</dt>
+                            <dd>Consumer</dd>
+                        </dl>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>First Name</label>
+                                <div><input type="text" value="Xiaoxiao" disabled/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Last Name</label>
+                                <div><input type="text" value="Xiao" disabled/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Birth Date</label>
+                                <div class="grid-row grid-row--gutter-none">
+                                    <div class="col-md-4">
+                                        <!-- component:select -->
+                                        <div data-module="form.select" class="form-select form-select--small">
+                                            <select id="select1">
+                                                <option value="opt1" selected="">1990</option>
+                                                <option value="opt2">1991</option>
+                                                <option value="opt3">1992</option>
+                                            </select>
+                                            <div class="form-select__field">1990</div>
+                                        </div>
+                                        <!-- /component:select -->
+                                    </div>
+                                    <div class="col-md-4 padding-toleft--small">
+                                        <!-- component:select -->
+                                        <div data-module="form.select" class="form-select form-select--small">
+                                            <select id="select1">
+                                                <option value="opt1" selected="">01</option>
+                                                <option value="opt2">02</option>
+                                                <option value="opt3">03</option>
+                                            </select>
+                                            <div class="form-select__field">01</div>
+                                        </div>
+                                        <!-- /component:select -->
+                                    </div>
+                                    <div class="col-md-4 padding-toleft--small">
+                                        <!-- component:select -->
+                                        <div data-module="form.select" class="form-select form-select--small">
+                                            <select id="select1">
+                                                <option value="opt1" selected="">22</option>
+                                                <option value="opt2">23</option>
+                                                <option value="opt3">24</option>
+                                            </select>
+                                            <div class="form-select__field">22</div>
+                                        </div>
+                                        <!-- /component:select -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Payment Terms</label>
+                                <div><input type="text" placeholder="Please Enter"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Reason</label>
+                                <div><input type="text" placeholder="Please Enter"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Stop Payment Fee</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Customer Level</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">Glod</option>
+                                        <option value="opt2">Silver</option>
+                                        <option value="opt3">Bronze</option>
+                                    </select>
+                                    <div class="form-select__field">Glod</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Gender</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">Male</option>
+                                        <option value="opt2">Female</option>
+                                        <option value="opt3">Unkown</option>
+                                    </select>
+                                    <div class="form-select__field">Male</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Customer Status</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">Former</option>
+                                        <option value="opt2">Active</option>
+                                        <option value="opt3">Prospective</option>
+                                        <option value="opt4">Suspend</option>
+                                        <option value="opt5">Terminating</option>
+                                        <option value="opt6">Terminated</option>
+                                    </select>
+                                    <div class="form-select__field">Active</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Change Credit</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Credit Limit</label>
+                                <div><input type="text" value="2000" disabled/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Credit Level</label>
+                                <div><input type="text" value="B" disabled/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Position</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">Unkown</option>
+                                        <option value="opt2">Staff</option>
+                                        <option value="opt3">Section Chief</option>
+                                    </select>
+                                    <div class="form-select__field">Unkown</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Income</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="1-30 Thousand">1-30 Thousand</option>
+                                        <option value="30 Thousand - 50 Thousand">30 Thousand - 50 Thousand</option>
+                                        <option value="50 Thousand - 80 Thousand">50 Thousand - 80 Thousand</option>
+                                        <option value="80 Thousand - 100 Thousand">80 Thousand - 100 Thousand</option>
+                                        <option value="200 Thousand - 500 Thousand">200 Thousand - 500 Thousand</option>
+                                        <option value="%00 Thousand - 800 Thousand">%00 Thousand - 800 Thousand</option>
+                                        <option value="2 Million - 3 Million">2 Million - 3 Million</option>
+                                        <option value="3 Million - 4 Million">3 Million - 4 Million</option>
+                                        <option value="4 Million - 5 Million">4 Million - 5 Million</option>
+                                        <option value="5 Milion - 10 Milion">5 Milion - 10 Milion</option>
+                                        <option value="10 Milion - 20 Milion">10 Milion - 20 Milion</option>
+                                        <option value="20 Milion - 30 Milion">20 Milion - 30 Milion</option>
+                                        <option value="30 Milion - 40 Milion">30 Milion - 40 Milion</option>
+                                    </select>
+                                    <div class="form-select__field"></div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Occupation</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="Unknown">Unknown</option>
+                                        <option value="Other">Other</option>
+                                        <option value="Self-employed/Private Owner">Self-employed/Private Owner</option>
+                                        <option value="Govemment Officer">Govemment Officer</option>
+                                        <option value="Workers/General Career">Workers/General Career</option>
+                                        <option value="Driver">Driver</option>
+                                        <option value="Student">Student</option>
+                                        <option value="Full-Time Housewife">Full-Time Housewife</option>
+                                        <option value="Retired at home">Retired at home</option>
+                                        <option value="Civil Servant">Civil Servant</option>
+                                        <option value="Social Celebrity">Social Celebrity</option>
+                                        <option value="Freelancers">Freelancers</option>
+                                    </select>
+                                    <div class="form-select__field">Unknown</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>preferred Language</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="Hungarian">Hungarian</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                    <div class="form-select__field">English</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Customer Language</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="Hungarian">Hungarian</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                    <div class="form-select__field">English</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Customer Password</label>
+                                <div><input type="text" placeholder="Please Enter"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Employer</label>
+                                <!-- component:search -->
+                                <div class="form-search is-empty form-item--small" data-module="form.search">
+                                    <input id="search-small" type="search" placeholder="Search">
+                                    <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                    <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                        <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                    </button>
+                                </div>
+                                <!-- /component:search -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Physiology Status</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="Normal">Normal</option>
+                                        <option value="Visually Impaired">Visually Impaired</option>
+                                        <option value="Hearing Impaired">Hearing Impaired</option>
+                                        <option value="Hearing and Visually Impact">Hearing and Visually Impact</option>
+                                    </select>
+                                    <div class="form-select__field">Normal</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <dl class="col-md-4 terms-list">
+                            <dt>Old Customer ID</dt>
+                            <dd>00123123123</dd>
+                        </dl>
+                        <div class="col-md-12">
+                            <div class="form-item form-item--small">
+                                <label>Character Description</label>
+                                <textarea name="" id="" cols="" rows=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-item form-item--small">
+                                <label>Remark</label>
+                                <textarea name="" id="" cols="" rows=""></textarea>
+                            </div>
+                        </div>
+                        <div class="text--right padding-leader col-md-12">
+                            <button class="button button--naked button--small toright--small">Cancel</button>
+                            <button class="button button--action button--small">Save</button>
+                        </div>
+                    </form>
+                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom leader--large">
+                        <a href="/" class="icon icon-pencil pull-right color-gray text-size--11 leader--xsmall"></a>
+                        Addition Info
+                    </h3>
+                    <div class="grid-row leader--small">
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Agent Name</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Bad Payer</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-9 terms-list terms-list--small">
+                            <dt>Move Date</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Commercial Protection</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Effective Date</dt>
+                            <dd>2016-10-17</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Expiry Date</dt>
+                            <dd>2099-12-31</dd>
+                        </dl>
+                        <dl class="col-md-12 terms-list terms-list--small">
+                            <dt>Commercial Protection Remarke</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Permission for Marketing/Offer Proposal</dt>
+                            <dd>Yes</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Effective Date</dt>
+                            <dd>05.01.2016</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Expire  Date</dt>
+                            <dd>05.01.2017</dd>
+                        </dl>
+                        <dl class="col-md-12 terms-list terms-list--small">
+                            <dt>Marketing Permission Remark</dt>
+                            <dd>Yes</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Call Back Allowed</dt>
+                            <dd>No</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Person Status</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>preferred Agent</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>preferred Workgroup</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>preferred Department</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>NP Stop</dt>
+                            <dd>No</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Invoice Username</dt>
+                            <dd>--</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>LBS Collection</dt>
+                            <dd>No</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>LBS Analysis</dt>
+                            <dd>No</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>DPI Collection</dt>
+                            <dd>No</dd>
+                        </dl>
+                        <dl class="col-md-4 terms-list terms-list--small">
+                            <dt>Customer Information Collection</dt>
+                            <dd>No</dd>
+                        </dl>
+                    </div>
+                    <form class="grid-row js-hidden">
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Agent Name</label>
+                                <div><input type="text" placeholder="Please Enter"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Bad Payer</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Move Date</label>
+                                <!-- component:datepicker -->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                                </div>
+                                <!-- /component:datepicker -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Commercial Protection</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--disabled form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Effective Date</label>
+                                <!-- component:datepicker -->
+                                <div class="datepicker datepicker--disabled" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                                </div>
+                                <!-- /component:datepicker -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Expiry Date</label>
+                                <!-- component:datepicker -->
+                                <div class="datepicker datepicker--disabled" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                                </div>
+                                <!-- /component:datepicker -->
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-item form-item--small">
+                                <label>Commercial Protection Remarke</label>
+                                <textarea name="" id="" cols="" rows=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Permission for Marketing/Offer Proposal</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Effective Date</label>
+                                <!-- component:datepicker -->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                                </div>
+                                <!-- /component:datepicker -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Expire  Date</label>
+                                <!-- component:datepicker -->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                                </div>
+                                <!-- /component:datepicker -->
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-item form-item--small">
+                                <label>Marketing Permission Remark</label>
+                                <textarea name="" id="" cols="" rows=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Call Back Allowed</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Person Status</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>preferred Agent</label>
+                                <!-- component:search -->
+                                <div class="form-search is-empty form-item--small" data-module="form.search">
+                                    <input id="search-small" type="search" placeholder="Search">
+                                    <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                    <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                        <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                    </button>
+                                </div>
+                                <!-- /component:search -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>preferred Workgroup</label>
+                                <!-- component:search -->
+                                <div class="form-search is-empty form-item--small" data-module="form.search">
+                                    <input id="search-small" type="search" placeholder="Search">
+                                    <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                    <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                        <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                    </button>
+                                </div>
+                                <!-- /component:search -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>preferred Department</label>
+                                <!-- component:search -->
+                                <div class="form-search is-empty form-item--small" data-module="form.search">
+                                    <input id="search-small" type="search" placeholder="Search">
+                                    <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                    <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                        <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                    </button>
+                                </div>
+                                <!-- /component:search -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>NP Stop</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Invoice Username</label>
+                                <div><input type="text" placeholder="Please Enter"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>LBS Collection</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>LBS Analysis</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>DPI Collection</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item form-item--small">
+                                <label>Customer Information Collection</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">No</option>
+                                        <option value="opt2">Yes</option>
+                                    </select>
+                                    <div class="form-select__field">No</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="text--right padding-leader col-md-12">
+                            <button class="button button--naked button--small toright--small">Cancel</button>
+                            <button class="button button--action button--small">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!------------- /Customer Information--------------------->
+
+        <!------------ Address Information ------------->
+        <div class="trailer--large">
+            <header class="padding-trailer--small">
+                <h1 class="text-size--36 text-light">
+                    Address Information
+                    <div class="pull-right leader--xsmall">
+                        <button class="button button--action button--small" data-role="add-row">Add</button>
+                    </div>
+                </h1>
+            </header>
+            <!-- add a new row -->
+            <div class="border gradient-line--with-border trailer">
+                <div class="padding-whole">
+                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">New Address</h3>
+                    <form action="" class="grid-row">
+                        <div class="col-md-6">
+                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                <div class="col-md-6">
+                                    <div class="form-item form-item--required form-item--small">
+                                        <label for="">Street Name</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-item form-item--required form-item--small">
+                                        <label for="">House Number</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                <div class="col-md-2">
+                                    <div class="form-item form-item--small">
+                                        <label for="">Lettter</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-item form-item--small">
+                                        <label for="">Floor</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-item form-item--small">
+                                        <label for="">Side</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-item form-item--small">
+                                        <label for="">Main Door</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-item form-item--small">
+                                        <label for="">Door Number</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                <div class="col-md-3">
+                                    <div class="form-item form-item--small form-item--required">
+                                        <label for="">Zip Code</label>
+                                        <!-- component:autocomplete -->
+                                        <div class="autocomplete-plugin form-item form-item--required dropdown">
+                                            <input type="text">
+
+                                            <div role="menu" id="autocompleteDropdown"
+                                                 class="dropdown__content">
+                                                <div class="dropdown__scroll">
+                                                    <ul class="dropdown__list"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /component:autocomplete -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-item form-item--small form-item--required">
+                                        <label for="">City</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-item form-item--small form-item--required">
+                                        <label for="">County</label>
+                                        <!-- component:autocomplete -->
+                                        <div class="autocomplete-plugin form-item form-item--required dropdown">
+                                            <input type="text">
+
+                                            <div role="menu" id="autocompleteDropdown"
+                                                 class="dropdown__content">
+                                                <div class="dropdown__scroll">
+                                                    <ul class="dropdown__list"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /component:autocomplete -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-item form-item--small">
+                                        <label for="">P.O.Box</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                <div class="col-md-4">
+                                    <div class="form-item form-item--small">
+                                        <label for="">C/O</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-item form-item--small">
+                                        <label for="">Municipality</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-item form-item--small form-item--required">
+                                        <label for="">Country</label>
+                                        <!-- component:input -->
+                                        <div><input type="text"></div>
+                                        <!-- /component:input -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-item form-item--small">
+                                <label for="">Remarks</label>
+                                <!-- component:textarea -->
+                                <textarea name="" id="" cols="" rows=""></textarea>
+                                <!-- /component:textarea -->
+                            </div>
+                        </div>
+                        <div class="text--right padding-leader col-md-12">
+                            <button class="button button--naked button--small toright--small">Cancel</button>
+                            <button class="button button--action button--small">Save</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- /add a new row -->
+
+            <div class="border gradient-line--with-border">
+                <!--component: table-->
+                <table class="table table--adv">
+                    <thead>
+                    <tr>
+                        <th>Address Type</th>
+                        <th>Address</th>
+                        <th>Protection</th>
+                        <th>Protection Starts</th>
+                        <th>Protection Ends</th>
+                        <th>Attention People</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="row-selected expanded">
+                        <td>Legal</td>
+                        <td>Laulundgade 20 D 7400 Herning</td>
+                        <td>No</td>
+                        <td>05.10.1996</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr class="drop-row row-selected box--grey">
+                        <td class="text--center drop-item box--white" colspan="8">
+                            <div class="drop-item-holder">
+                                <!-- Edit data row -->
+                                <div class="edit-row-wrapper">
+                                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">Edit Address</h3>
+                                    <form action="" class="grid-row">
+                                        <div class="col-md-6">
+                                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                                <div class="col-md-6">
+                                                    <div class="form-item form-item--required form-item--small">
+                                                        <label for="">Street Name</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-item form-item--required form-item--small">
+                                                        <label for="">House Number</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                                <div class="col-md-2">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">Lettter</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">Floor</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">Side</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">Main Door</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">Door Number</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                                <div class="col-md-3">
+                                                    <div class="form-item form-item--small form-item--required">
+                                                        <label for="">Zip Code</label>
+                                                        <!-- component:autocomplete -->
+                                                        <div class="autocomplete-plugin form-item form-item--required dropdown">
+                                                            <input type="text">
+
+                                                            <div role="menu" id="autocompleteDropdown"
+                                                                 class="dropdown__content">
+                                                                <div class="dropdown__scroll">
+                                                                    <ul class="dropdown__list"></ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /component:autocomplete -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-item form-item--small form-item--required">
+                                                        <label for="">City</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-item form-item--small form-item--required">
+                                                        <label for="">County</label>
+                                                        <!-- component:autocomplete -->
+                                                        <div class="autocomplete-plugin form-item form-item--required dropdown">
+                                                            <input type="text">
+
+                                                            <div role="menu" id="autocompleteDropdown"
+                                                                 class="dropdown__content">
+                                                                <div class="dropdown__scroll">
+                                                                    <ul class="dropdown__list"></ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /component:autocomplete -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">P.O.Box</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                                                <div class="col-md-4">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">C/O</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-item form-item--small">
+                                                        <label for="">Municipality</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-item form-item--small form-item--required">
+                                                        <label for="">Country</label>
+                                                        <!-- component:input -->
+                                                        <div><input type="text"></div>
+                                                        <!-- /component:input -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Remarks</label>
+                                                <!-- component:textarea -->
+                                                <textarea name="" id="" cols="" rows=""></textarea>
+                                                <!-- /component:textarea -->
+                                            </div>
+                                        </div>
+                                        <div class="text--right padding-leader col-md-12">
+                                            <button class="button button--naked button--small toright--small">Cancel</button>
+                                            <button class="button button--action button--small">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /Edit data row -->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Legal</td>
+                        <td>Laulundgade 20 D 7400 Herning</td>
+                        <td>No</td>
+                        <td>05.10.1996</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Legal</td>
+                        <td>Laulundgade 20 D 7400 Herning</td>
+                        <td>No</td>
+                        <td>05.10.1996</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Legal</td>
+                        <td>Laulundgade 20 D 7400 Herning</td>
+                        <td>No</td>
+                        <td>05.10.1996</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Legal</td>
+                        <td>Laulundgade 20 D 7400 Herning</td>
+                        <td>No</td>
+                        <td>05.10.1996</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--/component: table-->
+                <div class="padding-whole mobile-hidden">
+                    <!--component:select menu-->
+                    <div data-component="select" data-alias="lengthMenu"
+                         class="form-select form-select--length form-item--inline form-select--small">
+                        <select name="length">
+                            <option value="10" selected="selected">Vis 10</option>
+                            <option value="50">Vis 50</option>
+                            <option value="100">Vis 100</option>
+                            <option value="500">Vis 500</option>
+                        </select>
+
+                        <div class="form-select__field">Vis 10</div>
+                    </div>
+                    <!--/component:select menu-->
+                    <!-- component: pager -->
+                    <div class="pager pager--default pull-right" data-component="pager" data-alias="pagination">
+                        <a class="pager__button previous" data-selector="page-previous">previous</a>
+                        <span data-selector="pages">
+                            <a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+                            <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+                            <span class="pager__elipsis">…</span>
+                            <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+                        </span>
+                        <a class="pager__button next" data-selector="page-next">next</a>
+                    </div>
+                    <!-- /component: pager -->
+                </div>
+            </div>
+        </div>
+        <!---------- /Address Information --------------->
+
+        <!------------ Contact Media Information ------------->
+        <div class="trailer--large">
+            <header class="padding-trailer--small">
+                <h1 class="text-size--36 text-light">
+                    Contact Media Information
+                    <div class="pull-right leader--xsmall">
+                        <button class="button button--action button--small" data-role="add-row">Add</button>
+                    </div>
+                </h1>
+            </header>
+
+            <!-- add a new row -->
+            <div class="border gradient-line--with-border trailer">
+                <div class="padding-whole">
+                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">New Contact Media Information</h3>
+                    <form action="" class="grid-row">
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Media Type</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select4">
+                                        <option value="opt1" selected="">Email</option>
+                                        <option value="opt2">Preferred Agent Email</option>
+                                        <option value="opt3">Telephone</option>
+                                        <option value="opt4">Emergency</option>
+                                        <option value="opt5">Snall Mail</option>
+                                        <option value="opt6">MMS</option>
+                                    </select>
+                                    <div class="form-select__field">Email</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Contact Information</label>
+                                <!-- component:input -->
+                                <div><input type="text" placeholder="Please Enter"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Priority</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select4">
+                                        <option value="opt1" selected="">1</option>
+                                        <option value="opt2">2</option>
+                                        <option value="opt3">3</option>
+                                        <option value="opt4">4</option>
+                                        <option value="opt5">5</option>
+                                    </select>
+                                    <div class="form-select__field">1</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Do Not Disturb</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select4">
+                                        <option value="opt1" selected="">Yes</option>
+                                        <option value="opt2">No</option>
+                                    </select>
+                                    <div class="form-select__field">Yes</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Effective Date</label>
+                                <!-- component:date -->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates">
+                                </div>
+                                <!-- /component:date -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Expiry Date</label>
+                                <!-- component:date -->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates">
+                                </div>
+                                <!-- /component:date -->
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-item form-item--small">
+                                <label for="">Remarks</label>
+                                <!-- component:textarea -->
+                                <textarea name="" id="" cols="" rows=""></textarea>
+                                <!-- /component:textarea -->
+                            </div>
+                        </div>
+                        <div class="text--right padding-leader col-md-12">
+                            <button class="button button--naked button--small toright--small">Cancel</button>
+                            <button class="button button--action button--small">Save</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- /add a new row -->
+
+            <div class="border gradient-line--with-border">
+                <!---component:table-->
+                <table class="table table--adv">
+                    <thead>
+                    <tr>
+                        <th>Media Type</th>
+                        <th>Contact Information</th>
+                        <th>Priority</th>
+                        <th>Do Not Disturb</th>
+                        <th>Effective Date</th>
+                        <th>Remarks</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="row-selected expanded">
+                        <td>Email</td>
+                        <td>234198754@163.com</td>
+                        <td>1</td>
+                        <td>Yes</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td>
+                            <a href="#nogo" class="icon-pencil "></a>
+                            <a href="#nogo" class="icon-remove toleft"></a>
+                        </td>
+                    </tr>
+                    <tr class="drop-row row-selected box--grey">
+                        <td class="text--center drop-item box--white" colspan="7">
+                            <div class="drop-item-holder">
+                                <!-- Edit data row -->
+                                <div class="edit-row-wrapper">
+                                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">Edit Contact Media Information</h3>
+                                    <form action="" class="grid-row">
+                                        <dl class="col-md-3 terms-list">
+                                            <dt>Media Type</dt>
+                                            <dd class="text-size--16">Email</dd>
+                                        </dl>
+                                        <div class="col-md-3">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Contact Information</label>
+                                                <!-- component:input -->
+                                                <div><input type="text" placeholder="Please Enter"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Priority</label>
+                                                <!-- component:select -->
+                                                <div data-module="form.select" class="form-select form-select--small">
+                                                    <select id="select4">
+                                                        <option value="opt1" selected="">1</option>
+                                                        <option value="opt2">2</option>
+                                                        <option value="opt3">3</option>
+                                                        <option value="opt4">4</option>
+                                                        <option value="opt5">5</option>
+                                                    </select>
+                                                    <div class="form-select__field">1</div>
+                                                </div>
+                                                <!-- /component:select -->
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Do Not Disturb</label>
+                                                <!-- component:select -->
+                                                <div data-module="form.select" class="form-select form-select--small">
+                                                    <select id="select4">
+                                                        <option value="opt1" selected="">Yes</option>
+                                                        <option value="opt2">No</option>
+                                                    </select>
+                                                    <div class="form-select__field">Yes</div>
+                                                </div>
+                                                <!-- /component:select -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Effective Date</label>
+                                                <!-- component:date -->
+                                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                                    <!-- options:end -->
+                                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                                        <span class="aria--visible">Clear filter</span>
+                                                    </button>
+
+                                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates">
+                                                </div>
+                                                <!-- /component:date -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Expiry Date</label>
+                                                <!-- component:date -->
+                                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                                    <!-- options:end -->
+                                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                                        <span class="aria--visible">Clear filter</span>
+                                                    </button>
+
+                                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates">
+                                                </div>
+                                                <!-- /component:date -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Remarks</label>
+                                                <!-- component:textarea -->
+                                                <textarea name="" id="" cols="" rows=""></textarea>
+                                                <!-- /component:textarea -->
+                                            </div>
+                                        </div>
+                                        <div class="text--right padding-leader col-md-12">
+                                            <button class="button button--naked button--small toright--small">Cancel</button>
+                                            <button class="button button--action button--small">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /Edit data row -->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>234198754@163.com</td>
+                        <td>1</td>
+                        <td>Yes</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>234198754@163.com</td>
+                        <td>1</td>
+                        <td>Yes</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>234198754@163.com</td>
+                        <td>1</td>
+                        <td>Yes</td>
+                        <td>05.10.2016</td>
+                        <td>N/A</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!---/component:table-->
+                <div class="padding-whole mobile-hidden">
+                    <!--component:select menu-->
+                    <div data-component="select" data-alias="lengthMenu"
+                         class="form-select form-select--length form-item--inline form-select--small">
+                        <select name="length">
+                            <option value="10" selected="selected">Vis 10</option>
+                            <option value="50">Vis 50</option>
+                            <option value="100">Vis 100</option>
+                            <option value="500">Vis 500</option>
+                        </select>
+
+                        <div class="form-select__field">Vis 10</div>
+                    </div>
+                    <!--/component:select menu-->
+                    <!-- component: pager -->
+                    <div class="pager pager--default pull-right" data-component="pager" data-alias="pagination">
+                        <a class="pager__button previous" data-selector="page-previous">previous</a>
+                        <span data-selector="pages">
+                            <a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+                            <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+                            <span class="pager__elipsis">…</span>
+                            <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+                        </span>
+                        <a class="pager__button next" data-selector="page-next">next</a>
+                    </div>
+                    <!-- /component: pager -->
+                </div>
+            </div>
+        </div>
+        <!---------- /Contact Media Information --------------->
+
+        <!------------ Party Permission ------------->
+        <div>
+            <header class="padding-trailer--small">
+                <h1 class="text-size--36 text-light">
+                    Party Permission
+                    <div class="pull-right leader--xsmall">
+                        <button class="button button--action button--small">Add</button>
+                    </div>
+                </h1>
+
+            </header>
+
+            <!-- add a new row -->
+            <div class="border gradient-line--with-border trailer">
+                <div class="padding-whole">
+                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">New Party Permission</h3>
+                    <form action="" class="grid-row">
+                        <div class="col-md-6">
+                            <div class="form-item form-item--small">
+                                <label for="">Permission Type</label>
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select4">
+                                        <option value="opt1" selected="">Legal Contact Media Permission</option>
+                                        <option value="opt2">Commercial Contact Permission</option>
+                                        <option value="opt3">Marketing Contact Permission</option>
+                                        <option value="opt4">Location Data Permission</option>
+                                        <option value="opt5">Traffic Usage Data Permission</option>
+                                        <option value="opt6">Third Party Products & Services Marketing Permission</option>
+                                        <option value="opt7">Content Usage Data Permission</option>
+                                    </select>
+                                    <div class="form-select__field">Legal Contact Media Permission</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Is Allowed</label>
+                                <!-- component:input -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select4">
+                                        <option value="opt1" selected="">Yes</option>
+                                        <option value="opt2">No</option>
+                                        <option value="opt3">Preliminary</option>
+                                    </select>
+                                    <div class="form-select__field"></div>
+                                </div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Effective Date</label>
+                                <!-- component:date -->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                    <!-- options:end -->
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates"></div>
+                                <!-- /component:date -->
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-item form-item--small">
+                                <label for="">Remarks</label>
+                                <!-- component:textarea -->
+                                <textarea name="" id="" cols="" rows=""></textarea>
+                                <!-- /component:textarea -->
+                            </div>
+                        </div>
+                        <div class="text--right padding-leader col-md-12">
+                            <button class="button button--naked button--small toright--small">Cancel</button>
+                            <button class="button button--action button--small">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /add a new row -->
+            <div class="border gradient-line--with-border">
+                <!---component: table-->
+                <table class="table table--adv">
+                    <thead>
+                    <tr>
+                        <th>Permission Type</th>
+                        <th>Is Allowed</th>
+                        <th>Effective Date</th>
+                        <th>Remarks</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="row-selected expanded">
+                        <td>Permission for Marketing/Offer Proposal</td>
+                        <td>Yes</td>
+                        <td>2016-10-03</td>
+                        <td>good</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr class="drop-row row-selected box--grey" >
+                        <td class="text--center drop-item box--white" colspan="5">
+                            <div class="drop-item-holder">
+                                <!-- Edit data row -->
+                                <div class="edit-row-wrapper">
+                                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">Edit Party Permission</h3>
+                                    <form action="" class="grid-row">
+                                        <div class="col-md-6">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Permission Type</label>
+                                                <!-- component:select -->
+                                                <div data-module="form.select" class="form-select form-select--small">
+                                                    <select id="select4">
+                                                        <option value="opt1" selected="">Legal Contact Media Permission</option>
+                                                        <option value="opt2">Commercial Contact Permission</option>
+                                                        <option value="opt3">Marketing Contact Permission</option>
+                                                        <option value="opt4">Location Data Permission</option>
+                                                        <option value="opt5">Traffic Usage Data Permission</option>
+                                                        <option value="opt6">Third Party Products & Services Marketing Permission</option>
+                                                        <option value="opt7">Content Usage Data Permission</option>
+                                                    </select>
+                                                    <div class="form-select__field">Legal Contact Media Permission</div>
+                                                </div>
+                                                <!-- /component:select -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Is Allowed</label>
+                                                <!-- component:input -->
+                                                <div data-module="form.select" class="form-select form-select--small">
+                                                    <select id="select4">
+                                                        <option value="opt1" selected="">Yes</option>
+                                                        <option value="opt2">No</option>
+                                                        <option value="opt3">Preliminary</option>
+                                                    </select>
+                                                    <div class="form-select__field"></div>
+                                                </div>
+                                                <!-- /component:input -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Effective Date</label>
+                                                <!-- component:date -->
+                                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+
+                                                    <!-- options:end -->
+                                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                                        <span class="aria--visible">Clear filter</span>
+                                                    </button>
+
+                                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates"></div>
+                                                <!-- /component:date -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-item form-item--small">
+                                                <label for="">Remarks</label>
+                                                <!-- component:textarea -->
+                                                <textarea name="" id="" cols="" rows=""></textarea>
+                                                <!-- /component:textarea -->
+                                            </div>
+                                        </div>
+                                        <div class="text--right padding-leader col-md-12">
+                                            <button class="button button--naked button--small toright--small">Cancel</button>
+                                            <button class="button button--action button--small">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /Edit data row -->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Permission for Marketing/Offer Proposal</td>
+                        <td>Yes</td>
+                        <td>2016-10-03</td>
+                        <td>good</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Permission for Marketing/Offer Proposal</td>
+                        <td>Yes</td>
+                        <td>2016-10-03</td>
+                        <td>good</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Permission for Marketing/Offer Proposal</td>
+                        <td>Yes</td>
+                        <td>2016-10-03</td>
+                        <td>good</td>
+                        <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!---/component: table-->
+                <div class="padding-whole mobile-hidden">
+                    <!--component:select menu-->
+                    <div data-component="select" data-alias="lengthMenu"
+                         class="form-select form-select--length form-item--inline form-select--small">
+                        <select name="length">
+                            <option value="10" selected="selected">Vis 10</option>
+                            <option value="50">Vis 50</option>
+                            <option value="100">Vis 100</option>
+                            <option value="500">Vis 500</option>
+                        </select>
+
+                        <div class="form-select__field">Vis 10</div>
+                    </div>
+                    <!--/component:select menu-->
+                    <!-- component: pager -->
+                    <div class="pager pager--default pull-right" data-component="pager" data-alias="pagination">
+                        <a class="pager__button previous" data-selector="page-previous">previous</a>
+                        <span data-selector="pages">
+                            <a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+                            <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+                            <span class="pager__elipsis">…</span>
+                            <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+                        </span>
+                        <a class="pager__button next" data-selector="page-next">next</a>
+                    </div>
+                    <!-- /component: pager -->
+                </div>
+            </div>
+        </div>
+        <!---------- /Party Permission --------------->
+    </div>
+    <!------------/container----------------->
+
+    <div id="action-modal-question-overlay" class="modal-box__overlay">
+        <div class="modal-box--with-action-buttons modal-box__content gradient-line padding-whole--none modal-box--size-small">
+            <div class="modal-box__close-btn icon icon-question"></div>
+            <div class="modal-box__container text--center">
+                <div class="modal-box__icon-box modal-box__icon-box--blue trailer">
+                    <span class="icon icon-question"></span>
+                </div>
+                <div class="text-size--13 leader--large">
+                    <p class="text-size--30 text-light trailer">Are you sure to terminate this customer？ </p>
+                    <p class="trailer--large">a terminated person can never be a prospect or an active customer again</p>
+                </div>
+                <ul class="modal-box__action-buttons">
+                    <li>
+                        <form action="">
+                            <button class="button button--default">
+                                <span class="button-text">cancel</span>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="">
+                            <button class="button button--action">
+                                <span class="button-text">terminated</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../p-eshop/assets/js/jquery.js"></script>
+<script>
+    $("#terminate-btn").click(function(){
+        $("#action-modal-question-overlay").addClass("modal-box--is-open");
+    })
+    $("#action-modal-question-overlay").click(function(){
+        $(this).removeClass("modal-box--is-open");
+    })
+</script>
+</html>

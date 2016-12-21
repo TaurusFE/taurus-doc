@@ -1,5 +1,5 @@
 /**
- * Created by y1205 on 2016/12/20.
+ * Created by y1205 on 2016/12/15.
  */
 import amChartsBars from '../markdown/am-charts-bars'
 import amChartsDoughnut from '../markdown/am-charts-doughnut'
@@ -18,7 +18,17 @@ import datePicker from '../markdown/date-picker'
 import numberStepper from '../markdown/number-stepper'
 import searchFilter from '../markdown/search-filter'
 import select from '../markdown/select'
+import loading from '../markdown/loading'
+// --------------------------------------------------
 import color from '../element/color'
+import typography from '../element/typography'
+
+// -----------------------------------------------
+import eshop from '../pages/telenor/catalog/eshop.vue'
+import agentView from '../pages/telenor/catalog/av.vue'
+import cm from '../pages/telenor/catalog/cm.vue'
+import rm from '../pages/telenor/catalog/rm.vue'
+
 let taurus = {
   'component': {
     switcher,
@@ -29,6 +39,7 @@ let taurus = {
     'scroll-to': scrollTo,
     'box-group': boxGroup,
     autoComplete,
+    loading,
     'range-slider': rangeSlider,
     'am-charts-bars': amChartsBars,
     'am-charts-doughnut': amChartsDoughnut,
@@ -40,7 +51,14 @@ let taurus = {
     select
   },
   'element': {
-    color
+    color,
+    typography
+  },
+  'case': {
+    eshop,
+    agentView,
+    cm,
+    rm
   }
 }
 export {

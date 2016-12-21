@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>customer add address</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-------------------add a new address modal------------------------------------------>
+<div class="modal-box__overlay  modal-box--is-open">
+    <div class="modal-box__content modal-box--size-large modal-box__content--full" style="width:850px;">
+        <header class="padding-whole padding-toright--huge box--greyed rel border--bottom">
+            <h1 class="text-size--28 text-light mobile-text-size--21 trailer-xsmall">
+                Input Complete Address Here
+            </h1>
+            <div class="modal-box__close-btn icon-reject"></div>
+        </header>
+        <div class="padding-trailer--large padding-whole--small padding-toright padding-toleft">
+            <!-- add a new address -->
+            <form action="" class="grid-row">
+                <div class="col-md-6">
+                    <div class="form-item form-item--small">
+                        <label for="">Address Type</label>
+                        <!-- Radiobutton bar -->
+                        <div class="radiobutton-row radiobutton-row--small button--bar__character grid-row grid-row--gutter-none">
+                            <input type="radio" name="small-group" value="yes" id="small-group_0" checked="checked">
+                            <label class="text--medium col-md-4 text--center" for="small-group_0">
+                                Legal
+                            </label>
+                            <input type="radio" name="small-group" value="no" id="small-group_1">
+                            <label class="text--medium col-md-4 text--center" for="small-group_1">
+                                Farm
+                            </label>
+                            <input type="radio" name="small-group" value="no" id="small-group_2">
+                            <label class="text--medium col-md-4 text--center" for="small-group_2">
+                                Contact
+                            </label>
+                        </div>
+                        <!-- /Radiobutton bar -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small">
+                        <label for="">Attention People</label>
+                        <!-- component:input -->
+                        <div><input type="text" placeholder="Please Enter"></div>
+                        <!-- /component:input -->
+                    </div>
+                </div>
+                <div class="col-md-12 leader--large">
+                    <ul class="form-item form-inline box--default padding-toleft padding-leader--xsmall padding-trailer--xsmall">
+                        <li class="form-radio form-radio--small">
+                            <input type="radio" checked="" name="rad-inline-small" value="--some-value--" id="rad-inline-small-0">
+                            <label for="rad-inline-small-0">Denmark Address</label>
+                        </li>
+                        <li class="form-radio form-radio--small">
+                            <input type="radio" name="rad-inline-small" id="rad-inline-small-1" value="--some-value--">
+                            <label for="rad-inline-small-1">Foreign Address</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 padding-leader--small">
+                    <!--Component：StatusMessage -->
+                    <div class="message message--error leader--small" data-module="message">
+                        <div class="message__inner">
+                            <span class="message__icon icon-reject"></span>
+                            <div class="text--small message__text">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <button class="message__close" aria-hidden="true"><span class="icon-remove"></span></button>
+                        </div>
+                    </div>
+                    <!--/Component：StatusMessage -->
+                </div>
+                <div class="col-md-6">
+                    <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                        <div class="col-md-6">
+                            <div class="form-item form-item--required form-item--small">
+                                <label for="">Street Name</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-item form-item--required form-item--small">
+                                <label for="">House Number</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                        <div class="col-md-2">
+                            <div class="form-item form-item--small">
+                                <label for="">Lettter</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-item form-item--small">
+                                <label for="">Floor</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-item form-item--small">
+                                <label for="">Side</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Main Door</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">Door Number</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small form-item--required">
+                                <label for="">Zip Code</label>
+                                <!-- component:autocomplete -->
+                                <div class="autocomplete-plugin form-item form-item--required dropdown">
+                                    <input type="text">
+
+                                    <div role="menu" id="autocompleteDropdown"
+                                         class="dropdown__content">
+                                        <div class="dropdown__scroll">
+                                            <ul class="dropdown__list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /component:autocomplete -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small form-item--required">
+                                <label for="">City</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small form-item--required">
+                                <label for="">County</label>
+                                <!-- component:autocomplete -->
+                                <div class="autocomplete-plugin form-item form-item--required dropdown">
+                                    <input type="text">
+
+                                    <div role="menu" id="autocompleteDropdown"
+                                         class="dropdown__content">
+                                        <div class="dropdown__scroll">
+                                            <ul class="dropdown__list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /component:autocomplete -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="">P.O.Box</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grid-row grid-row--gutter-none form-item--multi-fields">
+                        <div class="col-md-6">
+                            <div class="form-item form-item--small">
+                                <label for="">C/O</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-item form-item--small">
+                                <label for="">Municipality</label>
+                                <!-- component:input -->
+                                <div><input type="text"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text--right padding-leader--large col-md-12">
+                    <button class="button button--naked button--small toright--small">Cancel</button>
+                    <button class="button button--action button--small">Submit</button>
+                </div>
+            </form>
+            <!-- /add a new address -->
+        </div>
+    </div>
+</div>
+<!-------------------/add a new address modal------------------------------------------>
+
+<!-------------------loading modal------------------------------------------>
+<div class="modal-box__overlay">
+    <div class="modal-box__content modal-box--size-large modal-box__content--full">
+        <header class="padding-whole padding-toright--huge box--greyed rel border--bottom">
+            <h1 class="text-size--28 text-light mobile-text-size--21 trailer-xsmall">
+                Input Complete Address Here
+            </h1>
+            <div class="modal-box__close-btn icon-reject"></div>
+        </header>
+        <div class="padding-trailer--large padding-whole--small padding-toright padding-toleft">
+            <!-- loading -->
+            <div class="text--center">
+                <div class="load-tester load-large inline-block">
+                    <span class="spinner"></span>
+                </div>
+            </div>
+            <!-- /loading -->
+        </div>
+    </div>
+</div>
+<!-------------------/loading modal------------------------------------------>
+
+<!-------------------search result modal------------------------------------------>
+<div class="modal-box__overlay">
+    <div class="modal-box__content modal-box--size-large modal-box__content--full">
+        <header class="padding-whole padding-toright--huge box--greyed rel border--bottom">
+            <h1 class="text-size--28 text-light mobile-text-size--21 trailer-xsmall">
+                Input Complete Address Here
+            </h1>
+            <div class="modal-box__close-btn icon-reject"></div>
+        </header>
+        <div class="padding-trailer--large padding-whole--small padding-toright padding-toleft">
+            <!-- search result -->
+            <div>
+                <div class="padding-leader--small trailer--large">
+                    <!--Component：StatusMessage -->
+                    <div class="message message--info " data-module="message">
+                        <div class="message__inner">
+                            <span class="message__icon icon icon-notification"></span>
+                            <div class="text--small message__text">
+                                <p>According to your input we match multiple addresses, please choose one to use</p>
+                            </div>
+                            <button class="message__close" aria-hidden="true"><span class="icon-remove"></span></button>
+                        </div>
+                    </div>
+                    <!--/Component：StatusMessage -->
+                </div>
+                <!--Component：TDataTable---start-->
+                <table class="table table--default table--action table--lines" id="DataTables_Table_0" role="grid" >
+                    <thead class="box--greyed border border--light">
+                    <tr role="row">
+                        <th>Country</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Zip Code</th>
+                        <th>Municipality</th>
+                        <th>C/O</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr role="row">
+                        <td>Denmark</td>
+                        <td>--</td>
+                        <td>Laulundgade 20 D 7400 Herning</td>
+                        <td>7440</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr role="row">
+                        <td>Denmark</td>
+                        <td>--</td>
+                        <td>Rebildparken 99 9220 Aalborg</td>
+                        <td>9200</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--Component：TDataTable---end-->
+            </div>
+            <!-- search result -->
+        </div>
+    </div>
+</div>
+<!-------------------/search result modal------------------------------------------>
+
+</body>
+</html>

@@ -13,6 +13,8 @@ import Component from '../pages/component'
 import Element from '../pages/element'
 import Guide from '../pages/guide'
 import Faq from '../pages/faq'
+import Assets from '../pages/assets'
+import Case from '../pages/telenor'
 import { taurus } from '../config'
 import navConfig from '../config/router.json'
 var pageRouters = [
@@ -52,8 +54,17 @@ var pageRouters = [
     name: 'faq',
     path: '/faq',
     component: Faq
+  },
+  {
+    name: 'assets',
+    path: '/assets',
+    component: Assets
+  },
+  {
+    name: 'case',
+    path: '/case',
+    component: Case
   }
-
 ]
 function addChildren (navConfig, type) {
   let list = navConfig[type]
@@ -83,6 +94,7 @@ function registerRoute (routers, type, navConfig) {
 let routers = registerRoute(pageRouters, 'component', navConfig)
 console.log(navConfig.element)
 routers = registerRoute(routers, 'element', navConfig)
+routers = registerRoute(routers, 'case', navConfig)
 export default new Router({
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link href="../../assets/css/telenor.min.css" rel="stylesheet" type="text/css">
+    <script src="../../assets/js/jquery.js" type="text/javascript"></script>
+    <title>delivery</title>
+</head>
+<body class="offcanvas">
+   <div class="section--oncanvas" style="padding-bottom: 470px;">
+    <div class="section--wrap">
+        <!--header-->
+        <nav class="menu-wrapper">
+            <!--desktop:menu-->
+            <div class="section mobile-hidden tablet-padding-toleft tablet-padding-toright">
+                <div class="container section--menu">
+                    <a href="index.html" class="link--logo float--left" title="home">
+                        <span class="link--text">Home</span>
+                    </a>
+                    <ul class="menu--main float--left clear">
+                        <li><a href="shop.html" class="active-trail track-element-click">Shop</a></li>
+                        <li><a href="" class="track-element-click">Customer Service</a></li>
+                        <li><a href="" class="track-element-click">My Telenor</a></li>
+                        <li><a href="" class="track-element-click">Find Store</a></li>
+                    </ul>
+                    <div class="section--menu__service">
+                        <div class="menu--service">
+                            <a href="#nogo" class="active-trail">Private</a>
+                            <a href="#nogo">Business</a>
+                        </div>
+                        <div class="menu--user">
+                            <a href="#nogo">Sign in</a>
+                        </div>
+                    </div>
+                    <div class="menu--right float--right">
+                        <div class="menu--right__basket">
+                            <a href="#nogo" class="basket-icon">
+                                <span class="icon-basket"></span>
+                                <span class="product-amount">1</span>
+                            </a>
+                        </div>
+                        <div class="menu--right__search"></div>
+                    </div>
+                </div>
+            </div>
+            <!--subnav menu -->
+            <div id="menu--subnav-sticky-wrapper" class="mobile-hidden menu-subnav-sticky-wrapper">
+                <div class="section section--subnav mobile-hidden tablet-padding-toleft tablet-padding-toright">
+                    <div class="container">
+                        <div><a href="#nogo" class="link--logo float--left"></a></div>
+                        <div>
+                            <ul class="menu--subnav menu--flexnav flexnav--inited">
+                                <li>
+                                    <a href="product-list.html" class="active-trail  track-element-click">Mobiles</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Subscriptions</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Tablets</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Mobile Broadband</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Broadband</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Family Discont</a>
+                                </li>
+                                <li class="flexnav is-open"><a class="flexnav__toggler">Mere</a>
+                                    <ul class="flexnav__subnav">
+                                        <li>
+                                            <a href="#nogo" class="track-element-click">Roam Away</a>
+                                        </li>
+                                        <li>
+                                            <a href="＃nogo" class="track-element-click" >On Sales</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Mobile menu -->
+            <div class="nav-mobile desktop-hidden">
+                <div class="nav-mobile__container">
+                    <a class="logo" href="#nogo" title="home">
+                        <span class="icon--text">Views.Root.Home</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#nogo">
+                                <span class="icon icon-user"></span>
+                                <span class="icon--text">Log ind</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nogo" class="basket-icon">
+                                <span class="icon-basket"></span>
+                                <span class="product-amount">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="mobile-menu" href="#nogo">
+                                <span class="icon--text">Menu</span>
+                                <span class="icon icon-hamburger-menu"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--header-end-->
+        <div class="container--main">
+            <div class="container padding-leader--xxlarge padding-trailer--xxlarge delivery">
+                <h1 class="text-size--36 text-light trailer--small">Delivery</h1>
+                <div class="border trailer gradient-line--with-border">
+                    <div class="padding-whole border--bottom box--greyed clear">
+                        <div class="grid-row">
+                            <div class="col-md-6">
+                                <div class="form-select form-item">
+                                    <label for="">Delivery</label>
+                                    <select id="address" name="">
+                                        <option selected value="">Home Address</option>
+                                        <option value="">Alternative Address</option>
+                                        <option value="">Send to Telenor shop (1-2 days)</option>
+                                    </select>
+                                    <div class="form-select__field">Home Address</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--法律地址“Home Address” start-->
+                    <div class="padding-trailer padding-leader--none padding-toright padding-toleft">
+                                <div class="grid-row">
+                                    <div class="col-md-6">
+                                        <div class="form-item form-item--required">
+                                            <label for="">First Name</label>
+                                            <input id="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-item form-item--required">
+                                            <label for="">Surname</label>
+                                            <input id="" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-row">
+                                    <div class="col-md-6">
+                                        <div class="form-item form-item--required">
+                                            <label for="">Address</label>
+                                            <input id="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="grid-row grid-row--gutter-none form-item--multi-fields grid-row-xs--bottom">
+                                            <div class="col-xs-3">
+                                                <div class="form-item form-item--required">
+                                                    <label for="no">Nr. </label>
+                                                    <input type="text" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="form-item">
+                                                    <label for="letter">Bogstav</label>
+                                                    <input id=""  type="text" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="form-item">
+                                                    <label for="floor">Etage</label>
+                                                    <input id="" type="text" value="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="form-item">
+                                                    <label for="apt">Dør nr.</label>
+                                                    <input id="" type="text" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-row">
+                                    <div class="col-md-6">
+                                            <div class="form-item--multi form-row">
+                                                <div class="form-item form-col--med form-item--required">
+                                                    <label for="">ZIP Code.</label>
+                                                    <input id="" type="text">
+                                                </div>
+                                                <div class="form-item form-item--required">
+                                                    <label for="">Town</label>
+                                                    <input id="" type="text">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-item">
+                                            <label for="">Place</label>
+                                            <input id="" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-row">
+                                    <div class="col-md-6 trailer--small mobile-trailer">
+                                        <div class="form-item form-item--required">
+                                            <label for="">Email</label>
+                                            <input id="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 trailer--small">
+                                        <div class="form-item form-item--required">
+                                            <label for="">Mobile Phone Number</label>
+                                            <input id="" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!--法律地址“Home Address” end-->
+                    <!--用户可到附近运营商门店自取商品 可选地址 form start-->
+                    <div class="padding-trailer padding-leader--none padding-toright padding-toleft">
+                        <div class="padding-trailer--large">
+                            <div class="grid-row">
+                                <div class="col-md-6">
+                                    <div class="form-item form-item--required">
+                                        <label for="">First Name</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-item form-item--required">
+                                        <label for="">Surname</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="col-md-6 trailer--small mobile-trailer">
+                                    <div class="form-item form-item--required">
+                                        <label for="">Email</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 trailer--small">
+                                    <div class="form-item form-item--required">
+                                        <label for="">Mobile Phone Number</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <header class="padding-trailer--small border--bottom">
+                            <h1 class="text-size--36 text-light">
+                                Find your store
+                            </h1>
+                        </header>
+                        <div class="rel">
+                            <div class="border--bottom trailer padding-leader padding-trailer">
+                                <div class="grid-row">
+                                    <div class="col-md-6">
+                                        <div class="form-search is-empty " data-module="form.search">
+                                            <input id="search" type="search" placeholder="Search">
+                                            <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                            <button id="search-button" class="form-search__submit" tabindex="-1">
+                                                <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available-stores">
+                                <div class="trailer--small text-size--13">
+                                        <div class="available-stores">
+                                            <div class="grid-row">
+                                                <div class="col-md-4 mobile-trailer padding-toleft--xlarge">
+                                                    <span class="form-radio">
+                                                        <input type="radio" checked="" id="rad-inline-6" name="rad-inline" value="--some-value--">
+                                                        <label class="" for="rad-inline-6">
+                                                            <span class="text-bold trailer--xsmall display--inline-block">DK-Telenor shop Silkeborg </span>
+                                                        </label>
+                                                    </span>
+                                                    <h3 class="text-bold trailer--xsmall">Address</h3>
+                                                    <address class="store-address trailer--large">
+                                                        Søndergade 2   <br>
+                                                        8600 Silkeborg<br>
+                                                        Telefon:  60504216
+                                                    </address>
+                                                    <h3 class="text-bold trailer--xsmall">
+                                                        Opening hours
+                                                    </h3>
+                                                    <dl class="clear">
+                                                        <dt>Weekdays: </dt>
+                                                        <dd></dd>
+                                                        <dt>Weekend:</dt>
+                                                        <dd></dd>
+                                                    </dl>
+                                                    <dl class="clear">
+                                                        <dt>Distance:</dt>
+                                                        <dd>11.0 km from you</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="col-md-4 mobile-trailer padding-toleft--xlarge">
+                                                    <span class="form-radio">
+                                                        <input type="radio" checked="" id="rad-inline-5" name="rad-inline" value="--some-value--">
+                                                        <label class="" for="rad-inline-5">
+                                                            <span class="text-bold trailer--xsmall display--inline-block">DK-5R Marketing (2 hold)</span>
+                                                        </label>
+                                                    </span>
+                                                    <h3 class="text-bold trailer--xsmall">Adresse</h3>
+                                                    <address class="store-address trailer--large">
+                                                        Søndergade 2   <br>
+                                                        8600 Silkeborg<br>
+                                                        Telefon:  60504216
+                                                    </address>
+                                                    <h3 class="text-bold trailer--xsmall">
+                                                        Opening hours
+                                                    </h3>
+                                                    <dl class="clear">
+                                                        <dt>Weekdays: </dt>
+                                                        <dd></dd>
+                                                        <dt>Weekend:</dt>
+                                                        <dd></dd>
+                                                    </dl>
+                                                    <dl class="clear">
+                                                        <dt>Distance:</dt>
+                                                        <dd>11.0 km from you</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="col-md-4 mobile-trailer padding-toleft--xlarge">
+                                                    <span class="form-radio">
+                                                        <input type="radio" checked="" id="rad-inline-4" name="rad-inline" value="--some-value--">
+                                                        <label class="" for="rad-inline-4">
+                                                            <span class="text-bold trailer--xsmall display--inline-block">DK-Telenor butikken Århus Bruun¿s Galleri</span>
+                                                        </label>
+                                                    </span>
+                                                    <h3 class="text-bold trailer--xsmall">Adresse</h3>
+                                                    <address class="store-address trailer--large">
+                                                        Søndergade 2   <br>
+                                                        8600 Silkeborg<br>
+                                                        Telefon:  60504216
+                                                    </address>
+                                                    <h3 class="text-bold trailer--xsmall">
+                                                        Opening hours
+                                                    </h3>
+                                                    <dl class="clear">
+                                                        <dt>Weekdays: </dt>
+                                                        <dd></dd>
+                                                        <dt>Weekend:</dt>
+                                                        <dd></dd>
+                                                    </dl>
+                                                    <dl class="clear">
+                                                        <dt>Distance:</dt>
+                                                        <dd>11.0 km from you</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="text--center">
+                                    <div class="pager pager--default" data-component="pager" data-alias="pagination" style="display: inline-block;">
+                                        <a class="pager__button previous" data-selector="page-previous">previous</a>
+                                        <span data-selector="pages">
+                                            <a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+                                            <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+                                            <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+                                            <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+                                            <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+                                            <span class="pager__elipsis">…</span>
+                                            <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+                                        </span>
+                                        <a class="pager__button next" data-selector="page-next">next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--用户可到附近运营商门店自取商品 form end-->
+                    <!--用户可到附近运营商门店自取商品 已有地址可修改 form start-->
+                    <div class="padding-trailer padding-leader--none padding-toright padding-toleft">
+                        <div class="padding-trailer--large">
+                            <div class="grid-row">
+                                <div class="col-md-6">
+                                    <div class="form-item form-item--required">
+                                        <label for="">First Name</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-item form-item--required">
+                                        <label for="">Surname</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="col-md-6 trailer--small mobile-trailer">
+                                    <div class="form-item form-item--required">
+                                        <label for="">Email</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 trailer--small">
+                                    <div class="form-item form-item--required">
+                                        <label for="">Mobile Phone Number</label>
+                                        <input id="" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <header class="padding-trailer--small">
+                            <h1 class="text-size--36 text-light">
+                                Find your store
+                            </h1>
+                        </header>
+                        <div class="rel">
+
+                            <div class="available-stores">
+                                <div class="trailer--small text-size--13">
+                                    <div class="available-stores">
+                                        <div class="grid-row">
+                                            <div class="col-md-4 mobile-trailer padding-toleft--xlarge">
+                                                    <span class="form-radio">
+                                                        <input type="radio" checked="" id="rad-inline-3" name="rad-inline" value="--some-value--">
+                                                        <label class="" for="rad-inline-3">
+                                                            <span class="text-bold trailer--xsmall display--inline-block">DK-Telenor butikken Silkeborg</span>
+                                                        </label>
+                                                    </span>
+                                                <h3 class="text-bold trailer--xsmall">Adresse</h3>
+                                                <address class="store-address trailer--large">
+                                                    Søndergade 2   <br>
+                                                    8600 Silkeborg<br>
+                                                    Telefon:  60504216
+                                                </address>
+                                                <h3 class="text-bold trailer--xsmall">
+                                                    Åbningstider
+                                                </h3>
+                                                <dl class="clear">
+                                                    <dt>Hverdage: </dt>
+                                                    <dd></dd>
+                                                    <dt>Weekender:</dt>
+                                                    <dd></dd>
+                                                </dl>
+                                                <dl class="clear">
+                                                    <dt>Afstand:</dt>
+                                                    <dd>45,3 km fra dig</dd>
+                                                </dl>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text--left">
+                                    <div class=" mobile-trailer--small mobile-text--center">
+                                        <button class="button button--accept  mobile-float--none stretch-mobile">
+                                            <span class="button__label icon--right icon-arrow-next"><span class="button__text">Exit</span></span>
+                                            <span class="button__spinner"><span class="spinner-holder"><span class="spinner-container"><em><span></span></em></span></span></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--用户可到附近运营商门店自取商品 已有地址可修改 form end-->
+                </div>
+                <div class="trailer clear">
+                    <!--submit address error 提示 start-->
+                    <div class="message message--error leader trailer">
+                        <div class="message__inner">
+                            <span class="message__icon icon icon-reject"></span>
+                            <div class="text--small message__text">
+                                <p>Adressen er ikke gyldig. Se venligst dine informationer igennem og prøv igen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--submit address error 提示 end-->
+                    <div class="clear">
+                        <button id="test-anonymous" class="button button--accept float--right mobile-float--none stretch-mobile mobile-trailer">
+                            <span class="button__label icon--right icon-arrow-next"><span class="button__text">Continue as anonymous</span></span>
+                            <span class="button__label--success icon--left icon-thumb-up"><span class="button__text">Gemt</span></span>
+                            <span class="button__spinner"><span class="spinner-holder"><span class="spinner-container"><em><span></span></em></span></span></span>
+                        </button>
+                        <!--未登录用户购裸机 button start-->
+                        <button id="test-sign-in" class="button button--accept float--right mobile-float--none stretch-mobile">
+                            <span class="button__label icon--right icon-arrow-next"><span class="button__text">Sign in</span></span>
+                            <span class="button__spinner"><span class="spinner-holder"><span class="spinner-container"><em><span></span></em></span></span></span>
+                        </button>
+                        <!--未登录用户购裸机 button end-->
+                    </div>
+                </div>
+            </div>
+            <div class="section--help section--negative container--wide">
+                <div class="container text--center">
+                    <p class="section--help__title mobile-hidden">Get an overview on the My Telenor</p>
+                    <p class="section--help__subtitle"><span>Looking for your last bill - or would you switch the payment method? On My Telenor can you manage most. </span><span class="mobile-display--block"></span></p>
+                    <ul class="section--help__buttons">
+                        <li>
+                            <a class="button button--action-dark">
+                                <span class="button__text">My Telenor</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section-->
+    <div id="footer" class="section-footer-scroll" data-component="footer/scroll">
+        <nav class="section section--footer">
+            <div class="container">
+                <div class="grid-row trailer--small mobile-hidden">
+                    <!-- footer:breadbcrumb-->
+                    <div class="col-md-9">
+                        <div class="section--footer__breadcrumb">
+                            <ul>
+                                <li><a href="#nogo">Home</a></li>
+                                <li><a href="#nogo">Shop</a></li>
+                                <li><a href="#nogo">Moblie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 tablet-omega footer__social text--right">
+                        <a href="#nogo" class="icon-facebook track-social">
+                            <span class="icon--text">Facebook</span>
+                        </a>
+                        <a href="#nogo" class="icon-twitter-circle track-social">
+                            <span class="icon--text">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- : Footer Navigation -->
+                <div class="section--footer__menu mobile-hidden">
+                    <div class="flex--row">
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--:section footer info -->
+                <div class="section--footer__info">
+                    <div class="grid-row">
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-hotline circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                Kundeservice har altid åbent
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-one-to-one-loaner-phone circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                1:1 lånemobil
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-truck circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                Fri fragt og ekspreslevering
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-perfect-start circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                Kundeservice har altid åbent
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- section bottom-->
+        <div class="section section--bottom">
+            <div class="container">
+                <div class="desktop-hidden footer__social">
+                    <a href="#nogo" class="icon-facebook"><span class="icon--text">Facebook</span></a>
+                    <a href="#nogo" class="icon-twitter-circle"><span class="icon--text">Twitter</span></a>
+                </div>
+                <div class="section--bottom__holder mobile-text--center">
+                    <div class="leader--xsmall mobile-trailer--small float--right mobile-text--center clearImg">
+                        <div class="float--right toleft--xsmall mobile-toleft--none mobile-trailer--xsmall">
+                            <img src="../../assets/img/paymenticons.png" alt="">
+                        </div>
+                        <div class="float--left">
+                            <img src="../../assets/img/payment-icon2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="float--left">
+                        <div>
+                            <ul class="adr-list">
+                                <li class="icon-telenor section--bottom__logo"></li>
+                                <li>Telenor</li>
+                                <li> · </li>
+                                <li>Frederikskaj 8</li>
+                                <li> · </li>
+                                <li>1780 København V</li>
+                                <li class="mobile-hidden"> · </li>
+                                <li class="mobile-hidden">CVR: 19433692</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end-->
+</div>
+</body>
+<script type="text/javascript">
+    //点击跳转到summary
+    $ ("#test-anonymous").click (function(){
+        window.location.href="summary-information.html";
+    });
+    //点击跳转到sign
+    $ ("#test-sign-in").click (function(){
+        window.location.href="login.html";
+    });
+</script>
+</html>

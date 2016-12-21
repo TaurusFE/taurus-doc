@@ -138,11 +138,11 @@
   ],
   "element": [
     {
-      "groupName": "gloabal",
+      "groupName": "global",
       "list": [
         {
           "path": "/color",
-          "title": "color"
+          "title": "Color"
         },
         {
           "path": "/typography",
@@ -283,6 +283,46 @@
         "path": "formExamples",
         "title": "Form Examples"
       }]
+    }
+  ],
+  "case": [
+    {
+      "groupName": "UE",
+      "list": [
+        {
+          "path": "/sitemap",
+          "title": "SiteMap"
+        },
+        {
+          "path": "/deliveryPage",
+          "title": "Delivery Page"
+        },
+        {
+          "path": "/svnAddress",
+          "title": "SVN Address"
+        }
+      ]
+    },
+    {
+      "groupName": "fe static",
+      "list": [
+        {
+          "path": "/eshop",
+          "title": "EShop"
+        },
+        {
+          "path": "/cm",
+          "title": "Custom Manage"
+        },
+        {
+          "path": "/agentView",
+          "title": "Agent View"
+        },
+        {
+          "path": "/rm",
+          "title": "Resource Manage"
+        }
+      ]
     }
   ]
 }

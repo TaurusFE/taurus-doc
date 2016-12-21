@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simcard-categroy</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/resourcemanagement.min.css" rel="stylesheet" type="text/css">
+    <script src="../assets/js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- 手机端菜单滑出时 增加 offcanvas--open -->
+<div class="offcanvas">
+    <!-- 手机端菜单滑出时 增加 is-disabled -->
+    <div class="section--oncanvas">
+        <!--nav-->
+        <nav class="menu-wrapper">
+            <!--desktop:menu-->
+            <div class="section mobile-hidden">
+                <div class="container section--menu">
+                    <!--<a href="#nogo" class="link--logo float--left" title="home">
+                        <span class="link--text">Home</span>
+                    </a>-->
+                    <ul class="menu--main">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Kundeservice</a></li>
+                        <li><a href="#">Mit Telenor</a></li>
+                        <li><a href="#">Find butik</a></li>
+                    </ul>
+                    <!--<div class="section&#45;&#45;menu__service">-->
+                        <!--<div class="menu&#45;&#45;service">-->
+                            <!--<a href="#nogo" class="active-trail">Privat</a>-->
+                            <!--<a href="#nogo">Erhverv</a>-->
+                        <!--</div>-->
+                        <!--<div class="menu&#45;&#45;user">-->
+                            <!--<a href="#nogo">Log ind</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="menu--right float--right">
+                        <div class="menu--right__basket">
+                            <a href="#nogo" class="basket-icon">
+                                <span class="icon icon-basket text-size--24"></span>
+                            </a>
+                        </div>
+                        <div class="menu--right__search">
+                            <div class="search-block--top">
+                                <!– 增加 search-block--active 激活搜索 –>
+                                <div class="search-block container search-block--last-page search-block--input-empty">
+                                    <!–form-search–>
+                                    <div class="form-search">
+                                        <button class="search-block__submit form-search__submit" tabindex="-1"
+                                                data-component="button" data-alias="submit">
+                                            <span class="icon-search"></span>
+                                        </button>
+                                        <div class="search-block__type-area">
+                                            <input class="search-block__input" placeholder="Indtast søgeord"
+                                                   type="search" data-alias="searchInput" data-selector="input"
+                                                   data-component="element">
+                                            <button type="button" tabindex="-1"
+                                                    class="search-block__clear form-search__clear no-js--hidden icon-remove"
+                                                    data-component="button" data-alias="clear"></button>
+                                        </div>
+                                    </div>
+                                    <!–/form-search–>
+                                    <!–search-block__success–>
+                                    <div class="search-block__dropdown search-block__success">
+                                        <h2 class="search-block__title text-size--30 mobile-text-size--13 text-light trailer">
+                                            Din søgning på "
+                                            <span class="search-query">112区人</span>
+                                            " gav
+                                            <span class="search-block__total"></span>
+                                            resultater
+                                        </h2>
+
+                                        <div class="filter--container box--greyed search-block__message"></div>
+                                        <div class="search-block__results">
+                                            <div></div>
+                                            <div class="search-block__more">
+                                                <div class="search-block__view-all clear">
+                                                    <a href="#" class="button button--action float--right">
+                                                        <span class="button__label">Vis alle resultater</span>
+                                                    </a>
+                                                </div>
+                                                <div class="search-block__load-more">
+                                                    <a class="button button--default float--right">
+                                                        <span class="button__label">Vis flere resultater</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!–/search-block__success–>
+                                    <!–search-block__fail–>
+                                    <div class="search-block__dropdown search-block__fail">
+                                        <div class="padding-whole--med box--greyed search-block__message text-size--13">
+                                            <p>Din søgning på “
+                                                <strong class="search-query">112区人</strong>”
+                                                giver ingen resultater
+                                            </p>
+                                        </div>
+                                        <div class="search-block__results clear">
+                                            <p class="text-size--30 mobile-text-size--24 text-light leader--med search-block__suggestion border--bottom padding-trailer js-hidden"
+                                                    >
+                                                Mente du
+                                                <a id="site-search-suggestion" href="#" data-component="button"
+                                                   data-alias="searchSuggestion"></a>
+                                                ?
+                                            </p>
+
+                                            <div>
+                                                <div class="padding-leader--med text-size--13">
+                                                    <p><strong>Populære søgninger:</strong></p>
+                                                    <ul class="list leader--small">
+                                                        <li><a href="#" class="bullet-link"></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!–/search-block__fail–>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <!--/desktop:menu-->
+            <!--subnav menu -->
+            <div id="menu--subnav-sticky-wrapper" class="mobile-hidden menu-subnav-sticky-wrapper">
+
+                <div class="section section--subnav mobile-hidden">
+                    <div class="container">
+                        <!--<div><a href="#nogo" class="link--logo float--left"></a></div>-->
+
+                        <ul class="menu--subnav menu--flexnav flexnav--inited flexnav--active">
+                            <li>
+                                <a href="#nogo">Mobiler</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Abonnementer</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Tablets</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Bredbånd</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Tilbehør</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Familierabat</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Viaplay</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Gør et kup!</a>
+                            </li>
+                            <li class="flexnav">
+                                <a class="flexnav__toggler">Mere</a>
+                                <ul class="flexnav__subnav">
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Efterårssalg</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!--/subnav menu -->
+            <!--Mobile menu -->
+            <div class="nav-mobile desktop-hidden" role="navigation">
+                <div class="nav-mobile__container">
+                    <!--<a class="logo" href="/" rel="home" title="home"><span>Views.Root.Home</span></a>-->
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="icon--text">Menu</span>
+                                <span class="icon icon-hamburger-menu nav-mobile__icon" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Mobile menu -->
+        </nav>
+        <!--/nav-->
+        <!--tab-->
+        <div class="rm-tab--content">
+            <div class="container">
+                <!--Component：TTabs---start-->
+                <div id="tabpanel" class="tabpanel">
+                    <nav class="trailer">
+                        <ul class="tabpanel__list tabpanel__manage trailer">
+                            <li class="tabpanel__tab is-active">
+                                <a href="#nogo" class="tabpanel__link icon icon-search">Om Samsung Galaxy S6Edge+</a>
+                                <a class="icon icon-remove tabpanel__closed"></a>
+                            </li>
+                            <li class="tabpanel__tab">
+                                <a href="#nogo" class="tabpanel__link">Tekniske specifikationer</a>
+                                <a class="icon icon-remove tabpanel__closed"></a>
+                            </li>
+                            <li class="tabpanel__tab">
+                                <a href="#nogo" class="tabpanel__link">Fortrydelse</a>
+                                <a class="icon icon-remove tabpanel__closed"></a>
+                            </li>
+                            <li class="tabpanel__tab flexnav">
+                                <a href="#nogo" class="tabpanel__link flexnav__toggler">More</a>
+                                <ul class="flexnav__subnav">
+                                    <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Om Samsung Galaxy S6Edge+</a>
+                                    </li>
+                                    <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Tekniske specifikationer</a>
+                                    </li>
+                                    <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Fortrydelse</a>
+                                    </li>
+                                    <li class="tabpanel__tab flexnav--active-tab">
+                                        <a href="#nogo" class="tabpanel__link">Levering123</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--Component：TTabs---end-->
+            </div>
+        </div>
+        <!--/tab-->
+        <div class="container">
+            <header class="padding-trailer--small leader--large ovh">
+                <h1 class="text-size--36 text-light pull-left">Resource Category Management</h1>
+                <div class="pull-right leader--xsmall">
+                    <button class="button button--small button--action">Add Category</button>
+                </div>
+            </header>
+            <div class="border gradient-line--with-border trailer">
+                <div class="padding-whole">
+                    <h3 class="text-size--19 padding-trailer--xsmall border--bottom">New Resource Category</h3>
+                    <div class="grid-row">
+                        <div class="col-md-3">
+                            <div class="grid-row form-item form-item--required">
+                                <label class="col-md-12">Resource Type</label>
+                                <div class="col-md-6 padding-toright--xsmall">
+                                    <!--Component：TSelect---start-->
+                                    <div data-module="form.select" class="form-select form-select--disabled form-select--small">
+                                        <select id="select-disabled" disabled="">
+                                            <option value="opt1" selected="">Option 1</option>
+                                            <option value="opt2">Option 2</option>
+                                            <option value="opt3">Option 3</option>
+                                        </select>
+                                        <div class="form-select__field">--</div>
+                                    </div>
+                                    <!--Component：TSelect---end-->
+                                </div>
+                                <div class="col-md-6 padding-toleft--xsmall">
+                                    <!--Component：TSelect---start-->
+                                    <div data-module="form.select" class="form-select form-select--disabled form-select--small">
+                                        <select id="select-disabled" disabled="">
+                                            <option value="opt1" selected="">Option 1</option>
+                                            <option value="opt2">Option 2</option>
+                                            <option value="opt3">Option 3</option>
+                                        </select>
+                                        <div class="form-select__field">--</div>
+                                    </div>
+                                    <!--Component：TSelect---end-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="form-field-simple-label-required">Rescource Category ID</label>
+                                <div>
+                                    <input id="form-field-simple-label-required" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--required form-item--small">
+                                <label for="form-field-simple-label-required">Rescource Category Name</label>
+                                <div>
+                                    <input id="form-field-simple-label-required" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="form-field-simple-label-required">Remarks</label>
+                                <div>
+                                    <input id="form-field-simple-label-required" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--required form-item--small">
+                                <label for="form-field-simple-label-required">Effective Time</label>
+                                <!--Component：TDatePicker---start-->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                                </div>
+                                <!--Component：TDatePicker---end-->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--required form-item--small">
+                                <label for="form-field-simple-label-required">Expiry Time</label>
+                                <!--Component：TDatePicker---start-->
+                                <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+                                    <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                    <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                    <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                        <span class="aria--visible">Clear filter</span>
+                                    </button>
+
+                                    <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                                </div>
+                                <!--Component：TDatePicker---end-->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item form-item--small">
+                                <label for="form-field-simple-label-required">Category Description</label>
+                                <div>
+                                    <input id="form-field-simple-label-required" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text--right padding-leader">
+                        <button class="button button--naked button--small toright--small">Cancel</button>
+                        <button class="button button--action button--small">Save</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border gradient-line--with-border">
+                <div class="box--greyed padding-whole clear">
+                    <div class="pull-left">
+                        <!--Component：TSelect---start-->
+                        <div data-module="form.select" class="form-select form-select--small form-item--inline">
+                            <select id="select4">
+                                <option value="opt1" selected="">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                                <option value="opt3">Option 3</option>
+                            </select>
+                            <div class="form-select__field">Resouce Type</div>
+                        </div>
+                        <!--Component：TSelect---end-->
+                        <!--Component：TSelect---start-->
+                        <div data-module="form.select" class="form-select form-select--small form-item--inline">
+                            <select id="select4">
+                                <option value="opt1" selected="">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                                <option value="opt3">Option 3</option>
+                            </select>
+                            <div class="form-select__field">--</div>
+                        </div>
+                        <!--Component：TSelect---end-->
+                        <!--Component：TSearchFilter---start-->
+                        <div class="form-search is-empty form-item--small form-item--inline" data-module="form.search">
+                            <input id="search-small" type="search" placeholder="Search">
+                            <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                            <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                <span class="icon-search"></span><span class="aria--visible">Search</span>
+                            </button>
+                        </div>
+                        <!--Component：TSearchFilter---end-->
+                    </div>
+                    <div class="pull-right">
+                        <button class="button button--small button--default button--white">Reset</button>
+                    </div>
+                </div>
+                <div class="border--top">
+                    <div class="padding-whole padding-trailer--none">
+                        <div class="rm-message-tip border--bottom padding-trailer rel clear ">
+                            <div class="pull-left">
+                                <button disabled="" class="button button--small button--default button--white">Delete</button>
+                            </div>
+                            <div class="pull-right">
+                                <div class="form-item--inline">
+                                    <button id="column-filter-sb" class="button button--default button--small button--column-filter">
+                                        <span class="icon icon--only icon-list"></span>
+                                        <span class="icon icon--only icon-arrow-down"></span>
+                                    </button>
+                                    <!--Component：TSpeechBubbleFilter---start-->
+                                    <div class="speach-bubble is-loaded" data-module="speach.bubble" data-toggle-target="column-filter-sb" >
+                                        <div class="speach-bubble__top-bar ">
+                                            Select columns
+                                            <button type="button" class="no-js--hidden icon-reject speach-bubble__close">
+                                                <span class="aria--visible">Close</span>
+                                            </button>
+                                        </div>
+                                        <div class="speach-bubble__content">
+                                            <div class="accordion-filter " data-module="accordion.filter" id="column-filter-1">
+                                                <ul>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="price" type="checkbox" tabindex="1" role="checkbox" aria-checked="true" checked="checked">
+                                                        <label for="price">Price</label>
+                                                    </li>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="amount" type="checkbox" tabindex="1" role="checkbox" aria-checked="true" checked="checked">
+                                                        <label for="amount">Amount</label>
+                                                    </li>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="phone-number" type="checkbox" tabindex="1" role="checkbox" aria-checked="">
+                                                        <label for="phone-number">Phone number</label>
+                                                    </li>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="mb-usage" type="checkbox" tabindex="1" role="checkbox" aria-checked="true" checked="checked">
+                                                        <label for="mb-usage">MB Usage</label>
+                                                    </li>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="price" type="checkbox" tabindex="1" role="checkbox" aria-checked="true" checked="checked">
+                                                        <label for="price">Price</label>
+                                                    </li>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="amount" type="checkbox" tabindex="1" role="checkbox" aria-checked="true" checked="checked">
+                                                        <label for="amount">Amount</label>
+                                                    </li>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="phone-number" type="checkbox" tabindex="1" role="checkbox" aria-checked="">
+                                                        <label for="phone-number">Phone number</label>
+                                                    </li>
+                                                    <li class="accordion-filter__leaf-item accordion-filter__leaf-parent-item form-checkbox">
+                                                        <input id="mb-usage" type="checkbox" tabindex="1" role="checkbox" aria-checked="true" checked="checked">
+                                                        <label for="mb-usage">MB Usage</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="box--greyed multi-filter__submit-panel">
+                                            <button type="button" class="button button--action button--small" tabindex="1">Update table</button>
+                                        </div>
+                                    </div>
+                                    <!--Component：TSpeechBubbleFilter---start-->
+                                </div>
+                            </div>
+
+                            <!--Component：TStatusMessage---start-->
+                            <div class="message message--error " style="display: none">
+                                <div class="message__inner">
+                                    <span class="message__icon icon-reject"></span>
+                                    <div class="text--small message__text">
+                                        <p>Lorem ipsum dolor sit amet <a href="#" class="color-white link--underlined">OK</a>.</p>
+                                    </div>
+                                    <button class="message__close" aria-hidden="true"><span class="icon-remove"></span></button>
+                                </div>
+                            </div>
+                            <!--Component：TStatusMessage---end-->
+                        </div>
+                    </div>
+                    <!--Component：TDataTable---start-->
+                    <div class="table--scroll">
+                        <table class="table table--adv" id="DataTables_Table_0" role="grid" style="display: table;">
+                            <thead>
+                            <tr role="row">
+                                <th class="form-checkbox invoices__table__column--checkbox all form-checkbox--single sorting_disabled">
+                                    <!--<input type="checkbox" id="select-all-rows" value="all" data-component="checkbox"-->
+                                    <!--data-alias="selectAll">-->
+                                    <!--<label for="select-all-rows"></label>-->
+                                    <a class="form-checkbox--result" tabindex="1" href="#" role="link-hc" idx="4" data-state="some-selected"> <label>  </label> </a>
+                                </th>
+                                <th>SEQ</th>
+                                <th>Resource Type</th>
+
+                                <th>Resourc Category ID</th>
+                                <th>Resource Category Name</th>
+                                <th>Remarks</th>
+                                <th>Applicable Range</th>
+                                <th>Attributive Organization</th>
+                                <th>Effective Time</th>
+                                <th>Expiry Time</th>
+                                <th>Recyled Category</th>
+                                <th>Threshold(Max.)</th>
+                                <th>Threshold(Min.)</th>
+                                <th>Recycled Status</th>
+                                <th>Frozen Days</th>
+                                <th>Range Length</th>
+                                <th>Porting Allowed</th>
+                                <th>Number Length</th>
+                                <th>
+                                </th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr role="row" class="row-selected">
+                                <td class="form-checkbox invoices__table__column--checkbox form-checkbox--single ">
+                                    <input type="checkbox" id="check-02" name="invoices" value="6456456;343,43;Paid">
+                                    <label for="check-02"></label>
+                                </td>
+                                <td>1</td>
+                                <td>SIM Card</td>
+                                <td>2000</td>
+                                <td>Ordinary SIM Card</td>
+                                <td>Ordinary SIM Card</td>
+                                <td>2012-09-07 00:00:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="action-icon">
+                                    <a href="#nogo" class="icon-pencil "></a>
+                                    <a href="#nogo" class="icon-remove toleft"></a>
+                                </td>
+                            </tr>
+                            <tr role="row"  class="  ">
+
+                                <td class=" form-checkbox form-checkbox--single invoices__table__column--checkbox">
+                                    <input type="checkbox" id="check-03" name="invoices" value="6456456;343,43;Paid">
+                                    <label for="check-03"></label>
+                                </td>
+                                <td>2</td>
+                                <td>SIM Card</td>
+                                <td>2000</td>
+                                <td>Ordinary SIM Card</td>
+                                <td>Ordinary SIM Card</td>
+                                <td>2012-09-07 00:00:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="action-icon">
+                                        <a href="#nogo" class="icon-pencil "></a>
+                                        <a href="#nogo" class="icon-remove toleft"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr role="row" class="">
+                                <td class=" form-checkbox form-checkbox--single invoices__table__column--checkbox">
+                                    <input type="checkbox" id="check-04" checked="" name="invoices" value="6456456;343,43;Paid">
+                                    <label for="check-04"></label>
+                                </td>
+                                <td>3</td>
+                                <td>SIM Card</td>
+                                <td>2000</td>
+                                <td>Ordinary SIM Card</td>
+                                <td>Ordinary SIM Card</td>
+                                <td>2012-09-07 00:00:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="action-icon">
+                                        <a href="#nogo" class="icon-pencil "></a>
+                                        <a href="#nogo" class="icon-remove toleft"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="dataTables_empty" colspan="9">No matching records found</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="form-row clear padding-whole padding-leader--none">
+                        <div data-module="form.select" class="form-select form-select--small pull-left">
+                            <select id="select4">
+                                <option value="opt1" selected="">10 items</option>
+                                <option value="opt2">20 items</option>
+                                <option value="opt3">30 items</option>
+                            </select>
+                            <div class="form-select__field">--</div>
+                        </div>
+                        <div class="pager pager--default pull-right" data-component="pager" data-alias="pagination" style="display: inline-block;"><a class="pager__button previous" data-selector="page-previous">previous</a>
+    <span data-selector="pages"><a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+    <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+    <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+    <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+    <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+    <span class="pager__elipsis">…</span>
+    <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+    </span>
+                            <a class="pager__button next" data-selector="page-next">next</a>
+                        </div>
+                    </div>
+                    <!--Component：TDataTable---end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--side-panel-->
+    <div class="side-panel">
+        <!--nav-panel-->
+        <div class="nav-panel">
+            <ul class="nav-mobile__tabset">
+                <li class="tabpanel__tab is-active">
+                    <a href="javascript:;">Privat</a>
+                </li>
+                <li class="tabpanel__tab">
+                    <a href="javascript:;">Erhverv</a>
+                </li>
+                <li class="tabpanel__tab flexnav" role="presentation" style="display: none;">
+                    <a href="#" class="tabpanel__link flexnav__toggler" role="tab">Mere</a>
+                    <ul class="flexnav__subnav">
+                        <li class="tabpanel__tab flexnav--active-tab flexnav--invisible">
+                            <a href="#">Privat</a>
+                        </li>
+                        <li class="tabpanel__tab flexnav--invisible flexnav--active-tab">
+                            <a href="#">Erhverv</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- <form class="nav-mobile__search clear">
+                 <input type="text" class="nav-mobile__search__text" placeholder="Søg" name="iq">
+                 <button class="nav-mobile__search__button icon-search"></button>
+             </form>-->
+
+            <div class="nav-mobile__tab-holder tabpanel__panels">
+                <ul class="nav-mobile__accordion tabs__panel tabpanel__panel is-active">
+                    <li>
+                        <a href="#nogo">Shop1</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Shop1</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                </ul>
+                <ul class="nav-mobile__accordion tabs__panel tabpanel__panel js-hidden">
+                    <li>
+                        <a href="#nogo">Shop2</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Shop2</a>
+                        <span class="icon-arrow-next collapsed"></span>
+                        <ul class="nav-mobile__accordion__drop nav-mobile__submenu__privat_shop js-hidden">
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+
+                            <li>
+                                <a href="#nogo">Mobile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                    <li>
+                        <a href="#nogo">Mobile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/nav-panel-->
+    </div>
+    <!--side-panel-->
+    <!--Component：TModal---start-->
+    <div id="action-modal-demo-overlay" class="modal-box__overlay">
+        <div class="modal-box--with-action-buttons modal-box__content gradient-line padding-whole--none modal-box--size-small">
+            <div class="modal-box__close-btn icon icon-reject"></div>
+            <div class="modal-box__container text--center">
+                <div class="modal-box__icon-box modal-box__icon-box--blue trailer">
+                    <span class="icon icon-reject"></span>
+                </div>
+                <div class="text-size--13 leader--large">
+                    <p class="text-size--30 text-light trailer">Allerede kunde hos Telenor? </p>
+
+                    <p class="trailer--large">Log ind eller fortsæt som ny kunde. </p>
+                </div>
+                <ul class="modal-box__action-buttons">
+                    <li>
+                        <form action="">
+                            <button class="button button--default">
+                                Cancel
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="">
+                            <button class="button button--action">OK</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Component：TModal---end-->
+    <!--Component：TModal---start-->
+    <div id="action-modal-demo-form" class="modal-box__overlay modal-box--is-open">
+        <div class="modal-box__content modal-box__content--full modal-box--size-xlarge">
+            <header class="padding-whole--large padding-toright--huge box--greyed rel border--bottom">
+                <h1 class="text-size--28 mobile-text-size--21 trailer-xsmall">
+                    Modify
+                </h1>
+                <div class="modal-box__close-btn icon-reject"></div>
+            </header>
+            <div class="padding-whole padding-leader--none padding-trailer--large">
+                <h3 class="text-size--19 padding-trailer--xsmall leader--large border--bottom trailer--small">Basic Information</h3>
+                <div class="grid-row">
+                    <div class="col-md-3">
+                        <div class="grid-row form-item form-item--required">
+                            <label class="col-md-12">Resource Type</label>
+                            <div class="col-md-6 padding-toright--xsmall">
+                                <!--Component：TSelect---start-->
+                                <div data-module="form.select" class="form-select form-select--disabled form-select--small">
+                                    <select id="select-disabled" disabled="">
+                                        <option value="opt1" selected="">Option 1</option>
+                                        <option value="opt2">Option 2</option>
+                                        <option value="opt3">Option 3</option>
+                                    </select>
+                                    <div class="form-select__field">--</div>
+                                </div>
+                                <!--Component：TSelect---end-->
+                            </div>
+                            <div class="col-md-6 padding-toleft--xsmall">
+                                <!--Component：TSelect---start-->
+                                <div data-module="form.select" class="form-select form-select--disabled form-select--small">
+                                    <select id="select-disabled" disabled="">
+                                        <option value="opt1" selected="">Option 1</option>
+                                        <option value="opt2">Option 2</option>
+                                        <option value="opt3">Option 3</option>
+                                    </select>
+                                    <div class="form-select__field">--</div>
+                                </div>
+                                <!--Component：TSelect---end-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Rescource Category ID</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Rescource Category Name</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Remarks</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Attributive Organization</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Applicable Range</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Effective Time</label>
+                            <!--Component：TDatePicker---start-->
+                            <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+                                <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                    <span class="aria--visible">Clear filter</span>
+                                </button>
+
+                                <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                            </div>
+                            <!--Component：TDatePicker---end-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Expiry Time</label>
+                            <!--Component：TDatePicker---start-->
+                            <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+                                <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                    <span class="aria--visible">Clear filter</span>
+                                </button>
+
+                                <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                            </div>
+                            <!--Component：TDatePicker---end-->
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-size--19 leader--large border--bottom">Extended Information</h3>
+                <div class="grid-row">
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Recyled Category</label>
+                            <!--Component：TSearchFilter---start-->
+                            <div class="form-search is-empty form-item--small" data-module="form.search">
+                                <input id="search-small" type="search" placeholder="Search">
+                                <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                    <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                </button>
+                            </div>
+                            <!--Component：TSearchFilter---end-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Threshold(Max.)</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Threshold(Min.)</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Recycled Status</label>
+                            <!--Component：TSelect---start-->
+                            <div data-module="form.select" class="form-select form-select--disabled form-select--small">
+                                <select id="select-disabled" disabled="">
+                                    <option value="opt1" selected="">Option 1</option>
+                                    <option value="opt2">Option 2</option>
+                                    <option value="opt3">Option 3</option>
+                                </select>
+                                <div class="form-select__field">Available</div>
+                            </div>
+                            <!--Component：TSelect---end-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Frozen Days</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Range Length</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Porting Allowed</label>
+                            <!--Component：TSelect---start-->
+                            <div data-module="form.select" class="form-select form-select--disabled form-select--small">
+                                <select id="select-disabled" disabled="">
+                                    <option value="opt1" selected="">Option 1</option>
+                                    <option value="opt2">Option 2</option>
+                                    <option value="opt3">Option 3</option>
+                                </select>
+                                <div class="form-select__field">Yes</div>
+                            </div>
+                            <!--Component：TSelect---end-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--required form-item--small">
+                            <label for="form-field-simple-label-required">Number Length</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text--right padding-leader--large">
+                    <button class="button button--naked button--small toright--small">Cancel</button>
+                    <button class="button button--action button--small">Save</button>
+                </div>
+                <div class="grid-row leader--small ">
+                    <div class="col-md-3 terms-list ">
+                        <dt>Resource Type</dt>
+                        <dd class="text-size--16">Ordinary SIM Card</dd>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Rescource Category ID</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Rescource Category</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Applicable Range</dt>
+                        <dd class="text-size--16">NO RANGE</dd>
+                    </dl>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Attributive Organization</dt>
+                        <dd class="text-size--16">[2100000] Denmark</dd>
+                    </dl>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Material Code</dt>
+                        <dd class="text-size--16">1102137</dd>
+                    </dl>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Effective Time</label>
+                            <!--Component：TDatePicker---start-->
+                            <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+                                <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                    <span class="aria--visible">Clear filter</span>
+                                </button>
+
+                                <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                            </div>
+                            <!--Component：TDatePicker---end-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Expiry Time</label>
+                            <!--Component：TDatePicker---start-->
+                            <div class="datepicker" data-module="input.daterange" id="example-daterange" data-target="#example-table" data-target-column="0">
+                                <input class="datepicker__start" type="date" value="2014-01-01" min="2000-01-01" max="2014-03-01" placeholder="From date">
+                                <input class="datepicker__end" type="date" value="2014-01-18" min="2000-01-01" max="2014-03-01" placeholder="To date">
+                                <button class="no-js--hidden icon icon-clear" data-list-clear="" style="display: inline-block;">
+                                    <span class="aria--visible">Clear filter</span>
+                                </button>
+
+                                <input class="datepicker__range is-datepick" type="text" placeholder="Select dates range">
+                            </div>
+                            <!--Component：TDatePicker---end-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Category Description</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item form-item--small">
+                            <label for="form-field-simple-label-required">Remarks</label>
+                            <div>
+                                <input id="form-field-simple-label-required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Whether Bind CTN</dt>
+                        <dd class="text-size--16">--</dd>
+                    </dl>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Use Time</dt>
+                        <dd class="text-size--16">--</dd>
+                    </dl>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Handing ID</dt>
+                        <dd class="text-size--16">--</dd>
+                    </dl>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Operating Staff</dt>
+                        <dd class="text-size--16">--</dd>
+                    </dl>
+                    <dl class="col-md-3 terms-list ">
+                        <dt>Operating Time</dt>
+                        <dd class="text-size--16">2011-01-01 00:00:00</dd>
+                    </dl>
+                </div>
+                <div class="text--right padding-leader--large">
+                    <button class="button button--naked button--small toright--small">Cancel</button>
+                    <button class="button button--action button--small">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Component：TModal---end-->
+</div>
+</body>
+<script>
+    $('table .icon-remove').click(function(e){
+        e.stopPropagation();
+        if(!$('#action-modal-demo-overlay').hasClass('modal-box--is-open')){
+            $('#action-modal-demo-overlay').addClass('modal-box--is-open')
+        }
+    })
+    $('table .icon-pencil ').click(function(e){
+        e.stopPropagation();
+        if(!$('#action-modal-demo-form').hasClass('modal-box--is-open')){
+            $('#action-modal-demo-form').addClass('modal-box--is-open')
+        }
+    })
+    $('.modal-box__content').click(function (e) {
+        e.stopPropagation();
+    });
+    $('.modal-box__close-btn').click(function () {
+        $(".modal-box__overlay").removeClass("modal-box--is-open");
+    });
+    $(document).click(function () {
+        if ($(".modal-box__overlay").hasClass("modal-box--is-open")) {
+            $(".modal-box__overlay").removeClass("modal-box--is-open");
+        }
+    });
+</script>
+</html>
