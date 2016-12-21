@@ -16,6 +16,10 @@ import scrollTo from '../markdown/scroll-to'
 import boxGroup from '../markdown/box-group'
 import autoComplete from '../markdown/autoComplete'
 import rangeSlider from '../markdown/range-slider'
+import datePicker from '../markdown/date-picker'
+import numberStepper from '../markdown/number-stepper'
+import searchFilter from '../markdown/search-filter'
+import select from '../markdown/select'
 import color from '../element/color'
 let taurus = {
   'component': {
@@ -30,7 +34,11 @@ let taurus = {
     'am-charts-bars': amChartsBars,
     'am-charts-doughnut': amChartsDoughnut,
     'am-charts-gauge': amChartsGauge,
-    'am-charts-line': amChartsLine
+    'am-charts-line': amChartsLine,
+    'date-picker': datePicker,
+    'number-stepper': numberStepper,
+    'search-filter': searchFilter,
+    select
   },
   'element': {
     color
