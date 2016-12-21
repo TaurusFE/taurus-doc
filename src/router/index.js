@@ -63,7 +63,15 @@ var pageRouters = [
   {
     name: 'case',
     path: '/case',
-    component: Case
+    component: Case,
+    redirect: () => {
+      return {
+        path: '/case/sitemap',
+        query: {
+          url: 'http://10.19.18.95:48880/Wireframe/sitemap.html'
+        }
+      }
+    }
   }
 ]
 function addChildren (navConfig, type) {

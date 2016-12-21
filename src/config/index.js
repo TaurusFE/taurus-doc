@@ -7,33 +7,31 @@ import amChartsGauge from '../markdown/am-charts-gauge'
 import amChartsLine from '../markdown/am-charts-line'
 import switcher from '../markdown/switcher'
 import table from '../markdown/table'
-import simpleTable from '../markdown/simple-table'
 import cookieHelper from '../markdown/cookie-helper'
 import pager from '../markdown/pager'
 import scrollTo from '../markdown/scroll-to'
 import boxGroup from '../markdown/box-group'
 import autoComplete from '../markdown/autoComplete'
 import rangeSlider from '../markdown/range-slider'
-import datePicker from '../markdown/date-picker'
-import numberStepper from '../markdown/number-stepper'
-import searchFilter from '../markdown/search-filter'
-import select from '../markdown/select'
 import loading from '../markdown/loading'
 // --------------------------------------------------
 import color from '../element/color'
 import typography from '../element/typography'
 
 // -----------------------------------------------
+import sitemap from '../pages/telenor/content.vue'
 import eshop from '../pages/telenor/catalog/eshop.vue'
 import agentView from '../pages/telenor/catalog/av.vue'
 import cm from '../pages/telenor/catalog/cm.vue'
 import rm from '../pages/telenor/catalog/rm.vue'
 
+let deliveryPage = sitemap
+let svnAddress = sitemap
+
 let taurus = {
   'component': {
     switcher,
     table,
-    'simple-table': simpleTable,
     'cookie-helper': cookieHelper,
     pager,
     'scroll-to': scrollTo,
@@ -44,17 +42,16 @@ let taurus = {
     'am-charts-bars': amChartsBars,
     'am-charts-doughnut': amChartsDoughnut,
     'am-charts-gauge': amChartsGauge,
-    'am-charts-line': amChartsLine,
-    'date-picker': datePicker,
-    'number-stepper': numberStepper,
-    'search-filter': searchFilter,
-    select
+    'am-charts-line': amChartsLine
   },
   'element': {
     color,
     typography
   },
   'case': {
+    sitemap,
+    deliveryPage,
+    svnAddress,
     eshop,
     agentView,
     cm,

@@ -291,15 +291,18 @@
       "list": [
         {
           "path": "/sitemap",
-          "title": "SiteMap"
+          "title": "SiteMap",
+          "query": "http://10.19.18.95:48880/Wireframe/sitemap.html"
         },
         {
           "path": "/deliveryPage",
-          "title": "Delivery Page"
+          "title": "Delivery Page",
+          "query": "http://10.19.18.95:48880//Wireframe/delivery_page.html"
         },
         {
           "path": "/svnAddress",
-          "title": "SVN Address"
+          "title": "SVN Address",
+          "query": "http://10.19.18.95:48880/Wireframe/svn_address.html"
         }
       ]
     },
