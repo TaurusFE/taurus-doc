@@ -22,17 +22,30 @@ import loading from '../markdown/loading'
 // --------------------------------------------------
 import color from '../element/color'
 import typography from '../element/typography'
-
-// -----------------------------------------------
-import sitemap from '../pages/telenor/content.vue'
-import eshop from '../pages/telenor/catalog/eshop.vue'
-import agentView from '../pages/telenor/catalog/av.vue'
-import cm from '../pages/telenor/catalog/cm.vue'
-import rm from '../pages/telenor/catalog/rm.vue'
-
-let deliveryPage = sitemap
-let svnAddress = sitemap
-
+import typesetting from '../element/typesetting'
+import layouts from '../element/layouts'
+import iconImages from '../element/icons-images'
+import lists from '../element/lists'
+import input from '../element/input-element'
+import controls from '../element/controls'
+import buttons from '../element/buttons'
+import atomsLoading from '../element/loading'
+import typeHeadings from '../element/molecule-headers'
+import structure from '../element/molecule-structure'
+import feedbackMessages from '../element/molecule-feedback'
+import shop from '../element/molecule-shop'
+import products from '../element/molecule-products'
+import tables from '../element/molecule-tables'
+import tabsWidgets from '../element/molecule-tabs'
+import modalBox from '../element/molecule-modal'
+import upload from '../element/molecule-upload'
+import step from '../element/molecule-step'
+import charts from '../element/organisms-charts'
+import selfare from '../element/organisms-selfcare'
+import globalModules from '../element/organisms-global'
+import menu from '../element/organisms-menu'
+import dataTable from '../element/organisms-data-table'
+import formExamples from '../element/page-form'
 let taurus = {
   'component': {
     switcher,
@@ -56,16 +69,32 @@ let taurus = {
   },
   'element': {
     color,
-    typography
-  },
-  'case': {
-    sitemap,
-    deliveryPage,
-    svnAddress,
-    eshop,
-    agentView,
-    cm,
-    rm
+    typography,
+    typesetting,
+    layouts,
+    iconImages,
+    lists,
+    input,
+    controls,
+    buttons,
+    atomsLoading,
+    typeHeadings,
+    structure,
+    feedbackMessages,
+    shop,
+    products,
+    tables,
+    tabsWidgets,
+    modalBox,
+    upload,
+    step,
+    charts,
+    selfare,
+    globalModules,
+    menu,
+    dataTable,
+    formExamples
+
   }
 }
 export {
