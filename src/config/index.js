@@ -19,7 +19,6 @@ import numberStepper from '../markdown/number-stepper'
 import searchFilter from '../markdown/search-filter'
 import select from '../markdown/select'
 import loading from '../markdown/loading'
-// --------------------------------------------------
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
