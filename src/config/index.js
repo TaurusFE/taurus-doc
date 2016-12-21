@@ -19,6 +19,13 @@ import numberStepper from '../markdown/number-stepper'
 import searchFilter from '../markdown/search-filter'
 import select from '../markdown/select'
 import loading from '../markdown/loading'
+import modal from '../markdown/modal'
+import statusMessage from '../markdown/status-message'
+import tooltip from '../markdown/tooltip'
+import speechBubble from '../markdown/speech-bubble'
+import dropdown from '../markdown/dropdown'
+import tab from '../markdown/tab'
+import breadcrumbs from '../markdown/breadcrumbs'
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
@@ -68,6 +75,13 @@ let taurus = {
     'box-group': boxGroup,
     autoComplete,
     loading,
+    'modal-box': modal,
+    tooltip,
+    tab,
+    breadcrumbs,
+    'drop-down': dropdown,
+    'speech-bubble': speechBubble,
+    'status-message': statusMessage,
     'range-slider': rangeSlider,
     'am-charts-bars': amChartsBars,
     'am-charts-doughnut': amChartsDoughnut,
