@@ -34,30 +34,10 @@
       }
     },
     mounted () {
-      $(window).resize(() => {
-        var dropDown = this.$refs.dropdown
-        var header = this.$refs.header
-        if (header.clientWidth > '1108') { // 当窗口大于1108px时隐藏dropdown
-          $(dropDown).removeAttr('style')
-        }
-      })
+
     },
     methods: {
-      toggle (e) {
-        e.preventDefault()
-        var dropDown = this.$refs.dropdown
-        // 当dropDown没有加display=‘block’样式或者style属性为空时，点击按钮显示下拉菜单，反之隐藏
-        if ($(dropDown).attr('style') !== undefined && $(dropDown).attr('style') !== '') {
-          $(dropDown).slideUp(() => {
-            $(dropDown).removeAttr('style')
-          })
-        } else {
-          $(dropDown).slideDown(() => {
-            console.log($(this))
-            $(dropDown).addClass('block')
-          })
-        }
-      }
+
     }
 
   }

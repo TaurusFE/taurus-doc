@@ -127,8 +127,6 @@ let taurus = {
 
   }
 }
-debugger
-console.log(taurus)
 export {
   taurus
 }

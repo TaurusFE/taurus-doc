@@ -47,7 +47,6 @@
     .meta {
       background-color: #f9fafc;
       border-top: solid 1px #eaeefb;
-      clear: both;
       overflow: hidden;
       height: 0;
       transition: height .2s;
