@@ -56,6 +56,9 @@ import agentView from '../pages/telenor/catalog/av.vue'
 import cm from '../pages/telenor/catalog/cm.vue'
 import rm from '../pages/telenor/catalog/rm.vue'
 import eshop from '../pages/telenor/catalog/eshop.vue'
+
+import developGuide from '../pages/guide/develop-guide.md'
+import developFAQ from '../pages/faq/develop-faq.md'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
@@ -125,6 +128,12 @@ let taurus = {
     dataTable,
     formExamples
 
+  },
+  'guide': {
+    developGuide
+  },
+  'faq': {
+    developFAQ
   }
 }
 debugger
