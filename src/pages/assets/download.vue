@@ -19,7 +19,6 @@
         </div>
       </div>
     </div>
-
     <div class="sgComponentWrapper">
       <div class="container grid-row">
         <div class="sg-content__header col-md-4">
@@ -47,7 +46,7 @@
             <div class="sg-content__markup sg-markdown">
               <p>Preview UI kit with the measurement.</p>
             </div>
-            <a target="_blank" href="/static/file/UI Kit/index.html" class="leader--small button button--default">UI Kit with the measurement</a>
+            <a target="_blank" href="/static/file/UI%20Kit/Verision%202.0.0/index.html" class="leader--small button button--default">UI Kit with the measurement</a>
           </div>
         </div>
       </div>
@@ -63,7 +62,7 @@
             <div class="sg-content__markup sg-markdown">
               <p>Icon Fonts.</p>
             </div>
-            <a href="/static/file/verisIcon.zip" class="leader--small button button--default">verisIcon.zip</a>
+            <a href="/static/file/verisIcon.zip" class="leader--small button button--default">Taurus Icon Fonts.zip</a>
           </div>
         </div>
       </div>
