@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>customer-create-prospect-customer</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/party.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!------------container----------------->
+<div class="container leader--large trailer--large">
+    <!------------ Individual Customer ------------->
+    <div>
+        <header class="padding-trailer--small">
+            <h1 class="text-size--36 text-light">
+                Create Prospect Customer
+            </h1>
+        </header>
+
+        <!-- Create Prospect Customer -->
+        <div class="border gradient-line--with-border">
+            <div class="padding-whole">
+                <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">Create New Customer</h3>
+                <form action="" class="grid-row">
+                    <div class="col-md-4 form-item--multi">
+                        <div class="form-item form-item--small form-item--required">
+                            <label for="">Name</label>
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Given Name"/></div>
+                            <!-- /component:input -->
+                        </div>
+                        <div class="form-item form-item--small form-item--required">
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Family Name"/></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small form-item--required">
+                            <label for="">Contact Media</label>
+                            <!-- component:select -->
+                            <div data-module="form.select" class="form-select form-select--small">
+                                <select id="select4">
+                                    <option value="opt1" selected="">Email</option>
+                                    <option value="opt2">Address</option>
+                                    <option value="opt3">Phone number</option>
+                                </select>
+                                <div class="form-select__field">Email</div>
+                            </div>
+                            <!-- /component:select -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small form-item--required">
+                            <label for="">Phone Number</label>
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Please Enter"/></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                    <div class="text--right padding-leader col-md-12">
+                        <button class="button button--naked button--small toright--small">Cancel</button>
+                        <button class="button button--action button--small">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /Create Prospect Customer -->
+    </div>
+    <!---------- /Individual Customer --------------->
+</div>
+<!------------/container----------------->
+
+</body>
+</html>
