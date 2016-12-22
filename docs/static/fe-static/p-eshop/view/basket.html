@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/telenor.min.css">
+    <script src="../../assets/js/jquery.js" type="text/javascript"></script>
+    <title>Baskets</title>
+</head>
+<body>
+<div class="section--oncanvas" style="padding-bottom: 470px;">
+    <div class="section--wrap">
+        <!--header-->
+        <nav class="menu-wrapper">
+            <!--desktop:menu-->
+            <div class="section mobile-hidden tablet-padding-toleft tablet-padding-toright">
+                <div class="container section--menu">
+                    <a href="index.html" class="link--logo float--left" title="home">
+                        <span class="link--text">Home</span>
+                    </a>
+                    <ul class="menu--main float--left clear">
+                        <li><a href="shop.html" class="active-trail track-element-click">Shop</a></li>
+                        <li><a href="" class="track-element-click">Customer Service</a></li>
+                        <li><a href="" class="track-element-click">My Telenor</a></li>
+                        <li><a href="" class="track-element-click">Find Store</a></li>
+                    </ul>
+                    <div class="section--menu__service">
+                        <div class="menu--service">
+                            <a href="#nogo" class="active-trail">Private</a>
+                            <a href="#nogo">Business</a>
+                        </div>
+                        <div class="menu--user">
+                            <a href="#nogo">Sign in</a>
+                        </div>
+                    </div>
+                    <div class="menu--right float--right">
+                        <div class="menu--right__basket">
+                            <a href="#nogo" class="basket-icon">
+                                <span class="icon-basket"></span>
+                                <span class="product-amount">1</span>
+                            </a>
+                        </div>
+                        <div class="menu--right__search"></div>
+                    </div>
+                </div>
+            </div>
+            <!--subnav menu -->
+            <div class="mobile-hidden menu-subnav-sticky-wrapper">
+                <div class="section section--subnav mobile-hidden tablet-padding-toleft tablet-padding-toright">
+                    <div class="container">
+                        <div><a href="#nogo" class="link--logo float--left"></a></div>
+                        <div>
+                            <ul class="menu--subnav menu--flexnav flexnav--inited">
+                                <li>
+                                    <a href="product-list.html" class="active-trail  track-element-click">Mobiles</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Subscriptions</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Tablets</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Mobile Broadband</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Broadband</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#nogo" class="track-element-click">Family Discont</a>
+                                </li>
+                                <!--  is-open-->
+                                <li class="flexnav"><a class="flexnav__toggler">More</a>
+                                    <ul class="flexnav__subnav">
+                                        <li>
+                                            <a href="#nogo" class="track-element-click">Roam Away</a>
+                                        </li>
+                                        <li>
+                                            <a href="＃nogo" class="track-element-click" >On Sales</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Mobile menu -->
+            <div class="nav-mobile desktop-hidden">
+                <div class="nav-mobile__container">
+                    <a class="logo" href="#nogo" title="home">
+                        <span class="icon--text">Views.Root.Home</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#nogo">
+                                <span class="icon icon-user"></span>
+                                <span class="icon--text">Log ind</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nogo" class="basket-icon">
+                                <span class="icon-basket"></span>
+                                <span class="product-amount">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="mobile-menu" href="#nogo">
+                                <span class="icon--text">Menu</span>
+                                <span class="icon icon-hamburger-menu"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--header-end-->
+        <div class="container--main">
+            <div class="section--content">
+                <section class="container padding-leader--small padding-trailer--xxlarge">
+                    <div class="basket-flow">
+                        <!--该产品仍处于无货状态 message start-->
+                        <div class="message message--error leader trailer">
+                            <div class="message__inner">
+                                <span class="message__icon icon-reject"></span>
+                                <div class="text--small message__text">
+                                    <p>OBS! The following products have unfortunately been sold out: Apple iPhone 6s router your basket is updated with the updated info when you click
+                                        <a href="">OK</a>
+                                    </p>
+                                </div>
+                                <button class="message__close"><span class="icon-remove"></span></button>
+                            </div>
+                        </div>
+                        <!--该产品仍处于无货状态 message end-->
+                        <div class="table--basket">
+                                    <header class="padding-leader--small padding-trailer--small">
+                                        <h1 class="text-size--36 text-light">My Basket</h1>
+                                    </header>
+                                    <div class="table-basket gradient-line--with-border trailer">
+                                        <div class="table-basket__headers">
+                                            <div class="table-basket__row text-size--13">
+                                                <div class="table-basket__cell item"></div>
+                                                <div class="table-basket__cell details"></div>
+                                                <div class="table-basket__cell qty"></div>
+                                                <div class="table-basket__cell period">Monthly</div>
+                                                <div class="table-basket__cell due">Pay Now</div>
+                                            </div>
+                                        </div>
+                                        <div class="table-basket__content">
+                                                <div class="table-basket__row clear">
+                                                    <div class="table-basket__cell item">
+                                                        <!-- : Responsive image element -->
+                                                        <img alt="" src="../../assets/img/Samsung_Galaxy_S7_Black_front.png">
+                                                    </div>
+                                                    <div class="table-basket__cell details">
+                                                        <div class="product">
+                                                            <h3 class="text-size--16 trailer--small text-bold">Apple iPhone 6s</h3>
+                                                            <p>
+                                                                FREE + 40 GB subscription: 249, - / month.
+                                                            </p>
+                                                            <p>
+                                                                Smart Agreement: 180, - / month.
+                                                            </p>
+                                                            <p>
+                                                                Creation: 0, -
+                                                            </p>
+                                                            <p class="trailer--small">
+                                                                <a class="product-link">
+                                                                    Minimum of 6 months. Incl. subscription: 5.814, -
+                                                                </a>
+                                                            </p>
+                                                            <p>
+                                                                Mobile Insurance 89, - / Month.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-basket__cell qty">
+                                                        <a href="" class="icon-remove">
+                                                            <span class="text-size--13">Remove</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="table-basket__cell period ">
+                                                        <p class="table-basket__description text-size--13 color-gray">Monthly</p>
+                                                        <p class="table-basket__price text-size--24 text-light">234,-</p>
+                                                    </div>
+                                                    <div class="table-basket__cell due ">
+                                                        <p class="table-basket__description text-size--13 color-gray">Pay Now</p>
+                                                        <p class="table-basket__price text-size--24 text-light">0,-</p>
+                                                    </div>
+                                                </div>
+                                                <!--model box start-->
+                                                <div class="modal-box__overlay">
+                                                    <div class="modal-box__content padding-whole--none gradient-line">
+                                                        <div class="modal-box__close-btn icon icon-reject"></div>
+                                                        <div class="price-details-popup padding-whole">
+                                                            <div class="sg-component__header">
+                                                                <h2 class="text-size--36 text-light trailer--large">Alt om prisen</h2>
+                                                                <p class="trailer text-size--19">Nedenfor kan du finde alle detaljer om dit abonnement</p>
+                                                                <div class="popup-holder box--greyed border padding-whole text-size--13 trailer--large">
+                                                                <div class="padding-leader--small padding-trailer border--bottom">
+                                                                    <dl>
+                                                                        <dt><strong>FRI+ 40 GB</strong></dt>
+                                                                        <dd>249,-/md.</dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <div class="padding-leader--small padding-trailer border--bottom">
+                                                                    <p><strong>Apple iPhone 7 256GB Black</strong></p>
+                                                                    <dl>
+                                                                        <dt>Samlet pris for Apple iPhone 7 256GB Black</dt>
+                                                                        <dd>7.699,-</dd>
+                                                                        <dt>Rabat med abonnement</dt>
+                                                                        <dd>1.339,-</dd>
+                                                                        <dt>Apple iPhone 7 256GB Black pris efter rabat</dt>
+                                                                        <dd>6.360,-</dd>
+                                                                        <dt>Abonnement i 6 md. (6 x 249,-)
+                                                                        </dt>
+                                                                        <dd>1.494,-</dd>
+                                                                        <dt>Betal nu</dt>
+                                                                        <dd>0,-</dd>
+                                                                        <dt>Betaling pr. md. (6360,-/24 md.)</dt>
+                                                                        <dd>265,-</dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <div class="padding-leader--small padding-trailer border--bottom">
+                                                                    <dl>
+                                                                        <dt><strong>Oprettelse</strong></dt>
+                                                                        <dd>0,-</dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <div class="padding-leader--small padding-trailer border--bottom">
+                                                                    <dl>
+                                                                        <dt><strong>Fragt</strong></dt>
+                                                                        <dd>0,-</dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <div class="padding-leader--small padding-trailer border--bottom">
+                                                                    <dl>
+                                                                        <dt><strong>Mindstepris (6 md.)</strong></dt>
+                                                                        <dd>7.854,-</dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                                <h2 class="text-size--19 padding-trailer--small border--bottom trailer">Mere information</h2>
+                                                                <ul class="columns-two">
+                                                                <li>
+                                                                    <a class="bullet-link">Priser og vilkår</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="bullet-link">Gebyrer på din regning</a>
+                                                                </li>
+                                                            </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--model box end-->
+                                                <!--有Subscription的保险包含在月付费中；裸机包含保险则会另外单列一行裸机保险费用 start-->
+                                                <div class="table-basket__row clear">
+                                                    <div class="table-basket__cell item">
+                                                        <!-- : Responsive image element -->
+                                                    </div>
+                                                    <div class="table-basket__cell details">
+                                                        <div class="product">
+                                                            <h3 class="text-size--16 trailer--small text-bold">mobile Insurance</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-basket__cell qty">
+                                                        <a href="" class="icon icon-remove">
+                                                            <span class="text-size--13">Remove</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="table-basket__cell period ">
+                                                        <p class="table-basket__description text-size--13 color-gray">Monthly</p>
+                                                        <p class="table-basket__price text-size--24 text-light">89,-</p>
+                                                    </div>
+                                                    <div class="table-basket__cell due ">
+                                                        <p class="table-basket__description text-size--13 color-gray">Pay Now</p>
+                                                        <p class="table-basket__price text-size--24 text-light">0,-</p>
+                                                    </div>
+                                                </div>
+                                                <!--有Subscription的保险包含在月付费中；裸机包含保险则会另外单列一行裸机保险费用  end-->
+                                            <div class="table-basket__row clear total-row result-row box--greyed subtotal-table">
+                                                <div class="table-basket__row--content mobile-hidden">
+                                                    <div class="table-basket__cell total text-size--13">
+                                                        <div class="clear">
+                                                            <p class="text-truncate" title="Total">
+                                                                Total
+                                                            </p>
+                                                        </div>
+                                                        <div class="clear">
+                                                            <p class="text-truncate" title="Fragt">
+                                                                Shipping fee
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="clear">
+                                                            <p class="text-truncate" title="Oprettelsesgebyr">
+                                                                Activation fee
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-basket__cell period text-size--13">
+                                                        <p>748,-</p>
+                                                        <p>&nbsp;</p>
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                    <div class="table-basket__cell due text-size--13">
+                                                        <p>0,-</p>
+                                                        <p>0,-</p>
+                                                        <p>0,-</p>
+                                                    </div>
+                                                </div>
+                                                <div class="table-basket__row--content desktop-hidden">
+                                                    <div class="table-basket__cell total text-size--13">
+                                                        <p class="text-truncate" title="Total">
+                                                            Total
+                                                        </p>
+                                                        <p class="text-truncate" title="Fragt">
+                                                            Shipping fee
+                                                        </p>
+                                                    </div>
+                                                    <div class="table-basket__cell due text-size--13">
+                                                        <p>0,-</p>
+                                                        <p>0,-</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-basket__row clear total-row result-row box--greyed">
+                                                <div class="table-basket__row--content mobile-hidden">
+                                                    <div class="table-basket__cell total text-size--19">
+                                                        <div class="clear">
+                                                            <div class="toright toleft icon-questionmark tooltip__trigger">
+                                                            </div>
+                                                            <p class="text-truncate" title="Pris pr. måned">Monthly Fee</p>
+                                                        </div>
+                                                        <div class="clear">
+                                                            <div class="toright toleft icon-questionmark tooltip__trigger">
+                                                            </div>
+                                                            <p class="text-truncate" title="Betales nu"><strong>Pay Now</strong>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-basket__cell period text-size--19">
+                                                        <p>748,-</p>
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                    <div class="table-basket__cell due text-size--19">
+                                                        <p><strong>0,-</strong></p>
+                                                    </div>
+                                                </div>
+                                                <div class="table-basket__row--content desktop-hidden">
+                                                    <div class="table-basket__cell total text-size--13">
+                                                        <p class="text-truncate" title="Monthly Fee">Monthly Fee</p>
+                                                        <p class="text-truncate" title="Pay Now"><strong>Pay Now</strong></p>
+                                                    </div>
+                                                    <div class="table-basket__cell due text-size--19">
+                                                        <p>748,-</p>
+                                                        <p><strong>0,-</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                             <div class="mobile-hidden gradient-line--with-border border trailer">
+                                <div class="infografic-wrapper">
+                                    <div class="header box--greyed padding-whole--med is-expanded">
+                                        <span class="icon icon-list-expand text-size--21 color-gray-light align--middle"></span>
+                                        <h2 class="inline-block">Overview of your next 6 months </h2>
+                                    </div>
+                                    <div class="infografic border--top in is-open" style="display: block;">
+                                        <div class="padding-whole container text--center">
+                                            <div class="border--bottom padding-trailer">
+                                                <div class="grid-row">
+                                                    <div class="col-md-6 border--right mobile-border--without-right padding-whole--small">
+                                                        <p class="text-size--19 trailer--xsmall">Payments - 6 Month Forward</p>
+                                                        <p class="text-price">388,-</p>
+                                                    </div>
+                                                    <div class="col-md-6 padding-whole--small">
+                                                        <p class="text-size--19 trailer--xsmall">Pay Now - Incl.VAT</p>
+                                                        <p class="text-price">200,-</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="padding-toleft padding-toright padding-trailer--large infografic__list">
+                                            <p class="text-size--13">OVERVIEW</p>
+                                            <h4 class="text-size--13 trailer--large">PAYMENTS - 6 MONTHS AHEAD</h4>
+                                            <div class="text--center flex--subscription-container">
+                                                <div class="flex-item empty-item">
+                                                    <div class="row">
+                                                        <div class="text-item text-size--13">Now</div>
+                                                        <ul class="blue-price">
+                                                            <li></li>
+                                                        </ul>
+                                                        <div class="without_price">200,-</div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-item">
+                                                    <div class="row">
+                                                        <div class="text-item text-size--13">
+                                                            <span>1 Month</span>
+                                                        </div>
+                                                        <ul class="blue-price">
+                                                            <li>388,-</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-item">
+                                                    <div class="row">
+                                                        <div class="text-item text-size--13">2 Month</div>
+                                                        <ul class="blue-price">
+                                                            <li>388,-</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-item">
+                                                    <div class="row">
+                                                        <div class="text-item text-size--13">3 Month</div>
+                                                        <ul class="blue-price">
+                                                            <li>388,-</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-item">
+                                                    <div class="row">
+                                                        <div class="text-item text-size--13">4 Month</div>
+                                                        <ul class="blue-price">
+                                                            <li>388,-</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-item">
+                                                    <div class="row">
+                                                        <div class="text-item text-size--13">5 Month</div>
+                                                        <ul class="blue-price">
+                                                            <li>388,-</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-item">
+                                                    <div class="row">
+                                                        <div class="text-item text-size--13">6 Month</div>
+                                                        <ul class="blue-price">
+                                                            <li>388,-</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="text--center text-size--11">The chart is indicative. Your current consumption and Monthly Payments may vary.</p>
+                                        <p class="text--center text-size--11 trailer">The graph applles only to products in the basket</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="basket-footer trailer">
+                                        <div class="clear info-block">
+                                            <div class="text-size--13 float--left leader--xsmall mobile-hidden">
+                                                <p>All prices include VAT. 25% VAT</p>
+                                            </div>
+                                            <div class="float--right stretch-mobile form-item">
+                                                <div class="form-checkbox">
+                                                    <input checked type="checkbox" id="cbs-0" name="cbs-0" value="--some-value--">
+                                                    <label for="cbs-0" class="text--small">
+                                                        I have read and accepted
+                                                        <a class="inline-link">
+                                                            Telenor terms and conditions
+                                                        </a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                             <div class="message message--alert leader trailer">
+                                        <div class="message__inner">
+                                            <span class="message__icon icon icon-notification"></span>
+                                            <div class="text--small message__text">
+                                                <p>Du skal acceptere priser og vilkår for at fortsætte</p>
+                                            </div>
+                                            <button class="message__close"><span class="icon-remove"></span></button>
+                                        </div>
+                                    </div>
+                             <div class="clear">
+                                <div class="container text--right">
+                                    <div class="proceed-allowed">
+                                        <button class="stretch-mobile toleft mobile-toleft--none mobile-trailer button button--default">
+                                            Empty Basket
+                                        </button>
+                                        <button class="stretch-mobile toleft mobile-toleft--none mobile-trailer button button--default">
+                                            Save & Send
+                                        </button>
+                                        <button class="stretch-mobile toleft mobile-toleft--none mobile-trailer button button--default">
+                                            Buy More
+                                        </button>
+                                        <!--默认disabled状态   点击同意协议去掉disabled切换成可点击accept状态-->
+                                        <button id="test-basket" class="stretch-mobile toleft mobile-toleft--none mobile-trailer button button--accept text-truncate">
+                                            <span class="button__label icon--right icon-arrow-next"><span class="button__text">Continue</span></span>
+                                            <span class="button__label--success icon-thumb_up">Saved</span>
+                                            <span class="button__spinner"><span class="spinner-holder"><span class="spinner-container"><em><span></span></em></span></span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="table--basket__shair">
+                                        <!--点击save和send-->
+                                        <div class="clear">
+                                            <!-- : title blue box -->
+                                            <header class="padding-leader--small padding-trailer--small">
+                                                <h1 class="text-size--36 text-light">Do you want to save and send your basket?</h1>
+                                            </header>
+                                            <div class="gradient-line">
+                                                <div class="block--form trailer--large">
+                                                    <div class="mobile-padding-leader">
+                                                        <section class="trailer--large container">
+                                                            <p>If you write your e-mail / phone number here, we send the basket to you. You will receive a link to the basket and can continue when it suits
+                                                                you.</p>
+                                                            <div class="clear">
+                                                                <div class="customer-section trailer">
+                                                                    <div class="grid-row clear padding-leader--none">
+                                                                        <div class="form-item form-item--required col-md-6">
+                                                                            <label for="form-field-simple-label-required">Name</label>
+                                                                            <input id="form-field-simple-label-required" type="text">
+                                                                        </div>
+                                                                        <div class="form-item form-item--required col-md-6">
+                                                                            <label for="form-field-simple-label-required">Mobile number</label>
+                                                                            <input id="form-field-simple-label-required" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="grid-row">
+                                                                        <div class="form-item form-item--required col-md-6">
+                                                                            <label for="form-field-simple-label-required">E-mail</label>
+                                                                            <input id="form-field-simple-label-required" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="text--right">
+                                                                    <a class="button button--link leader collapsed"><span class="button__text color-black-light">Cancel</span></a>
+                                                                    <button class="button button--action trailer--small send leader">
+                                                                        <span class="button__label"><span class="button__text">Send</span></span>
+                                                                        <span class="button__label--success icon--left icon-thumb-up"><span class="button__text">Gemt</span></span>
+                                                                        <span class="button__spinner"><span class="spinner-holder"><span class="spinner-container"><em><span></span></em></span></span></span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--点击save和send end-->
+                                        <!--点击send start-->
+                                        <div class="clear">
+                                            <header class="padding-leader--small padding-trailer--small">
+                                                <h1 class="text-size--36 text-light">Confirm</h1>
+                                            </header>
+                                            <div class="gradient-line">
+                                                <div class="block--form trailer--large">
+                                                    <div class="padding-trailer">
+                                                        <p class="trailer--small">
+                                                            We have now sent your shopping cart ID # <a href="#" class="inline-link"><strong> fc04f4153e15ec62773ecfd22450cfe</strong></a> to your e-mail.The link is active for 14 days..
+                                                        </p>
+                                                        <div>
+                                                            <a class="button button--action" href="#"><span class="button__text">Continue Shopping</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--点击send  end-->
+                                        <!--当用户自己发出link，并且跳转到Telenor购物车界面时，界面会有提醒是否要覆盖产品 start-->
+                                        <div class="clear">
+                                              <header class="padding-leader--small padding-trailer--small">
+                                                <h1 class="text-size--36 text-light">Click Continue and See your Basket</h1>
+                                            </header>
+                                            <div class="gradient-line--with-border border">
+                                                <div class="block--form trailer--small">
+                                                    <div class="padding-whole">
+                                                        <p class="leader--small trailer">
+                                                            Have you put other items in your basket on Telenor.dk than those in the link you received here? Be aware that your current basket will be overwritten by this one if you click Continue.
+                                                        </p>
+                                                        <div class="clear">
+                                                            <div class="proceed-allowed text--left">
+                                                                    <button class="button button--default empty-basket stretch-mobile toright mobile-toright--none mobile-trailer">
+                                                                        Cancel
+                                                                    </button>
+                                                                    <button  class="button button--action stretch-mobile mobile-trailer">
+                                                                        Continue
+                                                                    </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--当用户自己出发link，并且跳转到Telenor购物车界面时，界面会有提醒是否要覆盖产品 end-->
+                             </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="section--help section--negative container--wide">
+                <div class="container text--center">
+                    <p class="section--help__title mobile-hidden">Get an overview on the My Telenor</p>
+                    <p class="section--help__subtitle"><span>Looking for your last bill - or would you switch the payment method? On My Telenor can you manage most. </span><span class="mobile-display--block"></span></p>
+                    <ul class="section--help__buttons">
+                        <li>
+                            <a class="button button--action-dark">
+                                <span class="button__text">My Telenor</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section-->
+    <div id="footer" class="section-footer-scroll" data-component="footer/scroll">
+        <nav class="section section--footer">
+            <div class="container">
+                <div class="grid-row trailer--small mobile-hidden">
+                    <!-- footer:breadbcrumb-->
+                    <div class="col-md-9">
+                        <div class="section--footer__breadcrumb">
+                            <ul>
+                                <li><a href="#nogo">Home</a></li>
+                                <li><a href="#nogo">Shop</a></li>
+                                <li><a href="#nogo">Moblie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 tablet-omega footer__social text--right">
+                        <a href="#nogo" class="icon-facebook track-social">
+                            <span class="icon--text">Facebook</span>
+                        </a>
+                        <a href="#nogo" class="icon-twitter-circle track-social">
+                            <span class="icon--text">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- : Footer Navigation -->
+                <div class="section--footer__menu mobile-hidden">
+                    <div class="flex--row">
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item footer-item">
+                            <h3><a href="#nogo">Om Telenor</a></h3>
+                            <ul class="list list--footer">
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                                <li><a href="#nogo" class="track-element-click">Job hos Telenor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--:section footer info -->
+                <div class="section--footer__info">
+                    <div class="grid-row">
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-hotline circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                Kundeservice har altid åbent
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-one-to-one-loaner-phone circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                1:1 lånemobil
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-truck circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                Fri fragt og ekspreslevering
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 padding-trailer">
+                            <div class="section--footer__info__icon icon-perfect-start circle-outline border-width-1"></div>
+                            <div class="section--footer__info__txt">
+                                Kundeservice har altid åbent
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- section bottom-->
+        <div class="section section--bottom">
+            <div class="container">
+                <div class="desktop-hidden footer__social">
+                    <a href="#nogo" class="icon-facebook"><span class="icon--text">Facebook</span></a>
+                    <a href="#nogo" class="icon-twitter-circle"><span class="icon--text">Twitter</span></a>
+                </div>
+                <div class="section--bottom__holder mobile-text--center">
+                    <div class="leader--xsmall mobile-trailer--small float--right mobile-text--center clearImg">
+                        <div class="float--right toleft--xsmall mobile-toleft--none mobile-trailer--xsmall">
+                            <img src="../../assets/img/paymenticons.png" alt="">
+                        </div>
+                        <div class="float--left">
+                            <img src="../../assets/img/payment-icon2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="float--left">
+                        <div>
+                            <ul class="adr-list">
+                                <li class="icon-telenor section--bottom__logo"></li>
+                                <li>Telenor</li>
+                                <li> · </li>
+                                <li>Frederikskaj 8</li>
+                                <li> · </li>
+                                <li>1780 København V</li>
+                                <li class="mobile-hidden"> · </li>
+                                <li class="mobile-hidden">CVR: 19433692</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end-->
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    //点击跳转到choose number
+    $ ("#test-basket").click (function(){
+        window.location.href="select-number.html";
+    });
+</script>

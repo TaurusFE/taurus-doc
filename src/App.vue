@@ -10,15 +10,17 @@
         </transition>
       </div>
     </div>
+    <template v-if='unhome'>
+      <d-footer></d-footer>
+    </template>
   </div>
 </template>
 
 <script>
 import DHeader from './components/Header/'
 import menuList from './config/main.json'
+import DFooter from './components/Footer/'
 export default {
-  data () {
-  },
   computed: {
     unhome () {
       return this.$route.name !== 'home'
@@ -29,7 +31,7 @@ export default {
     }
   },
   components: {
-    DHeader
+    DHeader, DFooter
   }
 }
 </script>

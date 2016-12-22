@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>customer-view-subscriptions</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/party.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-------------customer-summary-------->
+<div class="section--hero">
+    <div class="party-summary customer-summary">
+        <div class="container">
+            <a href="party-query-information-DK.html" class="text-size--13"><span class="icon-arrow-prev toright--xsmall"></span>Party Search</a>
+            <div class="padding-leader clear">
+                <dl class="party-summary__info">
+                    <dt class="party-summary__avatar">
+                        <span class="icon-person"></span>
+                    </dt>
+                    <dd class="party-summary__detail">
+                        <div>
+                            <span class="text-size--30 text-light">Jack Chen</span>
+                            <sapn class="status-badge status-badge--accept">Active</sapn>
+                        </div>
+                        <div class="party-summary__id">
+                            (110002029689)
+                        </div>
+                    </dd>
+                </dl>
+                <div class="pull-right padding-leader--med">
+                    <button class="button button--small button button--action">
+                        <span class="button__label icon--right icon-arrow-next"><span class="button__text">Party</span></span>
+                    </button>
+                    <button class="button button--small button--default button--white toright">Terminate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------/customer-summary------->
+
+<!------------cm-tab-nav----------------->
+<div class="cm-tab-nav">
+    <div class="container">
+        <!-- component:tab -->
+        <div class="tabpanel">
+            <nav class="trailer">
+                <ul class="tabpanel__list">
+                    <li class="tabpanel__tab">
+                        <a href="#nogo" class="tabpanel__link">Customer View</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">Account</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">Contact Person</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">Preference</a>
+                    </li>
+                    <li class="tabpanel__tab is-active">
+                        <a href="" class="tabpanel__link">User Assignment</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">Timeline</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /component:tab -->
+    </div>
+</div>
+<!-----------/cm-tab-nav----------------->
+
+<!------------container----------------->
+<div class="container leader--large trailer--large">
+    <!---------- customer subscriptions --------------->
+    <div>
+        <header class="padding-trailer--small">
+            <h1 class="text-size--36 text-light">
+                User Assignment
+            </h1>
+        </header>
+        <div class="border gradient-line--with-border">
+            <!-- table operation -->
+            <div class="border--bottom leader padding-trailer--med toleft toright clear">
+                <div class="pull-left">
+                    <button class="button button--small button--default button--white" id="assign-to-user">Assign to User</button>
+                </div>
+            </div>
+            <!-- /table operation -->
+            <div class="padding-whole padding-leader--large padding-trailer--none">
+                <!--Component：TStatusMessage---start-->
+                <div class="message message--success " data-module="message">
+                    <div class="message__inner">
+                        <span class="message__icon icon-check-grey"></span>
+                        <div class="text--small message__text">
+                            <p>Tips:Success Assign User to 12345678</p>
+                        </div>
+                        <button class="message__close" aria-hidden="true"><span class="icon-remove"></span></button>
+                    </div>
+                </div>
+                <!--Component：TStatusMessage---end-->
+            </div>
+            <!--component: table-->
+            <table class="table table--adv" role="grid">
+                <thead>
+                <tr role="row">
+                    <th class="form-checkbox all form-checkbox--single sorting_disabled">
+                        <a class="form-checkbox--result" href="#" data-state="some-selected">
+                            <label></label>
+                        </a>
+                    </th>
+                    <th>Serise Number</th>
+                    <th>Owner</th>
+                    <th>User</th>
+                    <th>Assigned</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr role="row" class="row-selected expanded">
+                    <td class="form-checkbox form-checkbox--single">
+                        <input type="checkbox">
+                        <label></label>
+                    </td>
+                    <td>201612062</td>
+                    <td>Legal Guardian</td>
+                    <td><a href="#">ZhangWx</a></td>
+                    <td>Yes</td>
+                    <td><a href="#nogo" class="icon-pencil"></a></td>
+                </tr>
+                <tr class="drop-row row-selected box--grey" >
+                    <td class="text--center drop-item box--white" colspan="6">
+                        <div class="drop-item-holder">
+                            <!-- edit-->
+                            <div class="edit-row-wrapper">
+                                <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">Assign to a User</h3>
+                                <form action="" class="grid-row">
+                                    <div class="col-md-6 ">
+                                        <div class="form-item--multi">
+                                            <div class="form-item form-item--small form-item--required">
+                                                <label for="">Name</label>
+                                                <!-- component:input -->
+                                                <div><input type="text" placeholder="Given Name"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                            <div class="form-item form-item--small form-item--required">
+                                                <!-- component:input -->
+                                                <div><input type="text" placeholder="Family Name"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-item form-item--small form-item--required">
+                                            <label for="">CPR Number</label>
+                                            <!-- component:search -->
+                                            <div class="form-search is-empty form-item--small" data-module="form.search">
+                                                <input id="search-small" type="search" placeholder="Search">
+                                                <button type="button" tabindex="-1" class="form-search__clear no-js--hidden icon-clear" data-list-clear=""><span class="aria--visible">Clear filter</span></button>
+                                                <button id="search-small-button" class="form-search__submit" tabindex="-1">
+                                                    <span class="icon-search"></span><span class="aria--visible">Search</span>
+                                                </button>
+                                            </div>
+                                            <!-- /component:search -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-item form-item--small form-item--required">
+                                            <label for="">Contact Media</label>
+                                            <!-- component:select -->
+                                            <div data-module="form.select" class="form-select form-select--small">
+                                                <select id="select1">
+                                                    <option value="opt1" selected="">Email</option>
+                                                    <option value="opt2">Address</option>
+                                                    <option value="opt3">Phone</option>
+                                                </select>
+                                                <div class="form-select__field">Email</div>
+                                            </div>
+                                            <!-- /component:select -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-item form-item--small form-item--required">
+                                            <label for="">Email</label>
+                                            <!-- component:input -->
+                                            <div><input type="text" placeholder="Please Enter"/></div>
+                                            <!-- /component:input -->
+                                        </div>
+                                    </div>
+                                    <div class="text--right padding-leader col-md-12">
+                                        <button class="button button--naked button--small toright--small">Cancel</button>
+                                        <button class="button button--action button--small">Assign to a User</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /edit-->
+
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+    </div>
+    <!---------- /customer Subscriptions --------------->
+</div>
+<!------------/container----------------->
+
+<!-------------------Assign a Party as a User modal------------------------------------------>
+<div class="modal-box__overlay" id="assign-modal">
+    <div class="modal-box__content modal-box--size-large modal-box__content--full">
+        <header class="padding-whole padding-toright--huge box--greyed rel border--bottom">
+            <h1 class="text-size--28 text-light mobile-text-size--21 trailer-xsmall">
+                Assign a Party as a User
+            </h1>
+            <div class="modal-box__close-btn icon-reject"></div>
+        </header>
+        <div class="padding-trailer--large padding-whole--small padding-toright padding-toleft">
+            <form action="" class="grid-row">
+                <div class="col-md-6 form-item--multi">
+                    <div class="form-item form-item--small form-item--required">
+                        <label for="">Name</label>
+                        <!-- component:input -->
+                        <div><input type="text" placeholder="Given Name"></div>
+                        <!-- /component:input -->
+                    </div>
+                    <div class="form-item form-item--small form-item--required">
+                        <!-- component:input -->
+                        <div><input type="text" placeholder="Family Name"></div>
+                        <!-- /component:input -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small form-item--required">
+                        <label for="">ID Type</label>
+                        <!-- component:select -->
+                        <div data-module="form.select" class="form-select form-select--small">
+                            <select id="select1">
+                                <option value="opt1" selected="">Single</option>
+                                <option value="opt2">Item one</option>
+                                <option value="opt3">Item two</option>
+                                <option value="opt3">Item three</option>
+                                <option value="opt3">Item four</option>
+                            </select>
+                            <div class="form-select__field">Single</div>
+                        </div>
+                        <!-- /component:select -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small form-item--required">
+                        <label for="">ID Number</label>
+                        <!-- component:input -->
+                        <div><input type="text" placeholder="Please Enter"/></div>
+                        <!-- /component:input -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small form-item--required">
+                        <label for="">Contact Media</label>
+                        <!-- component:select -->
+                        <div data-module="form.select" class="form-select form-select--small">
+                            <select id="select1">
+                                <option value="opt1" selected="">Email</option>
+                                <option value="opt2">Address</option>
+                                <option value="opt3">Phone</option>
+                            </select>
+                            <div class="form-select__field">Email</div>
+                        </div>
+                        <!-- /component:select -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small form-item--required">
+                        <label for="">Contact info</label>
+                        <!-- component:input -->
+                        <div><input type="text" placeholder="Please Enter"/></div>
+                        <!-- /component:input -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small">
+                        <label>Birth Date</label>
+                        <div class="grid-row grid-row--gutter-none">
+                            <div class="col-md-4">
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">1990</option>
+                                        <option value="opt2">1991</option>
+                                        <option value="opt3">1992</option>
+                                    </select>
+                                    <div class="form-select__field">1990</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                            <div class="col-md-4 padding-toleft--small">
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">01</option>
+                                        <option value="opt2">02</option>
+                                        <option value="opt3">03</option>
+                                    </select>
+                                    <div class="form-select__field">01</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                            <div class="col-md-4 padding-toleft--small">
+                                <!-- component:select -->
+                                <div data-module="form.select" class="form-select form-select--small">
+                                    <select id="select1">
+                                        <option value="opt1" selected="">22</option>
+                                        <option value="opt2">23</option>
+                                        <option value="opt3">24</option>
+                                    </select>
+                                    <div class="form-select__field">22</div>
+                                </div>
+                                <!-- /component:select -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small">
+                        <label for="">Birth Place</label>
+                        <!-- component:input -->
+                        <div><input id="FamilyName" type="text" placeholder="Family Name"></div>
+                        <!-- /component:input -->
+                    </div>
+                </div>
+                <div class="col-md-6 form-item--multi">
+                    <div class="form-item form-item--small form-item--required">
+                        <label for="">Mother 's Name</label>
+                        <!-- component:input -->
+                        <div><input type="text" placeholder="Given Name"></div>
+                        <!-- /component:input -->
+                    </div>
+                    <div class="form-item form-item--small form-item--required">
+                        <!-- component:input -->
+                        <div><input type="text" placeholder="Family Name"></div>
+                        <!-- /component:input -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-item form-item--small form-item--required">
+                        <label for="">Citizenship</label>
+                        <!-- component:input -->
+                        <div><input  type="text" placeholder="Please Enter"></div>
+                        <!-- /component:input -->
+                    </div>
+                </div>
+                <div class="text--right padding-leader--large col-md-12">
+                    <button class="button button--naked button--small toright--small">Cancel</button>
+                    <button class="button button--action button--small">Assign</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-------------------/Assign a Party as a User modal------------------------------------------>
+</body>
+
+<script type="text/javascript" src="../../p-eshop/assets/js/jquery.js"></script>
+<script>
+    $("#assign-to-user").click(function(){
+        $("#assign-modal").addClass("modal-box--is-open");
+    })
+
+    $("#assign-modal .modal-box__close-btn").click(function(){
+        $("#assign-modal").removeClass("modal-box--is-open");
+    })
+</script>
+</html>

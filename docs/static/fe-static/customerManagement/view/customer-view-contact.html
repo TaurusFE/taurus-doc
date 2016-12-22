@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>customer-view-subscriptions</title>
+    <link href="../../p-eshop/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/party.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-------------customer-summary-------->
+<div class="section--hero">
+    <div class="party-summary customer-summary">
+        <div class="container">
+            <a href="party-query-information-DK.html" class="text-size--13"><span class="icon-arrow-prev toright--xsmall"></span>Party Search</a>
+            <div class="padding-leader clear">
+                <dl class="party-summary__info">
+                    <dt class="party-summary__avatar">
+                        <span class="icon-person"></span>
+                    </dt>
+                    <dd class="party-summary__detail">
+                        <div>
+                            <span class="text-size--30 text-light">Jack Chen</span>
+                            <sapn class="status-badge status-badge--accept">Active</sapn>
+                        </div>
+                        <div class="party-summary__id">
+                            (110002029689)
+                        </div>
+                    </dd>
+                </dl>
+                <div class="pull-right padding-leader--med">
+                    <button class="button button--small button button--action">
+                        <span class="button__label icon--right icon-arrow-next"><span class="button__text">Party</span></span>
+                    </button>
+                    <button class="button button--small button--default button--white toright">Terminate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------/customer-summary------->
+
+<!------------cm-tab-nav----------------->
+<div class="cm-tab-nav">
+    <div class="container">
+        <!-- component:tab -->
+        <div class="tabpanel">
+            <nav class="trailer">
+                <ul class="tabpanel__list">
+                    <li class="tabpanel__tab">
+                        <a href="#nogo" class="tabpanel__link">Customer View</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">Account</a>
+                    </li>
+                    <li class="tabpanel__tab is-active">
+                        <a href="" class="tabpanel__link">Contact Person</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">Preference</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">User Assignment</a>
+                    </li>
+                    <li class="tabpanel__tab">
+                        <a href="" class="tabpanel__link">Timeline</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /component:tab -->
+    </div>
+</div>
+<!-----------/cm-tab-nav----------------->
+
+<!------------container----------------->
+<div class="container leader--large trailer--large">
+    <!------------ Contact Person ------------->
+    <div>
+        <header class="padding-trailer--small">
+            <h1 class="text-size--36 text-light">
+                Contact Person
+                <div class="pull-right leader--xsmall">
+                    <button class="button button--action button--small">Add</button>
+                </div>
+            </h1>
+
+        </header>
+
+        <!-- add a new row -->
+        <div class="border gradient-line--with-border trailer">
+            <div class="padding-whole">
+                <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">New Contact Person</h3>
+                <div action="" class="grid-row">
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">Role</label>
+                            <!-- component:select -->
+                            <div data-module="form.select" class="form-select form-select--small">
+                                <select id="select4">
+                                    <option value="opt1" selected="">Legal Guardian</option>
+                                    <option value="opt2">CTN contact</option>
+                                    <option value="opt3">Customer</option>
+                                    <option value="opt4">Contact Person</option>
+                                </select>
+                                <div class="form-select__field">Legal Guardian</div>
+                            </div>
+                            <!-- /component:select -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item--multi">
+                            <div class="form-item form-item--small">
+                                <label for="GivenName">Name</label>
+                                <!-- component:input -->
+                                <div><input id="GivenName" type="text" placeholder="Given Name"></div>
+                                <!-- /component:input -->
+                            </div>
+                            <div class="form-item form-item--small">
+                                <!-- component:input -->
+                                <div><input id="FamilyName" type="text" placeholder="Family Name"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">ID Type</label>
+                            <!-- component:select -->
+                            <div data-module="form.select" class="form-select form-select--small">
+                                <select id="select4">
+                                    <option value="opt1" selected="">old personal card</option>
+                                    <option value="opt2">new personal card</option>
+                                    <option value="opt3">Driving licence</option>
+                                    <option value="opt4">Passport number</option>
+                                    <option value="opt5">Foreign passport number</option>
+                                    <option value="opt6">Foreign personal id</option>
+                                    <option value="opt7">Foreign driving licence</option>
+                                </select>
+                                <div class="form-select__field">old personal card</div>
+                            </div>
+                            <!-- /component:select -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">ID Number</label>
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Please Enter"/></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">Media Type</label>
+                            <!-- component:select -->
+                            <div data-module="form.select" class="form-select form-select--small">
+                                <select id="select4">
+                                    <option value="opt1" selected="">E-mail</option>
+                                    <option value="opt2">SMS</option>
+                                    <option value="opt3">Letter</option>
+                                </select>
+                                <div class="form-select__field">E-mail</div>
+                            </div>
+                            <!-- /component:select -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">Media Info</label>
+                            <!-- component:input -->
+                            <div><input type="text" placeholder="Please Enter"/></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                </div>
+                <!-- when Role is Legal Delegate show -->
+                <div class="grid-row">
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">Gender</label>
+                            <!-- component:select -->
+                            <div data-module="form.select" class="form-select form-select--small">
+                                <select id="select4">
+                                    <option value="opt1" selected="">All</option>
+                                    <option value="opt2">Private</option>
+                                    <option value="opt3">Business</option>
+                                </select>
+                                <div class="form-select__field">All</div>
+                            </div>
+                            <!-- /component:select -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item--multi">
+                            <div class="form-item form-item--small">
+                                <label for="GivenName">Mother's Name</label>
+                                <!-- component:input -->
+                                <div><input id="GivenName" type="text" placeholder="Given Name"></div>
+                                <!-- /component:input -->
+                            </div>
+                            <div class="form-item form-item--small">
+                                <!-- component:input -->
+                                <div><input id="FamilyName" type="text" placeholder="Family Name"></div>
+                                <!-- /component:input -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">Citizenship</label>
+                            <!-- component:input -->
+                            <div><input id="" type="text" placeholder="Please Enter"></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label>Birth Date</label>
+                            <div class="grid-row grid-row--gutter-none">
+                                <div class="col-md-4">
+                                    <!-- component:select -->
+                                    <div data-module="form.select" class="form-select form-select--small">
+                                        <select id="select1">
+                                            <option value="opt1" selected="">1990</option>
+                                            <option value="opt2">1991</option>
+                                            <option value="opt3">1992</option>
+                                        </select>
+                                        <div class="form-select__field">1990</div>
+                                    </div>
+                                    <!-- /component:select -->
+                                </div>
+                                <div class="col-md-4 padding-toleft--small">
+                                    <!-- component:select -->
+                                    <div data-module="form.select" class="form-select form-select--small">
+                                        <select id="select1">
+                                            <option value="opt1" selected="">01</option>
+                                            <option value="opt2">02</option>
+                                            <option value="opt3">03</option>
+                                        </select>
+                                        <div class="form-select__field">01</div>
+                                    </div>
+                                    <!-- /component:select -->
+                                </div>
+                                <div class="col-md-4 padding-toleft--small">
+                                    <!-- component:select -->
+                                    <div data-module="form.select" class="form-select form-select--small">
+                                        <select id="select1">
+                                            <option value="opt1" selected="">22</option>
+                                            <option value="opt2">23</option>
+                                            <option value="opt3">24</option>
+                                        </select>
+                                        <div class="form-select__field">22</div>
+                                    </div>
+                                    <!-- /component:select -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-item form-item--small">
+                            <label for="">Birth Place</label>
+                            <!-- component:input -->
+                            <div><input id="" type="text" placeholder="Please Enter"></div>
+                            <!-- /component:input -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /when Role is Legal Delegate show -->
+                <div class="grid-row">
+                    <div class="text--right padding-leader col-md-12">
+                        <button class="button button--naked button--small toright--small">Cancel</button>
+                        <button class="button button--action button--small">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /add a new row -->
+        <div class="border gradient-line--with-border">
+            <div class="padding-whole padding-leader--large padding-trailer--none">
+                <!--Component：TStatusMessage---start-->
+                <div class="message message--success " data-module="message">
+                    <div class="message__inner">
+                        <span class="message__icon icon-check-grey"></span>
+                        <div class="text--small message__text">
+                            <p>Tips: Contact Person Create Success .</p>
+                        </div>
+                        <button class="message__close" aria-hidden="true"><span class="icon-remove"></span></button>
+                    </div>
+                </div>
+                <!--Component：TStatusMessage---end-->
+            </div>
+            <!---component: table-->
+            <table class="table table--adv">
+                <thead>
+                <tr>
+                    <th>Contact Role</th>
+                    <th>Full Name</th>
+                    <th>Contact Media</th>
+                    <th>Contact Info</th>
+                    <th>ID Type</th>
+                    <th>ID Number</th>
+                    <th>Updated Date</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="row-selected expanded">
+                    <td>Legal Guardian</td>
+                    <td>ZhangWx</td>
+                    <td>Email</td>
+                    <td>Zhangwx@asiainfo.com</td>
+                    <td>shenfenzheng</td>
+                    <td>43010512341234</td>
+                    <td>29.08, 2016 10:03</td>
+                    <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                </tr>
+                <tr class="drop-row row-selected box--grey" >
+                    <td class="text--center drop-item box--white" colspan="8">
+                        <div class="drop-item-holder">
+                            <!-- Edit data row -->
+                            <div class="edit-row-wrapper">
+                                <h3 class="text-size--19 padding-trailer--xsmall border--bottom traile">Edit Contact Person</h3>
+                                <div action="" class="grid-row">
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">Role</label>
+                                            <!-- component:select -->
+                                            <div data-module="form.select" class="form-select form-select--small">
+                                                <select id="select4">
+                                                    <option value="opt1" selected="">Legal Guardian</option>
+                                                    <option value="opt2">CTN contact</option>
+                                                    <option value="opt3">Customer</option>
+                                                    <option value="opt4">Contact Person</option>
+                                                </select>
+                                                <div class="form-select__field">Legal Guardian</div>
+                                            </div>
+                                            <!-- /component:select -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item--multi">
+                                            <div class="form-item form-item--small">
+                                                <label for="GivenName">Name</label>
+                                                <!-- component:input -->
+                                                <div><input id="GivenName" type="text" placeholder="Given Name"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                            <div class="form-item form-item--small">
+                                                <!-- component:input -->
+                                                <div><input id="FamilyName" type="text" placeholder="Family Name"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">ID Type</label>
+                                            <!-- component:select -->
+                                            <div data-module="form.select" class="form-select form-select--small">
+                                                <select id="select4">
+                                                    <option value="opt1" selected="">old personal card</option>
+                                                    <option value="opt2">new personal card</option>
+                                                    <option value="opt3">Driving licence</option>
+                                                    <option value="opt4">Passport number</option>
+                                                    <option value="opt5">Foreign passport number</option>
+                                                    <option value="opt6">Foreign personal id</option>
+                                                    <option value="opt7">Foreign driving licence</option>
+                                                </select>
+                                                <div class="form-select__field">old personal card</div>
+                                            </div>
+                                            <!-- /component:select -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">ID Number</label>
+                                            <!-- component:input -->
+                                            <div><input type="text" placeholder="Please Enter"/></div>
+                                            <!-- /component:input -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">Media Type</label>
+                                            <!-- component:select -->
+                                            <div data-module="form.select" class="form-select form-select--small">
+                                                <select id="select4">
+                                                    <option value="opt1" selected="">E-mail</option>
+                                                    <option value="opt2">SMS</option>
+                                                    <option value="opt3">Letter</option>
+                                                </select>
+                                                <div class="form-select__field">E-mail</div>
+                                            </div>
+                                            <!-- /component:select -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">Media Info</label>
+                                            <!-- component:input -->
+                                            <div><input type="text" placeholder="Please Enter"/></div>
+                                            <!-- /component:input -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- when Role is Legal Delegate show -->
+                                <div class="grid-row">
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">Gender</label>
+                                            <!-- component:select -->
+                                            <div data-module="form.select" class="form-select form-select--small">
+                                                <select id="select4">
+                                                    <option value="opt1" selected="">All</option>
+                                                    <option value="opt2">Private</option>
+                                                    <option value="opt3">Business</option>
+                                                </select>
+                                                <div class="form-select__field">All</div>
+                                            </div>
+                                            <!-- /component:select -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item--multi">
+                                            <div class="form-item form-item--small">
+                                                <label for="GivenName">Mother's Name</label>
+                                                <!-- component:input -->
+                                                <div><input id="GivenName" type="text" placeholder="Given Name"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                            <div class="form-item form-item--small">
+                                                <!-- component:input -->
+                                                <div><input id="FamilyName" type="text" placeholder="Family Name"></div>
+                                                <!-- /component:input -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">Citizenship</label>
+                                            <!-- component:input -->
+                                            <div><input id="" type="text" placeholder="Please Enter"></div>
+                                            <!-- /component:input -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label>Birth Date</label>
+                                            <div class="grid-row grid-row--gutter-none">
+                                                <div class="col-md-4">
+                                                    <!-- component:select -->
+                                                    <div data-module="form.select" class="form-select form-select--small">
+                                                        <select id="select1">
+                                                            <option value="opt1" selected="">1990</option>
+                                                            <option value="opt2">1991</option>
+                                                            <option value="opt3">1992</option>
+                                                        </select>
+                                                        <div class="form-select__field">1990</div>
+                                                    </div>
+                                                    <!-- /component:select -->
+                                                </div>
+                                                <div class="col-md-4 padding-toleft--small">
+                                                    <!-- component:select -->
+                                                    <div data-module="form.select" class="form-select form-select--small">
+                                                        <select id="select1">
+                                                            <option value="opt1" selected="">01</option>
+                                                            <option value="opt2">02</option>
+                                                            <option value="opt3">03</option>
+                                                        </select>
+                                                        <div class="form-select__field">01</div>
+                                                    </div>
+                                                    <!-- /component:select -->
+                                                </div>
+                                                <div class="col-md-4 padding-toleft--small">
+                                                    <!-- component:select -->
+                                                    <div data-module="form.select" class="form-select form-select--small">
+                                                        <select id="select1">
+                                                            <option value="opt1" selected="">22</option>
+                                                            <option value="opt2">23</option>
+                                                            <option value="opt3">24</option>
+                                                        </select>
+                                                        <div class="form-select__field">22</div>
+                                                    </div>
+                                                    <!-- /component:select -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-item form-item--small">
+                                            <label for="">Birth Place</label>
+                                            <!-- component:input -->
+                                            <div><input id="" type="text" placeholder="Please Enter"></div>
+                                            <!-- /component:input -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /when Role is Legal Delegate show -->
+                                <div class="grid-row">
+                                    <div class="text--right padding-leader col-md-12">
+                                        <button class="button button--naked button--small toright--small">Cancel</button>
+                                        <button class="button button--action button--small">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Edit data row -->
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Legal Guardian</td>
+                    <td>ZhangWx</td>
+                    <td>Email</td>
+                    <td>Zhangwx@asiainfo.com</td>
+                    <td>shenfenzheng</td>
+                    <td>43010512341234</td>
+                    <td>29.08, 2016 10:03</td>
+                    <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                </tr>
+                <tr>
+                    <td>Legal Guardian</td>
+                    <td>ZhangWx</td>
+                    <td>Email</td>
+                    <td>Zhangwx@asiainfo.com</td>
+                    <td>shenfenzheng</td>
+                    <td>43010512341234</td>
+                    <td>29.08, 2016 10:03</td>
+                    <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                </tr>
+                <tr>
+                    <td>Legal Guardian</td>
+                    <td>ZhangWx</td>
+                    <td>Email</td>
+                    <td>Zhangwx@asiainfo.com</td>
+                    <td>shenfenzheng</td>
+                    <td>43010512341234</td>
+                    <td>29.08, 2016 10:03</td>
+                    <td><a href="#nogo" class="icon-pencil "></a><a href="#nogo" class="icon-remove toleft"></a></td>
+                </tr>
+                </tbody>
+            </table>
+            <!---/component: table-->
+            <div class="padding-whole mobile-hidden">
+                <!--component:select menu-->
+                <div data-component="select" data-alias="lengthMenu"
+                     class="form-select form-select--length form-item--inline form-select--small">
+                    <select name="length">
+                        <option value="10" selected="selected">Vis 10</option>
+                        <option value="50">Vis 50</option>
+                        <option value="100">Vis 100</option>
+                        <option value="500">Vis 500</option>
+                    </select>
+
+                    <div class="form-select__field">Vis 10</div>
+                </div>
+                <!--/component:select menu-->
+                <!-- component: pager -->
+                <div class="pager pager--default pull-right" data-component="pager" data-alias="pagination">
+                    <a class="pager__button previous" data-selector="page-previous">previous</a>
+                        <span data-selector="pages">
+                            <a class="pager__button" data-selector="page-button" data-page-number="1">1</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="2">2</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="3">3</a>
+                            <a class="pager__button current" data-selector="page-button" data-page-number="4">4</a>
+                            <a class="pager__button" data-selector="page-button" data-page-number="5">5</a>
+                            <span class="pager__elipsis">…</span>
+                            <a class="pager__button" data-selector="page-button" data-page-number="24">24</a>
+                        </span>
+                    <a class="pager__button next" data-selector="page-next">next</a>
+                </div>
+                <!-- /component: pager -->
+            </div>
+        </div>
+    </div>
+    <!---------- /Contact Person --------------->
+</div>
+<!------------/container----------------->
+
+</body>
+</html>
