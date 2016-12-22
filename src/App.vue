@@ -27,7 +27,7 @@ export default {
     },
     list () {
       let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
-      this.base =base
+      this.base = base
       return menuList[base]
     }
   },
