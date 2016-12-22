@@ -8,7 +8,7 @@ export default {
   data () {
     return  {
       rangeOptions: {
-      isDrag: false,
+      isDrag: true,
       rangeLabel: 'Months',
       min: 0,
       max: 6,
