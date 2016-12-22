@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Global</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Global</div>
     </div>
     <div class="doc-compontent-box" id="page-title">
       <div class="sg-component">

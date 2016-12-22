@@ -425,10 +425,10 @@
 .icon-message:before {
   content: "\E071"; }
 
-.icon-messages:before {
+.icon-message_question:before {
   content: "\E072"; }
 
-.icon-message_question:before {
+.icon-messages:before {
   content: "\E073"; }
 
 .icon-meter:before {

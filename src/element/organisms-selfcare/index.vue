@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Selfcare</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Selfcare</div>
     </div>
     <div class="doc-compontent-box" id="self-care-history-timeline-filter">
       <div class="sg-component">

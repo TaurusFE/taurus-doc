@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Atom inputs</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Atom inputs</div>
     </div>
     <div id="formFields" class="doc-compontent-box">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Form fields</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Form fields</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -122,8 +122,8 @@
     </div>
     <div class="doc-compontent-box" id="searchFields">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Search fields</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Search fields</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -248,8 +248,8 @@
     </div>
     <div id="select" class="doc-compontent-box">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Select</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Select</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -337,8 +337,8 @@
     </div>
     <div class="doc-compontent-box" id="numberStepper">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Number stepper</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Number stepper</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -452,8 +452,8 @@
     <div class="doc-compontent-box" id="checkboxes">
       <!-- checkbox-component-start-->
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Checkboxes</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Checkboxes</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -625,8 +625,8 @@
     <div class="doc-compontent-box" id="radio-buttons">
       <!-- Radio buttons start-->
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Radio buttons</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Radio buttons</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">

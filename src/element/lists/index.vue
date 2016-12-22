@@ -1,14 +1,14 @@
 <template>
   <div>
     <!-- Page header -->
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">lists</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">lists</div>
     </div>
 
     <div id="unordered-lists" class="doc-compontent-box">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Unordered lists</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Unordered lists</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -119,8 +119,8 @@
     </div>
     <div id="ordered-lists" class="doc-compontent-box">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Ordered lists</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Ordered lists</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -231,8 +231,8 @@
       </div>
     </div>
     <div id="check-list" class="doc-compontent-box sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">Check list</h2>
+      <div class="leader--large trailer">
+        <h3 class="doc-text-size--24">Check list</h3>
       </div>
       <div class="sg-component__status">
       </div>

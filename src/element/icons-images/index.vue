@@ -1,17 +1,17 @@
 <template>
   <div>
     <!-- Page header -->
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Atom icons</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Atom icons</div>
     </div>
     <!-- SG Components -->
     <div id="sgComponentWrapper">
       <div id="icons" class="doc-compontent-box">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Icons</h3>
+        </div>
         <div class="sg-content container grid-row grid-row--gutter-none">
-          <div class="col-md-4">
-            <h2 class="title--medium-small">Icons</h2>
-          </div>
-          <div class="col-md-8">
+          <div class="col-md-12">
             <div class="sg-component__status">
             </div>
             <div class="sg-content__markup sg-markdown">
@@ -33,13 +33,11 @@
         </div>
       </div>
       <div id="iconsCircle" class="doc-compontent-box">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Icons With Circle</h3>
+        </div>
         <div class="sg-content container grid-row grid-row--gutter-none">
-          <div class="col-md-4">
-            <h2 class="title--medium-small">Icons With Circle</h2>
-          </div>
-          <div class="col-md-8">
-            <div class="sg-component__status col-md-12">
-            </div>
+          <div class="col-md-12">
             <div class="sg-content__markup sg-markdown">
               <div class="sg-icons-list float-left">
                 <!--<div class="sg-icons-list__item">
@@ -97,10 +95,9 @@
       </div>
       <div id="responsive-image" class="doc-compontent-box">
         <div class="sg-component">
-          <div class="sg-component__header">
-            <h2 class="title--medium-small trailer--small">Responsive Image</h2>
+          <div class="leader--large trailer">
+            <h3 class="doc-text-size--24">Responsive Image</h3>
           </div>
-          <div class="sg-component__status col-xs-12"></div>
           <div class="sg-component__markup">
             <!-- : Responsive image element -->
             <span data-picture="" data-alt="The worlds most hyped smart phone.">

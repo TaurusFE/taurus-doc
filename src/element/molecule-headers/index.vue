@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Molecule headers</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Molecule headers</div>
     </div>
     <div id="content-headers" class="doc-compontent-box">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Content headers</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Content headers</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -139,8 +139,8 @@
 
     <div class="doc-compontent-box" id="displayType">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Display type</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Display type</h3>
         </div>
         <div class="sg-component__status">
         </div>

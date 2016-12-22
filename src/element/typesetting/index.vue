@@ -1,14 +1,14 @@
 <template>
   <div>
     <!-- Page header -->
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Typesetting</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Typesetting</div>
     </div>
     <!-- SG Components -->
     <div id="float" class="doc-compontent-box">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Float</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Float</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -32,10 +32,8 @@
     <!-- SG Components -->
     <div id="margin" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Margin</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Margin</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Margin -start-->
@@ -149,10 +147,8 @@
     <!-- SG Components -->
     <div id="padding" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Padding</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Padding</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Padding -start-->
@@ -265,13 +261,11 @@
 
     <!-- SG Components -->
     <div id="box" class="doc-compontent-box">
-      <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Box</h2>
+      <div class="sg-content">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Box</h3>
         </div>
-        <div class="sg-component__status">
-        </div>
-        <div class="sg-component__markup">
+        <div class="sg-content__markup">
           <div class="demo_content">
             <!-- atoms:Box -start-->
             <div class="sg-component__label ">default box</div>
@@ -286,13 +280,11 @@
 
     <!-- SG Components -->
     <div id="box-shadow" class="doc-compontent-box">
-      <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Box shadow</h2>
+      <div class="sg-content">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Box shadow</h3>
         </div>
-        <div class="sg-component__status">
-        </div>
-        <div class="sg-component__markup">
+        <div class="sg-content__markup">
           <div class="demo_content">
             <!-- atoms:Box shadow-start-->
             <div class="sg-component__label ">left box-shadow</div>
@@ -310,13 +302,11 @@
     </div>
 
     <div id="border" class="doc-compontent-box">
-      <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Border</h2>
+      <div class="sg-content">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Border</h3>
         </div>
-        <div class="sg-component__status">
-        </div>
-        <div class="sg-component__markup">
+        <div class="sg-content__markup">
           <div class="demo_content">
             <!-- atoms:Border -start-->
             <div class="sg-component__label ">top</div>
@@ -338,12 +328,11 @@
         </div>
       </div>
     </div>
+
     <div id="width-hight" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Width/hight</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Width/hight</h3>
         </div>
         <div class="sg-content__markup">
           <table class="table table--all-lines">
@@ -368,14 +357,11 @@
       </div>
     </div>
 
-
     <!-- SG Components -->
     <div id="block-inline" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Block/inline</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Block/inline</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Block/inline-start-->
@@ -405,13 +391,12 @@
         </div>
       </div>
     </div>
+
     <!-- SG Components -->
     <div id="visible-hidden" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Visible/Hidden</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Visible/Hidden</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Visible/Hidden-start-->

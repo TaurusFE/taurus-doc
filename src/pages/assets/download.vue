@@ -1,7 +1,7 @@
 <template>
   <div class="section--block container">
-    <div class="block__header  trailer--large">
-      <h2 class="title--medium">Download assets</h2>
+    <div class="leader--large trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Download assets</div>
     </div>
     <div class="sgComponentWrapper">
       <div class="container grid-row">
