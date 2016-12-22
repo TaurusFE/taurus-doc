@@ -35,6 +35,7 @@ p {
 .doc-container {
   width: 1140px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .doc-title {
   display: none;
