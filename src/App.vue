@@ -10,11 +10,15 @@
         </transition>
       </div>
     </div>
+    <template v-if='unhome'>
+      <d-footer></d-footer>
+    </template>
   </div>
 </template>
 
 <script>
 import DHeader from './components/Header/'
+import DFooter from './components/Footer/'
 export default {
   computed: {
     unhome () {
@@ -22,7 +26,7 @@ export default {
     }
   },
   components: {
-    DHeader
+    DHeader, DFooter
   }
 }
 </script>
