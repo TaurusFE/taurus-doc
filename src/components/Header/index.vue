@@ -12,16 +12,16 @@
       <div class="doc-title">component</div>
       <ul class="doc-header-nav">
         <li>
-          <router-link active-class="active" to='/design'><span>Design</span></router-link>
+          <router-link  to='/design'><span>Design</span></router-link>
         </li>
-        <li><router-link active-class="active" to='/guide' ><span>Guide</span></router-link></li>
-        <li><router-link active-class="active" to='/element'><span>Element</span></router-link></li>
+        <li><router-link  to='/guide' ><span>Guide</span></router-link></li>
+        <li><router-link  to='/element'><span>Element</span></router-link></li>
         <li>
-          <router-link active-class="active" to='/component' ><span>Component</span></router-link>
+          <router-link  to='/component' ><span>Component</span></router-link>
         </li>
-        <li><router-link active-class="active" to='/assets'><span>Assets</span></router-link></li>
-        <li><router-link active-class="active" to='/case'><span>Telenor</span></router-link></li>
-        <li><router-link active-class="active" to='/faq' ><span>FAQ</span></router-link></li>
+        <li><router-link  to='/assets'><span>Assets</span></router-link></li>
+        <li><router-link  to='/case'><span>Telenor</span></router-link></li>
+        <li><router-link  to='/faq' ><span>FAQ</span></router-link></li>
       </ul>
   </header>
   </div>
@@ -34,30 +34,10 @@
       }
     },
     mounted () {
-      $(window).resize(() => {
-        var dropDown = this.$refs.dropdown
-        var header = this.$refs.header
-        if (header.clientWidth > '1108') { // 当窗口大于1108px时隐藏dropdown
-          $(dropDown).removeAttr('style')
-        }
-      })
+
     },
     methods: {
-      toggle (e) {
-        e.preventDefault()
-        var dropDown = this.$refs.dropdown
-        // 当dropDown没有加display=‘block’样式或者style属性为空时，点击按钮显示下拉菜单，反之隐藏
-        if ($(dropDown).attr('style') !== undefined && $(dropDown).attr('style') !== '') {
-          $(dropDown).slideUp(() => {
-            $(dropDown).removeAttr('style')
-          })
-        } else {
-          $(dropDown).slideDown(() => {
-            console.log($(this))
-            $(dropDown).addClass('block')
-          })
-        }
-      }
+
     }
 
   }

@@ -334,5 +334,23 @@
         "title": "Workflow"
       }
     ]
+  }],
+  "guide": [{
+    "list": [{
+      "path": "/developGuide",
+      "title": "Develop Guide"
+    },
+      {
+        "path": "/design",
+        "title": "Design"
+      }
+    ]
+  }],
+  "faq": [{
+    "list": [{
+      "path": "/developFAQ",
+      "title": "Develop FAQ"
+    }
+    ]
   }]
 }
