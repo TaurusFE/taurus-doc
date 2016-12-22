@@ -9,8 +9,8 @@
         <i class="icon icon-hamburger-menu"></i>
         <i class="icon icon-close"></i>
       </a>
-      <div class="doc-title">component</div>
-      <ul class="doc-header-nav">
+      <div class="doc-title">{{mobileNavTitle}}</div>
+      <ul class="doc-header-nav" @click="changeNavTitle">
         <li>
           <router-link  to='/design'><span>Design</span></router-link>
         </li>
@@ -31,11 +31,14 @@
   export default {
     data () {
       return {
-        active: ''
+        active: '',
+        mobileNavTitle: ''
       }
     },
     mounted () {
-
+      this.$nextTick(function () {
+        this.changeNavTitle()
+      })
     },
     methods: {
       mobileNavToggle: function () {
@@ -45,6 +48,11 @@
           document.body.className += ' ' + 'show'
         }
         isShowMobileNav = !isShowMobileNav
+      },
+      changeNavTitle: function () {
+        if (this.$route.matched.length > 0) {
+          this.mobileNavTitle = this.$route.matched[0].name.replace(/(\w)/, function (v) { return v.toUpperCase() })
+        }
       }
     }
 
