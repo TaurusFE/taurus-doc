@@ -1,7 +1,7 @@
 <template>
   <div class="doc-wrapper">
     <template v-if='unhome'>
-      <d-header :list='list' ></d-header>
+      <d-header :list='list'></d-header>
     </template>
     <div  :class="{'doc-main': unhome}">
       <div :class="{'doc-container': unhome}">
@@ -27,6 +27,7 @@ export default {
     },
     list () {
       let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
+      this.base =base
       return menuList[base]
     }
   },
