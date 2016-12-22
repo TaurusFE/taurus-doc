@@ -5,7 +5,7 @@
         <img class="doc-logo1" src="/static/img/taurus-logo.png">
         <img class="doc-logo2" src="/static/img/taurus-logo-noword.png">
       </router-link>
-      <a class="doc-nav-show">
+      <a class="doc-nav-show" @click="mobileNavToggle">
         <i class="icon icon-hamburger-menu"></i>
         <i class="icon icon-close"></i>
       </a>
@@ -27,6 +27,7 @@
   </div>
 </template>
 <script>
+  let isShowMobileNav = false
   export default {
     data () {
       return {
@@ -37,7 +38,14 @@
 
     },
     methods: {
-
+      mobileNavToggle: function () {
+        if (isShowMobileNav) {
+          document.body.className = document.body.className.replace(new RegExp('(\\s|^)' + 'show' + '(\\s|$)'), '')
+        } else {
+          document.body.className += ' ' + 'show'
+        }
+        isShowMobileNav = !isShowMobileNav
+      }
     }
 
   }

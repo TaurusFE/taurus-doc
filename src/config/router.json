@@ -121,10 +121,6 @@
       "groupName":"Others",
       "list": [
         {
-          "path": "/video",
-          "title": "Video"
-        },
-        {
           "path": "/cookie-helper",
           "title": "CookieHelper"
         },
