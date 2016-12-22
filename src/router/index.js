@@ -98,9 +98,11 @@ routers = registerRoute(routers, 'element', navConfig)
 routers = registerRoute(routers, 'case', navConfig)
 routers = registerRoute(routers, 'design', navConfig)
 routers = registerRoute(routers, 'assets', navConfig)
-debugger
+routers = registerRoute(routers, 'faq', navConfig)
+routers = registerRoute(routers, 'guide', navConfig)
 console.log(pageRouters)
 export default new Router({
+  linkActiveClass: 'active',
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: routers

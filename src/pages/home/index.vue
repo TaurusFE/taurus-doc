@@ -8,7 +8,7 @@
           Build rich, smart HTML5 and JavaScript apps for any platform, browser, or device.
         </h2>
         <div class="masthead__button-links">
-          <router-link class='button button--action' to='/design/princ'>PC</router-link>
+          <router-link class='button button--action' to='/design'>PC</router-link>
           <a class="button button--default button--white" target="_blank" href="//static/file/aii-taurus.7z">Mobile</a>
         </div>
       </div>
