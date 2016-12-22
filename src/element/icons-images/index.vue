@@ -117,19 +117,17 @@
   </div>
 </template>
 <script>
+  import svg from './svg.json'
   export default {
     mounted () {
-      $.get('./svg.json', function (data) {
-        data.svgArray.splice(data.svgArray.indexOf('office365'), 1) && data.svgArray.splice(data.svgArray.indexOf('logo-onedrive'), 1)
-        for (var i = 0, len = data.svgArray.length; i < len; i++) {
-          var item = $('<div class="sg-icons-list__item">' +
-            '   <div class="sg-component__label sg-component__label--small">icon-' + data.svgArray[i] + '</div>' +
-            '       <span class="icon-' + data.svgArray[i] + '"></span>' +
-            ' </div>')
-          $('#sg-list').append(item)
-        }
-      })
+      svg.svgArray.splice(svg.svgArray.indexOf('office365'), 1) && svg.svgArray.splice(svg.svgArray.indexOf('logo-onedrive'), 1)
+      for (var i = 0, len = svg.svgArray.length; i < len; i++) {
+        var item = $('<div class="sg-icons-list__item">' +
+          '   <div class="sg-component__label sg-component__label--small">icon-' + svg.svgArray[i] + '</div>' +
+          '       <span class="icon-' + svg.svgArray[i] + '"></span>' +
+          ' </div>')
+        $('#sg-list').append(item)
+      }
     }
-
   }
 </script>

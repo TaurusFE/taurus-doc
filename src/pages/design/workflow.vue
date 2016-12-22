@@ -1,7 +1,11 @@
 <template>
   <div class="container">
-    <a style="display: block;margin-top: 30px;margin-left: 150px;" href="/static/file/workflow.pdf">See document here</a>
+    <div class="text-size--36 trailer--section title__color">Workflow</div>
     <img src="/static/img/workflow.png" alt="">
+    <div class="text--right">
+      <a href="/static/file/workflow.pdf" target="_blank"><span class="icon-acrobat"></span> See document here</a>
+    </div>
+
   </div>
 </template>
 <style>

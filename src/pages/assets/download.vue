@@ -14,7 +14,7 @@
             <div class="sg-content__markup sg-markdown">
               <p>Interaction Component libraries for Axure.</p>
             </div>
-            <a  href="/static/file/OSE_wireframe_libraryV2.0.1.rplib" class="leader--small button button--default">OSE_wireframe_libraryV2.0.1.rplib</a>
+            <a target="_blank" href="/static/file/OSE_wireframe_libraryV2.0.1.rplib" class="leader--small button button--default">Taurus Axure Library</a>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@
             <div class="sg-content__markup sg-markdown">
               <p>Visual libraries for Sketch.</p>
             </div>
-            <a href="/static/file/UI Kit.sketch" class="leader--small button button--default">Verision 2.0.0.sketch</a>
+            <a  href="/static/file/Verision 2.0.0.sketch" class="leader--small button button--default">Verision 2.0.0.sketch</a>
           </div>
           <div class="sg-content-item sg-content mix ready">
             <h2 class="title--small leader--small">UI Kit</h2>
