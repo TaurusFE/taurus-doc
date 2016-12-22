@@ -68,42 +68,53 @@ var pageRouters = [
     }
   }
 ]
-function addChildren (navConfig, type) {
-  let list = navConfig[type]
-  let childConfList = []
-  for (let i = 0, len = list.length; i < len; i++) {
-    let children = list[i].list
-    for (let j = 0; j < children.length; j++) {
-      let childConf = children[j]
+/**
+ * 获取各个一级菜单下面的子菜单
+ * @param navList 对应router.json中的一级数组.例如 ‘component’: []
+ * @param name 对应router.json一级菜单的名字 'component
+ * @return childrenRouters
+ * */
+function getChildRouter (navList, name) {
+  let childrenRouters = {}
+  childrenRouters[name] = []
+  for (let i = 0; i < navList.length; i++) {
+    let childrenList = navList[i].list
+    for (let j = 0; j < childrenList.length; j++) {
+      var childConf = childrenList[j]
       let child = {
         path: childConf.path.replace('/', ''),
         name: childConf.path.replace('/', ''),
-        component: taurus[type][childConf.path.replace('/', '')]
+        component: taurus[name][childConf.path.replace('/', '')]
       }
-      childConfList.push(child)
+      childrenRouters[name].push(child)
     }
   }
-  return childConfList
+  return childrenRouters
 }
-function registerRoute (routers, type, navConfig) {
-  for (let i = 0; i < routers.length; i++) {
-    if (routers[i].name === type) {
-      routers[i].children = addChildren(navConfig, type)
+/**
+ * 返回router.json中各个菜单在主菜单中的位置，用于将子菜单配置插入到主菜单数组中
+ * @param pageRouters 主菜单数组
+ * @name 主菜单名字
+ * @return index
+ * */
+function getRootRouter (pageRouters, name) {
+  for (let i = 0; i < pageRouters.length; i++) {
+    if (pageRouters[i].name === name) {
+      return i
     }
   }
-  return routers
 }
-let routers = registerRoute(pageRouters, 'component', navConfig)
-routers = registerRoute(routers, 'element', navConfig)
-routers = registerRoute(routers, 'case', navConfig)
-routers = registerRoute(routers, 'design', navConfig)
-routers = registerRoute(routers, 'assets', navConfig)
-routers = registerRoute(routers, 'faq', navConfig)
-routers = registerRoute(routers, 'guide', navConfig)
-console.log(pageRouters)
+
+for (let obj in navConfig) {
+  let childRouters = getChildRouter(navConfig[obj], obj)
+  console.log(childRouters)
+  let index = getRootRouter(pageRouters, obj)
+  pageRouters[index].children = childRouters[obj]
+}
+
 export default new Router({
   linkActiveClass: 'active',
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
-  routes: routers
+  routes: pageRouters
 })
