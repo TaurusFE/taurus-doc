@@ -121,10 +121,6 @@
       "groupName":"Others",
       "list": [
         {
-          "path": "/video",
-          "title": "Video"
-        },
-        {
           "path": "/cookie-helper",
           "title": "CookieHelper"
         },
@@ -337,6 +333,24 @@
         "path": "/workflow",
         "title": "Workflow"
       }
+    ]
+  }],
+  "guide": [{
+    "list": [{
+      "path": "/developGuide",
+      "title": "Develop Guide"
+    },
+      {
+        "path": "/design",
+        "title": "Design"
+      }
+    ]
+  }],
+  "faq": [{
+    "list": [{
+      "path": "/developFAQ",
+      "title": "Develop FAQ"
+    }
     ]
   }]
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="text-size--36 leader--section trailer--section title__color">Principle</div>
-    <div class="catalog">
+    <div class="text-size--36 trailer--section title__color">Principle</div>
+    <!--<div class="catalog">
       <ul>
         <li><a href="#principle-1"><span>Visibility of system status</span></a></li>
         <li><a href="#principle-2"><span>Match between system and real world</span></a></li>
@@ -14,7 +14,7 @@
         <li><a href="#principle-9"><span>Help user recgnize，diagnose，and recover form errors</span></a></li>
         <li><a href="#principle-10"><span>Help and documentation</span></a></li>
       </ul>
-    </div>
+    </div>-->
     <div id="principle-1" class="trailer--med">
       <div class="block__header leader--large trailer">
         <h3 class="title--medium">1.状态可见原则（Visibility of system status）</h3>

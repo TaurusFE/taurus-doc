@@ -19,6 +19,13 @@ import numberStepper from '../markdown/number-stepper'
 import searchFilter from '../markdown/search-filter'
 import select from '../markdown/select'
 import loading from '../markdown/loading'
+import modal from '../markdown/modal'
+import statusMessage from '../markdown/status-message'
+import tooltip from '../markdown/tooltip'
+import speechBubble from '../markdown/speech-bubble'
+import dropdown from '../markdown/dropdown'
+import tab from '../markdown/tab'
+import breadcrumbs from '../markdown/breadcrumbs'
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
@@ -56,6 +63,9 @@ import agentView from '../pages/telenor/catalog/av.vue'
 import cm from '../pages/telenor/catalog/cm.vue'
 import rm from '../pages/telenor/catalog/rm.vue'
 import eshop from '../pages/telenor/catalog/eshop.vue'
+
+import developGuide from '../pages/guide/develop-guide.md'
+import developFAQ from '../pages/faq/develop-faq.md'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
@@ -68,6 +78,13 @@ let taurus = {
     'box-group': boxGroup,
     autoComplete,
     loading,
+    'modal-box': modal,
+    tooltip,
+    tab,
+    breadcrumbs,
+    'drop-down': dropdown,
+    'speech-bubble': speechBubble,
+    'status-message': statusMessage,
     'range-slider': rangeSlider,
     'am-charts-bars': amChartsBars,
     'am-charts-doughnut': amChartsDoughnut,
@@ -125,10 +142,14 @@ let taurus = {
     dataTable,
     formExamples
 
+  },
+  'guide': {
+    developGuide
+  },
+  'faq': {
+    developFAQ
   }
 }
-debugger
-console.log(taurus)
 export {
   taurus
 }
