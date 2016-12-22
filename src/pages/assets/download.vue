@@ -1,5 +1,5 @@
 <template>
-  <div class="section--block container">
+  <div class=" container">
     <div class="block__header  trailer--large">
       <h2 class="title--medium">Download assets</h2>
     </div>
