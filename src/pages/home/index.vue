@@ -13,7 +13,7 @@
                 <a class="portal-desc">Taurus Desktop（Version 0.1.11）</a>
               </span>
           <span class="masthead__button-portal">
-            <router-link class="button button--info" target="_blank" to="/mobile/design"><span><img src="/static/img/smartphone.png" alt=""></span>Mobile Documentation</router-link>
+            <a class="button button--info" target="_blank" href="/static/mobile-demo/examples/index.html"><span><img src="/static/img/smartphone.png" alt=""></span>Mobile Documentation</a>
                 <a class="portal-desc">Taurus Mobile（Version 0.1.11）</a>
               </span>
         </div>

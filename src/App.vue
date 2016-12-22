@@ -29,6 +29,12 @@ export default {
       let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
       this.base = base
       return menuList[base]
+    },
+    mounted () {
+      debugger
+      if (base === 'mobile') {
+        $('a[href="/desktop/component"]').css('href', '/static/img/esay.png')
+      }
     }
   },
   components: {
