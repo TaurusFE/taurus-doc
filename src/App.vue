@@ -1,7 +1,7 @@
 <template>
   <div class="doc-wrapper">
     <template v-if='unhome'>
-      <d-header></d-header>
+      <d-header :list='list' ></d-header>
     </template>
     <div  :class="{'doc-main': unhome}">
       <div :class="{'doc-container': unhome}">
@@ -15,10 +15,17 @@
 
 <script>
 import DHeader from './components/Header/'
+import menuList from './config/main.json'
 export default {
+  data () {
+  },
   computed: {
     unhome () {
       return this.$route.name !== 'home'
+    },
+    list () {
+      let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
+      return menuList[base]
     }
   },
   components: {

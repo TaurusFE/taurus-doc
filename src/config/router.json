@@ -1,356 +1,714 @@
 {
-  "component": [
-    {
-      "groupName": "form",
-      "list": [
-        {
-          "path": "/box-group",
-          "title": "BoxGroup"
-        },
-        {
-          "path": "/autoComplete",
-          "title": "AutoComplete"
-        },
-        {
-          "path": "/switcher",
-          "title": "Switcher"
-        },
-        {
-          "path": "/range-slider",
-          "title": "RangeSlider"
-        },
-        {
-          "path": "/date-picker",
-          "title": "DatePicker"
-        },
-        {
-          "path": "/select",
-          "title": "Select"
-        },
-        {
-          "path": "/search-filter",
-          "title": "SearchFilter"
-        },
-        {
-          "path": "/number-stepper",
-          "title": "NumberStepper"
-        },
-        {
-          "path": "/form-validation",
-          "title": "FormValidation"
-        }
-      ]
-
-    },
-    {
-      "groupName":"data",
-      "list": [
-        {
-          "path": "/simple-table",
-          "title": "SimpleTable"
-        },
-        {
-          "path": "/table",
-          "title": "Table"
-        },
-        {
-          "path": "/pager",
-          "title": "Pager"
-        },
-        {
-          "path": "/am-charts-bars",
-          "title": "AmCharts Bars"
-        },
-        {
-          "path": "/am-charts-doughnut",
-          "title": "AmCharts Doughnut"
-        },
-        {
-          "path": "/am-charts-gauge",
-          "title": "AmCharts Gauge"
-        },
-        {
-          "path": "/am-charts-line",
-          "title": "AmCharts Line"
-        }
-      ]
-    },
-    {
-      "groupName":"Notice",
-      "list": [
-        {
-          "path": "/loading",
-          "title": "Loading"
-        },
-        {
-          "path": "/modal-box",
-          "title": "ModalBox"
-        },
-        {
-          "path": "/status-message",
-          "title": "StatusMessage"
-        },
-        {
-          "path": "/tooltip",
-          "title": "Tooltip"
-        },
-        {
-          "path": "/speech-bubble",
-          "title": "SpeechBubble"
-        }
-      ]
-    },
-    {
-      "groupName":"Navigation",
-      "list": [
-        {
-          "path": "/drop-down",
-          "title": "DropDown"
-        },
-        {
-          "path": "/tab",
-          "title": "Tab"
-        },
-        {
-          "path": "/breadcrumbs",
-          "title": "Breadcrumbs"
-        }
-      ]
-    },
-    {
-      "groupName":"Others",
-      "list": [
-        {
-          "path": "/cookie-helper",
-          "title": "CookieHelper"
-        },
-        {
-          "path": "/scroll-to",
-          "title": "ScrollTo"
-        }
-      ]
-    }
-
-  ],
-  "element": [
-    {
-      "groupName": "global",
-      "list": [
-        {
-          "path": "/color",
-          "title": "Color"
-        },
-        {
-          "path": "/typography",
-          "title": "Typography"
-        },
-        {
-          "path": "/typesetting",
-          "title": "Typesetting"
-        },
-        {
-          "path": "/layouts",
-          "title": "Layouts"
-        }
-      ]
-    },
-    {
-      "groupName": "atoms",
-      "list": [
-        {
-          "path": "/iconImages",
-          "title": "Icons & Images"
-        },
-        {
-          "path": "/lists",
-          "title": "List"
-        },
-        {
-          "path": "/input",
-          "title": "Input Element"
-        },
-        {
-          "path": "/controls",
-          "title": "Controls & Toggles"
-        },
-        {
-          "path": "/buttons",
-          "title": "Buttons"
-        },
-        {
-          "path": "/atomsLoading",
-          "title": "Loading"
-        }
-      ]
-    },
-    {
-      "groupName": "molecules",
-      "list": [
-        {
-          "path": "/typeHeadings",
-          "title": "Type & Headings"
-        },
-        {
-          "path": "/structure",
-          "title": "Structure"
-        },
-        {
-          "path": "/feedbackMessages",
-          "title": "Feedback & Messages"
-        },
-        {
-          "path": "/shop",
-          "title": "Shop"
-        },
-        {
-          "path": "/products",
-          "title": "Products"
-        },
-        {
-          "path": "/tables",
-          "title": "Tables"
-        },
-        {
-          "path": "/tabsWidgets",
-          "title": "Tabs & Widgets"
-        },
-        {
-          "path": "/modalBox",
-          "title": "ModalBox"
-        },
-        {
-          "path": "/upload",
-          "title": "Upload"
-        },
-        {
-          "path": "/step",
-          "title": "Step"
-        }
-      ]
-    },
-    {
-      "groupName": "organisms",
-      "list": [
-        {
-          "path": "/charts",
-          "title": "Charts"
-        },
-        {
-          "path": "/selfare",
-          "title": "SelfCare"
-        },
-        {
-          "path": "/globalModules",
-          "title": "Global Modules"
-        },
-        {
-          "path": "/menu",
-          "title": "Menu"
-        },
-        {
-          "path": "/dataTable",
-          "title": "DataTable"
-        }
-      ]
-    },
-    {
-      "groupName": "pages",
-      "list": [{
-        "path": "/formExamples",
-        "title": "Form Examples"
-      }]
-    }
-  ],
-  "case": [
-    {
-      "groupName": "UE",
-      "list": [
-        {
-          "path": "/sitemap",
-          "title": "SiteMap",
-          "query": "http://10.19.18.95:48880/Wireframe/sitemap.html"
-        },
-        {
-          "path": "/deliveryPage",
-          "title": "Delivery Page",
-          "query": "http://10.19.18.95:48880//Wireframe/delivery_page.html"
-        },
-        {
-          "path": "/svnAddress",
-          "title": "SVN Address",
-          "query": "http://10.19.18.95:48880/Wireframe/svn_address.html"
-        }
-      ]
-    },
-    {
-      "groupName": "fe static",
-      "list": [
-        {
-          "path": "/eshop",
-          "title": "EShop"
-        },
-        {
-          "path": "/cm",
-          "title": "Custom Manage"
-        },
-        {
-          "path": "/agentView",
-          "title": "Agent View"
-        },
-        {
-          "path": "/rm",
-          "title": "Resource Manage"
-        }
-      ]
-    }
-  ],
-  "assets": [{
-    "groupName": "download Assets",
-    "list": [{
-      "path": "/download",
-      "title": "DownLoad"
-    }
-    ]
-  }, {
-    "groupName": "code standard",
-    "list": [
+  "desktop": {
+    "component": [
       {
-        "path": "/js",
-        "title": "JavaScript"
+        "groupName": "form",
+        "list": [
+          {
+            "path": "/box-group",
+            "title": "BoxGroup"
+          },
+          {
+            "path": "/autoComplete",
+            "title": "AutoComplete"
+          },
+          {
+            "path": "/switcher",
+            "title": "Switcher"
+          },
+          {
+            "path": "/range-slider",
+            "title": "RangeSlider"
+          },
+          {
+            "path": "/date-picker",
+            "title": "DatePicker"
+          },
+          {
+            "path": "/select",
+            "title": "Select"
+          },
+          {
+            "path": "/search-filter",
+            "title": "SearchFilter"
+          },
+          {
+            "path": "/number-stepper",
+            "title": "NumberStepper"
+          },
+          {
+            "path": "/form-validation",
+            "title": "FormValidation"
+          }
+        ]
+
       },
       {
-        "path": "/css",
-        "title": "CSS"
-      }
-    ]
-  }],
-  "design": [{
-    "list": [{
-      "path": "/principle",
-      "title": "Principle"
-    },
+        "groupName":"data",
+        "list": [
+          {
+            "path": "/simple-table",
+            "title": "SimpleTable"
+          },
+          {
+            "path": "/table",
+            "title": "Table"
+          },
+          {
+            "path": "/pager",
+            "title": "Pager"
+          },
+          {
+            "path": "/am-charts-bars",
+            "title": "AmCharts Bars"
+          },
+          {
+            "path": "/am-charts-doughnut",
+            "title": "AmCharts Doughnut"
+          },
+          {
+            "path": "/am-charts-gauge",
+            "title": "AmCharts Gauge"
+          },
+          {
+            "path": "/am-charts-line",
+            "title": "AmCharts Line"
+          }
+        ]
+      },
       {
-        "path": "/workflow",
-        "title": "Workflow"
-      }
-    ]
-  }],
-  "guide": [{
-    "list": [{
-      "path": "/developGuide",
-      "title": "Develop Guide"
-    },
+        "groupName":"Notice",
+        "list": [
+          {
+            "path": "/loading",
+            "title": "Loading"
+          },
+          {
+            "path": "/modal-box",
+            "title": "ModalBox"
+          },
+          {
+            "path": "/status-message",
+            "title": "StatusMessage"
+          },
+          {
+            "path": "/tooltip",
+            "title": "Tooltip"
+          },
+          {
+            "path": "/speech-bubble",
+            "title": "SpeechBubble"
+          }
+        ]
+      },
       {
-        "path": "/design",
-        "title": "Design"
+        "groupName":"Navigation",
+        "list": [
+          {
+            "path": "/drop-down",
+            "title": "DropDown"
+          },
+          {
+            "path": "/tab",
+            "title": "Tab"
+          },
+          {
+            "path": "/breadcrumbs",
+            "title": "Breadcrumbs"
+          }
+        ]
+      },
+      {
+        "groupName":"Others",
+        "list": [
+          {
+            "path": "/cookie-helper",
+            "title": "CookieHelper"
+          },
+          {
+            "path": "/scroll-to",
+            "title": "ScrollTo"
+          }
+        ]
       }
-    ]
-  }],
-  "faq": [{
-    "list": [{
-      "path": "/developFAQ",
-      "title": "Develop FAQ"
-    }
-    ]
-  }]
+
+    ],
+    "element": [
+      {
+        "groupName": "global",
+        "list": [
+          {
+            "path": "/color",
+            "title": "Color"
+          },
+          {
+            "path": "/typography",
+            "title": "Typography"
+          },
+          {
+            "path": "/typesetting",
+            "title": "Typesetting"
+          },
+          {
+            "path": "/layouts",
+            "title": "Layouts"
+          }
+        ]
+      },
+      {
+        "groupName": "atoms",
+        "list": [
+          {
+            "path": "/iconImages",
+            "title": "Icons & Images"
+          },
+          {
+            "path": "/lists",
+            "title": "List"
+          },
+          {
+            "path": "/input",
+            "title": "Input Element"
+          },
+          {
+            "path": "/controls",
+            "title": "Controls & Toggles"
+          },
+          {
+            "path": "/buttons",
+            "title": "Buttons"
+          },
+          {
+            "path": "/atomsLoading",
+            "title": "Loading"
+          }
+        ]
+      },
+      {
+        "groupName": "molecules",
+        "list": [
+          {
+            "path": "/typeHeadings",
+            "title": "Type & Headings"
+          },
+          {
+            "path": "/structure",
+            "title": "Structure"
+          },
+          {
+            "path": "/feedbackMessages",
+            "title": "Feedback & Messages"
+          },
+          {
+            "path": "/shop",
+            "title": "Shop"
+          },
+          {
+            "path": "/products",
+            "title": "Products"
+          },
+          {
+            "path": "/tables",
+            "title": "Tables"
+          },
+          {
+            "path": "/tabsWidgets",
+            "title": "Tabs & Widgets"
+          },
+          {
+            "path": "/modalBox",
+            "title": "ModalBox"
+          },
+          {
+            "path": "/upload",
+            "title": "Upload"
+          },
+          {
+            "path": "/step",
+            "title": "Step"
+          }
+        ]
+      },
+      {
+        "groupName": "organisms",
+        "list": [
+          {
+            "path": "/charts",
+            "title": "Charts"
+          },
+          {
+            "path": "/selfare",
+            "title": "SelfCare"
+          },
+          {
+            "path": "/globalModules",
+            "title": "Global Modules"
+          },
+          {
+            "path": "/menu",
+            "title": "Menu"
+          },
+          {
+            "path": "/dataTable",
+            "title": "DataTable"
+          }
+        ]
+      },
+      {
+        "groupName": "pages",
+        "list": [{
+          "path": "/formExamples",
+          "title": "Form Examples"
+        }]
+      }
+    ],
+    "case": [
+      {
+        "groupName": "UE",
+        "list": [
+          {
+            "path": "/sitemap",
+            "title": "SiteMap",
+            "query": "http://10.19.18.95:48880/Wireframe/sitemap.html"
+          },
+          {
+            "path": "/deliveryPage",
+            "title": "Delivery Page",
+            "query": "http://10.19.18.95:48880//Wireframe/delivery_page.html"
+          },
+          {
+            "path": "/svnAddress",
+            "title": "SVN Address",
+            "query": "http://10.19.18.95:48880/Wireframe/svn_address.html"
+          }
+        ]
+      },
+      {
+        "groupName": "fe static",
+        "list": [
+          {
+            "path": "/eshop",
+            "title": "EShop"
+          },
+          {
+            "path": "/cm",
+            "title": "Custom Manage"
+          },
+          {
+            "path": "/agentView",
+            "title": "Agent View"
+          },
+          {
+            "path": "/rm",
+            "title": "Resource Manage"
+          }
+        ]
+      }
+    ],
+    "assets": [{
+      "groupName": "download Assets",
+      "list": [{
+        "path": "/download",
+        "title": "DownLoad"
+      }
+      ]
+    }, {
+      "groupName": "code standard",
+      "list": [
+        {
+          "path": "/js",
+          "title": "JavaScript"
+        },
+        {
+          "path": "/css",
+          "title": "CSS"
+        }
+      ]
+    }],
+    "design": [{
+      "list": [{
+        "path": "/principle",
+        "title": "Principle"
+      },
+        {
+          "path": "/workflow",
+          "title": "Workflow"
+        }
+      ]
+    }],
+    "guide": [{
+      "list": [{
+        "path": "/developGuide",
+        "title": "Develop Guide"
+      },
+        {
+          "path": "/design",
+          "title": "Design"
+        }
+      ]
+    }],
+    "faqs": [{
+      "list": [{
+        "path": "/developFAQ",
+        "title": "Develop FAQ"
+      }
+      ]
+    }]
+  },
+  "mobile": {
+    "component": [
+      {
+        "groupName": "form",
+        "list": [
+          {
+            "path": "/box-group",
+            "title": "BoxGroup"
+          },
+          {
+            "path": "/autoComplete",
+            "title": "AutoComplete"
+          },
+          {
+            "path": "/switcher",
+            "title": "Switcher"
+          },
+          {
+            "path": "/range-slider",
+            "title": "RangeSlider"
+          },
+          {
+            "path": "/date-picker",
+            "title": "DatePicker"
+          },
+          {
+            "path": "/select",
+            "title": "Select"
+          },
+          {
+            "path": "/search-filter",
+            "title": "SearchFilter"
+          },
+          {
+            "path": "/number-stepper",
+            "title": "NumberStepper"
+          },
+          {
+            "path": "/form-validation",
+            "title": "FormValidation"
+          }
+        ]
+
+      },
+      {
+        "groupName":"data",
+        "list": [
+          {
+            "path": "/simple-table",
+            "title": "SimpleTable"
+          },
+          {
+            "path": "/table",
+            "title": "Table"
+          },
+          {
+            "path": "/pager",
+            "title": "Pager"
+          },
+          {
+            "path": "/am-charts-bars",
+            "title": "AmCharts Bars"
+          },
+          {
+            "path": "/am-charts-doughnut",
+            "title": "AmCharts Doughnut"
+          },
+          {
+            "path": "/am-charts-gauge",
+            "title": "AmCharts Gauge"
+          },
+          {
+            "path": "/am-charts-line",
+            "title": "AmCharts Line"
+          }
+        ]
+      },
+      {
+        "groupName":"Notice",
+        "list": [
+          {
+            "path": "/loading",
+            "title": "Loading"
+          },
+          {
+            "path": "/modal-box",
+            "title": "ModalBox"
+          },
+          {
+            "path": "/status-message",
+            "title": "StatusMessage"
+          },
+          {
+            "path": "/tooltip",
+            "title": "Tooltip"
+          },
+          {
+            "path": "/speech-bubble",
+            "title": "SpeechBubble"
+          }
+        ]
+      },
+      {
+        "groupName":"Navigation",
+        "list": [
+          {
+            "path": "/drop-down",
+            "title": "DropDown"
+          },
+          {
+            "path": "/tab",
+            "title": "Tab"
+          },
+          {
+            "path": "/breadcrumbs",
+            "title": "Breadcrumbs"
+          }
+        ]
+      },
+      {
+        "groupName":"Others",
+        "list": [
+          {
+            "path": "/cookie-helper",
+            "title": "CookieHelper"
+          },
+          {
+            "path": "/scroll-to",
+            "title": "ScrollTo"
+          }
+        ]
+      }
+
+    ],
+    "element": [
+      {
+        "groupName": "global",
+        "list": [
+          {
+            "path": "/color",
+            "title": "Color"
+          },
+          {
+            "path": "/typography",
+            "title": "Typography"
+          },
+          {
+            "path": "/typesetting",
+            "title": "Typesetting"
+          },
+          {
+            "path": "/layouts",
+            "title": "Layouts"
+          }
+        ]
+      },
+      {
+        "groupName": "atoms",
+        "list": [
+          {
+            "path": "/iconImages",
+            "title": "Icons & Images"
+          },
+          {
+            "path": "/lists",
+            "title": "List"
+          },
+          {
+            "path": "/input",
+            "title": "Input Element"
+          },
+          {
+            "path": "/controls",
+            "title": "Controls & Toggles"
+          },
+          {
+            "path": "/buttons",
+            "title": "Buttons"
+          },
+          {
+            "path": "/atomsLoading",
+            "title": "Loading"
+          }
+        ]
+      },
+      {
+        "groupName": "molecules",
+        "list": [
+          {
+            "path": "/typeHeadings",
+            "title": "Type & Headings"
+          },
+          {
+            "path": "/structure",
+            "title": "Structure"
+          },
+          {
+            "path": "/feedbackMessages",
+            "title": "Feedback & Messages"
+          },
+          {
+            "path": "/shop",
+            "title": "Shop"
+          },
+          {
+            "path": "/products",
+            "title": "Products"
+          },
+          {
+            "path": "/tables",
+            "title": "Tables"
+          },
+          {
+            "path": "/tabsWidgets",
+            "title": "Tabs & Widgets"
+          },
+          {
+            "path": "/modalBox",
+            "title": "ModalBox"
+          },
+          {
+            "path": "/upload",
+            "title": "Upload"
+          },
+          {
+            "path": "/step",
+            "title": "Step"
+          }
+        ]
+      },
+      {
+        "groupName": "organisms",
+        "list": [
+          {
+            "path": "/charts",
+            "title": "Charts"
+          },
+          {
+            "path": "/selfare",
+            "title": "SelfCare"
+          },
+          {
+            "path": "/globalModules",
+            "title": "Global Modules"
+          },
+          {
+            "path": "/menu",
+            "title": "Menu"
+          },
+          {
+            "path": "/dataTable",
+            "title": "DataTable"
+          }
+        ]
+      },
+      {
+        "groupName": "pages",
+        "list": [{
+          "path": "/formExamples",
+          "title": "Form Examples"
+        }]
+      }
+    ],
+    "case": [
+      {
+        "groupName": "UE",
+        "list": [
+          {
+            "path": "/sitemap",
+            "title": "SiteMap",
+            "query": "http://10.19.18.95:48880/Wireframe/sitemap.html"
+          },
+          {
+            "path": "/deliveryPage",
+            "title": "Delivery Page",
+            "query": "http://10.19.18.95:48880//Wireframe/delivery_page.html"
+          },
+          {
+            "path": "/svnAddress",
+            "title": "SVN Address",
+            "query": "http://10.19.18.95:48880/Wireframe/svn_address.html"
+          }
+        ]
+      },
+      {
+        "groupName": "fe static",
+        "list": [
+          {
+            "path": "/eshop",
+            "title": "EShop"
+          },
+          {
+            "path": "/cm",
+            "title": "Custom Manage"
+          },
+          {
+            "path": "/agentView",
+            "title": "Agent View"
+          },
+          {
+            "path": "/rm",
+            "title": "Resource Manage"
+          }
+        ]
+      }
+    ],
+    "assets": [{
+      "groupName": "download Assets",
+      "list": [{
+        "path": "/download",
+        "title": "DownLoad"
+      }
+      ]
+    }, {
+      "groupName": "code standard",
+      "list": [
+        {
+          "path": "/js",
+          "title": "JavaScript"
+        },
+        {
+          "path": "/css",
+          "title": "CSS"
+        }
+      ]
+    }],
+    "design": [{
+      "list": [{
+        "path": "/principle",
+        "title": "Principle"
+      },
+        {
+          "path": "/workflow",
+          "title": "Workflow"
+        }
+      ]
+    }],
+    "guide": [{
+      "list": [{
+        "path": "/developGuide",
+        "title": "Develop Guide"
+      },
+        {
+          "path": "/design",
+          "title": "Design"
+        }
+      ]
+    }],
+    "faqs": [{
+      "list": [{
+        "path": "/developFAQ",
+        "title": "Develop FAQ"
+      }
+      ]
+    }]
+  }
 }

@@ -15,7 +15,7 @@
     data () {
       return {
         base: '/case',
-        list: list.case
+        list: list.desktop.case
       }
     },
     components: {

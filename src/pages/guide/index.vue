@@ -15,7 +15,7 @@
     data () {
       return {
         base: '/guide',
-        list: list.guide
+        list: list.desktop.guide
       }
     },
     components: {

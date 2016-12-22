@@ -15,7 +15,7 @@
     data () {
       return {
         base: '/assets',
-        list: list.assets
+        list: list.desktop.assets
       }
     },
     components: {

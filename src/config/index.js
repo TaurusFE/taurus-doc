@@ -1,31 +1,31 @@
 /**
  * Created by y1205 on 2016/12/15.
  */
-import amChartsBars from '../markdown/am-charts-bars'
-import amChartsDoughnut from '../markdown/am-charts-doughnut'
-import amChartsGauge from '../markdown/am-charts-gauge'
-import amChartsLine from '../markdown/am-charts-line'
-import switcher from '../markdown/switcher'
-import table from '../markdown/table'
-import simpleTable from '../markdown/simple-table'
-import cookieHelper from '../markdown/cookie-helper'
-import pager from '../markdown/pager'
-import scrollTo from '../markdown/scroll-to'
-import boxGroup from '../markdown/box-group'
-import autoComplete from '../markdown/autoComplete'
-import rangeSlider from '../markdown/range-slider'
-import datePicker from '../markdown/date-picker'
-import numberStepper from '../markdown/number-stepper'
-import searchFilter from '../markdown/search-filter'
-import select from '../markdown/select'
-import loading from '../markdown/loading'
-import modal from '../markdown/modal'
-import statusMessage from '../markdown/status-message'
-import tooltip from '../markdown/tooltip'
-import speechBubble from '../markdown/speech-bubble'
-import dropdown from '../markdown/dropdown'
-import tab from '../markdown/tab'
-import breadcrumbs from '../markdown/breadcrumbs'
+import amChartsBars from '../markdown/desktop/am-charts-bars'
+import amChartsDoughnut from '../markdown/desktop/am-charts-doughnut'
+import amChartsGauge from '../markdown/desktop/am-charts-gauge'
+import amChartsLine from '../markdown/desktop/am-charts-line'
+import switcher from '../markdown/desktop/switcher'
+import table from '../markdown/desktop/table'
+import simpleTable from '../markdown/desktop/simple-table'
+import cookieHelper from '../markdown/desktop/cookie-helper'
+import pager from '../markdown/desktop/pager'
+import scrollTo from '../markdown/desktop/scroll-to'
+import boxGroup from '../markdown/desktop/box-group'
+import autoComplete from '../markdown/desktop/autoComplete'
+import rangeSlider from '../markdown/desktop/range-slider'
+import datePicker from '../markdown/desktop/date-picker'
+import numberStepper from '../markdown/desktop/number-stepper'
+import searchFilter from '../markdown/desktop/search-filter'
+import select from '../markdown/desktop/select'
+import loading from '../markdown/desktop/loading'
+import modal from '../markdown/desktop/modal'
+import statusMessage from '../markdown/desktop/status-message'
+import tooltip from '../markdown/desktop/tooltip'
+import speechBubble from '../markdown/desktop/speech-bubble'
+import dropdown from '../markdown/desktop/dropdown'
+import tab from '../markdown/desktop/tab'
+import breadcrumbs from '../markdown/desktop/breadcrumbs'
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
@@ -146,10 +146,93 @@ let taurus = {
   'guide': {
     developGuide
   },
-  'faq': {
+  'faqs': {
     developFAQ
   }
 }
-export {
-  taurus
+let mobile = {
+  'component': {
+    switcher,
+    table,
+    'cookie-helper': cookieHelper,
+    pager,
+    'scroll-to': scrollTo,
+    'box-group': boxGroup,
+    autoComplete,
+    loading,
+    'modal-box': modal,
+    tooltip,
+    tab,
+    breadcrumbs,
+    'drop-down': dropdown,
+    'speech-bubble': speechBubble,
+    'status-message': statusMessage,
+    'range-slider': rangeSlider,
+    'am-charts-bars': amChartsBars,
+    'am-charts-doughnut': amChartsDoughnut,
+    'am-charts-gauge': amChartsGauge,
+    'am-charts-line': amChartsLine,
+    'date-picker': datePicker,
+    'number-stepper': numberStepper,
+    'search-filter': searchFilter,
+    'simple-table': simpleTable,
+    select
+  },
+  'design': {
+    principle,
+    workflow
+  },
+  'case': {
+    sitemap,
+    deliveryPage,
+    svnAddress,
+    eshop,
+    agentView,
+    cm,
+    rm
+  },
+  'assets': {
+    download,
+    js,
+    css
+  },
+  'element': {
+    color,
+    typography,
+    typesetting,
+    layouts,
+    iconImages,
+    lists,
+    input,
+    controls,
+    buttons,
+    atomsLoading,
+    typeHeadings,
+    structure,
+    feedbackMessages,
+    shop,
+    products,
+    tables,
+    tabsWidgets,
+    modalBox,
+    upload,
+    step,
+    charts,
+    selfare,
+    globalModules,
+    menu,
+    dataTable,
+    formExamples
+
+  },
+  'guide': {
+    developGuide
+  },
+  'faqs': {
+    developFAQ
+  }
+}
+export default {
+  'desktop': taurus,
+  'mobile': mobile
 }

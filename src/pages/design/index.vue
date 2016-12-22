@@ -15,7 +15,7 @@
     data () {
       return {
         base: '/design',
-        list: list.design
+        list: list.desktop.design
       }
     },
     components: {

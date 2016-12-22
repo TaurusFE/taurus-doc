@@ -15,7 +15,7 @@
     data () {
       return {
         base: '/faq',
-        list: list.faq
+        list: list.desktop.faq
       }
     },
     components: {

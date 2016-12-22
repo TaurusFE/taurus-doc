@@ -129,7 +129,7 @@
     data () {
       return {
         base: '/element',
-        list: list.element
+        list: list.desktop.element
       }
     },
     components: {
