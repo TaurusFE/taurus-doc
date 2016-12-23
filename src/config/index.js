@@ -66,6 +66,9 @@ import eshop from '../pages/telenor/catalog/eshop.vue'
 
 import developGuide from '../pages/guide/develop-guide.md'
 import developFAQ from '../pages/faq/develop-faq.md'
+
+// 移动端
+import cell from '../pages/component/mobile/cell/index.md'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
@@ -152,8 +155,9 @@ let taurus = {
 }
 let mobile = {
   'component': {
-    switcher,
+    cell,
     table,
+    switcher,
     'cookie-helper': cookieHelper,
     pager,
     'scroll-to': scrollTo,

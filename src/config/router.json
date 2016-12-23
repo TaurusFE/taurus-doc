@@ -361,8 +361,8 @@
         "groupName": "form",
         "list": [
           {
-            "path": "/box-group",
-            "title": "BoxGroup"
+            "path": "/cell",
+            "title": "Cell"
           },
           {
             "path": "/autoComplete",

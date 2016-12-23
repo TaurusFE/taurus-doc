@@ -16,7 +16,7 @@
       let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
       return {
         base: '/' + base + '/faqs',
-        list: list.desktop.faqs
+        list: list[base].faqs
       }
     },
     components: {
