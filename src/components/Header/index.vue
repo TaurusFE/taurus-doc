@@ -11,10 +11,6 @@
       </a>
       <div class="doc-title">{{mobileNavTitle}}</div>
       <ul class="doc-header-nav" @click="changeNavTitle">
-        <li>
-          <router-link  to='/design'><span>Design</span></router-link>
-      <div class="doc-title">component</div>
-      <ul class="doc-header-nav">
         <li v-for='item in list'>
           <router-link :to='item.path'><span>{{item.title}}</span></router-link>
         </li>
@@ -47,8 +43,8 @@
         isShowMobileNav = !isShowMobileNav
       },
       changeNavTitle: function () {
-        if (this.$route.matched.length > 0 && this.$route.matched[0].name) {
-          this.mobileNavTitle = this.$route.matched[0].name.replace(/(\w)/, function (v) { return v.toUpperCase() })
+        if (this.$route && this.$route.fullPath && this.$route.fullPath.split('/').length > 2) {
+          this.mobileNavTitle = this.$route.fullPath.split('/')[2].replace(/(\w)/, function (v) { return v.toUpperCase() })
         }
       }
     }
