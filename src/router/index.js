@@ -99,7 +99,6 @@ function getRootRouter (pageRouters, name) {
   }
 }
 var route = []
-debugger
 for (let type in navConfig) {
   let parentRouter = generate(type)
   let menus = navConfig[type]
