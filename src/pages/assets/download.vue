@@ -1,7 +1,7 @@
 <template>
-  <div class="section--block container">
-    <div class="leader--large trailer--large">
-      <div class="text-size--36 trailer--section title__color text--telenor-light">Download assets</div>
+  <div class=" container">
+    <div class="block__header  trailer--large">
+      <h2 class="title--medium">Download assets</h2>
     </div>
     <div class="sgComponentWrapper">
       <div class="container grid-row">
@@ -19,7 +19,6 @@
         </div>
       </div>
     </div>
-
     <div class="sgComponentWrapper">
       <div class="container grid-row">
         <div class="sg-content__header col-md-4">
@@ -47,7 +46,7 @@
             <div class="sg-content__markup sg-markdown">
               <p>Preview UI kit with the measurement.</p>
             </div>
-            <a target="_blank" href="/static/file/UI Kit/index.html" class="leader--small button button--default">UI Kit with the measurement</a>
+            <a target="_blank" href="/static/file/UI%20Kit/Verision%202.0.0/index.html" class="leader--small button button--default">UI Kit with the measurement</a>
           </div>
         </div>
       </div>

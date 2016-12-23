@@ -1,0 +1,29 @@
+{
+  "i18nDemo": {
+    "headline_form_text": "表单信息",
+    "lang_des_text": "当前语言是: ",
+    "lang_des_value": "中文",
+    "change_lang_btn_text": "改变语言",
+    "headline_user_text": "用户信息",
+    "form_username_label": "用户名",
+    "form_username_placeholder": "请输入您的用户名",
+    "form_password_label": "密码",
+    "form_password_placeholder": "请输入您的密码",
+    "form_email_label": "邮箱地址",
+    "form_email_placeholder": "请输入您的邮箱地址",
+    "form_phone_label": "手机号码",
+    "form_phone_placeholder": "请输入您的手机号码",
+    "form_evaluation_label": "自我评价",
+    "form_evaluation_placeholder": "请输入您的自我评价",
+    "save_btn_text": "保存",
+    "cancel_btn_text": "取消"
+  },
+  "busiComponentDemo": {
+    "head-title": "实体管理页面",
+    "chg-lang-btn": "切换语言",
+    "create-btn": "创建实体",
+    "modify-btn": "修改实体",
+    "delete-btn": "删除实体",
+    "edit-entity-alert": "只能修改一个实体"
+  }
+}

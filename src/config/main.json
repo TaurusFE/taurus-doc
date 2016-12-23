@@ -1,0 +1,62 @@
+{
+  "desktop": [
+    {
+      "path": "/desktop/design",
+      "title": "Design"
+    },
+    {
+      "path": "/desktop/guide",
+      "title": "Guide"
+    },
+    {
+      "path": "/desktop/element",
+      "title": "Element"
+    },
+    {
+      "path": "/desktop/component",
+      "title": "Component"
+    },
+    {
+      "path": "/desktop/assets",
+      "title": "Assets"
+    },
+    {
+      "path": "/desktop/case",
+      "title": "Case"
+    },
+    {
+      "path": "/desktop/faqs",
+      "title": "Faqs"
+    }
+  ],
+  "mobile": [
+    {
+      "path": "/mobile/design",
+      "title": "Design"
+    },
+    {
+      "path": "/mobile/guide",
+      "title": "Guide"
+    },
+    {
+      "path": "/mobile/element",
+      "title": "Element"
+    },
+    {
+      "path": "/mobile/component",
+      "title": "Component"
+    },
+    {
+      "path": "/mobile/assets",
+      "title": "Assets"
+    },
+    {
+      "path": "/mobile/case",
+      "title": "Case"
+    },
+    {
+      "path": "/mobile/faqs",
+      "title": "Faqs"
+    }
+  ]
+}
