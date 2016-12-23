@@ -23,7 +23,7 @@ import DFooter from './components/Footer/'
 export default {
   computed: {
     unhome () {
-      return this.$route.name !== 'home'
+      return this.$route.fullPath !== '/'
     },
     list () {
       let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'

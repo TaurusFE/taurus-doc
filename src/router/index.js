@@ -13,7 +13,6 @@ import navConfig from '../config/router.json'
 function generate (type) {
   var pageRouters = [
     {
-      name: 'home',
       path: '/',
       component: require('../pages/home')
     },
