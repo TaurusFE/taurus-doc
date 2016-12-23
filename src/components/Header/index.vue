@@ -9,11 +9,13 @@
         <i class="icon icon-hamburger-menu"></i>
         <i class="icon icon-close"></i>
       </a>
-      <div class="doc-title">{{mobileNavTitle}}</div>
+<!--
       <ul class="doc-header-nav" @click="changeNavTitle">
         <li>
           <router-link  to='/design'><span>Design</span></router-link>
-      <div class="doc-title">component</div>
+        </li>
+      </ul>-->
+      <div class="doc-title">{{mobileNavTitle}}</div>
       <ul class="doc-header-nav">
         <li v-for='item in list'>
           <router-link :to='item.path'><span>{{item.title}}</span></router-link>
