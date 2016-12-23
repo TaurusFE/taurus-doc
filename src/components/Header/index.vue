@@ -47,7 +47,7 @@
         isShowMobileNav = !isShowMobileNav
       },
       changeNavTitle: function () {
-        if (this.$route.matched.length > 0) {
+        if (this.$route.matched.length > 0 && this.$route.matched[0].name) {
           this.mobileNavTitle = this.$route.matched[0].name.replace(/(\w)/, function (v) { return v.toUpperCase() })
         }
       }
