@@ -7,8 +7,6 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 import component from '../config'
-console.log('----------')
-console.log(component)
 import navConfig from '../config/router.json'
 function generate (type) {
   var pageRouters = [
@@ -19,7 +17,7 @@ function generate (type) {
     {
       path: `/${type}/design`,
       redirect: `/${type}/design/principle`,
-      component: require('../pages/guide')
+      component: require('../pages/design')
     },
     {
       path: `/${type}/component`,
