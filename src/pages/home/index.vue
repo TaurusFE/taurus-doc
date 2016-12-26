@@ -292,6 +292,9 @@
     .doc-vision {
       font-size: 34px;
     }
+    .button>span {
+      height:45px;
+    }
   }
   /*
 	// Small devices (landscape phones, 544px and up)
@@ -329,6 +332,9 @@
     .masthead__description {
       font-size: 18px;
       line-height: 25px;
+    }
+    .button>span {
+      height:45px;
     }
   }
   /*
