@@ -163,7 +163,7 @@ let mobile = {
     'cell-swipe': mobiCellSwipe,
     'search': mobiSearch,
     'spinner': mobiSpinner,
-    'tab_container': mobiTabContainer
+    'tab-container': mobiTabContainer
   },
   'design': {
     principle,
