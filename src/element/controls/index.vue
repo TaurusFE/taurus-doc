@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Atom controls</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Atom controls</div>
     </div>
     <div class="doc-compontent-box" id="checkboxes-filter">
       <!-- Checkboxes filter start-->
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Checkboxes filter</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Checkboxes filter</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -41,8 +41,8 @@
     </div>
     <div class="doc-compontent-box" id="toggleButtons">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Toggle buttons</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Toggle buttons</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">

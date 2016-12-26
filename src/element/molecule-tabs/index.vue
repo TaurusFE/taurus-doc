@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Tabs</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Tabs</div>
     </div>
     <div id="tabs" class="doc-compontent-box">
       <div class="sg-component">
@@ -1005,7 +1005,7 @@
       </div>
     </div>
     <div id="table-filters" class="doc-compontent-box">
-      <div class="sg-component mix is-approved omega" style="display: inline-block;">
+      <div class="sg-component mix is-approved omega">
         <div class="sg-component__header">
           <h2 class="title--medium-small trailer--small">Table filters</h2>
         </div>

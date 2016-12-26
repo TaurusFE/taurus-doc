@@ -1,8 +1,8 @@
 {
-  "name": "docs",
+  "name": "ai-taurus-docs",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "harwinvoid <harwinyang@gmail.com>",
+  "author": "TaurusFE",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "aii-taurus": "^0.1.10",
+    "ai-taurus-desktop": "^0.1.0",
     "github-markdown-css": "^2.3.0",
     "shelljs": "^0.7.5",
     "vue": "^2.1.0",

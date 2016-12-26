@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Molecule Upload & Download</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Molecule Upload & Download</div>
     </div>
     <div class="doc-compontent-box" id="download">
       <div class="sg-component">

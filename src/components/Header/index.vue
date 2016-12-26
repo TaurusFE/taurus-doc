@@ -9,19 +9,11 @@
         <i class="icon icon-hamburger-menu"></i>
         <i class="icon icon-close"></i>
       </a>
-      <div class="doc-title">component</div>
-      <ul class="doc-header-nav">
-        <li>
-          <router-link  to='/design'><span>Design</span></router-link>
+      <div class="doc-title">{{mobileNavTitle}}</div>
+      <ul class="doc-header-nav" @click="changeNavTitle">
+        <li v-for='item in list'>
+          <router-link :to='item.path'><span>{{item.title}}</span></router-link>
         </li>
-        <li><router-link  to='/guide' ><span>Guide</span></router-link></li>
-        <li><router-link  to='/element'><span>Element</span></router-link></li>
-        <li>
-          <router-link  to='/component' ><span>Component</span></router-link>
-        </li>
-        <li><router-link  to='/assets'><span>Assets</span></router-link></li>
-        <li><router-link  to='/case'><span>Telenor</span></router-link></li>
-        <li><router-link  to='/faq' ><span>FAQ</span></router-link></li>
       </ul>
   </header>
   </div>
@@ -31,11 +23,15 @@
   export default {
     data () {
       return {
-        active: ''
+        active: '',
+        mobileNavTitle: ''
       }
     },
+    props: ['list', 'base'],
     mounted () {
-
+      this.$nextTick(function () {
+        this.changeNavTitle()
+      })
     },
     methods: {
       mobileNavToggle: function () {
@@ -45,6 +41,11 @@
           document.body.className += ' ' + 'show'
         }
         isShowMobileNav = !isShowMobileNav
+      },
+      changeNavTitle: function () {
+        if (this.$route && this.$route.fullPath && this.$route.fullPath.split('/').length > 2) {
+          this.mobileNavTitle = this.$route.fullPath.split('/')[2].replace(/(\w)/, function (v) { return v.toUpperCase() })
+        }
       }
     }
 

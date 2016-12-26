@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Atom Loading</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Atom Loading</div>
     </div>
     <div class="doc-compontent-box" id="loaderSpinner">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">loader spinner</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">loader spinner</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -50,8 +50,8 @@
     </div>
     <div class="doc-compontent-box" id="lightboxSpinner">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">lightbox spinner</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">lightbox spinner</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -69,8 +69,8 @@
     </div>
     <div class="doc-compontent-box" id="spinner">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">spinner</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">spinner</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -99,8 +99,8 @@
     </div>
     <div class="doc-compontent-box" id="buttonSpinner">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">button spinner</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">button spinner</h3>
         </div>
         <div class="sg-component__status">
         </div>

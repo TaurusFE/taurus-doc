@@ -127,9 +127,10 @@
   import list from '../../config/router.json'
   export default {
     data () {
+      let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
       return {
-        base: '/element',
-        list: list.element
+        base: '/' + base + '/element',
+        list: list[base].element
       }
     },
     components: {

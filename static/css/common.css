@@ -33,8 +33,9 @@ p {
   color: #5e6d82
 }
 .doc-container {
-  width: 1140px;
+  width: 1160px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .doc-title {
   display: none;
@@ -50,6 +51,9 @@ p {
   top:0;
   width: 100%;
   z-index: 2;
+  -moz-box-shadow:0px 1px 3px rgba(0,0,0,0.1);
+  -webkit-box-shadow:0px 1px 3px rgba(0,0,0,0.1);
+  box-shadow:0px 1px 3px rgba(0,0,0,0.1);
 }
 .doc-header-nav {
   float: right;
@@ -76,6 +80,7 @@ p {
   border-bottom:3px solid #108ee9;
   color: #108ee9;
   font-weight: bold;
+
 }
 .doc-header-logo {
   width:130px;
@@ -118,31 +123,40 @@ p {
 
 }
 .doc-menu dl{
-  margin: 0 0 40px 0;
+  margin: 0 0 50px 0;
 }
 .doc-menu dt{
   text-transform: uppercase;
-  color: #b8b8b8;
+  color: #474747;
   line-height: 25px;
   padding:8px 0 18px 0;
-  border-bottom:1px solid #e8e8e8;
   margin-bottom:10px;
-
+  font-weight: bold;
 }
 .doc-menu dd{
   line-height: 25px;
-  padding:8px 0;
   margin: 0;
 }
 .doc-menu dd a{
-  color: #474747;
+  display: block;
+  color: #666666;
+  padding:8px 0;
+  border-left: 3px solid #e8e8e8;
 }
 .doc-menu dd a:hover{
   color: #000;
+  padding:8px 0;
+  border-left: 3px solid #e8e8e8;
 }
 .doc-menu dd a.active{
   color: #108ee9;
+  padding:8px 0;
   font-weight: bold;
+  border-left: 3px solid #038cd6;
+}
+
+.doc-menu dd a span{
+  padding-left: 15px;
 }
 
 
@@ -151,7 +165,22 @@ p {
   border: 1px solid #e8e8e8;
   background: #fff;
   margin: 30px 0 100px 250px;
-  padding: 30px;
+  padding: 40px 30px 95px 30px;
+}
+
+.doc-content-summary {
+   font-size: 13px;
+   line-height: 21px;
+   color: #666666;
+   margin-top: 5px;
+ }
+.doc-content-discription {
+   font-size: 11px;
+   line-height: 17px;
+   color: #999999;
+ }
+.doc-text-size--24 {
+  font-size: 24px;
 }
 
 /*

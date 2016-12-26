@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Modal box</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Modal box</div>
     </div>
     <div id="default-modal" class="doc-compontent-box">
       <div class="sg-component">

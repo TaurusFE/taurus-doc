@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- Page header -->
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Products</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Products</div>
     </div>
     <!-- SG Components -->
     <div id="sgComponentWrapper">

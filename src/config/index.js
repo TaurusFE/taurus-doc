@@ -1,31 +1,31 @@
 /**
  * Created by y1205 on 2016/12/15.
  */
-import amChartsBars from '../markdown/am-charts-bars'
-import amChartsDoughnut from '../markdown/am-charts-doughnut'
-import amChartsGauge from '../markdown/am-charts-gauge'
-import amChartsLine from '../markdown/am-charts-line'
-import switcher from '../markdown/switcher'
-import table from '../markdown/table'
-import simpleTable from '../markdown/simple-table'
-import cookieHelper from '../markdown/cookie-helper'
-import pager from '../markdown/pager'
-import scrollTo from '../markdown/scroll-to'
-import boxGroup from '../markdown/box-group'
-import autoComplete from '../markdown/autoComplete'
-import rangeSlider from '../markdown/range-slider'
-import datePicker from '../markdown/date-picker'
-import numberStepper from '../markdown/number-stepper'
-import searchFilter from '../markdown/search-filter'
-import select from '../markdown/select'
-import loading from '../markdown/loading'
-import modal from '../markdown/modal'
-import statusMessage from '../markdown/status-message'
-import tooltip from '../markdown/tooltip'
-import speechBubble from '../markdown/speech-bubble'
-import dropdown from '../markdown/dropdown'
-import tab from '../markdown/tab'
-import breadcrumbs from '../markdown/breadcrumbs'
+import amChartsBars from '../pages/component/desktop/am-charts-bars'
+import amChartsDoughnut from '../pages/component/desktop/am-charts-doughnut'
+import amChartsGauge from '../pages/component/desktop/am-charts-gauge'
+import amChartsLine from '../pages/component/desktop/am-charts-line'
+import switcher from '../pages/component/desktop/switcher'
+import table from '../pages/component/desktop/table'
+import simpleTable from '../pages/component/desktop/simple-table'
+import cookieHelper from '../pages/component/desktop/cookie-helper'
+import pager from '../pages/component/desktop/pager'
+import scrollTo from '../pages/component/desktop/scroll-to'
+import boxGroup from '../pages/component/desktop/box-group'
+import autoComplete from '../pages/component/desktop/autoComplete'
+import rangeSlider from '../pages/component/desktop/range-slider'
+import datePicker from '../pages/component/desktop/date-picker'
+import numberStepper from '../pages/component/desktop/number-stepper'
+import searchFilter from '../pages/component/desktop/search-filter'
+import select from '../pages/component/desktop/select'
+import loading from '../pages/component/desktop/loading'
+import modal from '../pages/component/desktop/modal'
+import statusMessage from '../pages/component/desktop/status-message'
+import tooltip from '../pages/component/desktop/tooltip'
+import speechBubble from '../pages/component/desktop/speech-bubble'
+import dropdown from '../pages/component/desktop/dropdown'
+import tab from '../pages/component/desktop/tab'
+import breadcrumbs from '../pages/component/desktop/breadcrumbs'
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
@@ -66,35 +66,42 @@ import eshop from '../pages/telenor/catalog/eshop.vue'
 
 import developGuide from '../pages/guide/develop-guide.md'
 import developFAQ from '../pages/faq/develop-faq.md'
+
+// 移动端
+import mobiCell from '../pages/component/mobile/cell'
+import mobiCellSwipe from '../pages/component/mobile/cell-swipe'
+import mobiSearch from '../pages/component/mobile/search'
+import mobiSpinner from '../pages/component/mobile/spinner'
+import mobiTabContainer from '../pages/component/mobile/tab-container'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
   'component': {
-    switcher,
-    table,
-    'cookie-helper': cookieHelper,
-    pager,
-    'scroll-to': scrollTo,
-    'box-group': boxGroup,
-    autoComplete,
-    loading,
-    'modal-box': modal,
-    tooltip,
-    tab,
-    breadcrumbs,
-    'drop-down': dropdown,
-    'speech-bubble': speechBubble,
-    'status-message': statusMessage,
-    'range-slider': rangeSlider,
     'am-charts-bars': amChartsBars,
     'am-charts-doughnut': amChartsDoughnut,
     'am-charts-gauge': amChartsGauge,
     'am-charts-line': amChartsLine,
+    'autoComplete': autoComplete,
+    'box-group': boxGroup,
+    'breadcrumbs': breadcrumbs,
+    'cookie-helper': cookieHelper,
     'date-picker': datePicker,
+    'drop-down': dropdown,
+    'loading': loading,
+    'modal-box': modal,
     'number-stepper': numberStepper,
+    'pager': pager,
+    'range-slider': rangeSlider,
+    'scroll-to': scrollTo,
     'search-filter': searchFilter,
+    'select': select,
     'simple-table': simpleTable,
-    select
+    'speech-bubble': speechBubble,
+    'status-message': statusMessage,
+    'switcher': switcher,
+    'tab': tab,
+    'table': table,
+    'tooltip': tooltip
   },
   'design': {
     principle,
@@ -146,10 +153,73 @@ let taurus = {
   'guide': {
     developGuide
   },
-  'faq': {
+  'faqs': {
     developFAQ
   }
 }
-export {
-  taurus
+let mobile = {
+  'component': {
+    'cell': mobiCell,
+    'cell-swipe': mobiCellSwipe,
+    'search': mobiSearch,
+    'spinner': mobiSpinner,
+    'tab-container': mobiTabContainer
+  },
+  'design': {
+    principle,
+    workflow
+  },
+  'case': {
+    sitemap,
+    deliveryPage,
+    svnAddress,
+    eshop,
+    agentView,
+    cm,
+    rm
+  },
+  'assets': {
+    download,
+    js,
+    css
+  },
+  'element': {
+    color,
+    typography,
+    typesetting,
+    layouts,
+    iconImages,
+    lists,
+    input,
+    controls,
+    buttons,
+    atomsLoading,
+    typeHeadings,
+    structure,
+    feedbackMessages,
+    shop,
+    products,
+    tables,
+    tabsWidgets,
+    modalBox,
+    upload,
+    step,
+    charts,
+    selfare,
+    globalModules,
+    menu,
+    dataTable,
+    formExamples
+
+  },
+  'guide': {
+    developGuide
+  },
+  'faqs': {
+    developFAQ
+  }
+}
+export default {
+  'desktop': taurus,
+  'mobile': mobile
 }

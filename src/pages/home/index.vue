@@ -8,8 +8,14 @@
           Build rich, smart HTML5 and JavaScript apps for any platform, browser, or device.
         </h2>
         <div class="masthead__button-links">
-          <router-link class='button button--action' to='/design'>Desktop</router-link>
-          <a class="button button--default button--white" target="_blank" href="//static/file/aii-taurus.7z">Mobile</a>
+         <span class="masthead__button-portal">
+           <router-link class="button button--action"  to="/desktop/design"><span><img src="/static/img/computer.png" alt=""></span>Desktop Documentation</router-link>
+                <a class="portal-desc"  target="_blank" href="/static/file/ai-taurus-desktop.zip">Taurus Desktop（Version 0.1.11）</a>
+              </span>
+          <span class="masthead__button-portal">
+            <router-link class="button button--info" to="/mobile/component"><span><img src="/static/img/smartphone.png" alt=""></span>Mobile Documentation</router-link>
+                <a class="portal-desc" target="_blank" href="/static/file/ai-taurus-desktop.zip">Taurus Mobile（Version 0.1.11）</a>
+              </span>
         </div>
       </div>
       <ul class="doc-banner-item" ref='hoverMove'>
@@ -81,7 +87,7 @@
     /*padding-top:105px;*/
     background-image:url(/static/img/home-banner-bg.png);
     background-repeat: repeat-x;;
-    background-position:center -70px;
+    background-position:center top;
     color:#fff;
     height: 907px;
     text-align: center;
@@ -104,19 +110,65 @@
     position: relative;
     z-index: 2;
     margin: 0 auto;
-    padding:120px 50px 100px 50px;
+    padding:200px 50px 100px 50px;
 
   }
   .masthead__button-links .button{
     height: 50px;
-    width: 180px;
+    width: 100%;
     line-height: 48px;
     border:0 none;
+    display: block;
+  }
+  .masthead__button-portal {
+    display: inline-block;
+    width: 280px;
+  }
+  .masthead__button-portal:first-child {
+    margin-right:30px;
+  }
+  .portal-desc {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top:15px;
+    opacity:.5;
+    color:#c0e2f5;
+    cursor: pointer;
+  }
+  .portal-desc:hover {
+    opacity:1;
+    text-decoration: underline;
   }
   .masthead__button-links .button--action{
-    margin-right: 20px;
+    margin-right: 30px;
     border:0 none;
   }
+  .button>span {
+    display: inline-block;
+    width: 28px;
+    height:28px;
+    margin-right:10px;
+    vertical-align: middle;
+  }
+  .button>span img {
+    width:100%;
+  }
+  .button--info{
+    background-color: #29c0c2;
+    color: #fff;
+  }
+  .button--info:hover{
+    border-color: #29c0c2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#25bbbd), to(#36ccce));
+    background-image: -webkit-linear-gradient(top, #25bbbd 0%, #36ccce 100%);
+    background-image: linear-gradient(to bottom, #25bbbd 0%, #36ccce 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0296E5', endColorstr='#FF038CD6', GradientType=0);
+    color: #fff;
+  }
+
   .masthead__description{
     padding-top: 40px;
     padding-bottom: 60px;
@@ -163,7 +215,7 @@
   /*案例*/
   .doc-case {
     background: url('/static/img/case.png') no-repeat center top;
-    background-size: cover;
+    /*background-size: cover;*/
     height:1180px;
     position:relative;
   }
@@ -214,12 +266,17 @@
       padding-top:50px
     }
     .masthead__button-links .button {
-      display: block;
-      width: auto;
-      margin:0 0 30px 0;
       height:60px;
       line-height: 60px;
       font-size: 18px;
+    }
+    .masthead__button-portal {
+      display: block;
+      width: auto;
+    }
+    .masthead__button-portal:first-child {
+      margin-right:0;
+      margin-bottom:40px;
     }
     .masthead__description {
       font-size: 18px;
@@ -234,6 +291,9 @@
     }
     .doc-vision {
       font-size: 34px;
+    }
+    .button>span {
+      height:45px;
     }
   }
   /*
@@ -257,16 +317,24 @@
       font-size:40px;
     }
     .masthead__button-links .button {
-      display: block;
-      width: auto;
-      margin:0 0 30px 0;
       height:60px;
       line-height: 60px;
       font-size: 18px;
     }
+    .masthead__button-portal {
+      display: block;
+      width: auto;
+    }
+    .masthead__button-portal:first-child {
+      margin-right:0;
+      margin-bottom:40px;
+    }
     .masthead__description {
       font-size: 18px;
       line-height: 25px;
+    }
+    .button>span {
+      height:45px;
     }
   }
   /*
@@ -290,4 +358,5 @@
   @media (min-width: 1201px) {
 
   }
+
 </style>

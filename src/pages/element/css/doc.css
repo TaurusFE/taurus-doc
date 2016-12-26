@@ -51,8 +51,8 @@
 
 /*iconFrame.css by tangll 2016-8-10*/
 .sg-content {
-  border-bottom: 1px solid #d1d1d1;
-  margin-bottom: 50px;
+  /*border-bottom: 1px solid #d1d1d1;*/
+  margin-bottom: 60px;
   padding-bottom: 50px;
 }
 
@@ -379,11 +379,11 @@ pre {
   }
 }
 
-.sg-component:after {
+/*.sg-component:after {
   content: "";
   display: table;
   clear: both
-}
+}*/
 
 /*header title*/
 .sg-component__header {

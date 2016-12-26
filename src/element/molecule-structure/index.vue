@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Molecule structure</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Molecule Structure</div>
     </div>
     <div class="doc-compontent-box" id="mediaObject">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Media object</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Media object</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -50,8 +50,8 @@
     </div>
     <div class="doc-compontent-box" id="flagObject">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Flag object</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Flag object</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -92,8 +92,8 @@
 
     <div class="doc-compontent-box" id="content-blocks">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Content blocks</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Content blocks</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -171,8 +171,8 @@
 
     <div id="article-sections" class="doc-compontent-box">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Article sections</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Article sections</h3>
         </div>
         <div class="sg-component__status">
         </div>

@@ -1,16 +1,14 @@
 <template>
   <div>
     <!-- Page header -->
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Typography and lists</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Typography and lists</div>
     </div>
     <!-- SG Components -->
     <div id="font-sizes" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Font sizes</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Font sizesr</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Font sizes-start-->
@@ -132,11 +130,10 @@
     <!-- SG Components -->
     <div id="font-weight" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Font weight</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Font weight</h3>
         </div>
-        <div class="sg-component__status trailer">
-        </div>
+
         <div class="sg-content__markup">
           <!-- atoms:Font weight-start-->
           <table class="table table--all-lines">
@@ -174,10 +171,8 @@
     <!-- SG Components -->
     <div id="text-truncate" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Text truncate</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Text truncate</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Text truncate-start-->
@@ -204,10 +199,8 @@
     <!-- SG Components -->
     <div id="color" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Color</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Color</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Text color-start-->
@@ -284,10 +277,8 @@
     <!-- SG Components -->
     <div id="link" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Link</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Link</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Link-start-->
@@ -341,10 +332,8 @@
     <!-- SG Components -->
     <div id="text-align" class="doc-compontent-box">
       <div class="sg-content">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Text align</h2>
-        </div>
-        <div class="sg-component__status trailer">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Text align</h3>
         </div>
         <div class="sg-content__markup">
           <!-- atoms:Text align-start-->
@@ -408,13 +397,11 @@
     </div>
 
     <div id="inline-elements" class="doc-compontent-box">
-      <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Inline elements</h2>
+      <div class="sg-content">
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Inline elements</h3>
         </div>
-        <div class="sg-component__status">
-        </div>
-        <div class="sg-component__markup">
+        <div class="sg-content__markup">
           <div class="demo_content">
             <div class="text--content">
               <div class="sg-component__label">Link</div>

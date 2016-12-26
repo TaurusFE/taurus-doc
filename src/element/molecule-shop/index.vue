@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Molecule shop</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Molecule shop</div>
     </div>
     <!-- SG Components -->
     <div id="sgComponentWrapper">

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Data Table</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Data Table</div>
     </div>
     <!-- Data table-->
     <div id="datatable" class="doc-compontent-box">

@@ -6,75 +6,71 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-import Home from '../pages/home'
-import Design from '../pages/design'
-import Component from '../pages/component'
-import Element from '../pages/element'
-import Guide from '../pages/guide'
-import Faq from '../pages/faq'
-import Assets from '../pages/assets'
-import Case from '../pages/telenor'
-import { taurus } from '../config'
+import component from '../config'
 import navConfig from '../config/router.json'
-var pageRouters = [
-  { name: 'home', path: '/', component: Home },
-  {
-    name: 'design',
-    path: '/design',
-    redirect: '/design/principle',
-    component: Design
-  },
-  {
-    name: 'component',
-    path: '/component',
-    component: Component,
-    redirect: '/component/switcher'
-  },
-  {
-    name: 'element',
-    path: '/element',
-    component: Element,
-    redirect: '/element/color'
-  },
-  {
-    name: 'guide',
-    path: '/guide',
-    component: Guide,
-    redirect: '/guide/developGuide'
-  },
-  {
-    name: 'faq',
-    path: '/faq',
-    component: Faq,
-    redirect: '/faq/developFAQ'
-  },
-  {
-    name: 'assets',
-    path: '/assets',
-    redirect: '/assets/download',
-    component: Assets
-  },
-  {
-    name: 'case',
-    path: '/case',
-    component: Case,
-    redirect: () => {
-      return {
-        path: '/case/sitemap',
-        query: {
-          url: 'http://10.19.18.95:48880/Wireframe/sitemap.html'
+function generate (type) {
+  var pageRouters = [
+    {
+      path: '/',
+      component: require('../pages/home')
+    },
+    {
+      path: `/${type}/design`,
+      redirect: `/${type}/design/principle`,
+      component: require('../pages/design')
+    },
+    {
+      path: `/${type}/component`,
+      component: require('../pages/component'),
+      redirect: `/${type}/component/switcher`
+    },
+    {
+      path: `/${type}/element`,
+      component: require('../pages/element'),
+      redirect: `/${type}/element/color`
+    },
+    {
+      path: `/${type}/guide`,
+      component: require('../pages/guide'),
+      redirect: `/${type}/guide/developGuide`
+    },
+    {
+      path: `/${type}/faqs`,
+      component: require('../pages/faq'),
+      redirect: `/${type}/faqs/developFAQ`
+    },
+    {
+      path: `/${type}/assets`,
+      component: require('../pages/assets'),
+      redirect: `/${type}/assets/download`
+    },
+    {
+      path: `/${type}/case`,
+      component: require('../pages/telenor'),
+      redirect: () => {
+        return {
+          path: `/${type}/case/sitemap`,
+          query: {
+            url: 'http://10.19.18.95:48880/Wireframe/sitemap.html'
+          }
         }
       }
     }
+  ]
+
+  if (type === 'mobile') {
+    pageRouters[2].redirect = `/${type}/component/search`
   }
-]
+
+  return pageRouters
+}
 /**
  * 获取各个一级菜单下面的子菜单
  * @param navList 对应router.json中的一级数组.例如 ‘component’: []
  * @param name 对应router.json一级菜单的名字 'component
  * @return childrenRouters
  * */
-function getChildRouter (navList, name) {
+function getChildRouter (navList, name, type) {
   let childrenRouters = {}
   childrenRouters[name] = []
   for (let i = 0; i < navList.length; i++) {
@@ -83,8 +79,7 @@ function getChildRouter (navList, name) {
       var childConf = childrenList[j]
       let child = {
         path: childConf.path.replace('/', ''),
-        name: childConf.path.replace('/', ''),
-        component: taurus[name][childConf.path.replace('/', '')]
+        component: component[type][name][childConf.path.replace('/', '')]
       }
       childrenRouters[name].push(child)
     }
@@ -99,22 +94,28 @@ function getChildRouter (navList, name) {
  * */
 function getRootRouter (pageRouters, name) {
   for (let i = 0; i < pageRouters.length; i++) {
-    if (pageRouters[i].name === name) {
+    let path = pageRouters[i].path
+    let menuName = path.substring(path.lastIndexOf('/') + 1, path.length)
+    if (menuName === name) {
       return i
     }
   }
 }
-
-for (let obj in navConfig) {
-  let childRouters = getChildRouter(navConfig[obj], obj)
-  console.log(childRouters)
-  let index = getRootRouter(pageRouters, obj)
-  pageRouters[index].children = childRouters[obj]
+var route = []
+for (let type in navConfig) {
+  let parentRouter = generate(type)
+  let menus = navConfig[type]
+  for (let menu in menus) {
+    let childRouters = getChildRouter(menus[menu], menu, type)
+    let index = getRootRouter(parentRouter, menu)
+    parentRouter[index].children = childRouters[menu]
+    route = route.concat(parentRouter)
+  }
 }
-
+console.log(route)
 export default new Router({
   linkActiveClass: 'active',
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
-  routes: pageRouters
+  routes: route
 })

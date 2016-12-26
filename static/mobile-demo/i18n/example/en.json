@@ -1,0 +1,29 @@
+{
+  "i18nDemo": {
+    "headline_form_text": "Form information",
+    "lang_des_text": "The current language is: ",
+    "lang_des_value": "english",
+    "change_lang_btn_text": "Change Language",
+    "headline_user_text": "User information",
+    "form_username_label": "Username",
+    "form_username_placeholder": "Fill in your username",
+    "form_password_label": "Password",
+    "form_password_placeholder": "Fill in your password",
+    "form_email_label": "Email",
+    "form_email_placeholder": "Fill in your email",
+    "form_phone_label": "Phone number",
+    "form_phone_placeholder": "Fill in your phone number",
+    "form_evaluation_label": "Self-evaluation",
+    "form_evaluation_placeholder": "Fill in your Self-evaluation",
+    "save_btn_text": "Save",
+    "cancel_btn_text": "Cancel"
+  },
+  "busiComponentDemo": {
+    "head-title": "Entity Management Example",
+    "chg-lang-btn": "Change Language",
+    "create-btn": "Create Entity",
+    "modify-btn": "Modify Entity",
+    "delete-btn": "Delete Entity",
+    "edit-entity-alert": "Only Modify One Entity"
+  }
+}

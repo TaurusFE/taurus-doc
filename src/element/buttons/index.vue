@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Atom buttons</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Atom buttons</div>
     </div>
     <div class="doc-compontent-box" id="buttons">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Buttons</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Buttons</h3>
         </div>
         <div class="sg-component__status">
           <p class="mobile-one-half mobile-pull-right mobile-text-right">
@@ -211,8 +211,8 @@
     </div>
     <div class="doc-compontent-box" id="buttonsBar">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Buttons bar</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Buttons bar</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -250,8 +250,8 @@
     </div>
     <div class="doc-compontent-box" id="radioButtonsBar">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Radio Buttons Bar</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Radio Buttons Bar</h3>
         </div>
         <div class="sg-component__status">
         </div>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Molecule feedback</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Molecule feedback</div>
     </div>
     <div class="doc-compontent-box" id="statusDot">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Status indicator dot</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Status indicator dot</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -50,8 +50,8 @@
     </div>
     <div class="doc-compontent-box" id="statusBadge">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Status badge</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Status badge</h3>
         </div>
         <div class="sg-component__status">
         </div>
@@ -81,8 +81,8 @@
     </div>
     <div class="doc-compontent-box" id="tooltips">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Tooltips</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Tooltips</h3>
         </div>
         <div class="sg-component__status">
           <p class="pull-right text--right">
@@ -137,8 +137,8 @@
     </div>
     <div class="doc-compontent-box" id="statusMessage">
       <div class="sg-component">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Status message</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Status message</h3>
         </div>
         <div class="sg-component__status">
           <p class="pull-right text--right">

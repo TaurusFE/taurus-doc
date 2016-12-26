@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="block__header leader--large trailer--large">
-      <h2 class="title--medium">Layouts</h2>
+    <div class="trailer--large">
+      <div class="text-size--36 trailer--section title__color text--telenor-light">Layouts</div>
     </div>
     <div class="container">
       <div class="doc-compontent-box">
         <!-- checkbox-component-start-->
         <div class="sg-component">
-          <div class="sg-component__header">
-            <h2 class="title--medium-small trailer--small">flex-layouts</h2>
+          <div class="leader--large trailer">
+            <h3 class="doc-text-size--24">flex-layouts</h3>
           </div>
           <div class="sg-component__status">
           </div>
@@ -105,8 +105,8 @@
       </div>
       <!-- checkbox-component-end-->
       <div class="doc-compontent-box">
-        <div class="sg-component__header">
-          <h2 class="title--medium-small trailer--small">Example</h2>
+        <div class="leader--large trailer">
+          <h3 class="doc-text-size--24">Example</h2>
         </div>
         <div class="sg-component__status">
         </div>
