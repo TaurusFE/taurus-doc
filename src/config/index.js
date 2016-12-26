@@ -68,7 +68,11 @@ import developGuide from '../pages/guide/develop-guide.md'
 import developFAQ from '../pages/faq/develop-faq.md'
 
 // 移动端
-import cell from '../pages/component/mobile/cell/index.md'
+import mobiCell from '../pages/component/mobile/cell'
+import mobiCellSwipe from '../pages/component/mobile/cell-swipe'
+import mobiSearch from '../pages/component/mobile/search'
+import mobiSpinner from '../pages/component/mobile/spinner'
+import mobiTabContainer from '../pages/component/mobile/tab-container'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
@@ -155,32 +159,11 @@ let taurus = {
 }
 let mobile = {
   'component': {
-    cell,
-    table,
-    switcher,
-    'cookie-helper': cookieHelper,
-    pager,
-    'scroll-to': scrollTo,
-    'box-group': boxGroup,
-    autoComplete,
-    loading,
-    'modal-box': modal,
-    tooltip,
-    tab,
-    breadcrumbs,
-    'drop-down': dropdown,
-    'speech-bubble': speechBubble,
-    'status-message': statusMessage,
-    'range-slider': rangeSlider,
-    'am-charts-bars': amChartsBars,
-    'am-charts-doughnut': amChartsDoughnut,
-    'am-charts-gauge': amChartsGauge,
-    'am-charts-line': amChartsLine,
-    'date-picker': datePicker,
-    'number-stepper': numberStepper,
-    'search-filter': searchFilter,
-    'simple-table': simpleTable,
-    select
+    'cell': mobiCell,
+    'cell-swipe': mobiCellSwipe,
+    'search': mobiSearch,
+    'spinner': mobiSpinner,
+    'tab_container': mobiTabContainer
   },
   'design': {
     principle,

@@ -361,74 +361,21 @@
         "groupName": "form",
         "list": [
           {
-            "path": "/cell",
-            "title": "Cell"
-          },
-          {
-            "path": "/autoComplete",
-            "title": "AutoComplete"
-          },
-          {
-            "path": "/switcher",
-            "title": "Switcher"
-          },
-          {
-            "path": "/range-slider",
-            "title": "RangeSlider"
-          },
-          {
-            "path": "/date-picker",
-            "title": "DatePicker"
-          },
-          {
-            "path": "/select",
-            "title": "Select"
-          },
-          {
-            "path": "/search-filter",
-            "title": "SearchFilter"
-          },
-          {
-            "path": "/number-stepper",
-            "title": "NumberStepper"
-          },
-          {
-            "path": "/form-validation",
-            "title": "FormValidation"
+            "path": "/search",
+            "title": "Search"
           }
         ]
-
       },
       {
         "groupName":"data",
         "list": [
           {
-            "path": "/simple-table",
-            "title": "SimpleTable"
+            "path": "/cell",
+            "title": "Cell"
           },
           {
-            "path": "/table",
-            "title": "Table"
-          },
-          {
-            "path": "/pager",
-            "title": "Pager"
-          },
-          {
-            "path": "/am-charts-bars",
-            "title": "AmCharts Bars"
-          },
-          {
-            "path": "/am-charts-doughnut",
-            "title": "AmCharts Doughnut"
-          },
-          {
-            "path": "/am-charts-gauge",
-            "title": "AmCharts Gauge"
-          },
-          {
-            "path": "/am-charts-line",
-            "title": "AmCharts Line"
+            "path": "/cell-swipe",
+            "title": "Cell Swipe"
           }
         ]
       },
@@ -436,24 +383,8 @@
         "groupName":"Notice",
         "list": [
           {
-            "path": "/loading",
-            "title": "Loading"
-          },
-          {
-            "path": "/modal-box",
-            "title": "ModalBox"
-          },
-          {
-            "path": "/status-message",
-            "title": "StatusMessage"
-          },
-          {
-            "path": "/tooltip",
-            "title": "Tooltip"
-          },
-          {
-            "path": "/speech-bubble",
-            "title": "SpeechBubble"
+            "path": "/spinner",
+            "title": "Spinner"
           }
         ]
       },
@@ -461,30 +392,14 @@
         "groupName":"Navigation",
         "list": [
           {
-            "path": "/drop-down",
-            "title": "DropDown"
-          },
-          {
-            "path": "/tab",
-            "title": "Tab"
-          },
-          {
-            "path": "/breadcrumbs",
-            "title": "Breadcrumbs"
+            "path": "/tab-container",
+            "title": "Tab Container"
           }
         ]
       },
       {
         "groupName":"Others",
         "list": [
-          {
-            "path": "/cookie-helper",
-            "title": "CookieHelper"
-          },
-          {
-            "path": "/scroll-to",
-            "title": "ScrollTo"
-          }
         ]
       }
 
