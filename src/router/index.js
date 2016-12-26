@@ -57,6 +57,11 @@ function generate (type) {
       }
     }
   ]
+
+  if (type === 'mobile') {
+    pageRouters[2].redirect = `/${type}/component/search`
+  }
+
   return pageRouters
 }
 /**
