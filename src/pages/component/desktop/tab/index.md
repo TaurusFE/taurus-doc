@@ -1,5 +1,5 @@
 <script>
-import { TDTabs, TTabs, TFlatTabs } from 'aii-taurus';
+import { TDTabs, TTabs, TFlatTabs } from 'ai-taurus-desktop';
 export default {
   components: {
     TTabs,
@@ -147,7 +147,7 @@ Tab组件一般用来分类数据和导航。
   </div>
 </template>
 <script>
-import {TTabs} from 'aii-taurus';
+import {TTabs} from 'ai-taurus-desktop';
 export default {
   components: {
     TTabs
@@ -233,7 +233,7 @@ export default {
   </div>
 </template>
 <script>
-import {TFlatTabs} from 'aii-taurus';
+import {TFlatTabs} from 'ai-taurus-desktop';
 export default {
   components: {
     TFlatTabs
@@ -310,7 +310,7 @@ export default {
   </div>
 </template>
 <script>
-import {TDTabs} from 'aii-taurus';
+import {TDTabs} from 'ai-taurus-desktop';
 export default {
   components: {
     TDTabs

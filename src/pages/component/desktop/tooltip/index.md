@@ -1,5 +1,5 @@
 <script>
-import 'aii-taurus';
+import 'ai-taurus-desktop';
 export default {
   data () {
     return {
@@ -60,7 +60,7 @@ Tooltip指令提供了鼠标悬停提示功能。
   </div>
 </template>
 <script>
-import 'aii-taurus';
+import 'ai-taurus-desktop';
 export default {
   data () {
     return {

@@ -1,5 +1,5 @@
 <script>
-  import 'aii-taurus';
+  import 'ai-taurus-desktop';
 
   export default {
     methods: {
@@ -148,7 +148,7 @@ scroll-to插件，用于页面滚动
   <p>这是一段长文本。这是一段长文本。这是一段长文本。这是一段长文本。这是一段长文本。</p>
   <div class="form-row"></div>
 <script>
-  import 'aii-taurus';
+  import 'ai-taurus-desktop';
 
   export default {
     methods: {

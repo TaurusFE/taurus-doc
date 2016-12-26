@@ -1,5 +1,5 @@
 <script>
- import {TNumberStepper} from 'aii-taurus';
+ import {TNumberStepper} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -68,7 +68,7 @@
       <div class="mt20">这是用来演示双向绑定的:<input v-model.number="normalStepperValue"></div>
     </div>
 <script>
- import {TNumberStepper} from 'aii-taurus';
+ import {TNumberStepper} from 'ai-taurus-desktop';
 
    export default ({
      components: {

@@ -1,5 +1,5 @@
 <script>
-  import {TDataTable} from 'aii-taurus';
+  import {TDataTable} from 'ai-taurus-desktop';
 
   let dataTableTemplate = ' <div class="container data-table--without-pagination"> '+
                           '       <div class="border--bottom clear padding-whole box--greyed header-grey"> '+
@@ -237,7 +237,7 @@
       v-on:dt-fixed-table-delete="dtFixedTableDelete">
     </t-data-table>
   <script>
-    import {TDataTable} from 'aii-taurus';
+    import {TDataTable} from 'ai-taurus-desktop';
   export default {
     components: {
       TDataTable
@@ -365,7 +365,7 @@
           v-on:dt-fixed-table-delete="dtFixedTableDelete">
         </t-data-table>
 <script>
-    import {TDataTable} from 'aii-taurus';
+    import {TDataTable} from 'ai-taurus-desktop';
 
      export default {
          components: {
@@ -482,7 +482,7 @@
           @dt-toggle-expanded="toggleExpanded">
         </t-data-table>
 <script>
-    import {TDataTable} from 'aii-taurus';
+    import {TDataTable} from 'ai-taurus-desktop';
 
   let dataTableTemplate = ' <div class="container data-table--without-pagination"> '+
                           '       <div class="border--bottom clear padding-whole box--greyed header-grey"> '+

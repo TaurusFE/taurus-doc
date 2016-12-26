@@ -1,5 +1,5 @@
 <script>
- import {TSearchFilter} from 'aii-taurus';
+ import {TSearchFilter} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -46,7 +46,7 @@
                     </div>
 
 <script>
- import {TSearchFilter} from 'aii-taurus';
+ import {TSearchFilter} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -78,7 +78,7 @@
                     <div class="mt20">这是用来演示双向绑定的:<input v-model="smallSearchResult"></div>
                   </div>
 <script>
- import {TSearchFilter} from 'aii-taurus';
+ import {TSearchFilter} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -111,7 +111,7 @@
           </div>
 
 <script>
- import {TSearchFilter} from 'aii-taurus';
+ import {TSearchFilter} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -146,7 +146,7 @@
 
 
 <script>
- import {TSearchFilter} from 'aii-taurus';
+ import {TSearchFilter} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -188,4 +188,3 @@
 | 名字 | 参数 | 描述 |
 | --- | ---| --- |
 | clear |无| 清除输入框文本 |
-

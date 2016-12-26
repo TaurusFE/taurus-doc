@@ -1,5 +1,5 @@
 <script>
-import { TLoading } from 'aii-taurus';
+import { TLoading } from 'ai-taurus-desktop';
 export default {
   components: {
     TLoading
@@ -85,7 +85,7 @@ Loading组件具有多种风格。其中包括局部显示和整页显示两种�
   </div>
 </template>
 <script>
-import { TLoading } from 'aii-taurus';
+import { TLoading } from 'ai-taurus-desktop';
 export default {
   el: '#loading-default',
   components: {
@@ -136,7 +136,7 @@ export default {
   </div>
 </template>
 <script>
-import { TLoading } from 'aii-taurus';
+import { TLoading } from 'ai-taurus-desktop';
 export default {
   el: '#loading-light',
   components: {
@@ -187,7 +187,7 @@ export default {
   </div>
 </template>
 <script>
-import { TLoading } from 'aii-taurus';
+import { TLoading } from 'ai-taurus-desktop';
 export default {
   el: '#loading-circle',
   components: {
@@ -239,7 +239,7 @@ export default {
   </div>
 </template>
 <script>
-import { TLoading } from 'aii-taurus';
+import { TLoading } from 'ai-taurus-desktop';
 export default {
   el: '#loading-spinner',
   components: {
@@ -287,7 +287,7 @@ export default {
   </div>
 </template>
 <script>
-import { TLoading } from 'aii-taurus';
+import { TLoading } from 'ai-taurus-desktop';
 export default {
   el: '#loading-full-screen',
   components: {

@@ -1,5 +1,5 @@
 <script>
- import {TLine} from 'aii-taurus';
+ import {TLine} from 'ai-taurus-desktop';
 
  const CHART_TYPE = {
    line: 'Line'
@@ -93,7 +93,7 @@
               value-field="value">
       </t-line>
 <script>
- import {TLine} from 'aii-taurus';
+ import {TLine} from 'ai-taurus-desktop';
 
  const CHART_TYPE = {
    line: 'Line'

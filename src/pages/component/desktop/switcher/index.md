@@ -1,5 +1,5 @@
 <script>
-  import {TSwitcher, TButton} from "aii-taurus"
+  import {TSwitcher, TButton} from "ai-taurus-desktop"
   export default {
     data () {
       return {
@@ -44,7 +44,7 @@
   </t-switcher>
 </template>
 <script>
-  import {TSwitcher} from 'aii-taurus'
+  import {TSwitcher} from 'ai-taurus-desktop'
   export default {
     components: {
       TSwitcher
@@ -71,7 +71,7 @@
   </t-switcher>
 </template>
 <script>
-  import {TSwitcher} from 'aii-taurus'
+  import {TSwitcher} from 'ai-taurus-desktop'
   export default {
     data() {
       return {
@@ -101,7 +101,7 @@
     </t-switcher>
   </template>
   <script>
-  import {TSwitcher} from 'aii-taurus'
+  import {TSwitcher} from 'ai-taurus-desktop'
   export default {
     data() {
       return {
@@ -128,7 +128,7 @@
     </t-switcher>
   </template>
   <script>
-  import {TSwitcher} from 'aii-taurus'
+  import {TSwitcher} from 'ai-taurus-desktop'
   export default {
     data() {
       return {

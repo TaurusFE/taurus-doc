@@ -1,5 +1,5 @@
 <script>
-import {TAutocomplete} from 'aii-taurus'
+import {TAutocomplete} from 'ai-taurus-desktop'
 export default {
   components: {
     TAutocomplete
@@ -35,7 +35,7 @@ export default {
       'Scheme'
     ]
     }
-  } 
+  }
 }
 </script>
 
@@ -45,10 +45,10 @@ Autocomplete组件，根据用户输入值进行搜索和过滤，让用户快�
 ```html
 <template>
 <div style='width:400px;'>
-   <t-autocomplete 
-      v-model.trim="rearchResult" 
-      :source="source" 
-      :disabled="disabled" 
+   <t-autocomplete
+      v-model.trim="rearchResult"
+      :source="source"
+      :disabled="disabled"
       :auto-focus="autoFocus" >
     </t-autocomplete>
 </div>
@@ -60,7 +60,7 @@ Autocomplete组件，根据用户输入值进行搜索和过滤，让用户快�
  <div style='margin-top: 20px'>这是用来演示双向绑定的:<input v-model.trim="rearchResult"></div>
 </template>
 <script>
-import {TAutocomplete} from 'aii-taurus'
+import {TAutocomplete} from 'ai-taurus-desktop'
 export default {
   components: {
     TAutocomplete
@@ -80,13 +80,13 @@ export default {
         'Python', 'Ruby', 'Scala', 'Scheme'
       ]
     }
-  } 
+  }
 }
 </script>
 
 ```
 :::
-### Props 
+### Props
 
 | 名字 | 类型 | 是否必传 | 默认 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -106,4 +106,3 @@ export default {
 | close |  | 关闭搜索结果列表菜单 |
 | open |  | 打开搜索结果列表菜单 |
 | select | value | 选择搜索结果,参数为选择的内容 |
-

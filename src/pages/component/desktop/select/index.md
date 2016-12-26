@@ -1,5 +1,5 @@
 <script>
- import {TSelect} from 'aii-taurus';
+ import {TSelect} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -91,7 +91,7 @@
 
 
 <script>
- import {TSelect} from 'aii-taurus';
+ import {TSelect} from 'ai-taurus-desktop';
 
    export default ({
      components: {
@@ -155,7 +155,7 @@
 <t-select :options="optgroup" style="width:150px;"></t-select>
 
 <script>
- import {TSelect} from 'aii-taurus';
+ import {TSelect} from 'ai-taurus-desktop';
 
    export default ({
      components: {

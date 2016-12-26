@@ -1,5 +1,5 @@
 <script>
-import { TSelectDropdown, TSubDropdown } from 'aii-taurus';
+import { TSelectDropdown, TSubDropdown } from 'ai-taurus-desktop';
 export default {
   components: {
     TSelectDropdown,
@@ -323,7 +323,7 @@ Dropdown是一个下拉框组件集，它包括`TSelectDropdown`和`TSubDropdown
   </div>
 </template>
 <script>
-import { TSelectDropdown } from 'aii-taurus';
+import { TSelectDropdown } from 'ai-taurus-desktop';
 export default {
   components: {
     TSelectDropdown
@@ -472,7 +472,7 @@ export default {
   </div>
 </template>
 <script>
-import { TSubDropdown } from 'aii-taurus';
+import { TSubDropdown } from 'ai-taurus-desktop';
 export default {
   components: {
     TSubDropdown

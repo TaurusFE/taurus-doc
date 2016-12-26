@@ -1,5 +1,5 @@
 <script>
-  import {cookieHelper, taurus, taurusConstant, localStorage} from 'aii-taurus';
+  import {cookieHelper, taurus, taurusConstant, localStorage} from 'ai-taurus-desktop';
 
   export default {
     ready () {
@@ -125,7 +125,7 @@ cookie-helper 封装了cookie的读写等操作
         <div><strong>SEC_AUTH_ZONE_KEY: </strong>{{ sec_auth_zone_key }}</div>
       </div>
 <script>
-    import {cookieHelper, taurus, constant, localStorage} from 'aii-taurus';
+    import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
 
     export default {
       data: function () {
@@ -183,7 +183,7 @@ cookie-helper 封装了cookie的读写等操作
         <div><strong>PRODUCT_TYPE: </strong>{{ bizInfoValue.product_type }}</div>
       </div>
 <script>
-    import {cookieHelper, taurus, constant, localStorage} from 'aii-taurus';
+    import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
 
     export default {
       data: function () {
@@ -256,7 +256,7 @@ cookie-helper 封装了cookie的读写等操作
         <div><strong>ADDRESS: </strong>{{ bizInfoValue.address }}</div>
       </div>
 <script>
-    import {cookieHelper, taurus, constant, localStorage} from 'aii-taurus';
+    import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
 
     export default {
       ready () {

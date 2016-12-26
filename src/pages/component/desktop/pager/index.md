@@ -1,5 +1,5 @@
 <script>
-  import {TPager} from 'aii-taurus';
+  import {TPager} from 'ai-taurus-desktop';
   export default {
     components: {
       TPager
@@ -67,7 +67,7 @@ pager组件，用于数据分页
     </div>
 
 <script>
-    import {TPager} from 'aii-taurus';
+    import {TPager} from 'ai-taurus-desktop';
       export default {
         components: {
           TPager

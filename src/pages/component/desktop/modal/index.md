@@ -1,5 +1,5 @@
 <script>
-import { TConfirm, TModal } from 'aii-taurus';
+import { TConfirm, TModal } from 'ai-taurus-desktop';
 export default {
   components: {
     TConfirm,
@@ -131,7 +131,7 @@ Modal组件是模态对话框组件，它提供了高自由度的定制能力。
   </div>
 </template>
 <script>
-import { TModal } from 'aii-taurus';
+import { TModal } from 'ai-taurus-desktop';
 export default {
   components: {
     TModal
@@ -203,7 +203,7 @@ export default {
   </div>
 </template>
 <script>
-import { TModal } from 'aii-taurus';
+import { TModal } from 'ai-taurus-desktop';
 export default {
   components: {
     TModal
@@ -311,7 +311,7 @@ export default {
   </div>
 </template>
 <script>
-import { TModal } from 'aii-taurus';
+import { TModal } from 'ai-taurus-desktop';
 export default {
   components: {
     TModal
@@ -374,7 +374,7 @@ export default {
   </div>
 </template>
 <script>
-import { TModal } from 'aii-taurus';
+import { TModal } from 'ai-taurus-desktop';
 export default {
   components: {
     TModal
@@ -438,7 +438,7 @@ export default {
   </div>
 </template>
 <script>
-import { TModal } from 'aii-taurus';
+import { TModal } from 'ai-taurus-desktop';
 export default {
   components: {
     TModal

@@ -1,5 +1,5 @@
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
   data: function () {
@@ -50,7 +50,7 @@
     <t-date-picker v-model="singleDateVal" date-format="yyyy.mm.dd"></t-date-picker>
   </div>
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
    data: {
@@ -85,7 +85,7 @@
     <t-date-picker :months-to-show="2" v-model="doubleDateVal" min-date="2016.07.11" max-date="2016.11.11" date-format="yyyy.mm.dd" :range-select="true"></t-date-picker>
 </div>
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
    data: function () {
@@ -119,7 +119,7 @@
 ```html
 <t-date-picker  min-date="2016.07.11" max-date="2016.11.11" date-format="yyyy.mm.dd"></t-date-picker>
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
        components: {
@@ -137,7 +137,7 @@
 ```html
 <t-date-picker :disabled="true" ></t-date-picker>
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
        components: {
@@ -155,7 +155,7 @@
 ```html
 <t-date-picker :date-val="dateVal" :range-select="true" date-format="yyyy.mm.dd" v-on:date-change="onChange"></t-date-picker>
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
   data: function () {
@@ -183,7 +183,7 @@
 ```html
 <t-date-picker :is-large="true" date-format="yyyy.mm.dd"></t-date-picker>
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
        components: {
@@ -201,7 +201,7 @@
 ```html
 <t-date-picker :inline="true" date-format="yyyy.mm.dd"></t-date-picker>
 <script>
- import {TDatePicker} from 'aii-taurus';
+ import {TDatePicker} from 'ai-taurus-desktop';
 
  export default {
        components: {

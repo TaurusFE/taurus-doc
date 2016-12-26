@@ -1,5 +1,5 @@
 <script>
- import {TBars} from 'aii-taurus';
+ import {TBars} from 'ai-taurus-desktop';
 
  export default {
      components: {
@@ -56,7 +56,7 @@
         value-unit="km">
       </t-bars>
 <script>
- import {TBars} from 'aii-taurus';
+ import {TBars} from 'ai-taurus-desktop';
 
  export default {
      components: {
@@ -108,4 +108,3 @@
 | legendAlign | String | No | 'right' | Legend Item 对齐方式 |
 | legendMaxColumns | Number | No | 3 | Legend Item 行最大列数 |
 | legendConf | Object | No | 无 | 当上面提供的 Legend 可选项无法满足要求时，请传递完整的 legendConf 信息\(将忽略上述所有的可选项\) |
-

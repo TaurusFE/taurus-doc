@@ -1,5 +1,5 @@
 <script>
-import { TBreadcrumbs } from 'aii-taurus';
+import { TBreadcrumbs } from 'ai-taurus-desktop';
 export default {
   components: {
     TBreadcrumbs
@@ -36,7 +36,7 @@ Breadcrumbs组件提供了导航功能。
   </div>
 </template>
 <script>
-import { TBreadcrumbs } from 'aii-taurus';
+import { TBreadcrumbs } from 'ai-taurus-desktop';
 export default {
   components: {
     TBreadcrumbs

@@ -1,5 +1,5 @@
 <script>
-import { TStatusMessage } from 'aii-taurus';
+import { TStatusMessage } from 'ai-taurus-desktop';
 export default {
   components: {
     TStatusMessage
@@ -72,7 +72,7 @@ Status Message组件是一个轻量级消息提示组件。它具有定时自动
   </div>
 </template>
 <script>
-import { TStatusMessage } from 'aii-taurus';
+import { TStatusMessage } from 'ai-taurus-desktop';
 export default {
   components: {
     TStatusMessage
@@ -107,7 +107,7 @@ export default {
   </div>
 </template>
 <script>
-import { TStatusMessage } from 'aii-taurus';
+import { TStatusMessage } from 'ai-taurus-desktop';
 export default {
   components: {
     TStatusMessage
@@ -204,7 +204,7 @@ this.$message({
   </div>
 </template>
 <script>
-import { TStatusMessage } from 'aii-taurus';
+import { TStatusMessage } from 'ai-taurus-desktop';
 export default {
   components: {
     TStatusMessage

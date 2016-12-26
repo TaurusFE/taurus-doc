@@ -1,5 +1,5 @@
 <script>
- import {TGauge} from 'aii-taurus';
+ import {TGauge} from 'ai-taurus-desktop';
  export default {
    data () {
        return {
@@ -59,7 +59,7 @@
     <t-gauge :data="highValueData" :max-value="1200" :step="240" :value="500" :title="highValueTitle"
              color="green"></t-gauge>
 <script>
- import {TGauge} from 'aii-taurus';
+ import {TGauge} from 'ai-taurus-desktop';
  export default {
    data () {
        return {
@@ -118,4 +118,3 @@
 | 名字 | 参数 | 描述 |
 | --- | --- | --- |
 | setValue | \(value\) | 设置组件的值 |
-

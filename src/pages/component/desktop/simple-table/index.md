@@ -1,5 +1,5 @@
 <script>
-  import {TSimpleTable} from 'aii-taurus';
+  import {TSimpleTable} from 'ai-taurus-desktop';
   let simpleTableTemplate = ' <div> '+
                  '     <h3 class="title--xsmall trailing-border trailer">{{entry.boxTitle}}</h3> '+
                  '     <div class="grid-row"> '+
@@ -145,7 +145,7 @@
     :filter-key="searchQuery">
   </t-simple-table>
 <script>
-import {TSimpleTable} from 'aii-taurus';
+import {TSimpleTable} from 'ai-taurus-desktop';
 
 export default {
   components: {
@@ -184,7 +184,7 @@ export default {
       size="small">
     </t-simple-table>
 <script>
-import {TSimpleTable} from 'aii-taurus';
+import {TSimpleTable} from 'ai-taurus-desktop';
 
 export default {
   components: {
@@ -226,7 +226,7 @@ export default {
     zebra="true">
   </t-simple-table>
 <script>
-import {TSimpleTable} from 'aii-taurus';
+import {TSimpleTable} from 'ai-taurus-desktop';
 
 export default {
   components: {
@@ -266,7 +266,7 @@ export default {
     line="true">
   </t-simple-table>
 <script>
-import {TSimpleTable} from 'aii-taurus';
+import {TSimpleTable} from 'ai-taurus-desktop';
 
 export default {
   components: {
@@ -305,7 +305,7 @@ export default {
     type='settings'>
   </t-simple-table>
 <script>
-  import {TSimpleTable} from 'aii-taurus';
+  import {TSimpleTable} from 'ai-taurus-desktop';
 
   export default {
     components: {
@@ -385,7 +385,7 @@ export default {
   </t-simple-table>
 
 <script>
-  import {TSimpleTable} from 'aii-taurus';
+  import {TSimpleTable} from 'ai-taurus-desktop';
 
   let simpleTableTemplate = ' <div> '+
                  '     <h3 class="title--xsmall trailing-border trailer">{{entry.boxTitle}}</h3> '+

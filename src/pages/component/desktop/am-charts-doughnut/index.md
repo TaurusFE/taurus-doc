@@ -1,5 +1,5 @@
 <script>
- import {TGauge} from 'aii-taurus';
+ import {TGauge} from 'ai-taurus-desktop';
  export default {
    data: function () {
      return {
@@ -40,7 +40,7 @@
              ref="lowGauge"></t-gauge>
 </template>
 <script>
-  import {TGauge} from 'aii-taurus';
+  import {TGauge} from 'ai-taurus-desktop';
   export default {
     data: {
       multiValueData: [

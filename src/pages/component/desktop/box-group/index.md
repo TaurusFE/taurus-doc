@@ -1,5 +1,5 @@
 <script>
- import {TBoxGroup} from 'aii-taurus' 
+ import {TBoxGroup} from 'ai-taurus-desktop'
  const INFO_TITLE = 'BoxGroup事件信息：';
  export default {
    components: {
@@ -28,7 +28,7 @@
    }
  }
 </script>
-## BoxGroup 
+## BoxGroup
 
 radio 和 checkbox
 
@@ -44,7 +44,7 @@ radio 和 checkbox
     <div>当前值为：{{modelValues}}</div>
 </template>
 <script>
- import {TBoxGroup} from 'aii-taurus' 
+ import {TBoxGroup} from 'ai-taurus-desktop'
  export default {
    components: {
      TBoxGroup
@@ -64,11 +64,11 @@ radio 和 checkbox
 ::: demo 要使用`radio`,只需要加上`type="radiobox"`属性. radio默认`垂直`方向排列
 ```html
 <template>
-  <t-box-group type="radiobox" labels="选项1,选项2" 
+  <t-box-group type="radiobox" labels="选项1,选项2"
                checked="false,true"></t-box-group>
 </template>
 <script>
-import {TBoxGroup} from 'aii-taurus' 
+import {TBoxGroup} from 'ai-taurus-desktop'
  export default {
    components: {
      TBoxGroup
@@ -86,13 +86,13 @@ import {TBoxGroup} from 'aii-taurus'
 ::: demo 要使用水平排列的radio,只需加上`inline="true"`的属性即可
 ```html
 <template>
-  <t-box-group type="radiobox" labels="选项1,选项2" 
+  <t-box-group type="radiobox" labels="选项1,选项2"
                checked="false,true"
                inline='true'>
   </t-box-group>
 </template>
 <script>
-import {TBoxGroup} from 'aii-taurus' 
+import {TBoxGroup} from 'ai-taurus-desktop' 
  export default {
    components: {
      TBoxGroup
@@ -100,7 +100,7 @@ import {TBoxGroup} from 'aii-taurus'
  }
 </script>
 ```
-::: 
+:::
 ### Button Filter
 ::: demo 要使用`button filter`，只需要设置`type='checkbox-filter'`，button filter 常用来作为标签筛选器
 ```html
@@ -120,7 +120,7 @@ import {TBoxGroup} from 'aii-taurus'
       v-on:unchecked="unchecked"></t-box-group>
 </template>
 <script>
- import {TBoxGroup} from 'aii-taurus' 
+ import {TBoxGroup} from 'ai-taurus-desktop'
  const INFO_TITLE = 'BoxGroup事件信息：';
  export default {
    components: {
@@ -177,7 +177,7 @@ import {TBoxGroup} from 'aii-taurus'
 | checked | (index, newValue) | 选中某一项时触发(参数index是当前选中项的下标，newValue是当前选中项的值) |
 | unchecked | (index, newValue) | 取消选中某一项时触发(参数index是当前选中项的下标，newValue是当前选中项的值) |
 
-### Methods 
+### Methods
 
 | 名字 | 参数 | 描述 |
 | --- | --- | --- |
@@ -217,4 +217,3 @@ this.$refs.myTag.count(2, 99); // 将第三个复选框的总数设置为99
 // 分别将第三、四、五个复选框的总数设置为99、98和10
 this.$refs.myTag.count([2, 3, 4], [99, 98, 10]);
 ```
-

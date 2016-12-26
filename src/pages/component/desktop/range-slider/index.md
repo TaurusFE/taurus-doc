@@ -1,5 +1,5 @@
 <script>
-import {TSelect, TRangeSlider} from 'aii-taurus';
+import {TSelect, TRangeSlider} from 'ai-taurus-desktop';
 export default {
   components: {
     TSelect,
@@ -82,21 +82,21 @@ export default {
     <span>
       <label>start</label>
         <t-select :options="options" default-val="0"  
-                  v-on:on-change="setRangeSlideStart" 
+                  v-on:on-change="setRangeSlideStart"
                   style="width:150px;display: inline-block">
         </t-select>
     </span>
     <span style="margin-left:20px">
       <label>end</label>
       <t-select :options="options" default-val="0"  
-                v-on:on-change="setRangeSlideEnd" 
+                v-on:on-change="setRangeSlideEnd"
                 style="width:150px;display: inline-block">
       </t-select>
     </span>
   </article>
 </template>
 <script>
-import {TSelect, TRangeSlider} from 'aii-taurus';
+import {TSelect, TRangeSlider} from 'ai-taurus-desktop';
 export default {
   components: {
     TSelect,

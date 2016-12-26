@@ -1,5 +1,5 @@
 <script>
-import { TSpeechBubble, TSpeechBubbleFilter, TSpeechBubbleFilterTree } from 'aii-taurus';
+import { TSpeechBubble, TSpeechBubbleFilter, TSpeechBubbleFilterTree } from 'ai-taurus-desktop';
 export default {
   components: {
     TSpeechBubble,
@@ -132,7 +132,7 @@ Speech Bubble是一个类似下拉框的组件集，它包括`TSpeechBubble`,`TS
   </div>
 </template>
 <script>
-import { TSpeechBubble } from 'aii-taurus';
+import { TSpeechBubble } from 'ai-taurus-desktop';
 export default {
   components: {
     TSpeechBubble
@@ -191,7 +191,7 @@ export default {
   </div>
 </template>
 <script>
-import { TSpeechBubble } from 'aii-taurus';
+import { TSpeechBubble } from 'ai-taurus-desktop';
 export default {
   components: {
     TSpeechBubble
@@ -238,7 +238,7 @@ export default {
   </div>
 </template>
 <script>
-import {TSpeechBubbleFilter } from 'aii-taurus';
+import {TSpeechBubbleFilter } from 'ai-taurus-desktop';
 export default {
   components: {
     TSpeechBubbleFilter
@@ -289,7 +289,7 @@ export default {
   </div>
 </template>
 <script>
-import { TSpeechBubbleFilterTree } from 'aii-taurus';
+import { TSpeechBubbleFilterTree } from 'ai-taurus-desktop';
 export default {
   components: {
     TSpeechBubbleFilterTree
