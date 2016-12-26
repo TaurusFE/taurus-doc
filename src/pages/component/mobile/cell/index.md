@@ -1,11 +1,11 @@
-## Cell组件
+## TCell组件
 
-Cell组件是一个移动端列表组件。可用作展示列表信息、链接或者表单等。
+TCell组件是一个移动端列表组件。可用作展示列表信息、链接或者表单等。
 
 ### 引入
 
 ```js
-import { TCell } from 'aii-taurus';
+import { TCell } from 'ai-taurus-mobile';
 ```
 
 ### 用法
@@ -74,4 +74,4 @@ import { TCell } from 'aii-taurus';
 | icon | 自定义图标 |
 
 
-[cell-demo]: http://10.19.18.95:47777/static/mobile-demo/examples/index.html#/cell
+[cell-demo]: /static/mobile-demo/examples/index.html#/cell
