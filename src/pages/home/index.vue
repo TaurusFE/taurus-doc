@@ -10,11 +10,11 @@
         <div class="masthead__button-links">
          <span class="masthead__button-portal">
            <router-link class="button button--action"  to="/desktop/design"><span><img src="/static/img/computer.png" alt=""></span>Desktop Documentation</router-link>
-                <a class="portal-desc">Taurus Desktop（Version 0.1.11）</a>
+                <a class="portal-desc"  target="_blank" href="/static/file/ai-taurus-desktop.zip">Taurus Desktop（Version 0.1.11）</a>
               </span>
           <span class="masthead__button-portal">
             <router-link class="button button--info" to="/mobile/component"><span><img src="/static/img/smartphone.png" alt=""></span>Mobile Documentation</router-link>
-                <a class="portal-desc">Taurus Mobile（Version 0.1.11）</a>
+                <a class="portal-desc" target="_blank" href="/static/file/ai-taurus-desktop.zip">Taurus Mobile（Version 0.1.11）</a>
               </span>
         </div>
       </div>
