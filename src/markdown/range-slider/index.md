@@ -2,98 +2,123 @@
 import {TSelect, TRangeSlider} from 'aii-taurus';
 export default {
   components: {
-    TSelect,
-    TRangeSlider
-  },
-  data () {
-    return  {
-      rangeOptions: {
-      isDrag: true,
-      rangeLabel: 'Months',
-      min: 0,
-      max: 6,
-      step: 1,
-      start: 0,
-      end: 3
+      TRangeSlider,
+      TSelect
     },
-    singleSlideOptions: {
-      rangeLabel: 'Months',
-      type: 'single',
-      min: 0,
-      max: 6,
-      step: 1,
-      start: 0,
-      end: 3
-    },
-    selectSlideOptions: {
-      isDrag: true,
-      type: 'select',
-      rangeLabel: 'MB',
-      min: 100,
-      max: 600,
-      start: 100,
-      end: 300
-    },
-    options: [],
-    defaultVal: ''
-    }
-  },
-  methods: {
-    setRangeSlideStart: function (value) {
-      this.rangeOptions.start = value;
-    },
-    setRangeSlideEnd: function (value) {
-      this.rangeOptions.end = value;
-    },
-    setSingleRangeSlideEnd: function (value) {
-      this.singleSlideOptions.end = value;
-    }
-  },
-  mounted: function () { // 放一些初始化的动作
-    this.$nextTick(function () {
-      var _min = this.rangeOptions.min;
-      var _max = this.rangeOptions.max;
-      var _step = this.rangeOptions.step;
-      for (var i = _min; i <= _max; i += _step) {
-        var obj = {
-          value: i,
-          label: i + ' Month'
-        };
-        this.options.push(obj);
+    data: {
+      singleSlide: {
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        end: 0,
+        options: []
+      },
+      singleDisabledSlide: {
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        end: 50,
+        disabled: true
+      },
+      singleDiscreteSlide: {
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        step: 10,
+        end: 0
+      },
+      singleDiscreteSlide2: {
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        step: 10,
+        end: 0,
+        showStops: true
+      },
+      rangeSlideOptions: {
+        type: 'range',
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        step: 1,
+        start: 0,
+        end: 20
+      },
+      rangeSlideDisabledOptions: {
+        type: 'range',
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        step: 1,
+        start: 0,
+        end: 20,
+        disabled: true
+      },
+      rangeSlideDiscreteOptions: {
+        type: 'range',
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        step: 10,
+        start: 0,
+        end: 20
+      },
+      rangeSlideDiscreteOptions2: {
+        type: 'range',
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        step: 10,
+        start: 0,
+        end: 40,
+        showStops: true
       }
-      this.defaultVal = _min;
-    });
-  }
+    },
+    methods: {
+      getOptions: function (rangeOptions) {
+        let _min = rangeOptions['min'] || 0;
+        let _max = rangeOptions['max'] || 0;
+        let _step = rangeOptions['step'] || 1;
+        for (let i = _min; i <= _max; i += _step) {
+          let obj = {
+            value: i + '',
+            label: i + ' ' + rangeOptions['rangeLabel']
+          };
+          rangeOptions['options'].push(obj);
+        }
+      }
+    },
+    created () {
+      this.getOptions(this.singleSlide);
+      // this.getOptions(this.rangeSlideOptions);
+    }
 }
 </script>
 ## Range Slider
-用于拖拽滑块选择范围
+用于拖拽滑块选择一个固定范围
 
-### Double Select
-:::demo 要使用双选择的滑块拖动，需要传递一个option给`range-options`,默认是双选择的滑块拖动。
+### 默认
+:::demo 要使用滑块拖动，需要传递一个option给`range-options`,默认是单向选择的拖动滑块。通过设置绑定值option.end自定义滑块的初始值
 ```html
 <template>
-  <t-range-slider :range-options="rangeOptions"></t-range-slider>
-  <article style="margin-top: 20px;margin-bottom:20px">
-      <label>Range:</label>
-      <span>{{rangeOptions.start}}-{{rangeOptions.end}}</span>
-  </article>
-  <article>
-    <span>
-      <label>start</label>
-        <t-select :options="options" default-val="0"  
-                  v-on:on-change="setRangeSlideStart" 
-                  style="width:150px;display: inline-block">
-        </t-select>
-    </span>
-    <span style="margin-left:20px">
-      <label>end</label>
-      <t-select :options="options" default-val="0"  
-                v-on:on-change="setRangeSlideEnd" 
-                style="width:150px;display: inline-block">
-      </t-select>
-    </span>
-  </article>
+  <div class="sg-component">
+      <div class="sg-component__header">
+        <h2 class="title--medium-small trailer--small">默认</h2>
+      </div>
+      <div class="sg-component__status"></div>
+      <!--range slider 组件-->
+      <div id="single-slider-wrap" class="sg-component__markup">
+        <t-range-slider :range-options="singleSlide"></t-range-slider>
+        <div style="margin-top: 20px">
+          <label>
+            <label>值: </label>
+            <span> <t-select  :options="singleSlide.options"  size="small" v-model="singleSlide.end"
+                             style="width:150px;display: inline-block"></t-select></span>
+          </label>
+        </div>
+      </div>
+      <!--range slider-->
+    </div>
 </template>
 <script>
 import {TSelect, TRangeSlider} from 'aii-taurus';
@@ -104,52 +129,351 @@ export default {
   },
   data () {
     return  {
-      rangeOptions: {
-      isDrag: false,
-      rangeLabel: 'Months',
-      min: 0,
-      max: 6,
-      step: 1,
-      start: 0,
-      end: 3
-    }
-    options: [],
-    defaultVal: ''
-    }
+      singleSlide: {
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        end: 0,
+        options: []
+      }
   },
   methods: {
-    setRangeSlideStart: function (value) {
-      this.rangeOptions.start = value;
-    },
-    setRangeSlideEnd: function (value) {
-      this.rangeOptions.end = value;
-    },
-    setSingleRangeSlideEnd: function (value) {
-      this.singleSlideOptions.end = value;
+    getOptions: function (rangeOptions) {
+      let _min = rangeOptions['min'] || 0;
+      let _max = rangeOptions['max'] || 0;
+      let _step = rangeOptions['step'] || 1;
+      for (let i = _min; i <= _max; i += _step) {
+        let obj = {
+          value: i + '',
+          label: i + ' ' + rangeOptions['rangeLabel']
+        };
+        rangeOptions['options'].push(obj);
+      }
     }
+  },
+  created () {
+    this.getOptions(this.singleSlide);
   }
+ }
 </script>
 ```
 :::
-### Single Select
-:::demo
+### 禁用
 ```html
 <template>
-  <t-range-slider :range-options="singleSlideOptions"></t-range-slider>
-    <article style="margin-top: 20px;margin-bottom: 20px">
-      <label>Range:</label>
-      <span>{{singleSlideOptions.start}}-{{singleSlideOptions.end}}</span>
-    </article>
-    <article>
-      <span style="margin-left:20px">
-        <label>end</label>
-        <t-select :options="options" default-val="0"  v-on:on-change="setSingleRangeSlideEnd" style="width:150px;display: inline-block"></t-select>
-        </span>
-    </article>
+  <div class="sg-component">
+      <div class="sg-component__header">
+        <h2 class="title--medium-small trailer--small">禁用</h2>
+      </div>
+      <div class="sg-component__status"></div>
+      <!--range slider 组件-->
+      <div id="single-slider-disabled-wrap" class="sg-component__markup">
+        <t-range-slider :range-options="singleDisabledSlide"></t-range-slider>
+      </div>
+      <!--range slider-->
+  </div>
 </template>
+<script>
+import {TSelect, TRangeSlider} from 'aii-taurus';
+export default {
+  components: {
+    TSelect,
+    TRangeSlider
+  },
+  data () {
+    return  {
+      singleDisabledSlide: {
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            end: 50,
+            disabled: true
+      }
+  }
+ }
+</script>
+```
+
+### 离散值: 默认不显示间断点
+:::设置option.step改变step的值可以改变步长
+```html
+<template>
+   <div class="sg-component">
+      <div class="sg-component__header">
+        <h2 class="title--medium-small trailer--small">离散值: 不显示间断点</h2>
+      </div>
+      <div class="sg-component__status"></div>
+      <!--range slider 组件-->
+      <div id="single-slider-discrete-wrap" class="sg-component__markup">
+        <t-range-slider :range-options="singleDiscreteSlide"></t-range-slider>
+      </div>
+      <!--range slider-->
+    </div>
+</template>
+<script>
+import {TSelect, TRangeSlider} from 'aii-taurus';
+export default {
+  components: {
+    TSelect,
+    TRangeSlider
+  },
+  data () {
+    return  {
+       singleDiscreteSlide: {
+        rangeLabel: 'Number',
+        min: 0,
+        max: 100,
+        step: 10,
+        end: 0
+      }
+  }
+ }
+</script>
 ```
 :::
-### Select slider
-::: demo
+
+### 离散值: 显示间断点
+:::设置option.showStops为true可以显示间断点
 ```html
+<template>
+   <div class="sg-component">
+       <div class="sg-component__header">
+         <h2 class="title--medium-small trailer--small">离散值: 显示间断点</h2>
+       </div>
+       <div class="sg-component__status"></div>
+       <!--range slider 组件-->
+       <div class="sg-component__markup">
+         <t-range-slider :range-options="singleDiscreteSlide2"></t-range-slider>
+       </div>
+       <!--range slider-->
+    </div>
+</template>
+<script>
+import {TSelect, TRangeSlider} from 'aii-taurus';
+export default {
+  components: {
+    TSelect,
+    TRangeSlider
+  },
+  data () {
+    return  {
+       singleDiscreteSlide2: {
+         rangeLabel: 'Number',
+         min: 0,
+         max: 100,
+         step: 10,
+         end: 0,
+         showStops: true
+       }
+  }
+ }
+</script>
 ```
+:::
+
+### 默认范围滑块
+:::设置option.type为range可以使用双向范围滑块条
+```html
+<template>
+  <div class="sg-component">
+      <div class="sg-component__header">
+        <h2 class="title--medium-small trailer--small">默认范围滑块</h2>
+      </div>
+      <div class="sg-component__status"></div>
+      <!--range slider 组件-->
+      <div class="sg-component__markup">
+        <t-range-slider :range-options="rangeSlideOptions" ></t-range-slider>
+        <div style="margin-top: 20px">
+          <label>
+            <label>起始值: </label>
+            <span> <t-select  :options="rangeSlideOptions.options"  size="small" v-model="rangeSlideOptions.start"
+                              style="width:150px;display: inline-block"></t-select></span>
+          </label>
+          <label>
+            <label>结束值: </label>
+            <span> <t-select  :options="rangeSlideOptions.options"  size="small" v-model="rangeSlideOptions.end"
+                              style="width:150px;display: inline-block"></t-select></span>
+          </label>
+        </div>
+      </div>
+      <!--range slider-->
+    </div>
+</template>
+<script>
+import {TSelect, TRangeSlider} from 'aii-taurus';
+export default {
+  components: {
+    TSelect,
+    TRangeSlider
+  },
+  data () {
+    return  {
+        rangeSlideOptions: {
+          type: 'range',
+          rangeLabel: 'Number',
+          min: 0,
+          max: 100,
+          step: 1,
+          start: 0,
+          end: 20,
+          options: []
+        }
+    }
+  },
+  methods: {
+    getOptions: function (rangeOptions) {
+      let _min = rangeOptions['min'] || 0;
+      let _max = rangeOptions['max'] || 0;
+      let _step = rangeOptions['step'] || 1;
+      for (let i = _min; i <= _max; i += _step) {
+        let obj = {
+          value: i + '',
+          label: i + ' ' + rangeOptions['rangeLabel']
+        };
+        rangeOptions['options'].push(obj);
+      }
+    }
+  },
+  created () {
+    this.getOptions(this.rangeSlideOptions);
+  }
+ }
+</script>
+```
+:::
+
+### 禁用范围滑块
+```html
+<template>
+  <div class="sg-component">
+      <div class="sg-component__header">
+        <h2 class="title--medium-small trailer--small">禁用范围滑块</h2>
+      </div>
+      <div class="sg-component__status"></div>
+      <!--range slider 组件-->
+      <div class="sg-component__markup">
+        <t-range-slider :range-options="rangeSlideDisabledOptions" ></t-range-slider>
+      </div>
+      <!--range slider-->
+   </div>
+</template>
+<script>
+import {TSelect, TRangeSlider} from 'aii-taurus';
+export default {
+  components: {
+    TSelect,
+    TRangeSlider
+  },
+  data () {
+    return  {
+       rangeSlideDisabledOptions: {
+         type: 'range',
+         rangeLabel: 'Number',
+         min: 0,
+         max: 100,
+         step: 1,
+         start: 0,
+         end: 20,
+         disabled: true
+       }
+    }
+  }
+
+ }
+</script>
+```
+
+### 范围滑块带离散值: 不显示间断点
+:::设置option.type为range可以使用双向范围滑块条，默认不显示间断点
+```html
+<template>
+   <div class="sg-component">
+      <div class="sg-component__header">
+        <h2 class="title--medium-small trailer--small">范围滑块带离散值: 不显示间断点</h2>
+      </div>
+      <div class="sg-component__status"></div>
+      <!--range slider 组件-->
+      <div class="sg-component__markup">
+        <t-range-slider :range-options="rangeSlideDiscreteOptions" ></t-range-slider>
+      </div>
+      <!--range slider-->
+    </div>
+</template>
+<script>
+import {TSelect, TRangeSlider} from 'aii-taurus';
+export default {
+  components: {
+    TSelect,
+    TRangeSlider
+  },
+  data () {
+    return  {
+       rangeSlideDiscreteOptions: {
+         type: 'range',
+         rangeLabel: 'Number',
+         min: 0,
+         max: 100,
+         step: 10,
+         start: 0,
+         end: 20
+       }
+    }
+  }
+ }
+</script>
+```
+:::
+### 范围滑块带离散值: 显示间断点
+:::设置option.type为range可以使用双向范围滑块条，option.showStops为true可以显示间断点
+```html
+<template>
+   <div class="sg-component">
+      <div class="sg-component__header">
+        <h2 class="title--medium-small trailer--small">范围滑块带离散值: 不显示间断点</h2>
+      </div>
+      <div class="sg-component__status"></div>
+      <!--range slider 组件-->
+      <div class="sg-component__markup">
+        <t-range-slider :range-options="rangeSlideDiscreteOptions" ></t-range-slider>
+      </div>
+      <!--range slider-->
+    </div>
+</template>
+<script>
+import {TSelect, TRangeSlider} from 'aii-taurus';
+export default {
+  components: {
+    TSelect,
+    TRangeSlider
+  },
+  data () {
+    return  {
+       rangeSlideDiscreteOptions2: {
+         type: 'range',
+         rangeLabel: 'Number',
+         min: 0,
+         max: 100,
+         step: 10,
+         start: 0,
+         end: 40,
+         showStops: true
+       }
+    }
+  }
+ }
+</script>
+```
+:::
+
+### Props \(参数\)
+
+| 名字 | 类型 | 是否必传 | 默认 | 描述 |
+| --- | --- | --- | --- | --- |
+| rangeLabel | String| No | '' | 数据单位或者数据标签 |
+| min | Number | YES  | 0 | 数据范围最小值|
+| max | Number | YES | 无 | 数据范围最大值 |
+| end | Number | YES | 0 | 数据范围结束值，因为会做数据的绑定，所以这个值必须选 |
+| start | Number | YES or NO| 0 | 数据范围开始值，当type为range的时候必须传，因为会做数据的绑定，所以这个值必须选 |
+| disabled | Boolean | NO | false | 是否可用 |
+| step | Number | NO | 1 | 离散值，设定的步长 |
+| showStops | Boolean | NO | false | 是否显示离散值范围条 |
