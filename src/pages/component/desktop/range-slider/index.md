@@ -1,78 +1,80 @@
 <script>
-import {TSelect, TRangeSlider} from 'aii-taurus';
+import {TSelect, TRangeSlider} from 'ai-taurus-desktop';
 export default {
   components: {
       TRangeSlider,
       TSelect
     },
-    data: {
-      singleSlide: {
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        end: 0,
-        options: []
-      },
-      singleDisabledSlide: {
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        end: 50,
-        disabled: true
-      },
-      singleDiscreteSlide: {
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        step: 10,
-        end: 0
-      },
-      singleDiscreteSlide2: {
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        step: 10,
-        end: 0,
-        showStops: true
-      },
-      rangeSlideOptions: {
-        type: 'range',
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        step: 1,
-        start: 0,
-        end: 20
-      },
-      rangeSlideDisabledOptions: {
-        type: 'range',
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        step: 1,
-        start: 0,
-        end: 20,
-        disabled: true
-      },
-      rangeSlideDiscreteOptions: {
-        type: 'range',
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        step: 10,
-        start: 0,
-        end: 20
-      },
-      rangeSlideDiscreteOptions2: {
-        type: 'range',
-        rangeLabel: 'Number',
-        min: 0,
-        max: 100,
-        step: 10,
-        start: 0,
-        end: 40,
-        showStops: true
-      }
+     data () {
+        return {
+          singleSlide: {
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            end: 0,
+            options: []
+          },
+          singleDisabledSlide: {
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            end: 50,
+            disabled: true
+          },
+          singleDiscreteSlide: {
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            step: 10,
+            end: 0
+          },
+          singleDiscreteSlide2: {
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            step: 10,
+            end: 0,
+            showStops: true
+          },
+          rangeSlideOptions: {
+            type: 'range',
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            step: 1,
+            start: 0,
+            end: 20
+          },
+          rangeSlideDisabledOptions: {
+            type: 'range',
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            step: 1,
+            start: 0,
+            end: 20,
+            disabled: true
+          },
+          rangeSlideDiscreteOptions: {
+            type: 'range',
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            step: 10,
+            start: 0,
+            end: 20
+          },
+          rangeSlideDiscreteOptions2: {
+            type: 'range',
+            rangeLabel: 'Number',
+            min: 0,
+            max: 100,
+            step: 10,
+            start: 0,
+            end: 40,
+            showStops: true
+          }
+        }
     },
     methods: {
       getOptions: function (rangeOptions) {
@@ -159,6 +161,7 @@ export default {
 ```
 :::
 ### 禁用
+:::demo
 ```html
 <template>
   <div class="sg-component">
@@ -193,9 +196,9 @@ export default {
  }
 </script>
 ```
-
+:::
 ### 离散值: 默认不显示间断点
-:::设置option.step改变step的值可以改变步长
+:::demo 设置option.step改变step的值可以改变步长
 ```html
 <template>
    <div class="sg-component">
@@ -233,7 +236,7 @@ export default {
 :::
 
 ### 离散值: 显示间断点
-:::设置option.showStops为true可以显示间断点
+:::demo 设置option.showStops为true可以显示间断点
 ```html
 <template>
    <div class="sg-component">
@@ -272,7 +275,7 @@ export default {
 :::
 
 ### 默认范围滑块
-:::设置option.type为range可以使用双向范围滑块条
+:::demo 设置option.type为range可以使用双向范围滑块条
 ```html
 <template>
   <div class="sg-component">
@@ -343,6 +346,7 @@ export default {
 :::
 
 ### 禁用范围滑块
+:::demo
 ```html
 <template>
   <div class="sg-component">
@@ -384,7 +388,7 @@ export default {
 ```
 
 ### 范围滑块带离散值: 不显示间断点
-:::设置option.type为range可以使用双向范围滑块条，默认不显示间断点
+:::demo 设置option.type为range可以使用双向范围滑块条，默认不显示间断点
 ```html
 <template>
    <div class="sg-component">
@@ -424,7 +428,7 @@ export default {
 ```
 :::
 ### 范围滑块带离散值: 显示间断点
-:::设置option.type为range可以使用双向范围滑块条，option.showStops为true可以显示间断点
+:::demo 设置option.type为range可以使用双向范围滑块条，option.showStops为true可以显示间断点
 ```html
 <template>
    <div class="sg-component">
