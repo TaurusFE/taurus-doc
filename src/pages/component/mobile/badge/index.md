@@ -52,8 +52,6 @@ size	尺寸	String	normal, large, small	normal
 | 名称 | 说明 |
 | ------- | ---- |
 | - | 自定义显示内容 |
-| title | 自定义标题 |
-| icon | 自定义图标 |
 
 
 [badge-demo]: /static/mobile-demo/examples/index.html#/badge
