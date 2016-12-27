@@ -398,6 +398,31 @@
         ]
       },
       {
+        "groupName":"Form Components",
+        "list": [
+          {
+            "path": "/switch",
+            "title": "Switch"
+          },
+          {
+            "path": "/checklist",
+            "title": "Checklist"
+          },
+          {
+            "path": "/radio",
+            "title": "Radio"
+          },
+          {
+            "path": "/field",
+            "title": "Field"
+          },
+          {
+            "path": "/badge",
+            "title": "Badge"
+          }
+        ]
+      },
+      {
         "groupName":"Others",
         "list": [
         ]
