@@ -358,6 +358,11 @@
   "mobile": {
     "component": [
       {
+        "groupName": "OverView",
+        "href": "/static/mobile-demo/examples/index.html",
+        "list": []
+      },
+      {
         "groupName": "form",
         "list": [
           {
