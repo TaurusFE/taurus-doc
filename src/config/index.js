@@ -73,6 +73,7 @@ import mobiCellSwipe from '../pages/component/mobile/cell-swipe'
 import mobiSearch from '../pages/component/mobile/search'
 import mobiSpinner from '../pages/component/mobile/spinner'
 import mobiTabContainer from '../pages/component/mobile/tab-container'
+import mobileDemo from '../pages/component/mobile/demo'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
@@ -163,7 +164,8 @@ let mobile = {
     'cell-swipe': mobiCellSwipe,
     'search': mobiSearch,
     'spinner': mobiSpinner,
-    'tab-container': mobiTabContainer
+    'tab-container': mobiTabContainer,
+    'mobile-demo': mobileDemo
   },
   'design': {
     principle,

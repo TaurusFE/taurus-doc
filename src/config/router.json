@@ -359,8 +359,12 @@
     "component": [
       {
         "groupName": "OverView",
-        "href": "/static/mobile-demo/examples/index.html",
-        "list": []
+        "list": [
+          {
+            "path": "/mobile-demo",
+            "title": "Demo"
+          }
+        ]
       },
       {
         "groupName": "form",
