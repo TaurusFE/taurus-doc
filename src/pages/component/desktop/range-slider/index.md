@@ -1,11 +1,11 @@
 <script>
 import {TSelect, TRangeSlider} from 'ai-taurus-desktop';
 export default {
-  components: {
+    components: {
       TRangeSlider,
       TSelect
     },
-     data () {
+    data: function () {
         return {
           singleSlide: {
             rangeLabel: 'Number',
@@ -29,7 +29,7 @@ export default {
             end: 0
           },
           singleDiscreteSlide2: {
-            rangeLabel: 'Number',
+            // rangeLabel: 'Number',
             min: 0,
             max: 100,
             step: 10,
@@ -74,7 +74,7 @@ export default {
             end: 40,
             showStops: true
           }
-        }
+        };
     },
     methods: {
       getOptions: function (rangeOptions) {
@@ -92,7 +92,6 @@ export default {
     },
     created () {
       this.getOptions(this.singleSlide);
-      // this.getOptions(this.rangeSlideOptions);
     }
 }
 </script>
@@ -104,9 +103,6 @@ export default {
 ```html
 <template>
   <div class="sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">默认</h2>
-      </div>
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
       <div id="single-slider-wrap" class="sg-component__markup">
@@ -165,9 +161,6 @@ export default {
 ```html
 <template>
   <div class="sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">禁用</h2>
-      </div>
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
       <div id="single-slider-disabled-wrap" class="sg-component__markup">
@@ -202,9 +195,6 @@ export default {
 ```html
 <template>
    <div class="sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">离散值: 不显示间断点</h2>
-      </div>
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
       <div id="single-slider-discrete-wrap" class="sg-component__markup">
@@ -240,9 +230,6 @@ export default {
 ```html
 <template>
    <div class="sg-component">
-       <div class="sg-component__header">
-         <h2 class="title--medium-small trailer--small">离散值: 显示间断点</h2>
-       </div>
        <div class="sg-component__status"></div>
        <!--range slider 组件-->
        <div class="sg-component__markup">
@@ -278,10 +265,7 @@ export default {
 :::demo 设置option.type为range可以使用双向范围滑块条
 ```html
 <template>
-  <div class="sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">默认范围滑块</h2>
-      </div>
+   <div class="sg-component">
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
       <div class="sg-component__markup">
@@ -289,12 +273,12 @@ export default {
         <div style="margin-top: 20px">
           <label>
             <label>起始值: </label>
-            <span> <t-select  :options="rangeSlideOptions.options"  size="small" v-model="rangeSlideOptions.start"
+            <span> <t-select  :options="singleSlide.options"  size="small" v-model="rangeSlideOptions.start"
                               style="width:150px;display: inline-block"></t-select></span>
           </label>
           <label>
             <label>结束值: </label>
-            <span> <t-select  :options="rangeSlideOptions.options"  size="small" v-model="rangeSlideOptions.end"
+            <span> <t-select  :options="singleSlide.options"  size="small" v-model="rangeSlideOptions.end"
                               style="width:150px;display: inline-block"></t-select></span>
           </label>
         </div>
@@ -350,9 +334,6 @@ export default {
 ```html
 <template>
   <div class="sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">禁用范围滑块</h2>
-      </div>
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
       <div class="sg-component__markup">
@@ -386,15 +367,13 @@ export default {
  }
 </script>
 ```
+:::
 
 ### 范围滑块带离散值: 不显示间断点
 :::demo 设置option.type为range可以使用双向范围滑块条，默认不显示间断点
 ```html
 <template>
    <div class="sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">范围滑块带离散值: 不显示间断点</h2>
-      </div>
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
       <div class="sg-component__markup">
@@ -432,13 +411,10 @@ export default {
 ```html
 <template>
    <div class="sg-component">
-      <div class="sg-component__header">
-        <h2 class="title--medium-small trailer--small">范围滑块带离散值: 不显示间断点</h2>
-      </div>
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
       <div class="sg-component__markup">
-        <t-range-slider :range-options="rangeSlideDiscreteOptions" ></t-range-slider>
+        <t-range-slider :range-options="rangeSlideDiscreteOptions2" ></t-range-slider>
       </div>
       <!--range slider-->
     </div>
@@ -473,7 +449,7 @@ export default {
 
 | 名字 | 类型 | 是否必传 | 默认 | 描述 |
 | --- | --- | --- | --- | --- |
-| rangeLabel | String| No | '' | 数据单位或者数据标签 |
+| rangeLabel | String| No |  | 数据单位或者数据标签 |
 | min | Number | YES  | 0 | 数据范围最小值|
 | max | Number | YES | 无 | 数据范围最大值 |
 | end | Number | YES | 0 | 数据范围结束值，因为会做数据的绑定，所以这个值必须选 |

@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "ai-taurus-desktop": "^0.1.0",
+    "ai-taurus-desktop": "^0.1.2",
     "github-markdown-css": "^2.3.0",
     "shelljs": "^0.7.5",
     "vue": "^2.1.0",
