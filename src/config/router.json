@@ -403,6 +403,15 @@
         ]
       },
       {
+        "groupName":"JS Components",
+        "list": [
+          {
+            "path": "/palette-button",
+            "title": "Palette Button"
+          }
+        ]
+      },
+      {
         "groupName":"Form Components",
         "list": [
           {
@@ -424,6 +433,27 @@
           {
             "path": "/badge",
             "title": "Badge"
+          }
+        ]
+      },
+      {
+        "groupName":"CSS Components",
+        "list": [
+          {
+            "path": "/header",
+            "title": "Header"
+          },
+          {
+            "path": "/navbar",
+            "title": "Navbar"
+          },
+          {
+            "path": "/tabbar",
+            "title": "Tabbar"
+          },
+          {
+            "path": "/button",
+            "title": "Button"
           }
         ]
       },
