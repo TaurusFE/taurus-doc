@@ -73,6 +73,7 @@ import mobiCellSwipe from '../pages/component/mobile/cell-swipe'
 import mobiSearch from '../pages/component/mobile/search'
 import mobiSpinner from '../pages/component/mobile/spinner'
 import mobiTabContainer from '../pages/component/mobile/tab-container'
+import mobileDemo from '../pages/component/mobile/demo'
 import mobileHeader from '../pages/component/mobile/header'
 import mobileNavbar from '../pages/component/mobile/navbar'
 import mobileTabbar from '../pages/component/mobile/tabbar'
@@ -173,6 +174,8 @@ let mobile = {
     'cell-swipe': mobiCellSwipe,
     'search': mobiSearch,
     'spinner': mobiSpinner,
+    'tab-container': mobiTabContainer,
+    'mobile-demo': mobileDemo
     'tab-container': mobiTabContainer,
     'header': mobileHeader,
     'navbar': mobileNavbar,
