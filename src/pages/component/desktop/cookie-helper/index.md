@@ -152,10 +152,10 @@ CookieHelper插件提供了对cookie的读写操作能力。
 
 ```html
 <div class="form-row">
-  <button class="button button--action" v-on:click="writeBizCookie">write cookie</button>
-  <button class="button button--action" v-on:click="rewriteBizCookie">rewrite cookie</button>
-  <button class="button button--action" v-on:click="readBizCookie">read cookie</button>
-  <button class="button button--action" v-on:click="removeBizCookie">remove cookie</button>
+  <button class="button button--small button--action" v-on:click="writeBizCookie">write cookie</button>
+  <button class="button button--small button--action" v-on:click="rewriteBizCookie">rewrite cookie</button>
+  <button class="button button--small button--action" v-on:click="readBizCookie">read cookie</button>
+  <button class="button button--small button--action" v-on:click="removeBizCookie">remove cookie</button>
 </div>
 <div>
   <div><strong>CUSTOMER_ID: </strong>{{ bizInfoValue.customer_id }}</div>
