@@ -80,50 +80,31 @@
               taurus.removeBizInfo(this.bizInfoKey.role_type);
               taurus.removeBizInfo(this.bizInfoKey.product_type);
               this.readBizCookie();
-            },
-            writeLocalStorage () {
-              localStorage.set(this.bizInfoKey.customer_name, 'Wendy');
-              localStorage.set(this.bizInfoKey.address, 'Nanjing');
-              this.readLocalStorage();
-            },
-            rewriteLocalStorage () {
-              localStorage.set(this.bizInfoKey.customer_name, 'Teemo');
-              localStorage.set(this.bizInfoKey.address, 'Home');
-              this.readLocalStorage();
-            },
-            readLocalStorage () {
-              this.bizInfoValue.customer_name = localStorage.get(this.bizInfoKey.customer_name);
-              this.bizInfoValue.address = localStorage.get(this.bizInfoKey.address);
-            },
-            removeLocalStorage () {
-              localStorage.remove(this.bizInfoKey.customer_name);
-              localStorage.remove(this.bizInfoKey.address);
-              this.readLocalStorage();
             }
           }
   };
 </script>
 
-## Cookie-Helper
+## CookieHelper插件
 
-cookie-helper 封装了cookie的读写等操作
+CookieHelper插件提供了对cookie的读写操作能力。
 
-### Cookie操作演示
+### 基本用法
 
 :::demo
 
 ```html
-      <div class="form-row">
-        <button class="button button--action" v-on:click="writeCookie">write cookie</button>
-        <button class="button button--action" v-on:click="readCookie">read cookie</button>
-        <button class="button button--action" v-on:click="removeCookie">remove cookie</button>
-      </div>
-      <div>
-        <div><strong>SEC_AUTH_TOKEN_KEY: </strong>{{ sec_auth_token_key }}</div>
-        <div><strong>SEC_AUTH_TENANT_KEY: </strong>{{ sec_auth_tenant_key }}</div>
-        <div><strong>SEC_AUTH_ROLETYPE_KEY: </strong>{{ sec_auth_roletype_key }}</div>
-        <div><strong>SEC_AUTH_ZONE_KEY: </strong>{{ sec_auth_zone_key }}</div>
-      </div>
+<div class="form-row">
+  <button class="button button--small button--action" v-on:click="writeCookie">write cookie</button>
+  <button class="button button--small button--action" v-on:click="readCookie">read cookie</button>
+  <button class="button button--small button--action" v-on:click="removeCookie">remove cookie</button>
+</div>
+<div>
+  <div><strong>SEC_AUTH_TOKEN_KEY: </strong>{{ sec_auth_token_key }}</div>
+  <div><strong>SEC_AUTH_TENANT_KEY: </strong>{{ sec_auth_tenant_key }}</div>
+  <div><strong>SEC_AUTH_ROLETYPE_KEY: </strong>{{ sec_auth_roletype_key }}</div>
+  <div><strong>SEC_AUTH_ZONE_KEY: </strong>{{ sec_auth_zone_key }}</div>
+</div>
 <script>
     import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
 
@@ -170,123 +151,75 @@ cookie-helper 封装了cookie的读写等操作
 :::demo
 
 ```html
-      <div class="form-row">
-        <button class="button button--action" v-on:click="writeBizCookie">write cookie</button>
-        <button class="button button--action" v-on:click="rewriteBizCookie">rewrite cookie</button>
-        <button class="button button--action" v-on:click="readBizCookie">read cookie</button>
-        <button class="button button--action" v-on:click="removeBizCookie">remove cookie</button>
-      </div>
-      <div>
-        <div><strong>CUSTOMER_ID: </strong>{{ bizInfoValue.customer_id }}</div>
-        <div><strong>ORG_ID: </strong>{{ bizInfoValue.org_id }}</div>
-        <div><strong>ROLE_TYPE: </strong>{{ bizInfoValue.role_type }}</div>
-        <div><strong>PRODUCT_TYPE: </strong>{{ bizInfoValue.product_type }}</div>
-      </div>
+<div class="form-row">
+  <button class="button button--action" v-on:click="writeBizCookie">write cookie</button>
+  <button class="button button--action" v-on:click="rewriteBizCookie">rewrite cookie</button>
+  <button class="button button--action" v-on:click="readBizCookie">read cookie</button>
+  <button class="button button--action" v-on:click="removeBizCookie">remove cookie</button>
+</div>
+<div>
+  <div><strong>CUSTOMER_ID: </strong>{{ bizInfoValue.customer_id }}</div>
+  <div><strong>ORG_ID: </strong>{{ bizInfoValue.org_id }}</div>
+  <div><strong>ROLE_TYPE: </strong>{{ bizInfoValue.role_type }}</div>
+  <div><strong>PRODUCT_TYPE: </strong>{{ bizInfoValue.product_type }}</div>
+</div>
 <script>
-    import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
+  import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
 
-    export default {
-      data: function () {
-        return {
-          bizInfoKey: {
-            customer_id: 'CUSTOMER_ID',
-            org_id: 'ORG_ID',
-            role_type: 'ROLE_TYPE',
-            product_type: 'PRODUCT_TYPE',
-            customer_name: 'CUSTOMER_NAME',
-            address: 'ADDRESS'
-          },
-          bizInfoValue: {
-            customer_id: '',
-            org_id: '',
-            role_type: '',
-            product_type: '',
-            customer_name: '',
-            address: ''
-          }
-        };
-      },
-      methods: {
-        writeBizCookie: function () {
-          taurus.setBizInfo(this.bizInfoKey.customer_id, '201610178909');
-          taurus.setBizInfo(this.bizInfoKey.org_id, '876829');
-          taurus.setBizInfo(this.bizInfoKey.role_type, '1');
-          taurus.setBizInfo(this.bizInfoKey.product_type, '21000');
-          this.readBizCookie();
+  export default {
+    data: function () {
+      return {
+        bizInfoKey: {
+          customer_id: 'CUSTOMER_ID',
+          org_id: 'ORG_ID',
+          role_type: 'ROLE_TYPE',
+          product_type: 'PRODUCT_TYPE',
+          customer_name: 'CUSTOMER_NAME',
+          address: 'ADDRESS'
         },
-        rewriteBizCookie: function () {
-          taurus.setBizInfo(this.bizInfoKey.customer_id, '9999999999');
-          taurus.setBizInfo(this.bizInfoKey.org_id, '88888');
-          taurus.setBizInfo(this.bizInfoKey.role_type, '2');
-          taurus.setBizInfo(this.bizInfoKey.product_type, '99000');
-          this.readBizCookie();
-        },
-        readBizCookie: function () {
-          this.bizInfoValue.customer_id = taurus.getBizInfo(this.bizInfoKey.customer_id);
-          this.bizInfoValue.org_id = taurus.getBizInfo(this.bizInfoKey.org_id);
-          this.bizInfoValue.role_type = taurus.getBizInfo(this.bizInfoKey.role_type);
-          this.bizInfoValue.product_type = taurus.getBizInfo(this.bizInfoKey.product_type);
-        },
-        removeBizCookie: function () {
-          taurus.removeBizInfo(this.bizInfoKey.customer_id);
-          taurus.removeBizInfo(this.bizInfoKey.org_id);
-          taurus.removeBizInfo(this.bizInfoKey.role_type);
-          taurus.removeBizInfo(this.bizInfoKey.product_type);
-          this.readBizCookie();
+        bizInfoValue: {
+          customer_id: '',
+          org_id: '',
+          role_type: '',
+          product_type: '',
+          customer_name: '',
+          address: ''
         }
+      };
+    },
+    methods: {
+      writeBizCookie: function () {
+        taurus.setBizInfo(this.bizInfoKey.customer_id, '201610178909');
+        taurus.setBizInfo(this.bizInfoKey.org_id, '876829');
+        taurus.setBizInfo(this.bizInfoKey.role_type, '1');
+        taurus.setBizInfo(this.bizInfoKey.product_type, '21000');
+        this.readBizCookie();
+      },
+      rewriteBizCookie: function () {
+        taurus.setBizInfo(this.bizInfoKey.customer_id, '9999999999');
+        taurus.setBizInfo(this.bizInfoKey.org_id, '88888');
+        taurus.setBizInfo(this.bizInfoKey.role_type, '2');
+        taurus.setBizInfo(this.bizInfoKey.product_type, '99000');
+        this.readBizCookie();
+      },
+      readBizCookie: function () {
+        this.bizInfoValue.customer_id = taurus.getBizInfo(this.bizInfoKey.customer_id);
+        this.bizInfoValue.org_id = taurus.getBizInfo(this.bizInfoKey.org_id);
+        this.bizInfoValue.role_type = taurus.getBizInfo(this.bizInfoKey.role_type);
+        this.bizInfoValue.product_type = taurus.getBizInfo(this.bizInfoKey.product_type);
+      },
+      removeBizCookie: function () {
+        taurus.removeBizInfo(this.bizInfoKey.customer_id);
+        taurus.removeBizInfo(this.bizInfoKey.org_id);
+        taurus.removeBizInfo(this.bizInfoKey.role_type);
+        taurus.removeBizInfo(this.bizInfoKey.product_type);
+        this.readBizCookie();
       }
     }
+  }
 </script>
 ```
-:::
 
-### localStorage操作演示
-
-:::demo
-
-```html
-      <div class="form-row">
-        <button class="button button--action" v-on:click="writeLocalStorage">write localStorage</button>
-        <button class="button button--action" v-on:click="rewriteLocalStorage">rewrite localStorage</button>
-        <button class="button button--action" v-on:click="readLocalStorage">read localStorage</button>
-        <button class="button button--action" v-on:click="removeLocalStorage">remove localStorage</button>
-      </div>
-      <div>
-        <div><strong>CUSTOMER_NAME: </strong>{{ bizInfoValue.customer_name }}</div>
-        <div><strong>ADDRESS: </strong>{{ bizInfoValue.address }}</div>
-      </div>
-<script>
-    import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
-
-    export default {
-      ready () {
-        this.bizInfoValue.customer_name = localStorage.get(this.bizInfoKey.customer_name);
-        this.bizInfoValue.address = localStorage.get(this.bizInfoKey.address);
-      },
-      methods: {
-        writeLocalStorage () {
-          localStorage.set(this.bizInfoKey.customer_name, 'Wendy');
-          localStorage.set(this.bizInfoKey.address, 'Nanjing');
-          this.readLocalStorage();
-        },
-        rewriteLocalStorage () {
-          localStorage.set(this.bizInfoKey.customer_name, 'Teemo');
-          localStorage.set(this.bizInfoKey.address, 'Home');
-          this.readLocalStorage();
-        },
-        readLocalStorage () {
-          this.bizInfoValue.customer_name = localStorage.get(this.bizInfoKey.customer_name);
-          this.bizInfoValue.address = localStorage.get(this.bizInfoKey.address);
-        },
-        removeLocalStorage () {
-          localStorage.remove(this.bizInfoKey.customer_name);
-          localStorage.remove(this.bizInfoKey.address);
-          this.readLocalStorage();
-        }
-      }
-    };
-</script>
-```
 :::
 
 ### Methods \(方法\)
@@ -294,5 +227,5 @@ cookie-helper 封装了cookie的读写等操作
 | 名字 | 参数 | 描述 |
 | --- | --- | --- |
 | writeCookie |  (key, value, options) | 写cookie |
-| readCookie |  (key, value) | 读取cookie |
+| readCookie |  (key, value) | 读cookie |
 | removeCookie | (key, options) | 删除cookie |
