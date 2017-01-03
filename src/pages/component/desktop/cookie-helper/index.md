@@ -1,11 +1,7 @@
 <script>
-  import {cookieHelper, taurus, taurusConstant, localStorage} from 'ai-taurus-desktop';
+  import {cookieHelper, taurus, taurusConstant} from 'ai-taurus-desktop';
 
   export default {
-    ready () {
-      this.bizInfoValue.customer_name = localStorage.get(this.bizInfoKey.customer_name);
-      this.bizInfoValue.address = localStorage.get(this.bizInfoKey.address);
-    },
     data: function () {
       return {
         sec_auth_token_key: '--',
@@ -16,17 +12,13 @@
           customer_id: 'CUSTOMER_ID',
           org_id: 'ORG_ID',
           role_type: 'ROLE_TYPE',
-          product_type: 'PRODUCT_TYPE',
-          customer_name: 'CUSTOMER_NAME',
-          address: 'ADDRESS'
+          product_type: 'PRODUCT_TYPE'
         },
         bizInfoValue: {
           customer_id: '',
           org_id: '',
           role_type: '',
-          product_type: '',
-          customer_name: '',
-          address: ''
+          product_type: ''
         }
       };
     },
@@ -106,7 +98,7 @@ CookieHelper插件提供了对cookie的读写操作能力。
   <div><strong>SEC_AUTH_ZONE_KEY: </strong>{{ sec_auth_zone_key }}</div>
 </div>
 <script>
-    import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
+    import {cookieHelper, taurus, taurusConstant} from 'ai-taurus-desktop';
 
     export default {
       data: function () {
@@ -164,7 +156,7 @@ CookieHelper插件提供了对cookie的读写操作能力。
   <div><strong>PRODUCT_TYPE: </strong>{{ bizInfoValue.product_type }}</div>
 </div>
 <script>
-  import {cookieHelper, taurus, constant, localStorage} from 'ai-taurus-desktop';
+  import {cookieHelper, taurus, constant} from 'ai-taurus-desktop';
 
   export default {
     data: function () {
@@ -173,17 +165,13 @@ CookieHelper插件提供了对cookie的读写操作能力。
           customer_id: 'CUSTOMER_ID',
           org_id: 'ORG_ID',
           role_type: 'ROLE_TYPE',
-          product_type: 'PRODUCT_TYPE',
-          customer_name: 'CUSTOMER_NAME',
-          address: 'ADDRESS'
+          product_type: 'PRODUCT_TYPE'
         },
         bizInfoValue: {
           customer_id: '',
           org_id: '',
           role_type: '',
-          product_type: '',
-          customer_name: '',
-          address: ''
+          product_type: ''
         }
       };
     },
@@ -226,6 +214,15 @@ CookieHelper插件提供了对cookie的读写操作能力。
 
 | 名字 | 参数 | 描述 |
 | --- | --- | --- |
-| writeCookie |  (key, value, options) | 写cookie |
-| readCookie |  (key, value) | 读cookie |
-| removeCookie | (key, options) | 删除cookie |
+| writeCookie |  (key, value, options) | 将key为value的键值对写入cookie |
+| readCookie |  (key, converter) | 根据key读取cookie，如果指定了converter则使用它对key对应的值进行处理 |
+| removeCookie | (key, options) | 根据key删除cookie中的值 |
+
+以上`options`可选项如下：
+
+| 选项名 | 描述 |
+| ----- | ---- |
+| expires | 失效时间，是一个数字，单位为毫秒 |
+| path | cookie所在的目录 |
+| domain | 设置cookie所在的域 |
+| secure | 仅用于https协议。它表示创建的cookie只能在https连接中被浏览器传递到服务器端进行会话验证 |
