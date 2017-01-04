@@ -32,6 +32,9 @@ p {
   font-size: 14px;
   color: #5e6d82
 }
+.doc-wrapper {
+  height: 100%;
+}
 .doc-container {
   width: 1160px;
   margin: 0 auto;
@@ -383,4 +386,42 @@ p {
   body {
     min-width:1201px
   }
+}
+/**
+* error page
+*/
+.errpage {
+  height: 100%;
+  display:flex;
+  display: ;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.errpage .desc {
+  height: 100%;
+  width: 30%;
+  text-align: left;
+  display: table;
+}
+.desc .msg {
+  display: table-cell;
+  vertical-align: middle;
+}
+.msg h1 {
+  font-size: 70px;
+}
+.msg .note {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #108ee9;
+}
+.note-desc {
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+.errpage .errbox {
+  padding: 50px 0;
+  height: 100%;
+  width: 50%;
 }
