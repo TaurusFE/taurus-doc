@@ -1,8 +1,8 @@
 <template>
   <div class="doc-header">
     <header class="doc-container">
-      <router-link to="/" class="doc-header-logo">
-        <img class="doc-logo1" src="/static/img/taurus-logo.png">
+      <router-link to="/" class="doc-header-logo" :class="{'mobile-logo': mobile}">
+        <img class="doc-logo1" :src="logoSrc">
         <img class="doc-logo2" src="/static/img/taurus-logo-noword.png">
       </router-link>
       <a class="doc-nav-show" @click="mobileNavToggle">
@@ -22,9 +22,12 @@
   let isShowMobileNav = false
   export default {
     data () {
+      let flag = this.$route.fullPath.startsWith('/desktop')
       return {
         active: '',
-        mobileNavTitle: ''
+        mobile: !flag,
+        mobileNavTitle: '',
+        logoSrc: flag ? '/static/img/taurus-logo.png' : '/static/img/taurus-mobile-logo.png'
       }
     },
     props: ['list', 'base'],
@@ -53,5 +56,8 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style scoped>
+  .mobile-logo {
+    width: 213px;
+  }
 </style>
