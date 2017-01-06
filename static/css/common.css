@@ -87,7 +87,7 @@ p {
 }
 .doc-header-logo {
   width:130px;
-  padding-top: 10px;
+  padding-top: 20px;
   float: left;
 }
 .doc-header-logo img{
@@ -424,4 +424,9 @@ p {
   padding: 50px 0;
   height: 100%;
   width: 50%;
+  overflow: auto;
+}
+.errpage .errbox img {
+  height: 100%;
+  float: right;
 }
