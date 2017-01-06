@@ -73,6 +73,17 @@ import mobiCellSwipe from '../pages/component/mobile/cell-swipe'
 import mobiSearch from '../pages/component/mobile/search'
 import mobiSpinner from '../pages/component/mobile/spinner'
 import mobiTabContainer from '../pages/component/mobile/tab-container'
+import mobileDemo from '../pages/component/mobile/demo'
+import mobileHeader from '../pages/component/mobile/header'
+import mobileNavbar from '../pages/component/mobile/navbar'
+import mobileTabbar from '../pages/component/mobile/tabbar'
+import mobileButton from '../pages/component/mobile/button'
+import mobilePaletteButton from '../pages/component/mobile/palette-button'
+import mobileSwitch from '../pages/component/mobile/switch'
+import mobileChecklist from '../pages/component/mobile/checklist'
+import mobileRadio from '../pages/component/mobile/radio'
+import mobileField from '../pages/component/mobile/field'
+import mobileBadge from '../pages/component/mobile/badge'
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
@@ -163,7 +174,18 @@ let mobile = {
     'cell-swipe': mobiCellSwipe,
     'search': mobiSearch,
     'spinner': mobiSpinner,
-    'tab-container': mobiTabContainer
+    'mobile-demo': mobileDemo,
+    'tab-container': mobiTabContainer,
+    'header': mobileHeader,
+    'navbar': mobileNavbar,
+    'tabbar': mobileTabbar,
+    'button': mobileButton,
+    'palette-button': mobilePaletteButton,
+    'switch': mobileSwitch,
+    'checklist': mobileChecklist,
+    'radio': mobileRadio,
+    'field': mobileField,
+    'badge': mobileBadge
   },
   'design': {
     principle,

@@ -1,7 +1,10 @@
 <template>
   <nav class="doc-menu" >
-    <dl v-for='group in list'>
-      <template v-if='group.groupName'>
+    <dl :class="{'nav-overview': index === 0}" v-for='(group,index) in list'>
+      <template v-if='group.groupName && group.href'>
+        <dt><a :href="group.href" target="__blank"><span>{{group.groupName}}</span></a></dt>
+      </template>
+      <template v-else>
         <dt>{{group.groupName}}</dt>
       </template>
       <dd v-for='item in group.list'>
@@ -16,8 +19,14 @@
   </nav>
 
 </template>
-<style lang='scss'>
+<style lang='scss' scopd>
+  .nav-overview {
+    margin:0 0 20px 0 !important;
+    a {
+      color: #666;
+    }
 
+  }
 </style>
 <script>
   export default {

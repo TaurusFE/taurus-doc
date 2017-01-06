@@ -68,7 +68,7 @@
 ```
 :::
 
-## Search Small
+### Search Small
 
 :::demo is-small="true" 来设置成small样式
 
@@ -100,7 +100,7 @@
 ```
 :::
 
-## Search Inline
+### Search Inline
 
 :::demo
 
@@ -134,7 +134,7 @@
 :::
 
 
-## Search Small Inline
+### Search Small Inline
 
 :::demo is-inline="true"来显示搜索框搜索按钮
 

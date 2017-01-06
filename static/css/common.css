@@ -32,6 +32,9 @@ p {
   font-size: 14px;
   color: #5e6d82
 }
+.doc-wrapper {
+  height: 100%;
+}
 .doc-container {
   width: 1160px;
   margin: 0 auto;
@@ -84,7 +87,7 @@ p {
 }
 .doc-header-logo {
   width:130px;
-  padding-top: 10px;
+  padding-top: 20px;
   float: left;
 }
 .doc-header-logo img{
@@ -235,7 +238,7 @@ p {
   }
   .doc-header-logo {
     width:50px;
-    margin:8px 0 0 15px
+    margin-left:15px;
   }
   .doc-header-logo img.doc-logo2 {
     display: block;
@@ -383,4 +386,47 @@ p {
   body {
     min-width:1201px
   }
+}
+/**
+* error page
+*/
+.errpage {
+  height: 100%;
+  display:flex;
+  display: ;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.errpage .desc {
+  height: 100%;
+  width: 30%;
+  text-align: left;
+  display: table;
+}
+.desc .msg {
+  display: table-cell;
+  vertical-align: middle;
+}
+.msg h1 {
+  font-size: 70px;
+}
+.msg .note {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #108ee9;
+}
+.note-desc {
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+.errpage .errbox {
+  padding: 50px 0;
+  height: 100%;
+  width: 50%;
+  overflow: auto;
+}
+.errpage .errbox img {
+  height: 100%;
+  float: right;
 }
