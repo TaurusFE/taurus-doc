@@ -175,8 +175,7 @@ let mobile = {
     'search': mobiSearch,
     'spinner': mobiSpinner,
     'tab-container': mobiTabContainer,
-    'mobile-demo': mobileDemo
-    'tab-container': mobiTabContainer,
+    'mobile-demo': mobileDemo,
     'header': mobileHeader,
     'navbar': mobileNavbar,
     'tabbar': mobileTabbar,
