@@ -38,7 +38,6 @@ p {
 .doc-container {
   width: 1160px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .doc-title {
   display: none;
@@ -87,7 +86,7 @@ p {
 }
 .doc-header-logo {
   width:130px;
-  padding-top: 20px;
+  padding-top: 18px;
   float: left;
 }
 .doc-header-logo img{
@@ -239,6 +238,7 @@ p {
   .doc-header-logo {
     width:50px;
     margin-left:15px;
+    padding-top: 18px;
   }
   .doc-header-logo img.doc-logo2 {
     display: block;

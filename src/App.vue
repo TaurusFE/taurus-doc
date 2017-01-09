@@ -36,7 +36,7 @@ export default {
       return this.$route.name !== '404'
     },
     list () {
-      let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
+      let base = /^\/desktop/.test(this.$route.fullPath) ? 'desktop' : 'mobile'
       this.base = base
       return menuList[base]
     }
