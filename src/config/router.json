@@ -269,17 +269,17 @@
           {
             "path": "/sitemap",
             "title": "SiteMap",
-            "query": "http://10.19.18.95:48880/Wireframe/sitemap.html"
+            "query": "/Wireframe/sitemap.html"
           },
           {
             "path": "/deliveryPage",
             "title": "Delivery Page",
-            "query": "http://10.19.18.95:48880//Wireframe/delivery_page.html"
+            "query": "/Wireframe/delivery_page.html"
           },
           {
             "path": "/svnAddress",
             "title": "SVN Address",
-            "query": "http://10.19.18.95:48880/Wireframe/svn_address.html"
+            "query": "/Wireframe/svn_address.html"
           }
         ]
       },
@@ -604,17 +604,17 @@
           {
             "path": "/sitemap",
             "title": "SiteMap",
-            "query": "http://10.19.18.95:48880/Wireframe/sitemap.html"
+            "query": "/Wireframe/sitemap.html"
           },
           {
             "path": "/deliveryPage",
             "title": "Delivery Page",
-            "query": "http://10.19.18.95:48880//Wireframe/delivery_page.html"
+            "query": "/Wireframe/delivery_page.html"
           },
           {
             "path": "/svnAddress",
             "title": "SVN Address",
-            "query": "http://10.19.18.95:48880/Wireframe/svn_address.html"
+            "query": "/Wireframe/svn_address.html"
           }
         ]
       },

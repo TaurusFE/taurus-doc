@@ -46,7 +46,7 @@ function generate (type) {
         return {
           path: `/${type}/case/sitemap`,
           query: {
-            url: 'http://10.19.18.95:48880/Wireframe/sitemap.html'
+            url: '/Wireframe/sitemap.html'
           }
         }
       }
