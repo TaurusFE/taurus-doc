@@ -3,12 +3,17 @@
  */
 import Vue from 'vue'
 import Router from 'vue-router'
+
 Vue.use(Router)
-let buildFlag = false
+
 import component from '../config'
 import navConfig from '../config/router.json'
 function generate (type) {
   var pageRouters = [
+    {
+      path: '/',
+      component: require('../pages/home')
+    },
     {
       path: `/${type}/design`,
       redirect: `/${type}/design/principle`,
@@ -54,7 +59,7 @@ function generate (type) {
   ]
 
   if (type === 'mobile') {
-    pageRouters[1].redirect = `/${type}/component/search`
+    pageRouters[2].redirect = `/${type}/component/search`
   }
 
   return pageRouters
@@ -107,31 +112,7 @@ for (let type in navConfig) {
     route = route.concat(parentRouter)
   }
 }
-var errorRoute = [
-  {
-    path: '/',
-    component: require('../pages/home')
-  },
-  {
-    path: '/*',
-    component: require('../pages/notFound'),
-    name: '404'
-  },
-  {
-    path: '/503',
-    component: require('../pages/underBuild'),
-    name: '503'
-  }
-]
-route = route.concat(errorRoute)
-if (buildFlag) {
-  for (let i = 0; i < route.length; i++) {
-    if (route[i].path === '/') {
-      route[i].component = require('../pages/underBuild')
-      break
-    }
-  }
-}
+console.log(route)
 export default new Router({
   linkActiveClass: 'active',
   mode: 'history',

@@ -1,23 +1,16 @@
 <template>
   <div class="doc-wrapper">
-    <template v-if='unhome && statusPage'>
+    <template v-if='unhome'>
       <d-header :list='list'></d-header>
     </template>
-    <template v-if='unhome && statusPage'>
-      <div  class="doc-main">
-        <div class="doc-container">
-          <transition name='fade' mode='out-in'>
-            <router-view></router-view>
-          </transition>
-        </div>
+    <div  :class="{'doc-main': unhome}">
+      <div :class="{'doc-container': unhome}">
+        <transition name='fade' mode='out-in'>
+          <router-view></router-view>
+        </transition>
       </div>
-    </template>
-    <template v-else>
-      <transition name='fade' mode='out-in'>
-        <router-view></router-view>
-      </transition>
-    </template>
-    <template v-if='unhome && statusPage'>
+    </div>
+    <template v-if='unhome'>
       <d-footer></d-footer>
     </template>
   </div>
@@ -31,9 +24,6 @@ export default {
   computed: {
     unhome () {
       return this.$route.fullPath !== '/'
-    },
-    statusPage () {
-      return this.$route.name !== '404'
     },
     list () {
       let base = /^\/desktop/.test(this.$route.fullPath) ? 'desktop' : 'mobile'
