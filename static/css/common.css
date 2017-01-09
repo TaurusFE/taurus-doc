@@ -86,7 +86,7 @@ p {
 }
 .doc-header-logo {
   width:130px;
-  padding-top: 18px;
+  padding-top: 15px;
   float: left;
 }
 .doc-header-logo img{
@@ -301,6 +301,9 @@ p {
   .doc-header-nav li a.active {
     background-color: #f5f5f5;
     border: none;
+  }
+  .doc-wrapper {
+    height: 100%;
   }
   .doc-container {
     width: auto;
