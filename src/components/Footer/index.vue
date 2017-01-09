@@ -15,5 +15,6 @@
         font-size: 16px;
         line-height: 80px;
         color:#5780a6;
+        clear: both;
     }
 </style>
