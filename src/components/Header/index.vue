@@ -182,18 +182,6 @@
   .search-box__input:focus {
     outline: none
   }
-  .search-box__input::-webkit-input-placeholder {
-   color: #99a9bf
-   }
-  .search-box__input::-moz-placeholder {
-   color: #99a9bf
-  }
-  .search-box__input:-ms-input-placeholder {
-   color: #99a9bf
-  }
-  .search-box__input::placeholder {
-   color: #99a9bf
-  }
   .search-box__input::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;

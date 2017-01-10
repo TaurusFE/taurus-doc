@@ -114,6 +114,7 @@ p {
   display: none;
 }
 .doc-main {
+  overflow: auto;
   padding-top:70px;
 }
 .doc-menu {
