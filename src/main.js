@@ -6,9 +6,11 @@ import router from './router'
 import demoBlock from './components/CodeBlock/'
 Vue.component('demo-block', demoBlock)
 // 导入全局样式
+
 import 'highlight.js/styles/github.css'
 import 'github-markdown-css'
 /* eslint-disable no-new */
+// router.go('home')
 new Vue({
   router,
   el: '#app',

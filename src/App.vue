@@ -36,7 +36,7 @@ export default {
       return this.$route.name !== '404'
     },
     list () {
-      let base = this.$route.fullPath.startsWith('/desktop') ? 'desktop' : 'mobile'
+      let base = /^\/desktop/.test(this.$route.fullPath) ? 'desktop' : 'mobile'
       this.base = base
       return menuList[base]
     }
@@ -51,6 +51,6 @@ export default {
     transition: all .2s ease
   }
   .fade-enter, .fade-leave-active {
-     opacity: 0
+    opacity: 0
   }
 </style>
