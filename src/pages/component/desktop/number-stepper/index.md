@@ -40,9 +40,9 @@
 
 </script>
 
-## Search-Filter组件
+## Number Stepper组件
 
-搜索框组件，用于搜索过滤相应内容。
+数值输入组件。
 
 ### 基本用法
 
