@@ -171,8 +171,6 @@ export default {
         <button class="button button--default button-flex pull-right" slot="footer" @click="hdActionOne">按钮1</button>
         <button class="button button--default button-flex pull-right" slot="footer" @click="hdActionTwo">按钮2</button>
         <button class="button button--action button-flex pull-right" slot="footer">确定</button>
-        <div class="form-row">
-        </div>
       </t-confirm>
     </div>
   </div>
