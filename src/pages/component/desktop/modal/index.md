@@ -9,8 +9,6 @@ export default {
     return {
       showDefaultDialogState: false,
       showMoal1State: false,
-      confirmShow: false,
-      confirm2Show: false,
       confirm: {
         show: false
       },
@@ -116,8 +114,6 @@ Modal组件是模态对话框组件，它提供了高自由度的定制能力。
 
 ### 基本用法
 
-#### **简单对话框**
-
 :::demo
 
 ```html
@@ -151,7 +147,7 @@ export default {
 ```
 
 :::
-#### **带动作按钮的对话框**
+### 询问对话框
 
 :::demo 注意：`<t-loading>`标记的容器需要脱离文档流（此例添加了`position: relative`样式）
 
@@ -159,46 +155,23 @@ export default {
 <template>
   <div>
     <div class="form-row">
-      <h1>包含两个按钮的对话框</h1>
+      <h1>包含两个按钮的询问对话框</h1>
       <button @click="showConfirm" class="button button--small button--action">显示对话框</button>
       <t-confirm :title="confirm.title" @sure="hdSure" @cancel="hdCancel" type="info" v-model="confirm.show" :msg="confirm.msg">
       </t-confirm>
     </div>
 
     <div class="form-row">
-      <h1>包含三个按钮的对话框</h1>
+      <h1>包含三个按钮的询问对话框</h1>
       <button @click="showConfirm2" class="button button--small button--action" >显示对话框</button>
       <t-confirm :title="confirm2.title" type="success" v-model="confirm2.show" :msg="confirm2.msg" :size="'lg'">
         <div slot="body">
-          自定义自定义{{confirm2.msg}}
+          {{confirm2.msg}}
         </div>
-        <button class="button button--default button-flex" slot="footer" @click="hdActionOne">按钮1</button>
-        <button class="button button--default button-flex" slot="footer" @click="hdActionTwo">按钮2</button>
-        <button class="button button--action button-flex" slot="footer">确定</button>
+        <button class="button button--default button-flex pull-right" slot="footer" @click="hdActionOne">按钮1</button>
+        <button class="button button--default button-flex pull-right" slot="footer" @click="hdActionTwo">按钮2</button>
+        <button class="button button--action button-flex pull-right" slot="footer">确定</button>
       </t-confirm>
-    </div>
-
-    <div class="form-row">
-      <h1>数据输入对话框</h1>
-      <button @click="customShow" class="button button--small button--action">显示对话框</button>
-      <t-modal title="Login Modal" v-model="loginModal" :click-overlay-close="false">
-        <div class="login-modal">
-          <div class="form-item--multi form-row">
-            <div class="form-item form-col--med">
-              <input label="用户名" type="text" placeholder="User name" v-model="loginModel.username">
-            </div>
-            <div class="form-item">
-              <input label="密码" type="text" placeholder="Password" v-model="loginModel.password" type="password">
-            </div>
-          </div>
-        </div>
-        <div class="block--col">
-          <div class="float--right form-row">
-            <button text="取消" slot="footer" class="button button--small button--default" @click="loginModal=false">取消</button>
-            <button text="登录" slot="footer" class="button button--small button--action" @click="hdLogin" color="red">登录</button>
-          </div>
-        </div>
-      </t-modal>
     </div>
   </div>
 </template>
@@ -215,11 +188,6 @@ export default {
       },
       confirm2: {
         show: false
-      },
-      loginModal: false,
-      loginModel: {
-        username: '',
-        password: ''
       }
     };
   },
@@ -256,6 +224,98 @@ export default {
     },
     customShow () {
       this.loginModal = true;
+    }
+  }
+};
+</script>
+```
+
+:::
+
+### 表单对话框
+
+:::demo 这个例子里对话框内容全部是表单元素。
+
+```html
+<template>
+  <div class="form-row">
+    <h1>登录对话框</h1>
+    <button @click="customShow" class="button button--small button--action">显示对话框</button>
+    <t-modal title="Login Modal" v-model="loginModal" :click-overlay-close="false">
+      <div class="login-modal">
+        <div class="form-item--multi form-row">
+          <div class="form-item form-col--med">
+            <input label="用户名" type="text" placeholder="User name" v-model="loginModel.username">
+          </div>
+          <div class="form-item">
+            <input label="密码" type="text" placeholder="Password" v-model="loginModel.password" type="password">
+          </div>
+        </div>
+      </div>
+      <div class="block--col">
+        <div class="float--right form-row">
+          <button text="取消" slot="footer" class="button button--small button--default" @click="loginModal=false">取消</button>
+          <button text="登录" slot="footer" class="button button--small button--action" @click="hdLogin" color="red">登录</button>
+        </div>
+      </div>
+    </t-modal>
+  </div>
+  <div>
+    <h1>数据搜集对话框</h1>
+    <button @click="showForm" class="button button--small button--action" >显示对话框</button>
+    <t-modal title="" v-model="showFormState" :hide-close="true" :hide-icon-close="false" :size="'lg'" :special="true">
+      <div>
+        <div class="border box--greyed padding-whole leader trailer">
+            <div class="form-item form-item--required">
+              <label>Label</label>
+              <div class="rel leader--xsmall">
+                  <input type="text">
+              </div>
+            </div>
+            <div class="form-item form-item--required">
+              <label>Email</label>
+              <div class="rel leader--xsmall">
+                <input type="text">
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="form-checkbox form-checkbox--small">
+                  <input type="checkbox" checked="" name="cbs-small-0" id="cbs-small-0" value="--some-value--">
+                  <label class="text--small" for="cbs-inline-0">Yes, Telenor may contact me via email about the selected telephone.</label>
+              </div>
+            </div>
+        </div>
+        <div class="form-item text--right">
+            <button type="submit" class="button button--action" name="subscribe" data-submit="true" data-component="button">
+                <span class="button__label padding-toleft padding-toright" @click="formSend">Send</span>
+            </button>
+        </div>
+      </div>
+    </t-modal>
+  </div>
+</template>
+<script>
+import { TModal } from 'ai-taurus-desktop';
+export default {
+  components: {
+    TModal
+  },
+  data () {
+    return {
+      showFormState: false,
+      loginModal: false,
+      loginModel: {
+        username: '',
+        password: ''
+      }
+    };
+  },
+  methods: {
+    showForm () {
+      this.showFormState = true;
+    },
+    formSend () {
+      this.showFormState = false;
     },
     hdLogin () {
       alert(JSON.stringify(this.loginModel));
@@ -267,7 +327,7 @@ export default {
 ```
 
 :::
-#### **个性化对话框 I**
+### 个性化对话框 I
 
 :::demo 这个例子里的对话框有背景图。
 
@@ -338,7 +398,7 @@ export default {
 ```
 
 :::
-#### **个性化对话框 II**
+### 个性化对话框 II
 
 :::demo
 
@@ -391,69 +451,6 @@ export default {
     },
     showFullTwo () {
       this.fullStateTwo = true;
-    }
-  }
-};
-</script>
-```
-
-:::
-#### **表单对话框**
-
-:::demo 这个例子里对话框内容全部是表单元素。
-
-```html
-<template>
-  <div>
-    <button @click="showForm" class="button button--small button--action" >显示对话框</button>
-    <t-modal title="" v-model="showFormState" :hide-close="true" :hide-icon-close="false" :size="'lg'" :special="true">
-      <div>
-        <div class="border box--greyed padding-whole leader trailer">
-            <div class="form-item form-item--required">
-              <label>Label</label>
-              <div class="rel leader--xsmall">
-                  <input type="text">
-              </div>
-            </div>
-            <div class="form-item form-item--required">
-              <label>Email</label>
-              <div class="rel leader--xsmall">
-                <input type="text">
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="form-checkbox form-checkbox--small">
-                  <input type="checkbox" checked="" name="cbs-small-0" id="cbs-small-0" value="--some-value--">
-                  <label class="text--small" for="cbs-inline-0">Yes, Telenor may contact me via email about the selected telephone.</label>
-              </div>
-            </div>
-        </div>
-        <div class="form-item text--right">
-            <button type="submit" class="button button--action" name="subscribe" data-submit="true" data-component="button">
-                <span class="button__label padding-toleft padding-toright" @click="formSend">Send</span>
-            </button>
-        </div>
-      </div>
-    </t-modal>
-  </div>
-</template>
-<script>
-import { TModal } from 'ai-taurus-desktop';
-export default {
-  components: {
-    TModal
-  },
-  data () {
-    return {
-      showFormState: false
-    };
-  },
-  methods: {
-    showForm () {
-      this.showFormState = true;
-    },
-    formSend () {
-      this.showFormState = false;
     }
   }
 };

@@ -5,7 +5,7 @@
         <img class="doc-logo1" :src="logoSrc">
         <img class="doc-logo2" src="/static/img/taurus-logo-noword.png">
       </router-link>
-      <div class="search-box" v-clickoutside='handleBlur'>
+      <div class="search-box" :class='{"search-box-mobile": mobile}' v-clickoutside='handleBlur'>
         <input class="search-box__input"
                v-model='search'
                @input="showResult"
@@ -134,13 +134,8 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .mobile-logo {
-      padding-top: 25px;
-   }
-  @media (max-width: 545px){
-   .mobile-logo {
       padding-top: 18px;
-    }
-  }
+   }
   .search-box {
     display: inline-block;
     border-left: 1px solid #EBEDEE;
@@ -149,6 +144,9 @@
     padding-left: 30px;
     margin-top: 29px;
     margin-left: 120px;
+  }
+  .search-box-mobile {
+    margin-left: 35px;
   }
   .search-box .dropdown {
     border: 0;
@@ -183,18 +181,6 @@
   }
   .search-box__input:focus {
     outline: none
-  }
-  .search-box__input::-webkit-input-placeholder {
-   color: #99a9bf
-   }
-  .search-box__input::-moz-placeholder {
-   color: #99a9bf
-  }
-  .search-box__input:-ms-input-placeholder {
-   color: #99a9bf
-  }
-  .search-box__input::placeholder {
-   color: #99a9bf
   }
   .search-box__input::-webkit-calendar-picker-indicator {
     display: none;
