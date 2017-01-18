@@ -55,6 +55,14 @@
             "title": "Table"
           },
           {
+            "path": "/tree",
+            "title": "Tree"
+          },
+          {
+            "path": "/transfer",
+            "title": "Transfer"
+          },
+          {
             "path": "/pager",
             "title": "Pager"
           },
