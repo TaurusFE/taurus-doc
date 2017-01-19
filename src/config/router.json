@@ -37,8 +37,8 @@
             "title": "NumberStepper"
           },
           {
-            "path": "/form-validation",
-            "title": "FormValidation"
+            "path": "/form",
+            "title": "Form"
           }
         ]
 
@@ -115,6 +115,10 @@
           {
             "path": "/breadcrumbs",
             "title": "Breadcrumbs"
+          },
+          {
+            "path": "/steps",
+            "title": "Steps"
           }
         ]
       },

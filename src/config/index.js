@@ -20,12 +20,14 @@ import searchFilter from '../pages/component/desktop/search-filter'
 import select from '../pages/component/desktop/select'
 import loading from '../pages/component/desktop/loading'
 import modal from '../pages/component/desktop/modal'
+import steps from '../pages/component/desktop/steps'
 import statusMessage from '../pages/component/desktop/status-message'
 import tooltip from '../pages/component/desktop/tooltip'
 import speechBubble from '../pages/component/desktop/speech-bubble'
 import dropdown from '../pages/component/desktop/dropdown'
 import tab from '../pages/component/desktop/tab'
 import breadcrumbs from '../pages/component/desktop/breadcrumbs'
+import form from '../pages/component/desktop/form'
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
@@ -100,6 +102,7 @@ let taurus = {
     'drop-down': dropdown,
     'loading': loading,
     'modal-box': modal,
+    'form': form,
     'number-stepper': numberStepper,
     'pager': pager,
     'range-slider': rangeSlider,
@@ -112,7 +115,8 @@ let taurus = {
     'switcher': switcher,
     'tab': tab,
     'table': table,
-    'tooltip': tooltip
+    'tooltip': tooltip,
+    'steps': steps
   },
   'design': {
     principle,
