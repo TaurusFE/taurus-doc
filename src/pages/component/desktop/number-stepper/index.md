@@ -40,9 +40,9 @@
 
 </script>
 
-## Search-Filter组件
+## Number Stepper组件
 
-搜索框组件，用于搜索过滤相应内容。
+数值输入组件。
 
 ### 基本用法
 
@@ -54,8 +54,6 @@
     </div>
     <div class="form-row">
       <button v-on:click="getNSValue" class="button button--action">取值</button>
-      <button v-on:click="disable" class="button button--action">禁用</button>
-      <button v-on:click="enable" class="button button--action">解禁</button>
     </div>
     <div class="form-row">
       <button v-on:click="setNSValue(-3)" class="button button--action">设置值为(-3)</button>
@@ -89,12 +87,6 @@
        getNSValue: function () {
          let value = this.$refs.nsNormal.getValue();
          alert('类型' + typeof value + '; 值:' + value);
-       },
-       enable: function () {
-         this.$refs.nsNormal.enable();
-       },
-       disable: function () {
-         this.$refs.nsNormal.disable();
        },
        normalStepperChange: function (newValue, oldValue) {
          alert('newValue: ' + newValue + 'oldValue: ' + oldValue);

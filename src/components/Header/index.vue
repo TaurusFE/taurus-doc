@@ -5,11 +5,11 @@
         <img class="doc-logo1" :src="logoSrc">
         <img class="doc-logo2" src="/static/img/taurus-logo-noword.png">
       </router-link>
-      <div class="search-box">
+      <div class="search-box" :class='{"search-box-mobile": mobile}' v-clickoutside='handleBlur'>
         <input class="search-box__input"
                v-model='search'
                @input="showResult"
-               @blur="hideResult"
+               @focus="showResult"
                @keyup.up="highlight(highlightedIndex - 1)"
                @keyup.down="highlight(highlightedIndex + 1)"
                @keyup.enter.stop="select(highlightedIndex)"
@@ -37,10 +37,11 @@
 </template>
 <script>
   import menuList from '../../config/router.json'
+  import Clickoutside from '../../directive/clickoutside.js'
   let isShowMobileNav = false
   export default {
     data () {
-      let flag = this.$route.fullPath.startsWith('/desktop')
+      let flag = /^\/desktop/.test(this.$route.fullPath)
       return {
         active: false,
         mobile: !flag,
@@ -50,6 +51,7 @@
         logoSrc: flag ? '/static/img/taurus-logo.png' : '/static/img/taurus-mobile-logo.png'
       }
     },
+    directives: { Clickoutside },
     computed: {
       base () {
         let flag = this.mobile ? 'mobile' : 'desktop'
@@ -63,7 +65,7 @@
           array = array.concat(groups[i].list)
         }
         return array.filter((item) => {
-          return item.title.toUpperCase().startsWith(this.search.toUpperCase())
+          return item.title.toUpperCase().indexOf(this.search.toUpperCase()) !== -1
         })
       }
     },
@@ -90,6 +92,11 @@
       searchClick (item) {
         this.active = false
         this.search = item.title
+      },
+      handleBlur: function () {
+        if (this.active) {
+          this.active = false
+        }
       },
       showResult: function () {
         this.active = true
@@ -127,8 +134,8 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .mobile-logo {
-    width: 213px;
-  }
+      padding-top: 18px;
+   }
   .search-box {
     display: inline-block;
     border-left: 1px solid #EBEDEE;
@@ -137,6 +144,9 @@
     padding-left: 30px;
     margin-top: 29px;
     margin-left: 120px;
+  }
+  .search-box-mobile {
+    margin-left: 35px;
   }
   .search-box .dropdown {
     border: 0;
@@ -172,20 +182,13 @@
   .search-box__input:focus {
     outline: none
   }
-  .search-box__input::-webkit-input-placeholder {
-   color: #99a9bf
-   }
-  .search-box__input::-moz-placeholder {
-   color: #99a9bf
-  }
-  .search-box__input:-ms-input-placeholder {
-   color: #99a9bf
-  }
-  .search-box__input::placeholder {
-   color: #99a9bf
-  }
   .search-box__input::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
+ }
+ @media (max-width: 544px){
+  .search-box {
+    display: none;
+  }
  }
 </style>
