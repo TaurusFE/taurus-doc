@@ -350,404 +350,410 @@
 .icon-hotline:before {
   content: "\E058"; }
 
-.icon-identification-password:before {
+.icon-ic_arrow_drop_down:before {
   content: "\E059"; }
 
-.icon-img:before {
+.icon-ic_arrow_drop_next:before {
   content: "\E05A"; }
 
-.icon-impersonation:before {
+.icon-identification-password:before {
   content: "\E05B"; }
 
-.icon-input-radio-selected:before, .form-item .ws-range .ws-range-thumb, .form-search .ws-range .ws-range-thumb {
+.icon-img:before {
   content: "\E05C"; }
 
-.icon-instagram:before {
+.icon-impersonation:before {
   content: "\E05D"; }
 
-.icon-key:before {
+.icon-input-radio-selected:before, .form-item .ws-range .ws-range-thumb, .form-search .ws-range .ws-range-thumb {
   content: "\E05E"; }
 
-.icon-keyboard-voice:before {
+.icon-instagram:before {
   content: "\E05F"; }
 
-.icon-knowledge_base:before {
+.icon-key:before {
   content: "\E060"; }
 
-.icon-large:before {
+.icon-keyboard-voice:before {
   content: "\E061"; }
 
-.icon-lightbulb:before {
+.icon-knowledge_base:before {
   content: "\E062"; }
 
-.icon-list-collapse:before {
+.icon-large:before {
   content: "\E063"; }
 
-.icon-list-expand:before {
+.icon-lightbulb:before {
   content: "\E064"; }
 
-.icon-list:before {
+.icon-list-collapse:before {
   content: "\E065"; }
 
-.icon-location:before {
+.icon-list-expand:before {
   content: "\E066"; }
 
-.icon-lock:before {
+.icon-list:before {
   content: "\E067"; }
 
-.icon-locked:before {
+.icon-location:before {
   content: "\E068"; }
 
-.icon-log-out:before {
+.icon-lock:before {
   content: "\E069"; }
 
-.icon-login-phone-number:before {
+.icon-locked:before {
   content: "\E06A"; }
 
-.icon-logo-onedrive:before {
+.icon-log-out:before {
   content: "\E06B"; }
 
-.icon-lost-and-stolen-help:before {
+.icon-login-phone-number:before {
   content: "\E06C"; }
 
-.icon-mail:before {
+.icon-logo-onedrive:before {
   content: "\E06D"; }
 
-.icon-medium:before {
+.icon-lost-and-stolen-help:before {
   content: "\E06E"; }
 
-.icon-menu:before {
+.icon-mail:before {
   content: "\E06F"; }
 
-.icon-message-waiting:before {
+.icon-medium:before {
   content: "\E070"; }
 
-.icon-message:before {
+.icon-menu:before {
   content: "\E071"; }
 
-.icon-message_question:before {
+.icon-message-waiting:before {
   content: "\E072"; }
 
-.icon-messages:before {
+.icon-message:before {
   content: "\E073"; }
 
-.icon-meter:before {
+.icon-message_question:before {
   content: "\E074"; }
 
-.icon-minus:before {
+.icon-messages:before {
   content: "\E075"; }
 
-.icon-minutes-sms-data:before {
+.icon-meter:before {
   content: "\E076"; }
 
-.icon-mobile-broadband:before {
+.icon-minus:before {
   content: "\E077"; }
 
-.icon-mobile-messages:before {
+.icon-minutes-sms-data:before {
   content: "\E078"; }
 
-.icon-mobile-wifi:before {
+.icon-mobile-broadband:before {
   content: "\E079"; }
 
-.icon-mobile:before {
+.icon-mobile-messages:before {
   content: "\E07A"; }
 
-.icon-mobility:before {
+.icon-mobile-wifi:before {
   content: "\E07B"; }
 
-.icon-music:before {
+.icon-mobile:before {
   content: "\E07C"; }
 
-.icon-my-tv:before {
+.icon-mobility:before {
   content: "\E07D"; }
 
-.icon-network:before {
+.icon-music:before {
   content: "\E07E"; }
 
-.icon-notification:before {
+.icon-my-tv:before {
   content: "\E07F"; }
 
-.icon-office-365:before {
+.icon-network:before {
   content: "\E080"; }
 
-.icon-office365:before {
+.icon-notification:before {
   content: "\E081"; }
 
-.icon-one-to-one-loaner-phone:before {
+.icon-office-365:before {
   content: "\E082"; }
 
-.icon-one-two-three:before {
+.icon-office365:before {
   content: "\E083"; }
 
-.icon-onescreen-white:before {
+.icon-one-to-one-loaner-phone:before {
   content: "\E084"; }
 
-.icon-open-menu:before {
+.icon-one-two-three:before {
   content: "\E085"; }
 
-.icon-open-right-panel:before {
+.icon-onescreen-white:before {
   content: "\E086"; }
 
-.icon-open_veris:before {
+.icon-open-menu:before {
   content: "\E087"; }
 
-.icon-padlock:before {
+.icon-open-right-panel:before {
   content: "\E088"; }
 
-.icon-paper-doc:before {
+.icon-open_veris:before {
   content: "\E089"; }
 
-.icon-paper_exclamation:before {
+.icon-padlock:before {
   content: "\E08A"; }
 
-.icon-paper_list:before {
+.icon-paper-doc:before {
   content: "\E08B"; }
 
-.icon-paper_terminate:before {
+.icon-paper_exclamation:before {
   content: "\E08C"; }
 
-.icon-pause:before {
+.icon-paper_list:before {
   content: "\E08D"; }
 
-.icon-pencil:before {
+.icon-paper_terminate:before {
   content: "\E08E"; }
 
-.icon-people:before {
+.icon-pause:before {
   content: "\E08F"; }
 
-.icon-percent:before {
+.icon-pencil:before {
   content: "\E090"; }
 
-.icon-perfect-start:before {
+.icon-people:before {
   content: "\E091"; }
 
-.icon-person:before {
+.icon-percent:before {
   content: "\E092"; }
 
-.icon-phone:before {
+.icon-perfect-start:before {
   content: "\E093"; }
 
-.icon-phone404:before {
+.icon-person:before {
   content: "\E094"; }
 
-.icon-phone_handset:before {
+.icon-phone:before {
   content: "\E095"; }
 
-.icon-picture:before {
+.icon-phone404:before {
   content: "\E096"; }
 
-.icon-piggy:before {
+.icon-phone_handset:before {
   content: "\E097"; }
 
-.icon-pipeline:before {
+.icon-picture:before {
   content: "\E098"; }
 
-.icon-placemarker:before {
+.icon-piggy:before {
   content: "\E099"; }
 
-.icon-play-circle:before {
+.icon-pipeline:before {
   content: "\E09A"; }
 
-.icon-play:before {
+.icon-placemarker:before {
   content: "\E09B"; }
 
-.icon-plus:before {
+.icon-play-circle:before {
   content: "\E09C"; }
 
-.icon-present:before {
+.icon-play:before {
   content: "\E09D"; }
 
-.icon-print:before {
+.icon-plus:before {
   content: "\E09E"; }
 
-.icon-products:before {
+.icon-present:before {
   content: "\E09F"; }
 
-.icon-question:before {
+.icon-print:before {
   content: "\E0A0"; }
 
-.icon-questionmark:before {
+.icon-products:before {
   content: "\E0A1"; }
 
-.icon-rating:before {
+.icon-question:before {
   content: "\E0A2"; }
 
-.icon-refresh:before {
+.icon-questionmark:before {
   content: "\E0A3"; }
 
-.icon-reject:before {
+.icon-rating:before {
   content: "\E0A4"; }
 
-.icon-remove:before {
+.icon-refresh:before {
   content: "\E0A5"; }
 
-.icon-repairs:before {
+.icon-reject:before {
   content: "\E0A6"; }
 
-.icon-router:before {
+.icon-remove:before {
   content: "\E0A7"; }
 
-.icon-save:before {
+.icon-repairs:before {
   content: "\E0A8"; }
 
-.icon-search:before {
+.icon-router:before {
   content: "\E0A9"; }
 
-.icon-search2:before {
+.icon-save:before {
   content: "\E0AA"; }
 
-.icon-service-alt:before {
+.icon-search:before {
   content: "\E0AB"; }
 
-.icon-service:before {
+.icon-search2:before {
   content: "\E0AC"; }
 
-.icon-settings:before {
+.icon-service-alt:before {
   content: "\E0AD"; }
 
-.icon-signal:before {
+.icon-service:before {
   content: "\E0AE"; }
 
-.icon-simcard:before {
+.icon-settings:before {
   content: "\E0AF"; }
 
-.icon-small-home:before {
+.icon-signal:before {
   content: "\E0B0"; }
 
-.icon-small:before {
+.icon-simcard:before {
   content: "\E0B1"; }
 
-.icon-smartphone-broadband:before {
+.icon-small-home:before {
   content: "\E0B2"; }
 
-.icon-smiley:before {
+.icon-small:before {
   content: "\E0B3"; }
 
-.icon-speedtest:before {
+.icon-smartphone-broadband:before {
   content: "\E0B4"; }
 
-.icon-sport:before {
+.icon-smiley:before {
   content: "\E0B5"; }
 
-.icon-star-white:before {
+.icon-speedtest:before {
   content: "\E0B6"; }
 
-.icon-star:before {
+.icon-sport:before {
   content: "\E0B7"; }
 
-.icon-stock_management:before {
+.icon-star-white:before {
   content: "\E0B8"; }
 
-.icon-stores:before {
+.icon-star:before {
   content: "\E0B9"; }
 
-.icon-support-circle-24-7:before {
+.icon-stock_management:before {
   content: "\E0BA"; }
 
-.icon-support:before {
+.icon-stores:before {
   content: "\E0BB"; }
 
-.icon-table-columns:before {
+.icon-support-circle-24-7:before {
   content: "\E0BC"; }
 
-.icon-tablet-mobile:before {
+.icon-support:before {
   content: "\E0BD"; }
 
-.icon-tablet:before {
+.icon-table-columns:before {
   content: "\E0BE"; }
 
-.icon-technician:before {
+.icon-tablet-mobile:before {
   content: "\E0BF"; }
 
-.icon-telenor:before {
+.icon-tablet:before {
   content: "\E0C0"; }
 
-.icon-teleohone-hang-up:before {
+.icon-technician:before {
   content: "\E0C1"; }
 
-.icon-telephone:before {
+.icon-telenor:before {
   content: "\E0C2"; }
 
-.icon-thumb_down:before {
+.icon-teleohone-hang-up:before {
   content: "\E0C3"; }
 
-.icon-thumb_right:before {
+.icon-telephone:before {
   content: "\E0C4"; }
 
-.icon-thumb_up:before {
+.icon-thumb_down:before {
   content: "\E0C5"; }
 
-.icon-tidal:before {
+.icon-thumb_right:before {
   content: "\E0C6"; }
 
-.icon-time-period:before {
+.icon-thumb_up:before {
   content: "\E0C7"; }
 
-.icon-time:before {
+.icon-tidal:before {
   content: "\E0C8"; }
 
-.icon-topup:before {
+.icon-time-period:before {
   content: "\E0C9"; }
 
-.icon-truck:before {
+.icon-time:before {
   content: "\E0CA"; }
 
-.icon-tv:before {
+.icon-topup:before {
   content: "\E0CB"; }
 
-.icon-twitter-circle:before {
+.icon-truck:before {
   content: "\E0CC"; }
 
-.icon-twitter:before {
+.icon-tv:before {
   content: "\E0CD"; }
 
-.icon-unlocked:before {
+.icon-twitter-circle:before {
   content: "\E0CE"; }
 
-.icon-upload:before {
+.icon-twitter:before {
   content: "\E0CF"; }
 
-.icon-usage:before {
+.icon-unlocked:before {
   content: "\E0D0"; }
 
-.icon-usb:before {
+.icon-upload:before {
   content: "\E0D1"; }
 
-.icon-user:before {
+.icon-usage:before {
   content: "\E0D2"; }
 
-.icon-veris:before {
+.icon-usb:before {
   content: "\E0D3"; }
 
-.icon-video:before {
+.icon-user:before {
   content: "\E0D4"; }
 
-.icon-voice-broadband:before {
+.icon-veris:before {
   content: "\E0D5"; }
 
-.icon-water:before {
+.icon-video:before {
   content: "\E0D6"; }
 
-.icon-wheel:before {
+.icon-voice-broadband:before {
   content: "\E0D7"; }
 
-.icon-youtube:before {
+.icon-water:before {
   content: "\E0D8"; }
 
-.icon-zero-kr:before {
+.icon-wheel:before {
   content: "\E0D9"; }
 
-.icon-zero:before {
+.icon-youtube:before {
   content: "\E0DA"; }
 
-.icon-zip:before {
+.icon-zero-kr:before {
   content: "\E0DB"; }
 
-.icon-zoom-out:before {
+.icon-zero:before {
   content: "\E0DC"; }
 
-.icon-zoom:before {
+.icon-zip:before {
   content: "\E0DD"; }
+
+.icon-zoom-out:before {
+  content: "\E0DE"; }
+
+.icon-zoom:before {
+  content: "\E0DF"; }
 
 /**
 name: Icons
@@ -4018,7 +4024,7 @@ elements:
     cursor: pointer;
     line-height: 20px; }
     .table .icon-expand:before {
-      content: "\E064";
+      content: "\E066";
       position: relative; }
   .table .has-hidden-icons .icon-expand {
     display: none; }
@@ -4027,7 +4033,7 @@ elements:
     border-bottom: none 0; }
   .table .expanded .icon-expand:before,
   .table .parent .icon-expand:before {
-    content: "\E063"; }
+    content: "\E065"; }
   .table .dataTables_empty {
     font-style: italic;
     text-align: center;
@@ -4491,7 +4497,7 @@ elements:
   padding-left: 30px;
   position: relative; }
   .col--expander:before {
-    content: "\E064";
+    content: "\E066";
     margin-right: 10px;
     color: #666;
     font-size: 22px;
@@ -4499,7 +4505,7 @@ elements:
     top: 3px;
     left: 0; }
   .col--expander.is-expanded:before {
-    content: "\E063"; }
+    content: "\E065"; }
 
 .row--selected td,
 .row--selected .td,
@@ -4585,7 +4591,7 @@ elements:
   color: #038cd6; }
 
 .form-checkbox--result[data-state="some-selected"] label:before {
-  content: "\E075";
+  content: "\E077";
   padding-left: 3px;
   padding-right: 0;
   color: #038cd6; }
@@ -4750,6 +4756,46 @@ elements:
   background: #fff !important; }
 
 .table--fixed--left .row--error td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom: none; }
+
+.table--fixed--right td:before {
+  width: 0 !important; }
+
+.table--fixed--right tbody tr.drop-row td .action-icon [class^="icon-"],
+.table--fixed--right tbody tr.drop-row td .action-icon [class*="icon-"] {
+  display: inline-block; }
+
+.table--without-hover.table--fixed--right tbody tr:hover,
+.table--without-hover.table--fixed--right .table--fixed--right-hover {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tbody tr.row--error:hover,
+.table--fixed--right .row--error.table--fixed--right-hover {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr:hover td {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tr.row--error:hover td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr.table--fixed--right-hover td {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tbody tr.table--fixed--right-hover.row--error td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr td {
+  background: #fff !important; }
+
+.table--fixed--right .row--error td {
   background: #faf3f2 !important; }
 
 .bills-balance {
@@ -4955,7 +5001,7 @@ elements:
     cursor: pointer;
     line-height: 20px; }
     .table .icon-expand:before {
-      content: "\E064";
+      content: "\E066";
       position: relative; }
   .table .has-hidden-icons .icon-expand {
     display: none; }
@@ -4964,7 +5010,7 @@ elements:
     border-bottom: none 0; }
   .table .expanded .icon-expand:before,
   .table .parent .icon-expand:before {
-    content: "\E063"; }
+    content: "\E065"; }
   .table .dataTables_empty {
     font-style: italic;
     text-align: center;
@@ -5428,7 +5474,7 @@ elements:
   padding-left: 30px;
   position: relative; }
   .col--expander:before {
-    content: "\E064";
+    content: "\E066";
     margin-right: 10px;
     color: #666;
     font-size: 22px;
@@ -5436,7 +5482,7 @@ elements:
     top: 3px;
     left: 0; }
   .col--expander.is-expanded:before {
-    content: "\E063"; }
+    content: "\E065"; }
 
 .row--selected td,
 .row--selected .td,
@@ -5522,7 +5568,7 @@ elements:
   color: #038cd6; }
 
 .form-checkbox--result[data-state="some-selected"] label:before {
-  content: "\E075";
+  content: "\E077";
   padding-left: 3px;
   padding-right: 0;
   color: #038cd6; }
@@ -5687,6 +5733,46 @@ elements:
   background: #fff !important; }
 
 .table--fixed--left .row--error td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom: none; }
+
+.table--fixed--right td:before {
+  width: 0 !important; }
+
+.table--fixed--right tbody tr.drop-row td .action-icon [class^="icon-"],
+.table--fixed--right tbody tr.drop-row td .action-icon [class*="icon-"] {
+  display: inline-block; }
+
+.table--without-hover.table--fixed--right tbody tr:hover,
+.table--without-hover.table--fixed--right .table--fixed--right-hover {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tbody tr.row--error:hover,
+.table--fixed--right .row--error.table--fixed--right-hover {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr:hover td {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tr.row--error:hover td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr.table--fixed--right-hover td {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tbody tr.table--fixed--right-hover.row--error td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr td {
+  background: #fff !important; }
+
+.table--fixed--right .row--error td {
   background: #faf3f2 !important; }
 
 .bills-balance {
@@ -6348,7 +6434,7 @@ elements:
 .form-item--filter {
   position: relative; }
   .form-item--filter:before {
-    content: "\E0A9";
+    content: "\E0AB";
     line-height: 1;
     position: absolute;
     left: 10px;
@@ -6356,7 +6442,7 @@ elements:
   .form-item--filter input {
     padding-left: 30px; }
   [data-loading] .form-item--filter:before {
-    content: "\E0D7";
+    content: "\E0D9";
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite; }
   .form-item--filter .icon-clear {
@@ -7631,19 +7717,20 @@ examples:
 		  include: disabled-negative.html
 */
 .form-radio label {
-  padding: 6px 0 6px 30px;
+  padding: 0 0 0 30px;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .form-radio label:before {
     position: absolute;
     border-radius: 50%;
     background: #fff;
     border: 1px solid #b8b8b8;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     content: "";
-    left: 0;
-    top: 6px;
+    left: 1px;
+    top: 0px;
     -webkit-transition: all 0.125s;
     transition: all 0.125s; }
   .form-radio label:after {
@@ -7655,7 +7742,7 @@ examples:
     content: "";
     opacity: 0;
     left: 5px;
-    top: 11px;
+    top: 4px;
     -webkit-transition: all 0.125s;
     transition: all 0.125s; }
 
@@ -7693,7 +7780,7 @@ examples:
   .form-radio--small label:after {
     width: 6px;
     height: 6px;
-    left: 3px;
+    left: 4px;
     top: 9px; }
 
 .form-radio--large label {
@@ -7706,7 +7793,10 @@ examples:
     width: 14px;
     height: 14px;
     top: 16px;
-    left: 6px; }
+    left: 7px; }
+
+.form-radio--disabled {
+  cursor: not-allowed; }
 
 .section--negative .form-radio label:before {
   border-color: #fff; }
@@ -7776,155 +7866,139 @@ examples:
 	  tmpl:
 		  include: disabled-negative.html
 */
-.form-checkbox label {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 0 0 30px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  position: relative;
-  line-height: 1; }
-  .form-checkbox label.empty {
-    padding: 0;
-    width: 16px;
-    height: 16px; }
-  .form-checkbox label:before {
-    content: "\E029";
-    width: 11px;
-    height: 12px;
-    font-size: 13px;
-    line-height: 11px;
-    background: #fff;
-    border: 1px solid #d1d1d1;
-    border-radius: 2px;
-    text-align: center;
-    color: transparent;
-    position: absolute;
-    left: 0;
-    top: 0;
-    text-indent: -3px;
-    -webkit-transition: all 0.125s;
-    transition: all 0.125s;
-    overflow: visible;
-    padding-left: 3px;
-    padding-top: 2px; }
-
-.form-checkbox [type=checkbox] {
-  position: absolute; }
-
-.form-checkbox [type=checkbox]:checked ~ label:before {
-  color: #038cd6; }
-
-.form-checkbox label:hover:before {
-  background: #f5f5f5;
-  border: 1px solid #b8b8b8; }
-
-.form-checkbox [type=checkbox]:focus + label:before {
-  background: #f5f5f5;
-  border: 1px solid #038cd6; }
-
-.form-checkbox--small label {
-  padding-left: 20px; }
-  .form-checkbox--small label.empty {
-    width: 11px;
-    height: 11px; }
-  .form-checkbox--small label:before {
-    padding-left: 4px;
-    width: 5px;
-    height: 7px;
-    line-height: 0;
-    top: 4px; }
-
-.form-checkbox--large label {
-  padding-left: 40px; }
-  .form-checkbox--large label.empty {
-    width: 24px;
-    height: 24px; }
-  .form-checkbox--large label:before {
-    width: 19px;
-    height: 20px;
-    font-size: 15px;
-    line-height: 18px;
-    background: #f5f5f5; }
-
-.form-checkbox--large [type=checkbox]:checked + label:before {
-  background: #038cd6;
-  border-color: #038cd6;
-  color: #fff; }
-  .form-checkbox--large [type=checkbox]:checked + label:before:focus {
-    border-color: #0278b8; }
-
-.form-checkbox [type=checkbox]:disabled + label {
-  color: #d1d1d1;
-  pointer-events: none; }
-  .form-checkbox [type=checkbox]:disabled + label a {
-    pointer-events: all; }
-  .form-checkbox [type=checkbox]:disabled + label:before {
-    border-color: #e8e8e8; }
-
-.form-checkbox [type=checkbox]:disabled:checked + label:before {
-  border-color: transparent; }
-
-.section--negative .form-checkbox label:before {
-  border-color: #fff; }
-
-.section--negative .form-checkbox [type=checkbox]:hover + label:before {
-  background-color: #f5f5f5; }
-
-.section--negative .form-checkbox [type=checkbox]:active + label:before,
-.section--negative .form-checkbox [type=checkbox]:focus + label:before {
-  border-color: #00619e;
-  background-color: #c0e2f5; }
-
-.section--negative .form-checkbox [type=checkbox]:checked + label:before {
-  color: #0278b8; }
-
-.section--negative .form-checkbox--small [type=checkbox]:checked + label:before {
-  color: #474747; }
-
-.section--negative .form-checkbox--large [type=checkbox]:focus:checked + label:before {
-  background-color: #c0e2f5;
-  border-color: #00619e; }
-
-.section--negative .form-checkbox--large [type=checkbox]:checked + label:before {
-  background-color: #fff;
-  border-color: #fff; }
-
-.section--negative .form-checkbox [type=checkbox]:disabled + label {
-  color: #c0e2f5;
-  pointer-events: none; }
-  .section--negative .form-checkbox [type=checkbox]:disabled + label a {
-    pointer-events: all; }
-  .section--negative .form-checkbox [type=checkbox]:disabled + label:before {
-    border-color: #c0e2f5;
-    background-color: transparent; }
-
-.section--negative .form-checkbox [type=checkbox]:disabled:checked + label:before {
-  border-color: transparent;
-  background-color: transparent;
-  color: #fff; }
-
-.form-checkbox--single label {
-  margin: 0;
-  padding: 0; }
-  .form-checkbox--single label:before {
-    top: 0;
+.form-checkbox {
+  margin-right: 8px; }
+  .form-checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: relative;
+    line-height: 1; }
+    .form-checkbox label.empty {
+      padding: 0;
+      width: 16px;
+      height: 16px; }
+    .form-checkbox label:before {
+      content: "\E029";
+      width: 11px;
+      height: 12px;
+      font-size: 13px;
+      line-height: 11px;
+      background: #fff;
+      border: 1px solid #d1d1d1;
+      border-radius: 2px;
+      text-align: center;
+      color: transparent;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-indent: -3px;
+      -webkit-transition: all 0.125s;
+      transition: all 0.125s;
+      overflow: visible;
+      padding-left: 3px;
+      padding-top: 2px; }
+  .form-checkbox [type=checkbox] {
+    position: absolute; }
+  .form-checkbox [type=checkbox]:checked ~ label:before {
+    color: #038cd6; }
+  .form-checkbox label:hover:before {
+    background: #f5f5f5;
+    border: 1px solid #b8b8b8; }
+  .form-checkbox [type=checkbox]:focus + label:before {
+    background: #f5f5f5;
+    border: 1px solid #038cd6; }
+  .form-checkbox--small label {
+    padding-left: 20px; }
+    .form-checkbox--small label.empty {
+      width: 11px;
+      height: 11px; }
+    .form-checkbox--small label:before {
+      padding-left: 4px;
+      width: 5px;
+      height: 7px;
+      line-height: 0;
+      top: 2px; }
+  .form-checkbox--large label {
+    padding-left: 40px; }
+    .form-checkbox--large label.empty {
+      width: 24px;
+      height: 24px; }
+    .form-checkbox--large label:before {
+      width: 19px;
+      height: 20px;
+      font-size: 15px;
+      line-height: 18px;
+      background: #f5f5f5; }
+  .form-checkbox--large [type=checkbox]:checked + label:before {
+    background: #038cd6;
+    border-color: #038cd6;
+    color: #fff; }
+    .form-checkbox--large [type=checkbox]:checked + label:before:focus {
+      border-color: #0278b8; }
+  .form-checkbox [type=checkbox]:disabled + label {
+    color: #d1d1d1;
+    pointer-events: none; }
+    .form-checkbox [type=checkbox]:disabled + label a {
+      pointer-events: all; }
+    .form-checkbox [type=checkbox]:disabled + label:before {
+      border-color: #e8e8e8; }
+  .form-checkbox [type=checkbox]:disabled:checked + label:before {
+    border-color: transparent; }
+  .section--negative .form-checkbox label:before {
+    border-color: #fff; }
+  .section--negative .form-checkbox [type=checkbox]:hover + label:before {
+    background-color: #f5f5f5; }
+  .section--negative .form-checkbox [type=checkbox]:active + label:before,
+  .section--negative .form-checkbox [type=checkbox]:focus + label:before {
+    border-color: #00619e;
+    background-color: #c0e2f5; }
+  .section--negative .form-checkbox [type=checkbox]:checked + label:before {
+    color: #0278b8; }
+  .section--negative .form-checkbox--small [type=checkbox]:checked + label:before {
+    color: #474747; }
+  .section--negative .form-checkbox--large [type=checkbox]:focus:checked + label:before {
+    background-color: #c0e2f5;
+    border-color: #00619e; }
+  .section--negative .form-checkbox--large [type=checkbox]:checked + label:before {
+    background-color: #fff;
+    border-color: #fff; }
+  .section--negative .form-checkbox [type=checkbox]:disabled + label {
+    color: #c0e2f5;
+    pointer-events: none; }
+    .section--negative .form-checkbox [type=checkbox]:disabled + label a {
+      pointer-events: all; }
+    .section--negative .form-checkbox [type=checkbox]:disabled + label:before {
+      border-color: #c0e2f5;
+      background-color: transparent; }
+  .section--negative .form-checkbox [type=checkbox]:disabled:checked + label:before {
+    border-color: transparent;
+    background-color: transparent;
+    color: #fff; }
+  .form-checkbox--single label {
     margin: 0;
-    position: static; }
-
-.form-checkbox.form-item--small label {
-  padding-left: 20px; }
-  .form-checkbox.form-item--small label:before {
-    width: 9px;
-    height: 9px;
-    padding-top: 0;
-    padding-left: 0;
-    font-size: 11px;
-    line-height: 12px;
-    top: 5px; }
+    padding: 0; }
+    .form-checkbox--single label:before {
+      top: 0;
+      margin: 0;
+      position: static; }
+  .form-checkbox.form-item--small label {
+    padding-left: 20px; }
+    .form-checkbox.form-item--small label:before {
+      width: 9px;
+      height: 9px;
+      padding-top: 0;
+      padding-left: 0;
+      font-size: 11px;
+      line-height: 12px;
+      top: 5px; }
+  .form-checkbox--disabled {
+    cursor: not-allowed; }
 
 /**
 name: Form search
@@ -8034,7 +8108,7 @@ examples:
   .form-search.form-search--inline input {
     padding-left: 35px; }
   .form-search.form-search--inline:before {
-    content: "\E0A9";
+    content: "\E0AB";
     font-size: 20px;
     position: absolute;
     top: 11px;
@@ -8761,12 +8835,12 @@ examples:
       left: 0;
       border-radius: 2px 0 0 2px; }
       .form-item__number-wrapper .number__control--decrease:before {
-        content: "\E075"; }
+        content: "\E077"; }
     .form-item__number-wrapper .number__control--increase {
       right: 0;
       border-radius: 0 2px 2px 0; }
       .form-item__number-wrapper .number__control--increase:before {
-        content: "\E09C"; }
+        content: "\E09E"; }
     .section--negative .form-item__number-wrapper .number__control:focus {
       border: 1px solid #00619e; }
 
@@ -8776,6 +8850,212 @@ examples:
   .form-item__action-hidden [type="number"]::-webkit-inner-spin-button, .form-item__action-hidden [type="number"]::-webkit-outer-spin-button {
     margin: 0;
     -webkit-appearance: none; }
+
+.datepicker {
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  vertical-align: top;
+  height: 32px;
+  position: relative;
+  min-width: 200px;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 768px) {
+    .datepicker {
+      display: block; } }
+  .datepicker:before {
+    background: #f0f0f0;
+    border-right: 1px solid #e8e8e8;
+    content: "";
+    width: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0; }
+  .datepicker:after {
+    content: "\E020";
+    width: 32px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    text-align: center;
+    line-height: 32px;
+    font-size: 17px;
+    color: #666; }
+  .datepicker:hover {
+    border: 1px solid #b8b8b8;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.07);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.07); }
+  .datepicker.is-active {
+    border: 1px solid #038cd6;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.07);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.07); }
+  .datepicker input[type="text"],
+  .datepicker input[type="date"] {
+    background: transparent;
+    border: none;
+    color: #474747;
+    cursor: pointer;
+    font-size: 13px;
+    display: block;
+    line-height: normal;
+    height: 100%;
+    outline: none;
+    padding: 6px 26px 6px 42px;
+    width: 100%;
+    z-index: 5;
+    position: relative; }
+    .datepicker input[type="text"]:focus, .datepicker input[type="text"]:hover,
+    .datepicker input[type="date"]:focus,
+    .datepicker input[type="date"]:hover {
+      outline: none;
+      border: none; }
+  .datepicker--disabled {
+    background: #f5f5f5;
+    border-color: #e8e8e8; }
+    .datepicker--disabled:hover {
+      border-color: #e8e8e8;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .datepicker--disabled input[type="text"],
+    .datepicker--disabled input[type="date"] {
+      cursor: not-allowed;
+      background: none !important; }
+  .datepicker .icon-clear {
+    background-color: transparent;
+    border: none;
+    color: #474747;
+    line-height: 32px;
+    padding: 1px;
+    position: absolute;
+    outline: none;
+    right: 3px;
+    top: 0;
+    bottom: 0;
+    z-index: 6; }
+    .datepicker .icon-clear:before {
+      font-size: 20px;
+      height: 32px;
+      line-height: 28px; }
+    @media only screen and (max-width: 768px) {
+      .datepicker .icon-clear {
+        display: none; } }
+  .datepicker--large {
+    height: 40px; }
+    .datepicker--large input[type="text"],
+    .datepicker--large input[type="date"] {
+      font-size: 16px; }
+    .datepicker--large .icon-clear {
+      right: 7px;
+      line-height: 38px; }
+      .datepicker--large .icon-clear:before {
+        line-height: 38px; }
+  .datepicker.form-item--error {
+    -webkit-box-shadow: 0 0 0 2px #db5451;
+            box-shadow: 0 0 0 2px #db5451; }
+    .datepicker.form-item--error [type="text"],
+    .datepicker.form-item--error [type="text"]:focus,
+    .datepicker.form-item--error [type="number"],
+    .datepicker.form-item--error [type="number"]:focus,
+    .datepicker.form-item--error [type="date"],
+    .datepicker.form-item--error [type="date"]:focus {
+      border-color: transparent !important;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      padding-right: 42px; }
+    .datepicker.form-item--error [class^="icon-"] {
+      right: 4px;
+      bottom: -2px;
+      z-index: 6; }
+    .datepicker.form-item--error .icon-clear {
+      top: 50%;
+      margin-bottom: -13px;
+      right: 20px !important;
+      color: #474747; }
+  @media only screen and (max-width: 768px) {
+    .datepicker--range {
+      background-color: none;
+      border: 0;
+      padding-left: 0;
+      margin: 0 -5px; }
+      .datepicker--range:before, .datepicker--range:after {
+        display: none; }
+      .datepicker--range:hover, .datepicker--range.is-active {
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+      .datepicker--range .col {
+        position: relative;
+        float: left;
+        width: 50%;
+        padding: 0 5px; }
+        .datepicker--range .col:before {
+          background: #f0f0f0;
+          border-right: 1px solid #e8e8e8;
+          content: "";
+          width: 32px;
+          position: absolute;
+          left: 6px;
+          top: 1px;
+          bottom: 1px; }
+        .datepicker--range .col:after {
+          content: "\E020";
+          width: 32px;
+          position: absolute;
+          left: 6px;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+              -ms-transform: translate(0, -50%);
+                  transform: translate(0, -50%);
+          text-align: center;
+          line-height: 32px;
+          font-size: 17px;
+          color: #666; }
+      .datepicker--range input[type="text"],
+      .datepicker--range input[type="date"] {
+        color: #474747;
+        font-size: 13px;
+        line-height: 18px;
+        display: block;
+        height: 32px;
+        outline: none;
+        padding: 7px 26px 7px 38px;
+        width: 100%;
+        border: 1px solid #d1d1d1;
+        border-radius: 2px; }
+        .datepicker--range input[type="text"]:focus, .datepicker--range input[type="text"]:hover,
+        .datepicker--range input[type="date"]:focus,
+        .datepicker--range input[type="date"]:hover {
+          border: 1px solid #d1d1d1; }
+      .datepicker--range.form-item--error {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+        .datepicker--range.form-item--error [type="text"],
+        .datepicker--range.form-item--error [type="text"]:focus,
+        .datepicker--range.form-item--error [type="number"],
+        .datepicker--range.form-item--error [type="number"]:focus,
+        .datepicker--range.form-item--error [type="date"],
+        .datepicker--range.form-item--error [type="date"]:focus {
+          border-color: transparent !important;
+          -webkit-box-shadow: 0 0 0 2px #db5451;
+                  box-shadow: 0 0 0 2px #db5451; }
+        .datepicker--range.form-item--error [class^="icon-"] {
+          right: 9px; } }
+  .datepicker.disabled:before, .datepicker.disabled:after {
+    z-index: 6; }
+
+.datepicker__start, .datepicker__end {
+  display: none !important; }
+  @media only screen and (max-width: 768px) {
+    .datepicker--range .datepicker__start, .datepicker--range .datepicker__end {
+      display: block !important; } }
+
+@media only screen and (max-width: 768px) {
+  .datepicker__range {
+    display: none !important; } }
 
 .datepick {
   background-color: #fff;
@@ -8826,6 +9106,178 @@ examples:
       cursor: auto;
       background-color: #fff;
       opacity: .5; }
+  .datepick .date-picker__header-label {
+    padding: 0 5px; }
+    .datepick .date-picker__header-label:hover {
+      color: #038cd6; }
+  .datepick .datepick-sidebar {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: 0;
+    width: 200px;
+    margin-right: -200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-left: none; }
+    .datepick .datepick-sidebar > button {
+      margin-bottom: 10px; }
+  .datepick .datepick-ctrl {
+    text-align: right; }
+    .datepick .datepick-ctrl .button--micro.icon.calendar-ok-btn {
+      color: #fff;
+      margin: 0;
+      width: 32px; }
+      .datepick .datepick-ctrl .button--micro.icon.calendar-ok-btn[disabled] {
+        color: #b8b8b8 !important; }
+    .datepick .datepick-ctrl .datepick-time-label {
+      color: #038cd6;
+      margin-right: 10px;
+      vertical-align: bottom;
+      cursor: pointer; }
+      .datepick .datepick-ctrl .datepick-time-label[disabled] {
+        color: #b8b8b8 !important; }
+  .datepick [disabled] {
+    cursor: not-allowed; }
+  .datepick .datepick-month table td {
+    width: 33px;
+    height: 32px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle; }
+    .datepick .datepick-month table td .datepick-other-month {
+      display: inline-block;
+      cursor: pointer; }
+    .datepick .datepick-month table td > a {
+      padding: 0;
+      height: 100%;
+      line-height: 33px;
+      border: 1px solid #fff; }
+      .datepick .datepick-month table td > a.datepick-today {
+        border: 1px solid #038cd6;
+        color: #038cd6; }
+      .datepick .datepick-month table td > a.datepick-selected {
+        background-color: #038cd6;
+        border: 1px solid #038cd6;
+        color: #fff; }
+      .datepick .datepick-month table td > a.datepick-disabled {
+        cursor: not-allowed; }
+      .datepick .datepick-month table td > a:not(.datepick-today):not(.datepick-selected):not(.datepick-disabled):hover {
+        background-color: #f5f5f5;
+        border: 1px solid #f5f5f5; }
+  .datepick .datepick-month .month-table td {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 3px; }
+    .datepick .datepick-month .month-table td > a {
+      width: 48px;
+      height: 32px;
+      display: block;
+      line-height: 32px;
+      padding: 0; }
+      .datepick .datepick-month .month-table td > a:not(.datepick-selected):hover {
+        background-color: #f5f5f5; }
+  .datepick .datepick-month .year-table td {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 3px; }
+    .datepick .datepick-month .year-table td > a {
+      width: 48px;
+      height: 32px;
+      display: block;
+      line-height: 32px;
+      padding: 0; }
+      .datepick .datepick-month .year-table td > a:not(.datepick-selected):hover {
+        background-color: #f5f5f5; }
+  .datepick .datepick-month .time-spinner .time-spinner-select {
+    float: left;
+    font-size: 12px;
+    border: 1px solid #e9e9e9;
+    border-width: 0 1px;
+    margin-left: -1px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 33.6%;
+    position: relative;
+    overflow: hidden; }
+    .datepick .datepick-month .time-spinner .time-spinner-select ul {
+      list-style: none;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      width: -webkit-calc(100% + 20px);
+      width: calc(100% + 20px);
+      max-height: 236px;
+      overflow-y: auto; }
+    .datepick .datepick-month .time-spinner .time-spinner-select li {
+      list-style: none;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      margin: 0;
+      height: 34px;
+      line-height: 34px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: background 0.3s ease;
+      transition: background 0.3s ease;
+      width: 100%; }
+      .datepick .datepick-month .time-spinner .time-spinner-select li:hover {
+        background: #f5f5f5; }
+      .datepick .datepick-month .time-spinner .time-spinner-select li.datepick-selected {
+        background-color: #038cd6;
+        color: #fff; }
+      .datepick .datepick-month .time-spinner .time-spinner-select li.blank {
+        background: #fff;
+        cursor: auto; }
+    .datepick .datepick-month .time-spinner .time-spinner-select:after {
+      height: 28px;
+      background-color: #fff;
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+      /* box-shadow: 10px 1px 3px rgba(0,0,0,0.5); */
+      content: "   ";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      bottom: 0;
+      background: -webkit-linear-gradient(#fff, #f5f5f5);
+      /* Safari 5.1 - 6.0 */
+      /* Opera 11.1 - 12.0 */
+      /* Firefox 3.6 - 15 */
+      background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+      background: linear-gradient(#fff, #f5f5f5);
+      /* 标准的语法（必须放在最后） */ }
+    .datepick .datepick-month .time-spinner .time-spinner-select :before {
+      height: 28px;
+      background-color: #fff;
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+      content: "   ";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      top: 0;
+      background: -webkit-linear-gradient(#f5f5f5, #fff);
+      /* Safari 5.1 - 6.0 */
+      /* Opera 11.1 - 12.0 */
+      /* Firefox 3.6 - 15 */
+      background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#fff));
+      background: linear-gradient(#f5f5f5, #fff);
+      /* 标准的语法（必须放在最后） */ }
+    .datepick .datepick-month .time-spinner .time-spinner-select .blank {
+      height: 178px; }
 
 .datepick-popup {
   z-index: 500; }
@@ -8942,7 +9394,7 @@ examples:
       color: #474747;
       display: block;
       /*max-width: 28px;
-				max-height: 28px;*/
+        max-height: 28px;*/
       padding: 4px 0;
       text-decoration: none;
       width: 100%; }
@@ -9158,12 +9610,12 @@ examples:
     .filter-toggle--large .filter-toggle__label {
       line-height: 24px; }
     .filter-toggle__label:before {
-      content: "\E064";
+      content: "\E066";
       font-size: 18px;
       position: absolute;
       top: 0; }
       .filter-toggle.is-expanded .filter-toggle__label:before {
-        content: "\E063"; }
+        content: "\E065"; }
       .filter-toggle--large .filter-toggle__label:before {
         font-size: 24px;
         top: -1px; }
@@ -9296,7 +9748,7 @@ examples:
           background: transparent;
           width: 100%;
           height: auto;
-          content: "\E067"; }
+          content: "\E069"; }
     .form-item--toggle input:focus ~ .form-item--toggle__track {
       outline: none; }
     .form-item--toggle input + .tooltip__trigger {
@@ -9442,7 +9894,7 @@ examples:
     background: transparent;
     width: 100%;
     height: auto;
-    content: "\E067"; }
+    content: "\E069"; }
   .form-item--toggle--wide .toggle__check:disabled ~ .form-item--toggle__switch {
     right: 84px; }
 
@@ -9531,7 +9983,7 @@ examples:
       top: 0;
       bottom: 0; }
     .multi-filter__input :after {
-      content: "\E098";
+      content: "\E09A";
       width: 32px;
       height: 100%;
       position: absolute;
@@ -9670,7 +10122,7 @@ examples:
       content: "\E029";
       color: #038cd6; }
     .accordion-filter__parent-item[data-state="some-selected"] .accordion-filter__parent-item-toggle label:before {
-      content: "\E075";
+      content: "\E077";
       padding-left: 3px;
       padding-right: 0;
       color: #038cd6; }
@@ -10402,7 +10854,7 @@ examples:
     padding: 0 40px;
     position: relative; }
     .dropdown__filter:before {
-      content: "\E0A9";
+      content: "\E0AB";
       color: #b8b8b8;
       font-size: 22px;
       line-height: 25px;
@@ -10541,7 +10993,7 @@ examples:
   .dropdown--subscriptions .dropdown__label {
     padding-left: 35px; }
     .dropdown--subscriptions .dropdown__label:before {
-      content: "\E065";
+      content: "\E067";
       font-size: 20px;
       padding: 0 5px 0 10px;
       position: absolute;
@@ -10860,6 +11312,50 @@ type: ui
       display: block;
       padding-left: 0;
       padding-right: 0; } }
+
+.swipe {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+  .swipe__items-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 100%; }
+    .swipe__items-wrap > div {
+      position: absolute;
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+      width: 100%;
+      height: 100%;
+      display: none; }
+  .swipe__item {
+    width: 100%;
+    height: 100%; }
+  .swipe__item--active {
+    display: block !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+        transform: none !important;
+    background: #fff; }
+  .swipe__indicators-wrap {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+  .swipe__indicator {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0.2;
+    margin: 0 3px;
+    cursor: pointer; }
+  .swipe__indicator--active {
+    background: #fff; }
 
 .list li {
   position: relative;
@@ -13349,6 +13845,7 @@ examples:
 	  	  include: single-slider.html
 */
 .range-slider {
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -13357,7 +13854,7 @@ examples:
   .range-slider__container {
     height: 5px;
     position: relative;
-    background: #b8b8b8;
+    background: #e8e8e8;
     border-radius: 2.5px;
     margin-bottom: 8px;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
@@ -13373,6 +13870,15 @@ examples:
     height: 100%;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2) inset; }
+  .range-slider.disabled .range-slider__point {
+    background: #f5f5f5; }
+    .range-slider.disabled .range-slider__point.hover, .range-slider.disabled .range-slider__point.dragging {
+      cursor: not-allowed; }
+  .range-slider.disabled, .range-slider__points {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#888888));
+    background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #888888 100%);
+    background-image: linear-gradient(to bottom, #e8e8e8 0%, #888888 100%);
+    background-repeat: repeat-x; }
   .range-slider__point {
     width: 15px;
     height: 15px;
@@ -13392,6 +13898,12 @@ examples:
     .range-slider__point--to {
       float: right;
       margin-right: -8px; }
+    .range-slider__point.hover {
+      cursor: -webkit-grab;
+      cursor: grab; }
+    .range-slider__point.dragging {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
   .range-slider__values {
     list-style: none;
     margin: 0;
@@ -13433,7 +13945,8 @@ examples:
     position: relative;
     padding-top: 14px;
     display: inline-block;
-    height: 20px; }
+    height: 20px;
+    left: 8px; }
     .range-slider__value--empty:before {
       border-right: 1px solid #d1d1d1;
       width: 1px;
@@ -13444,6 +13957,8 @@ examples:
       position: absolute;
       left: 50%;
       top: 0; }
+  .range-slidervalues li:last-child .range-slider__value--empty {
+    left: 0; }
   .range-slider--single {
     cursor: pointer; }
     .range-slider--single .range-slider__select--from {
@@ -13452,6 +13967,10 @@ examples:
     padding: 4px 10px;
     text-align: center;
     min-width: 36px; }
+  .range-slider .range-slider--select .range-slider__points {
+    background: -webkit-gradient(linear, left top, left bottom, from(#02a962), to(#008e52));
+    background: -webkit-linear-gradient(top, #02a962, #008e52);
+    background: linear-gradient(180deg, #02a962, #008e52); }
 
 .rating__stars {
   font-size: 20px;
@@ -14364,6 +14883,7 @@ element:
   .tooltip__trigger {
     cursor: pointer;
     display: inline-block;
+    position: inherit !important;
     font-size: 17px;
     line-height: 1;
     -webkit-user-select: none;
