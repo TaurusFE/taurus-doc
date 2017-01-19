@@ -5775,6 +5775,46 @@ elements:
 .table--fixed--right .row--error td {
   background: #faf3f2 !important; }
 
+.table--fixed--right {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom: none; }
+
+.table--fixed--right td:before {
+  width: 0 !important; }
+
+.table--fixed--right tbody tr.drop-row td .action-icon [class^="icon-"],
+.table--fixed--right tbody tr.drop-row td .action-icon [class*="icon-"] {
+  display: inline-block; }
+
+.table--without-hover.table--fixed--right tbody tr:hover,
+.table--without-hover.table--fixed--right .table--fixed--right-hover {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tbody tr.row--error:hover,
+.table--fixed--right .row--error.table--fixed--right-hover {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr:hover td {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tr.row--error:hover td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr.table--fixed--right-hover td {
+  background: #f5f5f5 !important; }
+
+.table--fixed--right tbody tr.table--fixed--right-hover.row--error td {
+  background: #faf3f2 !important; }
+
+.table--fixed--right tbody tr td {
+  background: #fff !important; }
+
+.table--fixed--right .row--error td {
+  background: #faf3f2 !important; }
+
 .bills-balance {
   font-weight: normal;
   margin-top: 20px; }
@@ -12208,7 +12248,7 @@ examples:
       margin-right: 0; } }
   .modal-box__action-buttons li {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 0px;
+        -ms-flex: 1 0 0;
             flex: 1 0 0;
     padding: 0 5px;
     max-width: 50%; }
