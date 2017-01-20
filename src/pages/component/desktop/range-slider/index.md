@@ -8,32 +8,42 @@ export default {
     data: function () {
         return {
           singleSlide: {
+            type: 'single',
             rangeLabel: 'Number',
             min: 0,
             max: 100,
-            end: 0,
+            start: 0,
+            end: 5,
+            step: 1,
             options: []
           },
           singleDisabledSlide: {
+            type: 'single',
             rangeLabel: 'Number',
+            step: 1,
             min: 0,
             max: 100,
+            start: 0,
             end: 50,
             disabled: true
           },
           singleDiscreteSlide: {
+            type: 'single',
             rangeLabel: 'Number',
             min: 0,
+            step: 1,
             max: 100,
             step: 10,
-            end: 0
+            start: 0,
+            end: 5
           },
           singleDiscreteSlide2: {
-            // rangeLabel: 'Number',
+            type: 'single',
             min: 0,
             max: 100,
             step: 10,
-            end: 0,
+            end: 10,
+            start: 0,
             showStops: true
           },
           rangeSlideOptions: {

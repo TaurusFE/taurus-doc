@@ -1,36 +1,55 @@
 <script>
- import {TDatePicker} from 'ai-taurus-desktop';
+ import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
  export default {
-  data: function () {
-     return {
+  el: '#demo',
+    data: {
+      calendarSizeArr: ['small', 'large'],
+      calendarSize: 'small',
+      langArr: ['en', 'cn'],
+      lang: 'en',
+      shortcutOptions: {
+        isCover: false,
+        shortcuts: [{
+          text: '昨天',
+          onClick (picker) {
+            picker.$emit('pick', moment().subtract(1, 'd'));
+          }
+        }, {
+          text: '前天',
+          onClick (picker) {
+            picker.$emit('pick', moment().subtract(2, 'd'));
+          }
+        }]
+      },
+      type: 'date',
       singleDateVal: '',
-      doubleDateVal: '',
-      dateVal: '2016.08.20 - 2016.09.21'
-     };
+      singleMonthVal: '',
+      singleDateTimeVal: '',
+      rangeDateVal: '',
+      rangeDateTimeVal: '',
+      formatDateValue: '2017/1/12',
+      formatMonthValue: '2017/3',
+      formatDateRangeValue: ['2017/1/12', '2017/1/30'],
+      dateShortcutVal: '',
+      dateRangeShortcutVal: '',
+      customShortcutVal: '',
+      formatDateVal: ''
     },
     components: {
-      TDatePicker
+      TDatePicker,
+      TSelect
     },
     methods: {
-      setSingleDate: function () {
-        this.singleDateVal = '2015-06-16';
+      sizeChange (newVal) {
+        this.calendarSie = newVal;
       },
-      setDoubleDate: function () {
-        this.doubleDateVal = '2016.07.16 - 2016.08.10';
+      langChange (newVal) {
+        taurus.lang = newVal;
+        this.lang = newVal;
       },
-      onChange: function (value) {
-        alert(value);
-      }
-    },
-    watch: {
-      singleDateVal: function (newValue) {
-        console.log('********Single Date Change********');
-        console.log(newValue);
-      },
-      doubleDateVal: function (newValue) {
-        console.log('********Double Date Change********');
-        console.log(newValue);
+      onChange (value) {
+        console.log('date change:' + value);
       }
     }
   };
@@ -38,195 +57,295 @@
 
 ## DatePicker组件
 
-日期选择组件，支持选择单个日期或日期范围
+日期选择组件，在同一个选择器里选择日期和时间
 
-### 选择单个日期
+### 基本操作
 
-:::demo 要使用该组件需要传入一个date-format的时间格式用来定义获取返回时间的格式，并且要用v-model绑定需要返回的值。
+:::demo 要使用该组件需要传入一个type设定日历的类型，默认为date类型，用v-model绑定需要返回的值。
 
 ```html
-  <button class="button button--action" @click="setSingleDate">set single date (2015-06-16)</button>
-  <div style="margin: 10px;">
-    <t-date-picker v-model="singleDateVal" date-format="yyyy.mm.dd"></t-date-picker>
-  </div>
+    <div class="sg-component__label">基本操作</div>
+    <div style="margin: 10px;" class="box--default-dark-border padding-whole--small">
+    <label>日期选择</label>
+    <t-date-picker style="width:200px" v-model="singleDateVal" ref="singleDatePicker" v-on:date-change="onChange"
+                 placeholder="please select date"></t-date-picker>
+    <label>年月选择</label>
+    <t-date-picker style="width:200px" v-model="singleMonthVal" type="month" v-on:date-change="onChange"
+                 placeholder="please select date"></t-date-picker>
+    <label>日期时间选择</label>
+    <t-date-picker style="width:200px" v-model="singleDateTimeVal" type="dateTime" v-on:date-change="onChange"
+                 placeholder="please select date"></t-date-picker>
+    <label>日期范围</label>
+    <t-date-picker style="width:500px" v-model="rangeDateVal" type="dateRange" v-on:date-change="onChange"
+                 placeholder="please select date"></t-date-picker>
+    <label>日期时间范围</label>
+    <t-date-picker style="width:500px" v-model="rangeDateTimeVal" type="dateTimeRange" v-on:date-change="onChange"
+                 placeholder="please select date"></t-date-picker>
+    </div>
 <script>
- import {TDatePicker} from 'ai-taurus-desktop';
+ import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
  export default {
    data: {
-       singleDateVal: ''
+     type: 'date',
+     singleDateVal: '',
+     singleMonthVal: '',
+     singleDateTimeVal: '',
+     rangeDateVal: '',
+     rangeDateTimeVal: ''
      },
      components: {
        TDatePicker
      },
      methods: {
-       setSingleDate: function () {
-         this.singleDateVal = '2015-06-16';
-       }
-     },
-     watch: {
-       singleDateVal: function (newValue) {
-         console.log('********Single Date Change********');
-         console.log(newValue);
+       onChange (value) {
+         console.log('date change:' + value);
        }
      }
+   }
  };
 </script>
 ```
 :::
 
-### 选择日期范围
+### 带快捷选项
 
-:::demo range-select传入true即可选择时间范围
-
-```html
-<button class="button button--action" @click="setDoubleDate">set double date (2016.07.16 - 2016.08.10)</button>
-<div style="float1:left; margin: 10px;">
-    <t-date-picker :months-to-show="2" v-model="doubleDateVal" min-date="2016.07.11" max-date="2016.11.11" date-format="yyyy.mm.dd" :range-select="true"></t-date-picker>
-</div>
-<script>
- import {TDatePicker} from 'ai-taurus-desktop';
-
- export default {
-   data: function () {
-        return {
-         doubleDateVal: ''
-        };
-       },
-       components: {
-         TDatePicker
-       },
-       methods: {
-         setDoubleDate: function () {
-           this.doubleDateVal = '2016.12.16 - 2017.01.10';
-         }
-       },
-       watch: {
-         doubleDateVal: function (newValue) {
-           console.log('********Double Date Change********');
-           console.log(newValue);
-         }
-       }
- };
-</script>
-```
-:::
-
-### 指定日期最大值，最小值
-
-:::demo 传入min-date或者max-date来限制时间选择 max-date必须要大于min-date
+:::demo 传入show-shortcut属性为true，可以显示默认的快捷选项，如果需要传入自己定义的快捷选项传入shortcut-options属性，值为自定义的快捷选项数组
 
 ```html
-<t-date-picker  min-date="2016.07.11" max-date="2016.11.11" date-format="yyyy.mm.dd"></t-date-picker>
+  <div class="sg-component__label">带快捷选项</div>
+  <div style="margin: 10px;" class="box--default-dark-border padding-whole--small">
+    <label>日期快捷选项</label>
+    <t-date-picker style="width:200px" v-model="dateShortcutVal" type="date" :show-shortcut="true"
+                   v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+    <label>日期范围快捷选项</label>
+    <t-date-picker style="width:300px" v-model="dateRangeShortcutVal" type="dateRange" :show-shortcut="true"
+                   v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+    <label>自定义快捷选项</label>
+    <t-date-picker style="width:200px" v-model="customShortcutVal" type="date"
+                   :show-shortcut="true"
+                   :shortcut-options="shortcutOptions"
+                   v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+  </div>
 <script>
- import {TDatePicker} from 'ai-taurus-desktop';
+  import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
- export default {
-       components: {
-         TDatePicker
-       }
- };
-</script>
-```
-:::
-
-### 禁用
-
-:::demo disabled="true"用来禁用
-
-```html
-<t-date-picker :disabled="true" ></t-date-picker>
-<script>
- import {TDatePicker} from 'ai-taurus-desktop';
-
- export default {
-       components: {
-         TDatePicker
-       }
- };
-</script>
-```
-:::
-
-### change事件
-
-:::demo v-on:date-change绑定change事件
-
-```html
-<t-date-picker :date-val="dateVal" :range-select="true" date-format="yyyy.mm.dd" v-on:date-change="onChange"></t-date-picker>
-<script>
- import {TDatePicker} from 'ai-taurus-desktop';
-
- export default {
-  data: function () {
-       return {
-        dateVal: '2016.08.20 - 2016.09.21'
-       };
+  export default {
+    data: {
+      type: 'date',
+      dateShortcutVal: '',
+      dateRangeShortcutVal: '',
+      customShortcutVal: ''
       },
       components: {
         TDatePicker
       },
       methods: {
-        onChange: function (value) {
-          alert(value);
+        onChange (value) {
+          console.log('date change:' + value);
         }
       }
- };
+    }
+  };
 </script>
 ```
 :::
 
-### size设置为large
+### 格式化
 
-:::demo is-large="true"来设置large样式
+:::demo 传入format属性可以自定义日期的格式化，具体见下面参数文档
 
 ```html
-<t-date-picker :is-large="true" date-format="yyyy.mm.dd"></t-date-picker>
-<script>
- import {TDatePicker} from 'ai-taurus-desktop';
+  <div class="sg-component__label">格式化</div>
+  <div style="margin: 10px;"  class="box--default-dark-border padding-whole--small">
+    <t-date-picker style="width:200px"  type="date" v-model="formatDateValue" format="YYYY/MM/DD"
+                   v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+    <t-date-picker style="width:200px"  type="month" v-model="formatMonthValue" format="YYYY/MM"
+                   v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+    <t-date-picker style="width:300px"  type="dateRange" v-model="formatDateRangeValue" format="YYYY/MM/DD"
+                   v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+  </div>
+  <script>
+    import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
- export default {
-       components: {
-         TDatePicker
-       }
- };
-</script>
+    export default {
+      data: {
+        type: 'date',
+        formatDateValue: '',
+        formatMonthValue: '',
+        formatDateRangeValue: ''
+        },
+        components: {
+          TDatePicker
+        },
+        methods: {
+          onChange (value) {
+            console.log('date change:' + value);
+          }
+        }
+      }
+    };
+  </script>
 ```
 :::
 
-### 宽度根据内容做自适应
+### 尺寸
 
-:::demo inline="true"设置之后会根据内容去自适应
+:::demo 选择date-picker的大小尺寸，传入属性size
 
 ```html
-<t-date-picker :inline="true" date-format="yyyy.mm.dd"></t-date-picker>
-<script>
- import {TDatePicker} from 'ai-taurus-desktop';
+    <div class="sg-component__label">尺寸</div>
+    <div style="margin: 10px;" class="box--default-dark-border padding-whole--small">
+    <t-select :size="calendarSize" :options="calendarSizeArr" default-value="calendarSize" v-model="calendarSize"
+            :on-change="sizeChange" style="width:150px; display: inline-block;"></t-select>
+    <t-date-picker class="autoCanlendar" style="width:200px" type="date"  :size="calendarSize"
+                 v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+    </div>
+  <script>
+    import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
- export default {
-       components: {
-         TDatePicker
-       }
- };
+    export default {
+      data: {
+        type: 'date',
+        calendarSize: '',
+        },
+        components: {
+          TDatePicker,
+          TSelect
+        },
+        methods: {
+          onChange (value) {
+            console.log('date change:' + value);
+          },
+          sizeChange (newVal) {
+            this.calendarSie = newVal;
+          }
+        }
+      }
+    };
+  </script>
+```
+:::
+
+### 禁用
+
+:::demo disabled="true"用来禁用,禁用后不可操作
+
+```html
+<div class="sg-component__label">禁止</div>
+  <div style="margin: 10px;" class="box--default-dark-border padding-whole--small">
+    <t-date-picker style="width:200px" type="date"
+                   v-on:date-change="onChange" placeholder="please select date" disabled></t-date-picker>
+  </div>
+</script>
+<script>
+    import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
+
+    export default {
+      data: {
+        type: 'date'
+        },
+        components: {
+          TDatePicker
+        }
+      }
+    };
+  </script>
+```
+:::
+
+### 国际化
+
+:::demo date-picker支持国际化，默认语言为taurus设置的语言，可以自由切换
+
+```html
+<div class="sg-component__label">国际化</div>
+  <div style="margin: 10px;" class="box--default-dark-border padding-whole--small">
+    <t-select size="small" :options="langArr" default-value="en" v-model="lang" :on-change="langChange"
+              style="width:150px; display: inline-block;"></t-select>
+    <t-date-picker style="width:200px" type="dateTime" :locale="lang"
+                   v-on:date-change="onChange" placeholder="please select date"></t-date-picker>
+  </div></script>
+<script>
+    import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
+
+        export default {
+          data: {
+            type: 'date'
+            },
+            components: {
+              TDatePicker,
+              TSelect
+            },
+            methods: {
+              onChange (value) {
+                console.log('date change:' + value);
+              },
+             langChange (newVal) {
+                   taurus.lang = newVal;
+                   this.lang = newVal;
+             }
+            }
+          }
+        };
 </script>
 ```
 :::
+
+
 
 ### Props \(参数\)
 
 | 名字 | 类型 | 是否必传 | 默认 | 描述 |
 | --- | --- | --- | --- | --- |
-| dateVal | String | No | '' | 日期值，需要与dateFormat的格式一致 |
-| rangeSelect | Boolean | No | false | 是否选择日期范围 |
-| rangeSeparator | String | No | ' - ' | 开始时间，结束时间的分隔符 |
-| dateFormat | String | No | 'yyyy-mm-dd' | 日期格式 |
+| type | String | No | date | 日期类型，month/date/dateRange/dateTime/dateTimeRange/ |
+| rangeSeparator | String | No | ' ~ ' | 开始时间，结束时间的分隔符 |
+| format | String | No | 'YYYY-MM-DD' | 时间日期格式化,年 YYYY，月 MM，日 DD，小时 HH，分 mm，秒 ss，其他详细可参见http://momentjs.cn/docs/#/displaying/format/ |
 | disabled | Boolean | No | false | 是否禁用 |
-| minDate | Strig | No | '' | 日期最小值 |
-| maxDate | Strig | No | '' | 日期最大值 |
-| monthsToShow | Number/Array | No | 1 | 日历视图中同时显示月份的个数，出入的值为number时则在一行中显示number个月；传入值为数组[a，b]时，则显示为a行b列，共a*b个月 |
-| monthHeaderFormat | String | No | 'MM yyyy' | 月头部的显示格式 |
-| isLarge | Boolean | No | false | 设置组件size是否为large，true为large，false为default |
-| inline | Boolean | false | false | 组件宽度按内容自适应，默认为'false',按父元素大小显示 |
+| locale | String | No | taurus的默认语言en | 语言类型,如en表示英文，cn表示中文 |
+| size | String | No | small | 尺寸，[small,large] |
+| placeholder | String | No | '' | date-picker的输入框默认文本值 |
+| v-model | [String, Array] | No | '' | 双向绑定的值，如果type为dateRange或者dateTimeRange，需要传入数组，设置的值则为初始值，如['2017-1-1','2017-2-1'],其他类型可以传'2017-1-1'或者['2017-1-1'] |
+| showShortcut | Boolean | No | false | 是否显示快捷选项 |
+| shortcutOptions | object | No | false | 快捷选项，选项参考下表 |
+
+
+### format \(参数\)
+
+| 标识 | 输出 | 描述 |
+| --- | --- | ---  |
+| M   | 1 2 ... 11 12 |  月份|
+| Mo  | 1st 2nd ... 11th 12th |  |
+| MM  | 01 02 ... 11 12 |  |
+| MMM  | Jan Feb ... Nov Dec | 月份缩写 |
+| MMMM  | January February ... November December| 月份全写 |
+| Q  | 	1 2 3 4| 季度 |
+| D  | 1 2 ... 30 31| 日 |
+| Do  | 1st 2nd ... 30th 31st|  |
+| DD  | 01 02 ... 30 31|  |
+| DDD | 1 2 ... 364 365| 一年中的第几天 |
+| DDDo | 1st 2nd ... 364th 365th|  |
+| DDDD | 001 002 ... 364 365|  |
+| d | 0 1 ... 5 6| 一周中的第几天 |
+| do | 0th 1st ... 5th 6th|  |
+| dd | Su Mo ... Fr Sa|  |
+| ddd | Sun Mon ... Fri Sat|  |
+| dddd | Sunday Monday ... Friday Saturday|  |
+| H | 0 1 ... 22 23| 小时 |
+| HH | 00 01 ... 22 23|  |
+| h | 1 2 ... 11 12|  |
+| hh | 01 02 ... 11 12|  |
+| m | 0 1 ... 58 59 |  分钟|
+| mm | 00 01 ... 58 59 |  |
+| s | 0 1 ... 58 59 | 秒 |
+| ss | 00 01 ... 58 59 |  |
+
+### shortcutOptions \(参数\)
+
+| 名字 | 类型 | 是否必传 | 默认 | 描述 |
+| --- | --- | --- | --- | --- |
+| text | String | True | - | 标题文本 |
+| onClick
 
 ### Events \(事件\)
 
@@ -236,11 +355,4 @@
 
 
 
-### Methods \(方法\)
 
-| 名字 | 参数 | 描述 |
-| --- | --- | --- |
-| getDates |  | 获取当前选中的日期 |
-| clearDates |  | 清除/重置选中日期 |
-| show |  | 显示日期弹窗 |
-| hide |  | 隐藏日期弹窗 |
