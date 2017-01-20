@@ -5,11 +5,10 @@
     </template>
     <template v-if='unhome && statusPage'>
       <div  class="doc-main">
-        <div class="doc-container">
+
           <transition name='fade' mode='out-in'>
             <router-view></router-view>
           </transition>
-        </div>
       </div>
     </template>
     <template v-else>

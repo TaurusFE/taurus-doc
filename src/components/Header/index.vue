@@ -191,4 +191,9 @@
     display: none;
   }
  }
+ @media (min-width: 545px) and (max-width:768px) {
+  .search-box {
+    display: none;
+  }
+ }
 </style>
