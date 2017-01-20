@@ -17,7 +17,7 @@
         <div class="dropdown" :class='{none: !active}'>
           <ul ref='dropDown'>
             <li @click="searchClick(item)" :ref='"item-"　+index' :class='{active: highlightedIndex === index}'  v-for='(item, index) in componentArray' >
-              <router-link :to='base + item.path' class="item" ><strong>{{item.title}}</strong> </router-link>
+              <router-link :to='basePath + item.path' class="item" ><strong>{{item.title}}</strong> </router-link>
             </li>
           </ul>
         </div>
@@ -53,7 +53,7 @@
     },
     directives: { Clickoutside },
     computed: {
-      base () {
+      basePath () {
         let flag = this.mobile ? 'mobile' : 'desktop'
         return `/${flag}/component`
       },
