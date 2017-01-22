@@ -1,11 +1,11 @@
 <script>
 import {TTree} from 'ai-taurus-desktop';
 
-new Vue({
+export default {
   components: {
     TTree
   },
-  data: {
+  data: function () {
     return {
         treeData: [
           {
@@ -125,9 +125,114 @@ new Vue({
       }, 500);
     }
   }
-});
+};
 </script>
+<style>
+ul {
+ list-style: none;
+}
+.icon-base {
+ display: inline-block;
+ background-repeat: no-repeat;
+ vertical-align: middle;
+}
+i.icon{
+ width: 22px;
+ height: 22px;
+}
+i.subscribe-icon{
+ background-repeat: no-repeat;
+ vertical-align: middle;
+}
+.node-label-container{
+  display: inline-block;
+  padding: 2px 5px;
+}
+.node-label-container:hover{
+  background: #F5F5F5;
+  border-radius: 2px;
+}
+.node-label-container-select{
+  display: inline-block;
+  padding: 2px 5px;
+  background: #038cd6;
+  border-radius: 2px;
+}
 
+.child-node {
+  padding-left: 15px;
+  overflow: hidden;
+  max-height: 9999px;
+}
+div .container-loading {
+  width: 15px;
+  height: 18px;
+}
+.slide-enter-active, .slide-leave-active {
+  -moz-transition: max-height 0.3s ease;
+  -ms-transition: max-height 0.3s ease;
+  -o-transition: max-height 0.3s ease;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+.slide-enter, .slide-leave-active {
+  max-height: 0;
+}
+
+/**
+ *
+ * All animations must live in their own file
+ * in the animations directory and be included
+ * here.
+ *
+ */
+/**
+ * Styles shared by multiple animations
+ */
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.ball-clip-rotate > div {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  border: 2px solid #038cd6;
+  border-bottom-color: transparent;
+  height: 15px;
+  width: 15px;
+  background: transparent !important;
+  display: inline-block;
+  -webkit-animation: rotate 0.75s 0s linear infinite;
+          animation: rotate 0.75s 0s linear infinite; }
+
+</style>
 ## Tree
 
 树组件
@@ -141,11 +246,11 @@ new Vue({
 <script>
 import {TTree} from 'ai-taurus-desktop';
 
-new Vue({
+ export default {
   components: {
     TTree
   },
-  data: {
+  data: function () {
     return {
         treeData: [
           {
@@ -244,7 +349,7 @@ new Vue({
         ]
     };
   }
-});
+};
 </script>
 ```
 :::
@@ -258,11 +363,11 @@ new Vue({
 <script>
 import {TTree} from 'ai-taurus-desktop';
 
-new Vue({
+ export default {
   components: {
     TTree
   },
-  data: {
+  data: function () {
     return {
         treeData: [
           {
@@ -382,7 +487,7 @@ new Vue({
       }, 500);
     }
   }
-});
+};
 </script>
 ```
 :::

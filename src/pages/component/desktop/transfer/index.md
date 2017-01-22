@@ -1,7 +1,7 @@
 <script>
 import {TTransfer, TButton} from 'ai-taurus-desktop';
 
-new Vue({
+export default {
   components: {
     TTransfer,
     TButton
@@ -46,9 +46,73 @@ new Vue({
       this.targetKeys1 = this.getTargetKeys();
     }
   }
-});
+};
 </script>
+<style>
+.transfer {
+  position: relative;
+  line-height: 1.5;
+}
+.transfer-list {
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  border-radius: 2px;
+  height: 200px;
+  width: 230px;
+  position:relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  font-family: OpenSans;
+  color: #474747;
+}
+.transfer-list__header {
+  background-image: linear-gradient(-180deg, #FFFFFF 20%, #F5F5F5 98%);
+  border-bottom: 1px solid #D1D1D1;
+  border-radius: 2px 2px 0px 0px;
+  padding-left: 10px;
+  position: absolute;
+  width: 100%;
+}
+.transfer-list__title {
+  line-height: 40px;
+}
 
+.transfer-list__body {
+  font-family: OpenSans;
+  font-size: 13px;
+  color: #474747;
+  line-height: 32px;
+  height: 100%;
+}
+.transfer-list__search {
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+.transfer-list__checklist {
+  padding-left: 10px;
+  overflow-y: auto;
+  height: 100%;
+}
+.transfer-list__footer {
+  position: absolute;
+  bottom: 0;
+  width: 250px;
+}
+.transfer-operation {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.transfer-operation .transfer-btn:first-child {
+    margin-bottom: 12px;
+}
+</style>
 ## Transfer
 
 穿梭框组件
@@ -65,7 +129,7 @@ new Vue({
 <script>
 import {TTransfer} from 'ai-taurus-desktop';
 
-new Vue({
+export default {
   components: {
     TTransfer
   },
@@ -98,7 +162,7 @@ new Vue({
       this.targetKeys1 = newTargetKeys;
     }
   }
-});
+};
 </script>
 ```
 :::
@@ -108,7 +172,7 @@ new Vue({
 :::demo filterable设置为true
 
 ```html
- <t-transfer
+<t-transfer
     :data="data1"
     :target-keys="targetKeys1"
     :filterable="true"
@@ -116,7 +180,7 @@ new Vue({
 <script>
 import {TTransfer} from 'ai-taurus-desktop';
 
-new Vue({
+ export default {
   components: {
     TTransfer
   },
@@ -149,7 +213,7 @@ new Vue({
       this.targetKeys1 = newTargetKeys;
     }
   }
-});
+};
 </script>
 ```
 :::
@@ -159,7 +223,7 @@ new Vue({
 :::demo 自定义穿梭框
 
 ```html
- <t-transfer
+<t-transfer
     :data="data1"
     :target-keys="targetKeys1"
     :list-style="listStyle"
@@ -167,18 +231,11 @@ new Vue({
     :operations="['向左移动','向右移动']"
     filterable
     show-footer
-    @on-change="handleChange1">
-    <div :style="{float: 'right', margin: '5px'}" slot="left-footer">
-      <t-button  text="刷新"  class="button--default" size="small" @btn-click="reloadMockData"></t-button>
-    </div>
-    <div :style="{float: 'right', margin: '5px'}" slot="right-footer">
-      <t-button  text="刷新"  class="button--default" size="small" @btn-click="reloadMockData"></t-button>
-    </div>
-  </t-transfer>
+    @on-change="handleChange1"></t-transfer>
 <script>
 import {TTransfer, TButton} from 'ai-taurus-desktop';
 
-new Vue({
+export default {
   components: {
     TTransfer,
     TButton
@@ -223,7 +280,7 @@ new Vue({
       this.targetKeys1 = this.getTargetKeys();
     }
   }
-});
+};
 </script>
 ```
 :::

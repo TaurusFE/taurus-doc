@@ -113,7 +113,7 @@
       created: function () {
         var vm = this;
         Vue.component('my-box-partial', {
-          template: '#self-partial-template',
+          template: dataTableTemplate,
           props: ['rowData', 'index'],
           data: function () {
             return {
@@ -139,6 +139,7 @@
             }
           }
         });
+        debugger;
         Vue.component('note-component', {
           template: '<div><t-button text="button" class="button--action" size="small" @click="onclick(rowData,index)"></t-button><p>This is a note</p><span class="text-size--13"><a href="#">#18988027892</a></span></div>',
           props: ['rowData', 'index'],
@@ -518,6 +519,7 @@
 </script>
 ```
 :::
+
 
 ### Pagination Table
 

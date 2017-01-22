@@ -21,6 +21,8 @@ import select from '../pages/component/desktop/select'
 import loading from '../pages/component/desktop/loading'
 import modal from '../pages/component/desktop/modal'
 import steps from '../pages/component/desktop/steps'
+import tree from '../pages/component/desktop/tree'
+import transfer from '../pages/component/desktop/transfer'
 import statusMessage from '../pages/component/desktop/status-message'
 import tooltip from '../pages/component/desktop/tooltip'
 import speechBubble from '../pages/component/desktop/speech-bubble'
@@ -116,7 +118,9 @@ let taurus = {
     'tab': tab,
     'table': table,
     'tooltip': tooltip,
-    'steps': steps
+    'steps': steps,
+    'tree': tree,
+    'transfer': transfer
   },
   'design': {
     principle,
