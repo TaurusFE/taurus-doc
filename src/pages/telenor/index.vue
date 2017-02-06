@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="doc-container">
     <nav-list :base='base' :list='list'></nav-list>
     <div class="doc-content">
       <router-view></router-view>

@@ -54,8 +54,6 @@
     </div>
     <div class="form-row">
       <button v-on:click="getNSValue" class="button button--action">取值</button>
-      <button v-on:click="disable" class="button button--action">禁用</button>
-      <button v-on:click="enable" class="button button--action">解禁</button>
     </div>
     <div class="form-row">
       <button v-on:click="setNSValue(-3)" class="button button--action">设置值为(-3)</button>
@@ -90,12 +88,6 @@
          let value = this.$refs.nsNormal.getValue();
          alert('类型' + typeof value + '; 值:' + value);
        },
-       enable: function () {
-         this.$refs.nsNormal.enable();
-       },
-       disable: function () {
-         this.$refs.nsNormal.disable();
-       },
        normalStepperChange: function (newValue, oldValue) {
          alert('newValue: ' + newValue + 'oldValue: ' + oldValue);
        }
@@ -117,8 +109,17 @@
 | --- | --- | --- | --- | --- |
 | value | String | No | '' | 输入框内的文本 |
 | delay | Number | No | 300 | 默认延迟300毫秒执行搜索，可以传入其他值来控制延迟时间 |
-| isSmall | Boolean | No  | true | 组件尺寸大小，true为小尺寸，false为大尺寸 |
-| isInline | Boolean | No | true | 控制显示模式，当值为true时，搜索框的搜索按钮隐藏，当值为false时，搜索框搜索按钮显示 |
+| max | Number | No | '' | 最大值 |
+| min | Number | No | 0 | 最小值 |
+| step | Number | No | 1 | 步长 |
+| modelValue | Number | No | 0 | 初始值 |
+| defaultValue | Number | No | 0 | 初始值 |
+| size | String | No | '' | 输入框大小 |
+| label | String | No | '' | 输入框label |
+| disabled | Boolean | No  | false | 是否禁用 |
+
+
+
 
 ### Events (事件)
 
