@@ -6,8 +6,6 @@
     </div>
   </div>
 </template>
-<style lang='scss'>
-</style>
 <script>
   import NavList from '../../components/navList/'
   import list from '../../config/router.json'
