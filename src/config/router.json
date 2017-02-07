@@ -5,12 +5,16 @@
         "groupName": "form",
         "list": [
           {
-            "path": "/box-group",
-            "title": "BoxGroup"
+            "path": "/checkbox",
+            "title": "Checkbox"
+          },
+          {
+            "path": "/radio-group",
+            "title": "Radio Group"
           },
           {
             "path": "/autoComplete",
-            "title": "AutoComplete"
+            "title": "Auto Complete"
           },
           {
             "path": "/switcher",
@@ -18,11 +22,11 @@
           },
           {
             "path": "/range-slider",
-            "title": "RangeSlider"
+            "title": "Range Slider"
           },
           {
             "path": "/date-picker",
-            "title": "DatePicker"
+            "title": "Date Picker"
           },
           {
             "path": "/select",
@@ -30,11 +34,11 @@
           },
           {
             "path": "/search-filter",
-            "title": "SearchFilter"
+            "title": "Search Filter"
           },
           {
             "path": "/number-stepper",
-            "title": "NumberStepper"
+            "title": "Number Stepper"
           },
           {
             "path": "/form",
@@ -48,7 +52,7 @@
         "list": [
           {
             "path": "/simple-table",
-            "title": "SimpleTable"
+            "title": "Simple Table"
           },
           {
             "path": "/table",
@@ -93,11 +97,11 @@
           },
           {
             "path": "/modal-box",
-            "title": "ModalBox"
+            "title": "Modal Box"
           },
           {
             "path": "/status-message",
-            "title": "StatusMessage"
+            "title": "Status Message"
           },
           {
             "path": "/tooltip",
@@ -105,7 +109,7 @@
           },
           {
             "path": "/speech-bubble",
-            "title": "SpeechBubble"
+            "title": "Speech Bubble"
           }
         ]
       },
@@ -114,7 +118,7 @@
         "list": [
           {
             "path": "/drop-down",
-            "title": "DropDown"
+            "title": "Dropdown"
           },
           {
             "path": "/tab",
@@ -139,7 +143,7 @@
           },
           {
             "path": "/scroll-to",
-            "title": "ScrollTo"
+            "title": "Scroll To"
           }
         ]
       }

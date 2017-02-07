@@ -11,7 +11,8 @@ import simpleTable from '../pages/component/desktop/simple-table'
 import cookieHelper from '../pages/component/desktop/cookie-helper'
 import pager from '../pages/component/desktop/pager'
 import scrollTo from '../pages/component/desktop/scroll-to'
-import boxGroup from '../pages/component/desktop/box-group'
+import checkbox from '../pages/component/desktop/checkbox'
+import radioGroup from '../pages/component/desktop/radio-group'
 import autoComplete from '../pages/component/desktop/autoComplete'
 import rangeSlider from '../pages/component/desktop/range-slider'
 import datePicker from '../pages/component/desktop/date-picker'
@@ -97,7 +98,8 @@ let taurus = {
     'am-charts-gauge': amChartsGauge,
     'am-charts-line': amChartsLine,
     'autoComplete': autoComplete,
-    'box-group': boxGroup,
+    'checkbox': checkbox,
+    'radio-group': radioGroup,
     'breadcrumbs': breadcrumbs,
     'cookie-helper': cookieHelper,
     'date-picker': datePicker,

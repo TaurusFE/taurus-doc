@@ -1,222 +1,228 @@
 <script>
- import {TSelect} from 'ai-taurus-desktop';
-
-   export default ({
-     components: {
-       TSelect
-     },
-     data: function () {
-         return {
-           optionData: [{label: 'L1', value: 1}, {label: 'L2', value: 2}, {label: 'L3', value: 3}, {label: 'L4', value: 4}],
-           optgroup: [
-             {
-               label: 'g1',
-               value: [{label: 'gop1', value: 1}, {label: 'g2', value: 2}, {label: 'g3', value: 3}, {label: 'g4', value: 4}]
-             },
-             {
-               label: 'g2',
-               value: [
-                 {label: 'g21', value: 21}, {label: 'g22', value: 22}, {label: 'g23', value: 23}, {label: 'g24', value: 24}
-               ]
-             }
-           ],
-           disabled: false,
-           selectVal: '2',
-           selectTxt: '',
-           selectOption: '',
-           currentValue: ''
-         };
-       },
-       methods: {
-         btnClick: function () {
-           alert(1);
-         },
-         dataChange: function (value, vm) {
-           this.selectVal = value;
-           this.selectTxt = vm.getText();
-           this.selectOption = vm.getSelected();
-         },
-         clearSelect: function () {
-           this.$refs.select1.clear();
-         },
-         resetSelect: function () {
-           this.$refs.select1.reset();
-         },
-         toggleDisable: function () {
-           this.disabled = !this.disabled;
-         },
-         setValue: function (value) {
-           this.$refs.select1.setValue(value);
-         },
-         getValue: function () {
-           alert(this.$refs.select1.getValue());
-         },
-         setModel: function () {
-           this.currentValue = 1;
-         }
-       },
-       watch: {
-         currentValue (newValue) {
-           console.log('*************');
-           console.log(newValue);
-         }
-       }
-   });
-
+import {TSelect} from 'ai-taurus-desktop';
+export default {
+  components: {
+    TSelect
+  },
+  data: function () {
+    return {
+      simpleValue: [
+        'Push-Communication',
+        'Trouble-Ticket',
+        'Campaign',
+        'Customer-Management',
+        'C3'
+      ],
+      complexValue: [
+        {
+          text: 'Push-Communication',
+          name: 'v1'
+        },
+        {
+          text: 'Trouble-Ticket',
+          name: 'v2'
+        },
+        {
+          text: 'Campaign',
+          name: 'v3'
+        },
+        {
+          text: 'Customer-Management',
+          name: 'v4'
+        },
+        {
+          text: 'C3',
+          name: 'v5'
+        }
+      ]
+    };
+  },
+  methods: {
+    _hdSelect: function (itemData) {
+      console.log('select==>' + itemData);
+    },
+    _hdUnSelect: function (itemData) {
+      console.log('unselect==>' + itemData);
+    }
+  }
+};
 </script>
 
-## Select组件
+## TSelect组件
 
-下拉列表框
+下拉列表框。
 
 ### 基本用法
 
-:::demo 要使用该组件需要传入一个optionData数组，并且要用v-model绑定需要返回的值。
+:::demo
 
 ```html
-    <li>Vaule: {{selectVal}}</li>
-    <li>Text: {{selectTxt}}</li>
-    <li>Option: {{selectOption}}</li>
-		<div class="form-row" data-module="form.select">
-			<t-select ref="select1" :options="optionData" :default-value="2" v-model="currentValue" :disabled="disabled" v-on:on-change="dataChange" style="width:150px;"></t-select>
-		</div>
-    <div class="form-row" data-module="form.select">
-      <button class="button button--action" @click="toggleDisable">{{disabled ? 'enable' : 'disable'}}</button>
-      <button class="button button--action" @click="setValue(3)">set value 3</button>
-      <button class="button button--action" @click="clearSelect">clear</button>
-      <button class="button button--action" @click="resetSelect">reset</button>
-      <button class="button button--action" @click="getValue">get value</button>
-      <button class="button button--action" @click="setModel">set model (1)</button>
-    </div>
-
+<div id="base" class="form-row">
+  <t-select :value="simpleValue" size="small" width="200px" @select="_hdSelect" @unselect="_hdUnSelect"></t-select>
+</div>
 
 <script>
- import {TSelect} from 'ai-taurus-desktop';
-
-   export default ({
-     components: {
-       TSelect
-     },
-     data: function () {
-         return {
-           optionData: [{label: 'L1', value: 1}, {label: 'L2', value: 2}, {label: 'L3', value: 3}, {label: 'L4', value: 4}],
-           disabled: false,
-           selectVal: '2',
-           selectTxt: '',
-           selectOption: '',
-           currentValue: ''
-         };
-       },
-       methods: {
-         btnClick: function () {
-           alert(1);
-         },
-         dataChange: function (value, vm) {
-           this.selectVal = value;
-           this.selectTxt = vm.getText();
-           this.selectOption = vm.getSelected();
-         },
-         clearSelect: function () {
-           this.$refs.select1.clear();
-         },
-         resetSelect: function () {
-           this.$refs.select1.reset();
-         },
-         toggleDisable: function () {
-           this.disabled = !this.disabled;
-         },
-         setValue: function (value) {
-           this.$refs.select1.setValue(value);
-         },
-         getValue: function () {
-           alert(this.$refs.select1.getValue());
-         },
-         setModel: function () {
-           this.currentValue = 1;
-         }
-       },
-       watch: {
-         currentValue (newValue) {
-           console.log('*************');
-           console.log(newValue);
-         }
-       }
-   });
-
+export default {
+  el: '#base',
+  components: {
+    TSelect
+  },
+  data: function () {
+    return {
+      simpleValue: [
+        'Push-Communication',
+        'Trouble-Ticket',
+        'Campaign',
+        'Customer-Management',
+        'C3'
+      ],
+      complexValue: [
+        {
+          text: 'Push-Communication',
+          name: 'v1'
+        },
+        {
+          text: 'Trouble-Ticket',
+          name: 'v2'
+        },
+        {
+          text: 'Campaign',
+          name: 'v3'
+        },
+        {
+          text: 'Customer-Management',
+          name: 'v4'
+        },
+        {
+          text: 'C3',
+          name: 'v5'
+        }
+      ]
+    };
+  },
+  methods: {
+    _hdSelect: function (itemData) {
+      console.log('select==>' + itemData);
+    },
+    _hdUnSelect: function (itemData) {
+      console.log('unselect==>' + itemData);
+    }
+  }
+});
 </script>
 ```
 :::
 
-### Select with grouping
+### 禁用下拉框
 
-:::demo 需要用group功能要在optgroup中的每个value中再传入option数组
+:::demo
 
 ```html
-<t-select :options="optgroup" style="width:150px;"></t-select>
+<div id="disabledState" class="form-row">
+  <t-select :value="simpleValue" placeholder="请选择一条数据" :disabled="true" width="200px"></t-select>
+</div>
 
 <script>
- import {TSelect} from 'ai-taurus-desktop';
-
-   export default ({
-     components: {
-       TSelect
-     },
-     data: function () {
-         return {
-           optgroup: [
-             {
-               label: 'g1',
-               value: [{label: 'gop1', value: 1}, {label: 'g2', value: 2}, {label: 'g3', value: 3}, {label: 'g4', value: 4}]
-             },
-             {
-               label: 'g2',
-               value: [
-                 {label: 'g21', value: 21}, {label: 'g22', value: 22}, {label: 'g23', value: 23}, {label: 'g24', value: 24}
-               ]
-             }
-           ]
-         };
-       }
-   });
-
+export default {
+  el: '#disabledState',
+  components: {
+    TSelect
+  },
+  data: function () {
+    return {
+      simpleValue: [
+        'Push-Communication',
+        'Trouble-Ticket',
+        'Campaign',
+        'Customer-Management',
+        'C3'
+      ]
+    };
+  }
+};
 </script>
 ```
 :::
 
-### Props \(参数\)
+### 设置下拉框 Placeholder
 
-| 名字 | 类型 | 是否必传 | 默认 | 描述 |
-| --- | --- | --- | --- | --- |
-| options | Array | Yes | [] | 下拉选项,数据格式如：[{label: '1', value: 1}, {label: '2', value: 2}] |
-| size | String | false |  | 设置下拉框尺寸，当该值设为small时，显示小尺寸的下拉框|
-| disabled | Boolean | false | false | 是否禁用 |
-| optLabel | String | false | label | option为对象时，label的属性名，默认为'label' |
-| optValue | String | false | value | option为对象时，value的属性名，默认为'value' |
-| groupLabel | String | false | label | option为对象时，optgroup的label属性名，默认为'label' |
-| groupValue | String | false | value | option为对象时，optgroup的子选项属性名，默认为'value' |
-| placeholder | String | false | -- | 未选中任何下拉值时显示的文字，默认为'--' |
-| defaultValue | String,Number | false | -- | 默认值 |
-| inline | Boolean | false | false | 组件宽度按内容自适应，默认为'false',按父元素大小显示 |
-| isError | Boolean | false | false | 是否显示错误提示 |
-| errorMsg | String/Object | false | '' | 提示信息，可以是字符串（'error message'）或json对象({title:'title', text:'message'})。需要将isError设为true |
+:::demo
 
+```html
+<div id="placeholder" class="form-row">
+  <t-select :value="simpleValue" placeholder="请选择一条数据" width="200px"></t-select>
+</div>
 
-### Events \(事件\)
+<script>
+export default {
+  el: '#placeholder',
+  components: {
+    TSelect
+  },
+  data: function () {
+    return {
+      simpleValue: [
+        'Push-Communication',
+        'Trouble-Ticket',
+        'Campaign',
+        'Customer-Management',
+        'C3'
+      ]
+    };
+  }
+};
+</script>
+```
 
-| 名字 | 参数 | 描述 |
+:::
+
+### 多选下拉框
+
+:::demo
+
+```html
+<div id="multiple" class="form-row">
+  <t-select :value="simpleValue" :muti-select="true" placeholder="请选择" width="400px"></t-select>
+</div>
+
+<script>
+export default {
+  el: '#multiple',
+  components: {
+    TSelect
+  },
+  data: function () {
+    return {
+      simpleValue: [
+        'Push-Communication',
+        'Trouble-Ticket',
+        'Campaign',
+        'Customer-Management',
+        'C3'
+      ]
+    };
+  }
+};
+</script>
+```
+
+:::
+
+### Attributes
+
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
+| ---- | ---- | ---- | ---- | ---- |
+| value | 值 | Array | - | [] |
+| default-value | 默认值 | Array | - | [] |
+| size | 尺寸, 空串表示标准尺寸 | String | ''\|'small' | '' |
+| disabled | 是否禁用，true表示禁用，否则表示启用 | Boolean | true\|false | false |
+| width | 宽度 | String | 'auto'\|长度\|百分比 | 'auto' |
+| muti-select | 是否多选，true表示多选，否则表示单选 | Boolean | true\|false | false |
+| placeholder | placeholder文本。此文本只有在没有设置`default-value`属性的情况下显示 | String | - | '' |
+
+### Events
+
+| 事件名称 | 说明 | 回调参数 |
 | --- | --- | --- |
-| on-change | value | 下拉框的值发生变化时，触发该事件。 |
-
-
-### Methods \(方法\)
-
-| 名字 | 参数 | 描述 |
-| --- | --- | --- |
-| getValue |  | 获取选中选项的值 |
-| setValue | value | 设置下拉值 |
-| getText |  | 获取选中选项的文本 |
-| getSelected |  | 获取选中的option |
-| disable |  | 禁用下拉框 |
-| enable |  | 启用下拉框 |
-| reset |  | 重置下拉框的值 |
-| clear |  | 清除选中值 |
+| select | 选中下拉框的值时触发该事件。data参数表示当前选中项对应的数据 | data |
+| unselect | 取消选中下拉框的值时触发该事件。data参数表示当前取消选中项对应的数据 | data |
