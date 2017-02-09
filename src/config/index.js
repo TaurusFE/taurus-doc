@@ -113,7 +113,6 @@ let taurus = {
     'scroll-to': scrollTo,
     'search-filter': searchFilter,
     'select': select,
-    'simple-table': simpleTable,
     'speech-bubble': speechBubble,
     'status-message': statusMessage,
     'switcher': switcher,
