@@ -2,57 +2,58 @@
  import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
  export default {
-  el: '#demo',
-    data: {
-      calendarSizeArr: ['small', 'large'],
-      calendarSize: 'small',
-      langArr: ['en', 'cn'],
-      lang: 'en',
-      shortcutOptions: {
-        isCover: false,
-        shortcuts: [{
-          text: '昨天',
-          onClick (picker) {
-            picker.$emit('pick', moment().subtract(1, 'd'));
-          }
-        }, {
-          text: '前天',
-          onClick (picker) {
-            picker.$emit('pick', moment().subtract(2, 'd'));
-          }
-        }]
+      data: function () {
+        return {
+          calendarSizeArr: ['small', 'large'],
+          calendarSize: 'small',
+          langArr: ['en', 'cn'],
+          lang: 'en',
+          shortcutOptions: {
+            isCover: false,
+            shortcuts: [{
+              text: '昨天',
+              onClick (picker) {
+                picker.$emit('pick', moment().subtract(1, 'd'));
+              }
+            }, {
+              text: '前天',
+              onClick (picker) {
+                picker.$emit('pick', moment().subtract(2, 'd'));
+              }
+            }]
+          },
+          type: 'date',
+          singleDateVal: '',
+          singleMonthVal: '',
+          singleDateTimeVal: '',
+          rangeDateVal: '',
+          rangeDateTimeVal: '',
+          formatDateValue: '2017/1/12',
+          formatMonthValue: '2017/3',
+          formatDateRangeValue: ['2017/1/12', '2017/1/30'],
+          dateShortcutVal: '',
+          dateRangeShortcutVal: '',
+          customShortcutVal: '',
+          formatDateVal: ''
+        };
       },
-      type: 'date',
-      singleDateVal: '',
-      singleMonthVal: '',
-      singleDateTimeVal: '',
-      rangeDateVal: '',
-      rangeDateTimeVal: '',
-      formatDateValue: '2017/1/12',
-      formatMonthValue: '2017/3',
-      formatDateRangeValue: ['2017/1/12', '2017/1/30'],
-      dateShortcutVal: '',
-      dateRangeShortcutVal: '',
-      customShortcutVal: '',
-      formatDateVal: ''
-    },
-    components: {
-      TDatePicker,
-      TSelect
-    },
-    methods: {
-      sizeChange (newVal) {
-        this.calendarSie = newVal;
+      components: {
+        TDatePicker,
+        TSelect
       },
-      langChange (newVal) {
-        taurus.lang = newVal;
-        this.lang = newVal;
-      },
-      onChange (value) {
-        console.log('date change:' + value);
+      methods: {
+        sizeChange (newVal) {
+          this.calendarSie = newVal;
+        },
+        langChange (newVal) {
+          taurus.lang = newVal;
+          this.lang = newVal;
+        },
+        onChange (value) {
+          console.log('date change:' + value);
+        }
       }
-    }
-  };
+ };
 </script>
 
 ## DatePicker组件
@@ -86,13 +87,15 @@
  import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
  export default {
-   data: {
-     type: 'date',
-     singleDateVal: '',
-     singleMonthVal: '',
-     singleDateTimeVal: '',
-     rangeDateVal: '',
-     rangeDateTimeVal: ''
+   data: function () {
+       return {
+         type: 'date',
+         singleDateVal: '',
+         singleMonthVal: '',
+         singleDateTimeVal: '',
+         rangeDateVal: '',
+         rangeDateTimeVal: ''
+       }
      },
      components: {
        TDatePicker
@@ -131,19 +134,19 @@
   import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
   export default {
-    data: {
-      type: 'date',
-      dateShortcutVal: '',
-      dateRangeShortcutVal: '',
-      customShortcutVal: ''
-      },
-      components: {
-        TDatePicker
-      },
-      methods: {
-        onChange (value) {
-          console.log('date change:' + value);
+    data: function () {
+        return {
+            dateShortcutVal: '',
+            dateRangeShortcutVal: '',
+            customShortcutVal: ''
         }
+    },
+    components: {
+      TDatePicker
+    },
+    methods: {
+      onChange (value) {
+      console.log('date change:' + value);
       }
     }
   };
@@ -169,11 +172,13 @@
     import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
     export default {
-      data: {
-        type: 'date',
-        formatDateValue: '',
-        formatMonthValue: '',
-        formatDateRangeValue: ''
+      data: function (){
+            return {
+                type: 'date',
+                formatDateValue: '',
+                formatMonthValue: '',
+                formatDateRangeValue: ''
+            }
         },
         components: {
           TDatePicker
@@ -205,9 +210,11 @@
     import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
     export default {
-      data: {
-        type: 'date',
-        calendarSize: '',
+      data: function() {
+            return {
+              type: 'date',
+              calendarSize: '',
+            }
         },
         components: {
           TDatePicker,
@@ -242,9 +249,6 @@
     import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
 
     export default {
-      data: {
-        type: 'date'
-        },
         components: {
           TDatePicker
         }
@@ -271,8 +275,6 @@
 
         export default {
           data: {
-            type: 'date'
-            },
             components: {
               TDatePicker,
               TSelect

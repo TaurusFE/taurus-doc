@@ -51,10 +51,6 @@
         "groupName":"data",
         "list": [
           {
-            "path": "/simple-table",
-            "title": "Simple Table"
-          },
-          {
             "path": "/table",
             "title": "Table"
           },

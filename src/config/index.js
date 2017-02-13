@@ -7,7 +7,6 @@ import amChartsGauge from '../pages/component/desktop/am-charts-gauge'
 import amChartsLine from '../pages/component/desktop/am-charts-line'
 import switcher from '../pages/component/desktop/switcher'
 import table from '../pages/component/desktop/table'
-import simpleTable from '../pages/component/desktop/simple-table'
 import cookieHelper from '../pages/component/desktop/cookie-helper'
 import pager from '../pages/component/desktop/pager'
 import scrollTo from '../pages/component/desktop/scroll-to'
@@ -113,7 +112,6 @@ let taurus = {
     'scroll-to': scrollTo,
     'search-filter': searchFilter,
     'select': select,
-    'simple-table': simpleTable,
     'speech-bubble': speechBubble,
     'status-message': statusMessage,
     'switcher': switcher,
