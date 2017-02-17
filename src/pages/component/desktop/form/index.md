@@ -138,7 +138,6 @@
           this.$refs.registerForm.resetFields();
         },
         handleSubmit2 (ev) {
-          debugger;
           this.$refs.registerForm.validate((valid) => {
             if (valid) {
               alert('submit!');

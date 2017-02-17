@@ -61,7 +61,7 @@ TDatetimePicker组件支持传入自定义属性来展现不同形态。
 </div>
 ```
 ```js
- import { Toast, TDatetimePicker, TButton } from 'ai-taurus-mobile';
+import { TDatetimePicker, TButton } from 'ai-taurus-mobile';
 
   export default {
     components: {

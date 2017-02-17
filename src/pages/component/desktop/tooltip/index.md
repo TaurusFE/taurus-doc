@@ -1,7 +1,6 @@
 <script>
 import 'ai-taurus-desktop';
 Vue.directive('tooltip');
-debugger;
 export default {
   data () {
     return {

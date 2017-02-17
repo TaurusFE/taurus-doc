@@ -54,7 +54,7 @@ TSwipe组件支持传入自定义属性来展现不同形态, 需要配合TSwipe
 </div>
 ```
 ```js
- import {TSwipe, TSwipeItem} from 'taurus';
+import { TSwipe, TSwipeItem } from 'ai-taurus-mobile';
 
  export default {
    components: {
