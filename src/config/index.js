@@ -88,6 +88,20 @@ import mobileChecklist from '../pages/component/mobile/checklist'
 import mobileRadio from '../pages/component/mobile/radio'
 import mobileField from '../pages/component/mobile/field'
 import mobileBadge from '../pages/component/mobile/badge'
+import mobileToast from '../pages/component/mobile/toast'
+import mobileIndicator from '../pages/component/mobile/indicator'
+import mobilePullDown from '../pages/component/mobile/pull-down'
+import mobileInfiniteScroll from '../pages/component/mobile/infinite-scroll'
+import mobileMessageBox from '../pages/component/mobile/message-box'
+import mobileActionSheet from '../pages/component/mobile/action-sheet'
+import mobilePopup from '../pages/component/mobile/popup'
+import mobileSwipe from '../pages/component/mobile/swipe'
+import mobileLazeLoad from '../pages/component/mobile/lazy-load'
+import mobileRange from '../pages/component/mobile/range'
+import mobileProgress from '../pages/component/mobile/progress'
+import mobilePicker from '../pages/component/mobile/picker'
+import mobileDatetimePicker from '../pages/component/mobile/datetime-picker'
+
 let deliveryPage = sitemap
 let svnAddress = sitemap
 let taurus = {
@@ -176,6 +190,7 @@ let taurus = {
     developFAQ
   }
 }
+
 let mobile = {
   'component': {
     'cell': mobiCell,
@@ -193,7 +208,20 @@ let mobile = {
     'checklist': mobileChecklist,
     'radio': mobileRadio,
     'field': mobileField,
-    'badge': mobileBadge
+    'badge': mobileBadge,
+    'toast': mobileToast,
+    'indicator': mobileIndicator,
+    'pull-down': mobilePullDown,
+    'infinite-scroll': mobileInfiniteScroll,
+    'message-box': mobileMessageBox,
+    'action-sheet': mobileActionSheet,
+    'popup': mobilePopup,
+    'swipe': mobileSwipe,
+    'lazy-load': mobileLazeLoad,
+    'range': mobileRange,
+    'progress': mobileProgress,
+    'picker': mobilePicker,
+    'datetime-picker': mobileDatetimePicker
   },
   'design': {
     principle,

@@ -422,8 +422,68 @@
         "groupName":"JS Components",
         "list": [
           {
+            "path": "/toast",
+            "title": "Toast"
+          },
+          {
             "path": "/palette-button",
             "title": "Palette Button"
+          },
+          {
+            "path": "/indicator",
+            "title": "Indicator"
+          },
+          {
+            "path": "/pull-down",
+            "title": "Pull Down"
+          },
+          {
+            "path": "/pull-up",
+            "title": "Pull Up"
+          },
+          {
+            "path": "/infinite-scroll",
+            "title": "Infinite Scroll"
+          },
+          {
+            "path": "/message-box",
+            "title": "Message Box"
+          },
+          {
+            "path": "/action-sheet",
+            "title": "Action Sheet"
+          },
+          {
+            "path": "/pull-up",
+            "title": "Pull Up"
+          },
+          {
+            "path": "/swipe",
+            "title": "Swipe"
+          },
+          {
+            "path": "/lazy-load",
+            "title": "Lazy Load"
+          },
+          {
+            "path": "/range",
+            "title": "Range"
+          },
+          {
+            "path": "/pull-up",
+            "title": "Pull Up"
+          },
+          {
+            "path": "/progress",
+            "title": "Progress"
+          },
+          {
+            "path": "/picker",
+            "title": "Picker"
+          },
+          {
+            "path": "/datetime-picker",
+            "title": "Datetime Picker"
           }
         ]
       },
