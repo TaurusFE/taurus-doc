@@ -93,8 +93,8 @@ export default {
         let _step = rangeOptions['step'] || 1;
         for (let i = _min; i <= _max; i += _step) {
           let obj = {
-            value: i + '',
-            label: i + ' ' + rangeOptions['rangeLabel']
+            name: i + '',
+            text: i + ' ' + rangeOptions['rangeLabel']
           };
           rangeOptions['options'].push(obj);
         }
@@ -115,7 +115,7 @@ export default {
   <div class="sg-component">
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
-      <div id="single-slider-wrap" class="sg-component__markup">
+      <div id="single-slider-wrap" class="sg-component__markup" style="overflow: visible;">
         <t-range-slider :range-options="singleSlide"></t-range-slider>
         <div style="margin-top: 20px">
           <label>

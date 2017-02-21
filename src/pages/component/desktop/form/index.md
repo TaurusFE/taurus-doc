@@ -1,185 +1,168 @@
 <script>
-    import { TForm, TFormItem, TButton, TInput, TBoxGroup, TSelect} from "ai-taurus-desktop"
+    import { TForm, TFormItem, TButton, TInput, TSelect, TCheckbox, TRadioGroup} from "ai-taurus-desktop"
     export default {
       components: {
-        TForm,
-        TFormItem,
-        TButton,
-        TInput,
-        TBoxGroup,
-        TSelect
-      },
-      data () {
-        var checkAge = (rule, value, callback) => {
-          if (!value) {
-            return callback(new Error('年龄不能为空'));
-          }
-          setTimeout(() => {
-            if (!Number.isInteger(value)) {
-              callback(new Error('请输入数字值'));
-            } else {
-              if (value < 18) {
-                callback(new Error('必须年满18岁'));
+          TForm,
+          TFormItem,
+          TButton,
+          TInput,
+          TCheckbox,
+          TRadioGroup,
+          TSelect
+        },
+        data () {
+          var checkAge = (rule, value, callback) => {
+            if (!value) {
+              return callback(new Error('年龄不能为空'));
+            }
+            setTimeout(() => {
+              if (!Number.isInteger(value)) {
+                callback(new Error('请输入数字值'));
               } else {
-                callback();
-              }
-            }
-          }, 1000);
-        };
-        var validatePass = (rule, value, callback) => {
-          if (value === '') {
-            callback(new Error('请输入密码'));
-          } else {
-            if (this.registerModel.checkPass !== '') {
-              this.$refs.registerForm.validateField('checkPass');
-            }
-            callback();
-          }
-        };
-        var validatePass2 = (rule, value, callback) => {
-          if (value === '') {
-            callback(new Error('请再次输入密码'));
-          } else if (value !== this.registerModel.pass) {
-            callback(new Error('两次输入密码不一致!'));
-          } else {
-            callback();
-          }
-        };
-        var checkBand = (rule, value, callback) => {
-          if (value.length === 0) {
-            callback(new Error('请至少选择一个'));
-          }
-        };
-        var checkPhone = (rule, value, callback) => {
-          if (value === '') {
-            callback(new Error('请输入手机号码'));
-          } else if (!/^(?:13\d|15[89])-?\d{5}(\d{3}|\*{3})$/.test(value)) {
-            callback(new Error('手机号码格式错误'));
-          }
-        };
-        return {
-          collapse: true,
-          optionData: [{label: '+86', value: '+86'}, {label: '+87', value: '+87'}, {label: '+99', value: '+99'}],
-          phoneSuffix: '',
-          result: '',
-          hobbyArray: 'apple,sony',
-          hobbyLabels: 'Apple,Sony',
-          bandArray: 'apple,sony,nokia',
-          bandLabels: 'Apple,Sony,Nokia',
-          ruleForm2: {
-            pass: '',
-            checkPass: '',
-            age: '',
-            hobby: ['sony'],
-            band: []
-          },
-          registerModel: {
-            email: '',
-            pass: '',
-            checkPass: '',
-            nickname: '',
-            hab: '',
-            phone: '',
-            cap: '',
-            hobby: ['sony'],
-            band: []
-          },
-          register: {
-            pass: [
-              { required: true, validator: validatePass, trigger: 'blur' }
-            ],
-            checkPass: [
-              { required: true, validator: validatePass2, trigger: 'blur' }
-            ],
-            email: [
-              {
-                required: true, message: '请输入邮箱地址', trigger: 'blur'
-              },
-              {
-                type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur, change'
-              }
-            ],
-            phone: [
-              { required: true, message: '请输入电话号码', trigger: 'blur' },
-              { validator: checkPhone, message: '请输入正确的电话号码', trigger: 'blur, change' }
-            ],
-            band: [
-              { required: true, validator: checkBand }
-            ]
-          },
-          rules2: {
-            pass: [
-              { validator: validatePass, trigger: 'blur' }
-            ],
-            checkPass: [
-              { validator: validatePass2, trigger: 'blur' }
-            ],
-            age: [
-              { validator: checkAge, trigger: 'blur, change' }
-            ],
-            band: [
-              { required: true, validator: checkBand }
-            ]
-          }
-        };
-      },
-      methods: {
-        toggle () {
-          let vm = this;
-          setTimeout(() => {
-            vm.collapse = !vm.collapse;
-          }, 500);
-          // setTimeout(function () {
-          //   alert('ok');
-          // }, 1000);
-        },
-
-        handleReset2 () {
-          this.$refs.registerForm.resetFields();
-        },
-        handleSubmit2 (ev) {
-          debugger;
-          this.$refs.registerForm.validate((valid) => {
-            if (valid) {
-              alert('submit!');
-            } else {
-              console.log('error submit!!');
-              return false;
-            }
-          });
-        },
-        getFormValue () {
-          this.result = this.$refs.ruleForm2.getFieldValue();
-        }
-      },
-      computed: {
-        hobbyChecked () {
-          let checked = 'false, false'.split(',');
-          let array = this.hobbyArray.split(',');
-          for (let i in array) {
-            if (array[i] === this.ruleForm2.hobby[0]) {
-              checked[i] = true;
-            }
-          }
-          return checked.join(',');
-        },
-        bandChecked () {
-          let checked = 'false,false,false'.split(',');
-          let array = this.bandArray.split(',');
-          if (this.ruleForm2.band.length > 0) {
-            let band = this.ruleForm2.band;
-            for (let i in band) {
-              for (let j in checked) {
-                if (array[j] === band[i]) {
-                  checked[j] = 'true';
+                if (value < 18) {
+                  callback(new Error('必须年满18岁'));
+                } else {
+                  callback();
                 }
               }
+            }, 1000);
+          };
+          var validatePass = (rule, value, callback) => {
+            if (value === '') {
+              callback(new Error('请输入密码'));
+            } else {
+              if (this.registerModel.checkPass !== '') {
+                this.$refs.registerForm.validateField('checkPass');
+              }
+              callback();
             }
+          };
+          var validatePass2 = (rule, value, callback) => {
+            if (value === '') {
+              callback(new Error('请再次输入密码'));
+            } else if (value !== this.registerModel.pass) {
+              callback(new Error('两次输入密码不一致!'));
+            } else {
+              callback();
+            }
+          };
+          var checkBand = (rule, value, callback) => {
+            if (value.length === 0) {
+              callback(new Error('请至少选择一个'));
+            }
+          };
+          var checkPhone = (rule, value, callback) => {
+            if (value === '') {
+              callback(new Error('请输入手机号码'));
+            } else if (!/^(?:13\d|15[89])-?\d{5}(\d{3}|\*{3})$/.test(value)) {
+              callback(new Error('手机号码格式错误'));
+            }
+          };
+          return {
+            collapse: true,
+            optionData: [{text: '+86', value: '+86'}, {text: '+87', value: '+87'}, {text: '+99', value: '+99'}],
+            phoneSuffix: '',
+            result: '',
+            hobbyArray: ['apple', 'sony'],
+            // bandArray: 'apple,sony,nokia',
+            // bandLabels: 'Apple,Sony,Nokia',
+            ruleForm2: {
+              pass: '',
+              checkPass: '',
+              age: '',
+              hobby: ['sony'],
+              band: []
+            },
+            registerModel: {
+              email: '',
+              pass: '',
+              checkPass: '',
+              nickname: '',
+              hab: '',
+              phone: '',
+              cap: '',
+              hobby: ['sony'],
+              band: []
+            },
+            register: {
+              pass: [
+                { required: true, validator: validatePass, trigger: 'blur' }
+              ],
+              checkPass: [
+                { required: true, validator: validatePass2, trigger: 'blur' }
+              ],
+              email: [
+                {
+                  required: true, message: '请输入邮箱地址', trigger: 'blur'
+                },
+                {
+                  type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur, change'
+                }
+              ],
+              phone: [
+                { required: true, message: '请输入电话号码', trigger: 'blur' },
+                { validator: checkPhone, message: '请输入正确的电话号码', trigger: 'blur, change' }
+              ],
+              band: [
+                { required: true, validator: checkBand }
+              ]
+            },
+            rules2: {
+              pass: [
+                { validator: validatePass, trigger: 'blur' }
+              ],
+              checkPass: [
+                { validator: validatePass2, trigger: 'blur' }
+              ],
+              age: [
+                { validator: checkAge, trigger: 'blur, change' }
+              ],
+              band: [
+                { required: true, validator: checkBand }
+              ]
+            }
+          };
+        },
+        methods: {
+          toggle () {
+            let vm = this;
+            setTimeout(() => {
+              vm.collapse = !vm.collapse;
+            }, 500);
+            // setTimeout(function () {
+            //   alert('ok');
+            // }, 1000);
+          },
+
+          handleReset2 () {
+            this.$refs.registerForm.resetFields();
+          },
+          handleSubmit2 (ev) {
+            this.$refs.registerForm.validate((valid) => {
+              if (valid) {
+                alert('submit!');
+              } else {
+                console.log('error submit!!');
+                return false;
+              }
+            });
+          },
+          getFormValue () {
+            this.result = this.$refs.ruleForm2.getFieldValue();
           }
-          console.log(checked.join(','));
-          return checked.join(',');
+        },
+        computed: {
+          hobbyChecked () {
+            let checked = [false, false];
+            let array = this.hobbyArray.concat([]);
+            for (let i in array) {
+              if (array[i] === this.ruleForm2.hobby[0]) {
+                checked[i] = true;
+              }
+            }
+            return checked;
+          }
         }
-      }
   };
 </script>
 <style scoped>
@@ -266,42 +249,34 @@
 ```html
 <template>
    <t-form class="login-form">
-     <t-form-item>
-       <t-input placeholder="Username">
-         <i class="icon icon-user" slot="prepend"></i>
-       </t-input>
-     </t-form-item>
-     <t-form-item>
-       <t-input type="password" placeholder="Password">
-         <i class="icon icon-locked"
-            slot="prepend"></i>
-       </t-input>
-     </t-form-item>
-     <t-form-item>
-       <t-box-group type="checkbox"
-                    labels="Remember me"
-                    value="check"
-                    checked="true">
-       </t-box-group>
-       <a href="#" class="login-form-forget">forget password</a>
-       <t-button text="Login"
-                 class="button button--action"
-                 :stretch="true">
-       </t-button>
-       <span>Or </span><a href="">register now!</a>
-     </t-form-item>
-   </t-form>
+         <t-form-item>
+           <t-input placeholder="Username">
+             <i class="icon icon-user" slot="prepend"></i>
+           </t-input>
+         </t-form-item>
+         <t-form-item>
+           <t-input type="password" placeholder="Password">
+             <i class="icon icon-locked" slot="prepend"></i>
+           </t-input>
+         </t-form-item>
+         <t-form-item>
+           <t-checkbox label="Remember me" value="check" :checked="true"></t-checkbox>
+           <a href="#" class="login-form-forgot">forget password</a>
+           <t-button text="Login" class="button button--action" :stretch="true"></t-button>
+           <span>Or </span><a href="">register now!</a>
+         </t-form-item>
+       </t-form>
 </template>
 <script>
    import { TForm, TFormItem,
-            TButton, TInput, TBoxGroup} from "ai-taurus-desktop"
+            TButton, TInput, TCheckbox} from "ai-taurus-desktop"
     export default {
       components: {
         TForm,
         TFormItem,
         TButton,
         TInput,
-        TBoxGroup
+        TCheckbox
       }
     }
 </script>
@@ -313,87 +288,60 @@
 
 ```html
   <template>
-     <t-form class="register-form"
-             :model="registerModel"
-             :rules="register"
-             ref="registerForm"
-             label-width="145px"
-             label-position='top'>
-       <t-form-item label="E-mail" prop="email">
-         <t-input v-model="registerModel.email">
-         </t-input>
-       </t-form-item>
-       <t-form-item label="Password" prop="pass">
-         <t-input type="password"
-                  v-model="registerModel.pass">
-         </t-input>
-       </t-form-item>
-       <t-form-item label="Confirm Password"
-                    prop="checkPass">
-         <t-input type="password"
-                  v-model="registerModel.checkPass">
-         </t-input>
-       </t-form-item>
-       <t-form-item label="Nickname" prop="nickname">
-         <t-input></t-input>
-       </t-form-item>
-       <t-form-item label="Habitual Residence"
-                    prop="hab">
-         <t-input></t-input>
-       </t-form-item>
-       <t-form-item label="Phone Number" prop="phone">
-         <t-input v-model="registerModel.phone">
-           <div slot="prepend">
-             <span>+86</span>
-           </div>
-         </t-input >
-       </t-form-item>
-       <t-form-item label="Captcha" prop="cap">
-         <t-input></t-input>
-         <t-button text="Get captcha"
-                   class="button button--default">
-         </t-button>
-       </t-form-item>
-       <t-form-item label="兴趣" prop="hobby">
-         <t-box-group type="radiobox"
-                      :labels="hobbyLabels"
-                      v-model="registerModel.hobby"
-                      :value="hobbyArray"
-                      :checked="hobbyChecked"
-                      inline="true">
-         </t-box-group>
-       </t-form-item>
-       <t-form-item label="品牌" prop="band">
-         <t-box-group type="checkbox"
-                      :labels="bandLabels"
-                      v-model="registerModel.band"
-                      :value="bandArray"
-                      :checked="bandChecked"
-                      inline="true">
-         </t-box-group>
-       </t-form-item>
-       <t-form-item>
-         <t-button text="Register"
-                   class="button button--action"
-                   @btn-click="handleSubmit2" >
-         </t-button>
-         <t-button text="Reset"
-                   class="button button--action"
-                   @btn-click="handleReset2" >
-                  </t-button>
-       </t-form-item>
-     </t-form>
+     <t-form class="register-form" :model="registerModel" :rules="register" ref="registerForm" label-width="145px" label-position="top">
+           <t-form-item label="E-mail" prop="email">
+             <t-input v-model="registerModel.email"></t-input>
+           </t-form-item>
+           <t-form-item label="Password" prop="pass">
+             <t-input type="password" v-model="registerModel.pass">
+             </t-input>
+           </t-form-item>
+           <t-form-item label="Confirm Password" prop="checkPass">
+             <t-input type="password" v-model="registerModel.checkPass">
+             </t-input>
+           </t-form-item>
+           <t-form-item label="Nickname" prop="nickname">
+             <t-input>
+             </t-input>
+           </t-form-item>
+           <t-form-item label="Habitual Residence" prop="hab">
+             <t-input>
+             </t-input>
+           </t-form-item>
+           <t-form-item label="Phone Number" prop="phone">
+             <t-input v-model="registerModel.phone">
+               <t-select slot="prepend" :value="optionData" v-model="phoneSuffix" style="width:100px">
+               </t-select>
+             </t-input>
+           </t-form-item>
+           <t-form-item label="Captcha" prop="cap">
+             <t-input>
+             </t-input>
+             <t-button text="Get captcha" class="button button--default"></t-button>
+           </t-form-item>
+           <t-form-item label="兴趣" prop="hobby">
+             <t-radio-group :label="['Apple','Sony']" v-model="registerModel.hobby" :value="hobbyArray" :checked="hobbyChecked" :inline="true"></t-radio-group>
+           </t-form-item>
+           <t-form-item label="品牌" prop="band">
+             <t-checkbox label="Apple" value="apple" :checked="false" :inline="true"></t-checkbox>
+             <t-checkbox label="Sony" value="sony" :checked="false" :inline="true"></t-checkbox>
+             <t-checkbox label="Nokia" value="nokia" :checked="false" :inline="true"></t-checkbox>
+           </t-form-item>
+           <t-form-item>
+             <t-button text="Register" class="button button--action" @btn-click="handleSubmit2" ></t-button>
+           </t-form-item>
+         </t-form>
   </template>
   <script>
  <script>
-     import { TForm, TFormItem, TButton, TInput, TBoxGroup} from "ai-taurus-desktop"
+     import { TForm, TFormItem, TButton, TInput, TSelect} from "ai-taurus-desktop"
      export default {
        components: {
          TForm,
          TFormItem,
          TButton,
          TInput,
-         TBoxGroup
+         TSelect
        },
        data () {
          var checkAge = (rule, value, callback) => {

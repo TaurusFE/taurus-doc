@@ -6,34 +6,34 @@ export default {
   },
   data () {
     return  {
-      // delay: 1000,
     rearchResult: '',
-    disabled: false,
-    autoFocus: false,
-    source: [
-      'ActionScript',
-      'AppleScript',
-      'Asp',
-      'BASIC',
-      'C',
-      'C++',
-      'Clojure',
-      'COBOL',
-      'ColdFusion',
-      'Erlang',
-      'Fortran',
-      'Groovy',
-      'Haskell',
-      'Java',
-      'JavaScript',
-      'Lisp',
-      'Perl',
-      'PHP',
-      'Python',
-      'Ruby',
-      'Scala',
-      'Scheme'
-    ]
+        disabled: false,
+        autoFocus: false,
+        placeholder: 'please enter keyword',
+        source: [
+          'ActionScript',
+          'AppleScript',
+          'Asp',
+          'BASIC',
+          'C',
+          'C++',
+          'Clojure',
+          'COBOL',
+          'ColdFusion',
+          'Erlang',
+          'Fortran',
+          'Groovy',
+          'Haskell',
+          'Java',
+          'JavaScript',
+          'Lisp',
+          'Perl',
+          'PHP',
+          'Python',
+          'Ruby',
+          'Scala',
+          'Scheme'
+        ]
     }
   }
 }

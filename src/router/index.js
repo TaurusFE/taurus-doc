@@ -3,7 +3,9 @@
  */
 import Vue from 'vue'
 import Router from 'vue-router'
+import Taurus from 'ai-taurus-desktop'
 Vue.use(Router)
+Vue.use(Taurus)
 let buildFlag = false
 import component from '../config'
 import navConfig from '../config/router.json'

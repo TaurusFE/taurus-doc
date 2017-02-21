@@ -1,6 +1,4 @@
 <script>
-  import 'ai-taurus-desktop';
-
   export default {
     methods: {
       gotoMyTag: function (event) {
