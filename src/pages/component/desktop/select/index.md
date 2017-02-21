@@ -212,8 +212,7 @@ export default {
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | ---- | ---- | ---- | ---- | ---- |
-| value | 值 | Array | - | [] |
-| default-value | 默认值 | Array | - | [] |
+| options | 值 | Array | - | [] |
 | size | 尺寸, 空串表示标准尺寸 | String | ''\|'small' | '' |
 | disabled | 是否禁用，true表示禁用，否则表示启用 | Boolean | true\|false | false |
 | width | 宽度 | String | 'auto'\|长度\|百分比 | 'auto' |

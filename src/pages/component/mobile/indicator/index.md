@@ -17,14 +17,14 @@ import { Indicator } from 'ai-taurus-mobile';
 Indicator组件支持传入自定义对象来定制属性。
 
 ```html
- <div class="page-indicator">
+<div>
     <h1 class="page-title">Indicator</h1>
     <div class="page-indicator-wrapper">
       <t-button @click.native="openIndicator" size="large">点击弹出 Indicator</t-button>
       <t-button @click.native="openIndicatorWithSpinner" size="large">可配置 spinner</t-button>
       <t-button @click.native="openIndicatorWithText" size="large">点击弹出带有文字的 Indicator</t-button>
     </div>
-  </div>  
+  </div>
 ```
 ```js
   import { TButton, Indicator } from 'ai-taurus-mobile';
