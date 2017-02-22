@@ -1,4 +1,5 @@
 <script>
+  import Vue from 'vue';
   import {TTable, TButton} from 'ai-taurus-desktop';
 
   let dataTableTemplate = ' <div class="container data-table--without-pagination"> '+

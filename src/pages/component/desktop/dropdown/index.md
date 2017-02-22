@@ -122,7 +122,7 @@ export default {
 
 ```html
 <div class="form-row">
-  <t-dropdown :value="simpleValue" toggler="click" @click="_hdDropdownClick">
+  <t-dropdown :value="simpleValue" toggler="click" @click="_hdClick">
     <a href="javascript:void(0)">鼠标单击显示(click)</a>
   </t-dropdown>
 </div>
@@ -167,7 +167,7 @@ export default {
     };
   },
   methods: {
-    _hdDropdownClick (data) {
+    _hdClick (data) {
       console.log(data);
     }
   }

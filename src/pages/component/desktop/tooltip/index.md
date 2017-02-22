@@ -1,6 +1,7 @@
 <script>
-import 'ai-taurus-desktop';
-Vue.directive('tooltip');
+import Vue from 'vue';
+import Taurus from 'ai-taurus-desktop';
+Vue.use(Taurus);
 export default {
   data () {
     return {

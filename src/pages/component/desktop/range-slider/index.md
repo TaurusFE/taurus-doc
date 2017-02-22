@@ -93,8 +93,8 @@ export default {
         let _step = rangeOptions['step'] || 1;
         for (let i = _min; i <= _max; i += _step) {
           let obj = {
-            value: i + '',
-            label: i + ' ' + rangeOptions['rangeLabel']
+            name: i + '',
+            text: i + ' ' + rangeOptions['rangeLabel']
           };
           rangeOptions['options'].push(obj);
         }

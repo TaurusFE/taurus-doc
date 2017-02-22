@@ -102,10 +102,6 @@
           {
             "path": "/tooltip",
             "title": "Tooltip"
-          },
-          {
-            "path": "/speech-bubble",
-            "title": "Speech Bubble"
           }
         ]
       },

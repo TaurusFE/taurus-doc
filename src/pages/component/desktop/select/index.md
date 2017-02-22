@@ -1,4 +1,5 @@
 <script>
+import Vue from 'vue';
 import {TSelect} from 'ai-taurus-desktop';
 export default {
   components: {
@@ -58,7 +59,7 @@ export default {
 
 ```html
 <div id="base" class="form-row">
-  <t-select :value="simpleValue" size="small" width="200px" @select="_hdSelect" @unselect="_hdUnSelect"></t-select>
+  <t-select :options="simpleValue" size="small" width="200px" @select="_hdSelect" @unselect="_hdUnSelect"></t-select>
 </div>
 
 <script>
@@ -119,7 +120,7 @@ export default {
 
 ```html
 <div id="disabledState" class="form-row">
-  <t-select :value="simpleValue" placeholder="请选择一条数据" :disabled="true" width="200px"></t-select>
+  <t-select :options="simpleValue" placeholder="请选择一条数据" :disabled="true" width="200px"></t-select>
 </div>
 
 <script>
@@ -150,7 +151,7 @@ export default {
 
 ```html
 <div id="placeholder" class="form-row">
-  <t-select :value="simpleValue" placeholder="请选择一条数据" width="200px"></t-select>
+  <t-select :options="simpleValue" placeholder="请选择一条数据" width="200px"></t-select>
 </div>
 
 <script>
@@ -182,7 +183,7 @@ export default {
 
 ```html
 <div id="multiple" class="form-row">
-  <t-select :value="simpleValue" :muti-select="true" placeholder="请选择" width="400px"></t-select>
+  <t-select :options="simpleValue" :muti-select="true" placeholder="请选择" width="400px"></t-select>
 </div>
 
 <script>

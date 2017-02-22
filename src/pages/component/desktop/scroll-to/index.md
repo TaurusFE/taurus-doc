@@ -4,7 +4,6 @@
   export default {
     methods: {
       gotoMyTag: function (event) {
-        debugger;
         var el = document.getElementById('myTag');
         this.$scrollTo(el, 500); // 滚动到id为myTag的元素处
       },

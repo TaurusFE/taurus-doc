@@ -25,7 +25,6 @@ import tree from '../pages/component/desktop/tree'
 import transfer from '../pages/component/desktop/transfer'
 import statusMessage from '../pages/component/desktop/status-message'
 import tooltip from '../pages/component/desktop/tooltip'
-import speechBubble from '../pages/component/desktop/speech-bubble'
 import dropdown from '../pages/component/desktop/dropdown'
 import tab from '../pages/component/desktop/tab'
 import breadcrumbs from '../pages/component/desktop/breadcrumbs'
@@ -126,7 +125,6 @@ let taurus = {
     'scroll-to': scrollTo,
     'search-filter': searchFilter,
     'select': select,
-    'speech-bubble': speechBubble,
     'status-message': statusMessage,
     'switcher': switcher,
     'tab': tab,

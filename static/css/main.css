@@ -430,10 +430,10 @@
 .icon-message:before {
   content: "\E073"; }
 
-.icon-messages:before {
+.icon-message_question:before {
   content: "\E074"; }
 
-.icon-message_question:before {
+.icon-messages:before {
   content: "\E075"; }
 
 .icon-meter:before {
@@ -10819,6 +10819,7 @@ examples:
     background-color: #fff;
     color: #474747;
     border: 1px solid #d1d1d1;
+    display: none;
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     z-index: 500; }
@@ -10841,6 +10842,8 @@ examples:
         min-width: none;
         width: 100%;
         height: 0; } }
+    .is-open .dropdown__content {
+      display: block; }
   .dropdown__list {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;

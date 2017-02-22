@@ -170,7 +170,9 @@
             for (let i in band) {
               for (let j in checked) {
                 if (array[j] === band[i]) {
-                  checked[j] = 'true';
+                  checked[j] = true;
+                } else {
+                  checked[j] = false;
                 }
               }
             }
@@ -277,11 +279,10 @@
        </t-input>
      </t-form-item>
      <t-form-item>
-       <t-box-group type="checkbox"
-                    labels="Remember me"
+       <t-checkbox label="Remember me"
                     value="check"
-                    checked="true">
-       </t-box-group>
+                    checked>
+       </t-checkbox>
        <a href="#" class="login-form-forget">forget password</a>
        <t-button text="Login"
                  class="button button--action"
@@ -353,23 +354,21 @@
                    class="button button--default">
          </t-button>
        </t-form-item>
-       <t-form-item label="兴趣" prop="hobby">
-         <t-box-group type="radiobox"
-                      :labels="hobbyLabels"
+       <!-- <t-form-item label="兴趣" prop="hobby">
+         <t-radio-group :label="hobbyLabels"
                       v-model="registerModel.hobby"
                       :value="hobbyArray"
                       :checked="hobbyChecked"
-                      inline="true">
-         </t-box-group>
-       </t-form-item>
+                      inline>
+         </t-radio-group>
+       </t-form-item> -->
        <t-form-item label="品牌" prop="band">
-         <t-box-group type="checkbox"
-                      :labels="bandLabels"
+         <t-checkbox  :label="bandLabels"
                       v-model="registerModel.band"
                       :value="bandArray"
                       :checked="bandChecked"
-                      inline="true">
-         </t-box-group>
+                      inline>
+         </t-checkbox>
        </t-form-item>
        <t-form-item>
          <t-button text="Register"
@@ -544,7 +543,9 @@
              for (let i in band) {
                for (let j in checked) {
                  if (array[j] === band[i]) {
-                   checked[j] = 'true';
+                   checked[j] = true;
+                 } else {
+                    checked[j] = false;
                  }
                }
              }
