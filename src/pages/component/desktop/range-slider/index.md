@@ -115,7 +115,7 @@ export default {
   <div class="sg-component">
       <div class="sg-component__status"></div>
       <!--range slider 组件-->
-      <div id="single-slider-wrap" class="sg-component__markup">
+      <div id="single-slider-wrap" class="sg-component__markup" style="overflow: visible;">
         <t-range-slider :range-options="singleSlide"></t-range-slider>
         <div style="margin-top: 20px">
           <label>

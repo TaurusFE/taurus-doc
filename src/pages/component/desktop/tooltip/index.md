@@ -1,7 +1,5 @@
 <script>
-import Vue from 'vue';
-import Taurus from 'ai-taurus-desktop';
-Vue.use(Taurus);
+import 'ai-taurus-desktop';
 export default {
   data () {
     return {

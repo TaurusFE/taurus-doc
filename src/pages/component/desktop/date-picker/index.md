@@ -1,6 +1,5 @@
 <script>
- import {TSelect, taurus, TDatePicker, moment} from 'ai-taurus-desktop';
-
+ import {TSelect, TDatePicker, moment} from 'ai-taurus-desktop';
  export default {
       data: function () {
         return {
@@ -46,7 +45,6 @@
           this.calendarSie = newVal;
         },
         langChange (newVal) {
-          taurus.lang = newVal;
           this.lang = newVal;
         },
         onChange (value) {
@@ -200,7 +198,7 @@
 
 ```html
     <div class="sg-component__label">尺寸</div>
-    <div style="margin: 10px;" class="box--default-dark-border padding-whole--small">
+    <div style="margin: 10px; overflow: visible;" class="box--default-dark-border padding-whole--small">
     <t-select :size="calendarSize" :options="calendarSizeArr" default-value="calendarSize" v-model="calendarSize"
             :on-change="sizeChange" style="width:150px; display: inline-block;"></t-select>
     <t-date-picker class="autoCanlendar" style="width:200px" type="date"  :size="calendarSize"
@@ -264,7 +262,7 @@
 
 ```html
 <div class="sg-component__label">国际化</div>
-  <div style="margin: 10px;" class="box--default-dark-border padding-whole--small">
+  <div style="margin: 10px; overflow: visible;" class="box--default-dark-border padding-whole--small">
     <t-select size="small" :options="langArr" default-value="en" v-model="lang" :on-change="langChange"
               style="width:150px; display: inline-block;"></t-select>
     <t-date-picker style="width:200px" type="dateTime" :locale="lang"
