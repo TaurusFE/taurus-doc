@@ -29,6 +29,9 @@ import dropdown from '../pages/component/desktop/dropdown'
 import tab from '../pages/component/desktop/tab'
 import breadcrumbs from '../pages/component/desktop/breadcrumbs'
 import form from '../pages/component/desktop/form'
+import calendar from '../pages/component/desktop/calendar'
+import tag from '../pages/component/desktop/tag'
+import badge from '../pages/component/desktop/badge'
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
@@ -132,7 +135,10 @@ let taurus = {
     'tooltip': tooltip,
     'steps': steps,
     'tree': tree,
-    'transfer': transfer
+    'transfer': transfer,
+    'calendar': calendar,
+    'tag': tag,
+    'badge': badge
   },
   'design': {
     principle,
