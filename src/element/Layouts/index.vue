@@ -106,7 +106,7 @@
       <!-- checkbox-component-end-->
       <div class="doc-compontent-box">
         <div class="leader--large trailer">
-          <h3 class="doc-text-size--24">Example</h2>
+          <h2 class="doc-text-size--24">Example</h2>
         </div>
         <div class="sg-component__status">
         </div>

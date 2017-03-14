@@ -32,6 +32,8 @@ import form from '../pages/component/desktop/form'
 import calendar from '../pages/component/desktop/calendar'
 import tag from '../pages/component/desktop/tag'
 import badge from '../pages/component/desktop/badge'
+import rate from '../pages/component/desktop/rate'
+import editor from '../pages/component/desktop/editor'
 import color from '../element/color'
 import typography from '../element/typography'
 import typesetting from '../element/typesetting'
@@ -138,7 +140,9 @@ let taurus = {
     'transfer': transfer,
     'calendar': calendar,
     'tag': tag,
-    'badge': badge
+    'badge': badge,
+    'rate': rate,
+    'editor': editor
   },
   'design': {
     principle,

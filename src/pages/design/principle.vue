@@ -244,7 +244,7 @@
 
         <p class="doc-content-summary">理想情况是只提供用户当前所需的信息，并放置在所需的地方。</p>
 
-        <p class="doc-content-summary">好的图形设计是形成简洁自然对话过程的一个重要基础。屏幕布局应当利用人类认知领域中的完全形态法则，来增加人们对对话元素之间相互关系的理解。
+        <p class="doc-content-summary">好的图形设计是形成简洁自然对话过程的一个重要基础。屏幕布局应当利用人类认知领域中的完全形态法则，来增加人们对对话元素之间相互关系的理解。</p>
       </div>
       <div class="grid-row grid-row trailer--xlarge">
         <div class="col-md-4">

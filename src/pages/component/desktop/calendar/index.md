@@ -232,7 +232,7 @@ export default {
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | ---- | ---- | ---- | ---- | ---- |
 | events | 日历事件 | Array | -| - |
-| firstDay | 每一周开始的星期数 | Number | String | - | 0 |
+| firstDay | 每一周开始的星期数 | Number  | - | 0 |
 | titleFormat | 标题的日期格式 | String | - | MMMM yyyy |
 | monthNames | 月份的显示名称 | Array | - | ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] |
 | weekNames | 星期的显示名称 | Array | - | ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] |

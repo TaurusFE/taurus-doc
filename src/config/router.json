@@ -79,6 +79,10 @@
             "title": "Badge"
           },
           {
+            "path": "/editor",
+            "title": "Editor"
+          },
+          {
             "path": "/am-charts-bars",
             "title": "AmCharts Bars"
           },

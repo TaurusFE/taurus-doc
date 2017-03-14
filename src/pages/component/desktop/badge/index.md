@@ -179,7 +179,7 @@ export default {
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | ---- | ---- | ---- | ---- | ---- |
 | closable | 日历事件 | Boolean | true/false | false |
-| type | 标签的样式类型 | String | String | -/border/dot | - |
+| type | 标签的样式类型 | String | -/border/dot | - |
 | color | 标签颜色 | String | -/blue/green/red/yellow | - |
 
 ### Events
